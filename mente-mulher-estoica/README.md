@@ -16,6 +16,9 @@ conhecimento do app.
 | --- | --- |
 | `comandos.md` | Biblioteca dos 9 comandos prontos (Estratégia, Execução, Refino), em blocos copiáveis, com o contexto de marca embutido. |
 | `Comandos_Mente_Mulher_Estoica.pdf` | Versão original em PDF da biblioteca de comandos. |
+| `produtos.md` | Catálogo do que o app vai vender: ebooks, diário, planos e cursos, com preços de partida. |
+| `app.md` | Esboço do app: conceito, telas, MVP, ideias de tecnologia e próximos passos. |
+| `prototipo/index.html` | Protótipo visual do app na estética da marca. Abra no navegador para ver. |
 
 ## Identidade da marca (resumo)
 
@@ -28,6 +31,7 @@ conhecimento do app.
 
 ## Próximos passos possíveis
 
+- Escolher o produto de estreia (sugestão: diário digital em PDF).
+- Evoluir o `prototipo/` para as telas do MVP descritas em `app.md`.
+- Reunir o conteúdo das primeiras reflexões diárias (30 a 90 dias).
 - Reunir mais conteúdos (roteiros, carrosséis, legendas) neste acervo.
-- Definir os produtos que o app venderá (ebooks, diários, planos, cursos curtos).
-- Esboçar a estrutura do app a partir deste histórico.
