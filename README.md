@@ -9,3 +9,9 @@ Este repositório reúne materiais de estudo, documentos, casos fictícios e rec
 - Casos fictícios para formação
 - Guias pedagógicos
 - Recursos em HTML
+
+# Projeto Mente Mulher Estoica
+
+Acervo separado, na pasta [`mente-mulher-estoica/`](mente-mulher-estoica/), que reúne
+conteúdos e comandos do perfil @mente.mulher.estoica. É o histórico inicial para um futuro
+app de venda de conteúdos estoicos.
