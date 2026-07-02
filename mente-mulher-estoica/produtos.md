@@ -19,14 +19,25 @@ Materiais curtos, densos e bonitos, para leitura em uma ou duas sentadas.
 | **O Fim da Comparação** | Sair do impulso de se medir pelos outros. | R$ 27 |
 | **Amor não é Esforço Excessivo** | Reconhecer o próprio valor em relações. | R$ 27 |
 
-## 2. Diário das Mulheres Estoicas
+## 2. Diário Estoico (reflexão guiada)
 
-Produto âncora da marca. Diário guiado, com prompts diários de reflexão estoica.
+Produto âncora de reflexão. Diário guiado, com prompt, pergunta e prática por dia.
+Conteúdo pronto em `diario/` (Diário Estoico de 30 Dias).
 
 | Versão | O que é | Preço sugerido |
 | --- | --- | --- |
-| **Diário digital (PDF interativo)** | 90 dias de reflexões guiadas para imprimir ou preencher no tablet. | R$ 47 |
+| **Diário digital (PDF)** | 30 dias de reflexões guiadas para imprimir ou preencher no tablet. Depois expandir para 90. | R$ 47 |
 | **Diário no app (assinatura)** | Reflexão do dia, registro e acompanhamento dentro do app. | incluso no plano |
+
+## 2b. Série Diário das Mulheres Estoicas (biográfico)
+
+Grande diferencial da marca. Série sobre mulheres estoicas e suas lições.
+Planejamento em `serie-mulheres-estoicas/`.
+
+| Versão | O que é | Preço sugerido |
+| --- | --- | --- |
+| **Ebook Mulheres Estoicas** | As 9 protagonistas em texto original, com lições aplicadas. | R$ 37 |
+| **Curso Mulheres Estoicas** | Uma aula por protagonista, em vídeo ou texto. | R$ 97 |
 
 ## 3. Planos (assinatura)
 
