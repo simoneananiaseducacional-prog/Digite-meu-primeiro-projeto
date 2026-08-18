@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mente Mulher Estoica</title>
+  <style>
+    :root {
+      --preto: #0d0d0d;
+      --carvao: #1a1a1a;
+      --branco: #f5f3ef;
+      --cinza: #9a958c;
+      --dourado: #c9a227;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--preto);
+      color: var(--branco);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .tela {
+      max-width: 420px;
+      margin: 0 auto;
+      min-height: 100vh;
+      padding: 2.5rem 1.6rem 6rem;
+      position: relative;
+    }
+    header.marca {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header.marca .selo {
+      letter-spacing: 0.5em;
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      color: var(--dourado);
+    }
+    header.marca h1 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      letter-spacing: 0.06em;
+      margin-top: 0.6rem;
+    }
+    header.marca h1 span { color: var(--dourado); }
+
+    .rotulo {
+      font-size: 0.6rem;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: var(--cinza);
+      margin-bottom: 1rem;
+    }
+
+    /* Reflexao do dia */
+    .reflexao {
+      border-top: 1px solid #2b2b2b;
+      border-bottom: 1px solid #2b2b2b;
+      padding: 3rem 0;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+    .reflexao blockquote {
+      font-size: 1.5rem;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .reflexao .fonte {
+      margin-top: 1.6rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--dourado);
+    }
+
+    .diario {
+      margin-bottom: 3rem;
+    }
+    .diario textarea {
+      width: 100%;
+      min-height: 90px;
+      background: var(--carvao);
+      border: 1px solid #2b2b2b;
+      color: var(--branco);
+      font-family: inherit;
+      font-size: 0.95rem;
+      padding: 1rem;
+      resize: vertical;
+    }
+    .diario textarea::placeholder { color: #6b675f; font-style: italic; }
+
+    /* Biblioteca */
+    .biblioteca { margin-bottom: 2rem; }
+    .produto {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid #232323;
+      padding: 1.1rem 0;
+    }
+    .produto .nome { font-size: 1.02rem; }
+    .produto .desc { font-size: 0.74rem; color: var(--cinza); font-style: italic; }
+    .produto .preco { color: var(--dourado); font-size: 0.92rem; white-space: nowrap; }
+
+    .cta {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: transparent;
+      color: var(--dourado);
+      border: 1px solid var(--dourado);
+      padding: 1rem;
+      font-family: inherit;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 2rem;
+    }
+    .cta:hover { background: var(--dourado); color: var(--preto); }
+
+    /* Barra de navegacao */
+    nav.tab {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 420px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      background: var(--carvao);
+      border-top: 1px solid #2b2b2b;
+      padding: 0.9rem 0;
+    }
+    nav.tab a {
+      color: var(--cinza);
+      text-decoration: none;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    nav.tab a.ativo { color: var(--dourado); }
+
+    footer.nota {
+      text-align: center;
+      font-size: 0.62rem;
+      color: #5a564f;
+      margin-top: 3rem;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="tela">
+    <header class="marca">
+      <div class="selo">Protótipo</div>
+      <h1>Mente <span>Mulher</span> Estoica</h1>
+    </header>
+
+    <section class="reflexao">
+      <div class="rotulo">Reflexão do dia</div>
+      <blockquote>Não é o que acontece, é o que se faz com o que acontece.</blockquote>
+      <div class="fonte">Estoicismo aplicado</div>
+    </section>
+
+    <section class="diario">
+      <div class="rotulo">Seu registro de hoje</div>
+      <textarea placeholder="O que hoje pediu do seu autocontrole"></textarea>
+    </section>
+
+    <section class="biblioteca">
+      <div class="rotulo">Biblioteca</div>
+
+      <div class="produto">
+        <div>
+          <div class="nome">Diário das Mulheres Estoicas</div>
+          <div class="desc">90 dias de reflexões guiadas</div>
+        </div>
+        <div class="preco">R$ 47</div>
+      </div>
+
+      <div class="produto">
+        <div>
+          <div class="nome">A Mulher que Não se Abandona</div>
+          <div class="desc">ebook · autocontrole sem endurecer</div>
+        </div>
+        <div class="preco">R$ 27</div>
+      </div>
+
+      <div class="produto">
+        <div>
+          <div class="nome">Bíblia e Estoicismo · vol. 1</div>
+          <div class="desc">ebook · fé e filosofia</div>
+        </div>
+        <div class="preco">R$ 37</div>
+      </div>
+
+      <button class="cta">Assinar o plano Raiz</button>
+    </section>
+
+    <footer class="nota">Protótipo visual, sem venda real. Aprenda a não se abandonar.</footer>
+  </div>
+
+  <nav class="tab">
+    <a href="#" class="ativo">Início</a>
+    <a href="#">Diário</a>
+    <a href="#">Biblioteca</a>
+    <a href="#">Séries</a>
+    <a href="#">Perfil</a>
+  </nav>
+</body>
+</html>
