@@ -1,0 +1,130 @@
+{
+  "system_name": "CREI Slide System",
+  "version": "1.0.0",
+  "purpose": "Criar slides didáticos, ilustrativos, interativos e sofisticados para formações do CREI Pouso Alegre.",
+  "format": {
+    "aspect_ratio": "16:9",
+    "width_px": 1672,
+    "height_px": 941,
+    "safe_margin_percent": 5
+  },
+  "colors": {
+    "navy_950": "#031A37",
+    "navy_900": "#062247",
+    "navy_800": "#0C315D",
+    "orange_500": "#F47A00",
+    "orange_400": "#FF8A1C",
+    "off_white": "#F7F3EB",
+    "white": "#FFFFFF"
+  },
+  "typography": {
+    "title_family_priority": ["Playfair Display", "Cormorant Garamond", "Libre Baskerville"],
+    "body_family_priority": ["Montserrat", "Inter", "Aptos"],
+    "title_style": "editorial serif, strong, elegant",
+    "signature": "white keyword + orange keyword + editorial italic",
+    "minimum_projection_readability": true
+  },
+  "visual_style": {
+    "keywords": [
+      "editorial",
+      "cinematic",
+      "sophisticated",
+      "human",
+      "pedagogical",
+      "institutional",
+      "high-performance"
+    ],
+    "image_coverage_percent": [40, 60],
+    "illustration_rule": "Every image must explain or externalize the concept; decorative-only images are rejected.",
+    "avoid": [
+      "clipart",
+      "childish cartoons",
+      "generic corporate stock look",
+      "white-dominant backgrounds",
+      "rainbow palettes",
+      "dense paragraphs",
+      "tiny tables",
+      "six-or-more equal boxes",
+      "AI-generated text inside illustrations",
+      "deformed humans",
+      "meaningless decorative elements"
+    ]
+  },
+  "content_rules": {
+    "one_slide_one_idea": true,
+    "title_max_words": 10,
+    "preferred_visible_word_count": [20, 40],
+    "max_information_nuclei": 3,
+    "law_detail_location": ["footer", "speaker_notes"],
+    "golden_rule": "The slide shows; the presenter explains.",
+    "complexity_rule": "The more complex the concept, the simpler and more visual the screen must become."
+  },
+  "slide_types": [
+    "impact",
+    "question",
+    "comparison",
+    "flow",
+    "case",
+    "interactive",
+    "decision",
+    "synthesis",
+    "law_translated_to_practice"
+  ],
+  "oratory_sequence": [
+    "provoke",
+    "listen",
+    "organize",
+    "teach",
+    "transfer_to_school_practice"
+  ],
+  "interaction_actions": [
+    "observe",
+    "choose",
+    "compare",
+    "identify_barrier",
+    "identify_potential",
+    "match_resource_to_barrier",
+    "assign_responsibility",
+    "define_monitoring"
+  ],
+  "case_study_flow": [
+    "observation",
+    "fact_vs_interpretation",
+    "barriers",
+    "potentialities",
+    "supports",
+    "responsibilities",
+    "monitoring"
+  ],
+  "crei_technical_guardrails": {
+    "inclusive_education": "principle/orientation of education",
+    "special_education": "transversal modality",
+    "aee": "specialized educational service",
+    "aee_teacher": "specialized teacher; not synonymous with resource room",
+    "resource_room": "one possible space for AEE",
+    "case_study": "pedagogical process/methodology; form is only a recording instrument",
+    "case_study_coordination": "conducted by the AEE teacher according to current Inep guidance, collaboratively",
+    "pei": "federal curricular accessibility plan",
+    "pdi_mg": "state-level Minas Gerais instrument; never present as mandatory for every municipality",
+    "aclta_mg": "state teaching support role in Minas Gerais",
+    "school_support_professional": "federal non-teaching support role",
+    "aee_is_not_reinforcement": true,
+    "medical_report_not_prerequisite": true
+  },
+  "quality_gate": {
+    "must_pass": [
+      "single_clear_message",
+      "understandable_by_non-specialist",
+      "visual_has_pedagogical_function",
+      "technical_accuracy",
+      "legal_reference_checked",
+      "no_text_overflow",
+      "no_bad_syllable_breaks",
+      "safe_margins_respected",
+      "projection_readability",
+      "visual_rhythm_preserved",
+      "presenter_not_forced_to_read_slide"
+    ],
+    "final_success_test": "The learner should think: Agora eu entendi."
+  }
+}
