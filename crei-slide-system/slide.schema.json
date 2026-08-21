@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/crei-slide.schema.json",
+  "title": "CREI Slide Specification",
+  "type": "object",
+  "required": [
+    "number",
+    "title",
+    "centralIdea",
+    "layoutType",
+    "visibleText",
+    "visualConcept",
+    "speakerNotes",
+    "quality"
+  ],
+  "properties": {
+    "number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "centralIdea": {
+      "type": "string",
+      "minLength": 1
+    },
+    "layoutType": {
+      "type": "string",
+      "enum": [
+        "impact",
+        "question",
+        "comparison",
+        "flow",
+        "case",
+        "interactive",
+        "synthesis"
+      ]
+    },
+    "visibleText": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "visualConcept": {
+      "type": "string",
+      "minLength": 1
+    },
+    "interaction": {
+      "type": ["object", "null"],
+      "properties": {
+        "question": {"type": "string"},
+        "mode": {
+          "type": "string",
+          "enum": ["plenary", "pairs", "small-groups", "cards", "none"]
+        },
+        "estimatedMinutes": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "normativeBasis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["act"],
+        "properties": {
+          "act": {"type": "string"},
+          "article": {"type": ["string", "null"]},
+          "scope": {
+            "type": "string",
+            "enum": ["federal", "state", "municipal", "guidance"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "speakerNotes": {
+      "type": "object",
+      "required": ["opening", "explanation", "transferQuestion"],
+      "properties": {
+        "opening": {"type": "string"},
+        "explanation": {"type": "array", "items": {"type": "string"}},
+        "example": {"type": ["string", "null"]},
+        "transferQuestion": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "quality": {
+      "type": "object",
+      "required": [
+        "oneIdea",
+        "laypersonUnderstands",
+        "imageTeaches",
+        "textIsShort",
+        "normativeAccuracyChecked",
+        "creiAesthetic"
+      ],
+      "properties": {
+        "oneIdea": {"type": "boolean"},
+        "laypersonUnderstands": {"type": "boolean"},
+        "imageTeaches": {"type": "boolean"},
+        "textIsShort": {"type": "boolean"},
+        "normativeAccuracyChecked": {"type": "boolean"},
+        "creiAesthetic": {"type": "boolean"}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
