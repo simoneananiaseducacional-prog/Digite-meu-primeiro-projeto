@@ -1,0 +1,88 @@
+{
+  "brand": "MENTE MULHER ESTOICA",
+  "handle": "@mente.mulher.estoica",
+  "totalPages": 9,
+  "palette": {
+    "black": "#0E0D0E",
+    "blackSoft": "#171416",
+    "ivory": "#F2ECE3",
+    "ivorySoft": "#E6D8C7",
+    "wine": "#8E1834",
+    "wineDark": "#681126",
+    "taupe": "#BDA58D"
+  },
+  "cards": [
+    {
+      "filename": "01-capa.png",
+      "angle": "POR QUE A MENTE RESISTE",
+      "title": ["A certeza que", "você mais defende"],
+      "subtitle": ["talvez seja a que", "menos examinou."],
+      "cta": "DESLIZE →"
+    },
+    {
+      "filename": "02-inimigo.png",
+      "angle": "01 • INIMIGO",
+      "title": ["A certeza", "sem teste."],
+      "body": ["Quando toda evidência vira confirmação,", "a crença deixa de ser examinada."]
+    },
+    {
+      "filename": "03-historia.png",
+      "angle": "02 • HISTÓRIA",
+      "intro": ["Há quase 2 mil anos,", "Epicteto já separava", "fato de julgamento:"],
+      "quote": ["“Não são as coisas", "que nos perturbam,", "mas os juízos que", "fazemos sobre elas.”"],
+      "source": "Epicteto, Encheirídion 5"
+    },
+    {
+      "filename": "04-dados.png",
+      "angle": "03 • DADOS",
+      "title": ["Viés de", "confirmação"],
+      "body": ["Quando uma crença já existe,", "tendemos a procurar ou interpretar", "evidências a favor dela."],
+      "source": "Wason, 1960 • Nickerson, 1998"
+    },
+    {
+      "filename": "05-confissao.png",
+      "angle": "04 • CONFISSÃO EDITORIAL",
+      "title": ["Ninguém", "escapa."],
+      "body": ["Nem quem estuda.", "Nem quem ensina.", "Nem quem escreve isto."]
+    },
+    {
+      "filename": "06-contraste.png",
+      "angle": "05 • CONTRASTE",
+      "left": {
+        "title": "CONFIRMAR",
+        "question": ["Como provo", "que estou certa?"]
+      },
+      "right": {
+        "title": "EXAMINAR",
+        "question": ["O que me faria", "mudar de ideia?"]
+      }
+    },
+    {
+      "filename": "07-passo-a-passo.png",
+      "angle": "06 • PASSO A PASSO",
+      "title": "Antes de defender:",
+      "steps": [
+        "Nomeie a certeza.",
+        "Procure o contrário.",
+        "Defina o que mudaria sua conclusão.",
+        "Só então decida."
+      ],
+      "source": "Estratégia: considere o oposto • Lord et al., 1984"
+    },
+    {
+      "filename": "08-demonstracao.png",
+      "angle": "07 • DEMONSTRAÇÃO",
+      "belief": "“Ela não gosta de mim.”",
+      "evidenceA": "Demorou a responder",
+      "evidenceB": "Ajudou quando precisei",
+      "result": "CERTEZA REFORÇADA"
+    },
+    {
+      "filename": "09-encerramento.png",
+      "angle": "PARA NÃO ESQUECER",
+      "question": ["Qual certeza você", "defende com força,", "mas ainda não testou", "de verdade?"],
+      "closing": ["Examinar não é duvidar de tudo.", "É parar de aceitar sem olhar."],
+      "cta": "SALVE PARA REVISITAR"
+    }
+  ]
+}
