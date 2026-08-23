@@ -1,0 +1,5 @@
+node_modules/
+saida/
+*.zip
+*.tmp-*.png
+.DS_Store
