@@ -1,113 +1,88 @@
 {
   "brand": "MENTE MULHER ESTOICA",
-  "theme": "Excelência não é perfeição",
-  "sourceNote": "Dados: Hill & Curran (2016), meta-análise de 43 estudos (N=9.838). Base estoica: Epicteto, dicotomia do controle.",
-  "slides": [
+  "handle": "@mente.mulher.estoica",
+  "totalPages": 9,
+  "palette": {
+    "black": "#0E0D0E",
+    "blackSoft": "#171416",
+    "ivory": "#F2ECE3",
+    "ivorySoft": "#E6D8C7",
+    "wine": "#8E1834",
+    "wineDark": "#681126",
+    "taupe": "#BDA58D",
+    "orange": "#D85A1F"
+  },
+  "cards": [
     {
-      "file": "01-capa.png",
-      "kicker": "EXCELÊNCIA • AUTOCONTROLE • AÇÃO",
-      "lines": [
-        {"text": "EXCELÊNCIA", "accent": true, "weight": 800},
-        {"text": "NÃO É", "weight": 500},
-        {"text": "PERFEIÇÃO.", "weight": 800},
-        {"text": "É fazer muito bem", "small": true},
-        {"text": "o que depende de você.", "small": true, "weight": 700}
-      ]
+      "filename": "01-capa.png",
+      "angle": "EXCELÊNCIA • AUTOCONTROLE • AÇÃO",
+      "title": ["Excelência", "não é perfeição."],
+      "subtitle": ["É fazer bem", "o que depende de você."],
+      "cta": "DESLIZE →"
     },
     {
-      "file": "02-inimigo.png",
-      "kicker": "1 • INIMIGO",
-      "lines": [
-        {"text": "O inimigo", "weight": 500},
-        {"text": "não é errar.", "weight": 800},
-        {"text": "É transformar", "weight": 500},
-        {"text": "o medo de errar", "accent": true, "weight": 800},
-        {"text": "em um padrão", "weight": 500},
-        {"text": "impossível.", "weight": 800}
-      ]
+      "filename": "02-inimigo.png",
+      "angle": "01 • INIMIGO",
+      "title": ["O problema", "não é errar."],
+      "body": ["É transformar o medo do erro", "num padrão impossível de sustentar."]
     },
     {
-      "file": "03-historia.png",
-      "kicker": "2 • HISTÓRIA",
-      "lines": [
-        {"text": "Epicteto começava", "weight": 500},
-        {"text": "pela pergunta certa:", "weight": 500},
-        {"text": "o que depende", "accent": true, "weight": 800},
-        {"text": "de mim?", "accent": true, "weight": 800},
-        {"text": "Julgamento, escolha", "small": true},
-        {"text": "e ação, sim.", "small": true, "weight": 700},
-        {"text": "O resultado completo, não.", "small": true}
-      ]
+      "filename": "03-historia.png",
+      "angle": "02 • HISTÓRIA",
+      "intro": ["Epicteto começava", "pela pergunta essencial:"],
+      "quote": ["“O que depende", "de mim aqui?”"],
+      "source": "Escolhas, julgamentos e ações: sim. Resultado total: não."
     },
     {
-      "file": "04-dados.png",
-      "kicker": "3 • DADOS",
-      "lines": [
-        {"text": "43 ESTUDOS", "accent": true, "weight": 800},
-        {"text": "9.838 PESSOAS", "weight": 800},
-        {"text": "Preocupações", "small": true},
-        {"text": "perfeccionistas", "small": true, "weight": 700},
-        {"text": "se associaram a", "small": true},
-        {"text": "mais burnout.", "small": true, "weight": 800},
-        {"text": "Padrão alto não é o problema.", "tiny": true},
-        {"text": "Autocrítica rígida pode ser.", "tiny": true}
-      ],
-      "footnote": "Hill & Curran, 2016 • meta-análise"
+      "filename": "04-dados.png",
+      "angle": "03 • DADOS",
+      "title": ["Perfeccionismo", "tem dois lados."],
+      "body": ["Padrões altos podem impulsionar desempenho.", "Preocupação rígida com erros se associa a mais burnout."],
+      "source": "Hill & Curran, 2016 • meta-análise de 43 estudos"
     },
     {
-      "file": "05-confissao.png",
-      "kicker": "4 • CONFISSÃO EDITORIAL",
-      "lines": [
-        {"text": "Às vezes", "weight": 500},
-        {"text": "a gente chama de", "weight": 500},
-        {"text": "“exigência”", "accent": true, "weight": 800},
-        {"text": "o que, no fundo,", "weight": 500},
-        {"text": "é medo de entregar", "weight": 500},
-        {"text": "algo imperfeito.", "weight": 800}
-      ]
+      "filename": "05-confissao.png",
+      "angle": "04 • CONFISSÃO EDITORIAL",
+      "title": ["Às vezes", "a gente chama", "de exigência..."],
+      "body": ["o que, no fundo,", "é medo de entregar", "algo imperfeito."]
     },
     {
-      "file": "06-contraste.png",
-      "kicker": "5 • CONTRASTE",
-      "mode": "contrast",
+      "filename": "06-contraste.png",
+      "angle": "05 • CONTRASTE",
       "left": {
         "title": "PERFEIÇÃO",
-        "items": ["quer controle total", "atrasa para evitar erro", "pune cada falha"]
+        "items": ["controlar tudo", "adiar para evitar erro", "punir cada falha"]
       },
       "right": {
         "title": "EXCELÊNCIA",
-        "items": ["define um padrão alto", "age com o que tem", "revê e melhora"]
+        "items": ["definir um padrão alto", "agir com o que há", "rever e melhorar"]
       }
     },
     {
-      "file": "07-passo-a-passo.png",
-      "kicker": "6 • PASSO A PASSO",
-      "mode": "steps",
+      "filename": "07-passo-a-passo.png",
+      "angle": "06 • PASSO A PASSO",
+      "title": "Antes de travar:",
       "steps": [
-        ["01", "O que realmente", "depende de mim?"],
-        ["02", "Qual é o padrão", "suficiente para avançar?"],
-        ["03", "O que posso", "melhorar depois?"]
-      ]
-    },
-    {
-      "file": "08-demonstracao.png",
-      "kicker": "7 • DEMONSTRAÇÃO",
-      "mode": "demo",
-      "bad": "“Só publico quando estiver impecável.”",
-      "good": "“Publico quando estiver sólido, revisado e útil. Depois aprimoro.”"
-    },
-    {
-      "file": "09-final.png",
-      "kicker": "PARA NÃO ESQUECER",
-      "lines": [
-        {"text": "Excelência é", "weight": 500},
-        {"text": "consistência", "accent": true, "weight": 800},
-        {"text": "com critério.", "accent": true, "weight": 800},
-        {"text": "Não paralisia", "weight": 500},
-        {"text": "com aparência", "weight": 500},
-        {"text": "de rigor.", "weight": 800}
+        "O que depende de mim?",
+        "O que já está sólido o bastante?",
+        "O que pode ser melhorado depois?"
       ],
-      "cta": "SALVE PARA O PRÓXIMO “AINDA NÃO ESTÁ BOM O BASTANTE”."
+      "source": "Critério antes de perfeição."
+    },
+    {
+      "filename": "08-demonstracao.png",
+      "angle": "07 • DEMONSTRAÇÃO",
+      "belief": "“Só publico quando estiver impecável.”",
+      "evidenceA": "Resultado: atraso + ansiedade",
+      "evidenceB": "“Publico quando estiver sólido, revisado e útil.”",
+      "result": "AÇÃO → REVISÃO → MELHORIA"
+    },
+    {
+      "filename": "09-encerramento.png",
+      "angle": "PARA NÃO ESQUECER",
+      "question": ["Excelência é", "consistência", "com critério."],
+      "closing": ["Não paralisia", "com aparência de rigor."],
+      "cta": "SALVE PARA O PRÓXIMO “AINDA NÃO ESTÁ BOM”."
     }
   ]
 }
