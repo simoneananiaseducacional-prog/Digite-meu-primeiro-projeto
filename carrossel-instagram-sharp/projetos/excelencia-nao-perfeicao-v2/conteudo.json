@@ -1,0 +1,87 @@
+{
+  "brand": "MENTE MULHER ESTOICA",
+  "handle": "@mente.mulher.estoica",
+  "totalPages": 9,
+  "palette": {
+    "black": "#0E0D0E",
+    "blackSoft": "#171416",
+    "ivory": "#F2ECE3",
+    "ivorySoft": "#E6D8C7",
+    "wine": "#8E1834",
+    "wineDark": "#681126",
+    "taupe": "#BDA58D"
+  },
+  "cards": [
+    {
+      "filename": "01-capa.png",
+      "angle": "EXCELÊNCIA • AUTOCONTROLE • AÇÃO",
+      "title": ["Excelência", "não é perfeição."],
+      "subtitle": ["É fazer bem", "o que depende de você."],
+      "cta": "DESLIZE →"
+    },
+    {
+      "filename": "02-inimigo.png",
+      "angle": "01 • INIMIGO",
+      "title": ["O perfeccionismo", "disfarçado", "de excelência."],
+      "body": ["Padrão alto faz avançar.", "Medo de errar pode paralisar."]
+    },
+    {
+      "filename": "03-historia.png",
+      "angle": "02 • HISTÓRIA",
+      "intro": ["Epicteto começava", "por uma distinção simples:"],
+      "quote": ["O que depende", "de mim?"],
+      "source": "Epicteto • Encheirídion 1"
+    },
+    {
+      "filename": "04-dados.png",
+      "angle": "03 • DADOS",
+      "title": ["43 estudos", "9.838 pessoas"],
+      "body": ["Preocupações perfeccionistas", "se associaram a mais burnout.", "Padrão alto e medo de errar", "não são a mesma coisa."],
+      "source": "Hill & Curran, 2016"
+    },
+    {
+      "filename": "05-confissao.png",
+      "angle": "04 • CONFISSÃO EDITORIAL",
+      "title": ["Às vezes", "a gente chama", "de exigência..."],
+      "body": ["o que, no fundo,", "é medo de entregar", "algo imperfeito."]
+    },
+    {
+      "filename": "06-contraste.png",
+      "angle": "05 • CONTRASTE",
+      "left": {
+        "title": "PERFEIÇÃO",
+        "question": ["Quer controlar", "tudo."]
+      },
+      "right": {
+        "title": "EXCELÊNCIA",
+        "question": ["Age, revisa", "e melhora."]
+      }
+    },
+    {
+      "filename": "07-passo-a-passo.png",
+      "angle": "06 • PASSO A PASSO",
+      "title": "Antes de travar:",
+      "steps": [
+        "O que depende de mim?",
+        "O que já está sólido o bastante?",
+        "O que posso melhorar depois?"
+      ],
+      "source": "Critério antes de perfeição."
+    },
+    {
+      "filename": "08-demonstracao.png",
+      "angle": "07 • DEMONSTRAÇÃO",
+      "belief": "Só publico quando estiver impecável.",
+      "evidenceA": "Resultado: atraso + ansiedade",
+      "evidenceB": "Publico quando estiver sólido, revisado e útil.",
+      "result": "AÇÃO → REVISÃO → MELHORIA"
+    },
+    {
+      "filename": "09-encerramento.png",
+      "angle": "PARA NÃO ESQUECER",
+      "question": ["Excelência é", "consistência", "com critério."],
+      "closing": ["Não paralisia", "com aparência de rigor."],
+      "cta": "SALVE PARA REVISITAR"
+    }
+  ]
+}
