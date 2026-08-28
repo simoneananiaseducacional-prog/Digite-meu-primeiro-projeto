@@ -25,3 +25,14 @@ Princípio central do sistema:
 > **O slide mostra; a formadora explica.**
 
 O padrão prioriza slides didáticos, ilustrativos, interativos, sofisticados, com estética editorial/cinematográfica, identidade azul-marinho + laranja + off-white e rigor técnico nas referências de Educação Especial Inclusiva.
+
+## Skills
+
+A pasta `skills/` reúne instruções reutilizáveis para agentes e fluxos de trabalho.
+
+- `skills/cead-auditor-ava/SKILL.md` — auditoria pedagógica e técnica do AVA.
+- `skills/comandos-gpt/SKILL.md` — biblioteca com 99 modos acionados por prefixos como `/human`, `/critic`, `/study`, `/research`, `/decision`, `/instagram`, `/reels`, `/risk` e `/review`.
+
+Os comandos podem ser combinados. Exemplo:
+
+`/research /critic /compare: analise estas opções e indique a mais consistente.`
