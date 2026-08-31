@@ -1,109 +1,109 @@
-# Reel: quatro filtros que influenciam sua experiência da realidade
+# Reel: quatro filtros e a reação no trânsito
 
 ## Status
 
-Roteiro aprovado para produção.
+Versão aprovada para produção, com contexto explicitamente fictício.
 
 ## Objetivo
 
-Explicar, de forma curta e rigorosa, como crenças, estado corporal, identidade e percepção influenciam a interpretação das experiências, estabelecendo uma ponte cuidadosa com o domínio próprio estoico.
+Mostrar, por meio de uma situação universal, como crença, estado corporal, identidade e percepção podem transformar um fato em reação automática. A ligação estoica aparece na pausa entre impressão, interpretação e conduta.
 
-## Duração
+## Formato
 
-35 a 40 segundos.
+- Duração: aproximadamente 78 segundos.
+- Dimensão: 1080 × 1920 pixels.
+- Leitura: cerca de 9 segundos por conceito.
+- Fundo: preto.
+- Textos essenciais: somente off-white ou dourado claro.
+- Azul, verde e ferrugem: apenas pequenos marcadores, nunca frases.
+- Áudio: livre para narração ou trilha do Instagram.
 
-## Texto da capa
+## Abertura
 
-**Você não percebe a realidade de forma neutra.**
+**Exemplo fictício**
 
-Alternativa curta:
+Imagine esta situação:
 
-**Quatro filtros mudam o que você percebe.**
+> Um carro entra na sua frente.  
+> O fato dura segundos.  
+> A interpretação pode dirigir sua reação.
 
-## Roteiro técnico
+## Sequência didática
 
-| Tempo | Fala | Texto na tela | Imagem ou movimento | Intenção |
-|---|---|---|---|---|
-| 0–4 s | Você não enxerga a realidade exatamente como ela é. | Você não percebe tudo de forma neutra. | Plano fechado, olhar direto, movimento lento de aproximação. | Criar reconhecimento sem afirmar que a mente inventa a realidade. |
-| 4–7 s | Você a interpreta por meio de influências que nem sempre percebe. | CRENÇAS · ESTADO CORPORAL · IDENTIDADE · PERCEPÇÃO | As quatro palavras aparecem uma a uma. | Apresentar o mapa do vídeo. |
-| 7–13 s | Suas crenças orientam aquilo que você espera encontrar. | Crenças influenciam expectativas. | Pessoa observando uma situação ou página de livro. | Mostrar expectativa e seleção de evidências. |
-| 13–19 s | O estado do seu corpo pode afetar a clareza com que você pensa e decide. | Cansaço, tensão e fome também entram na decisão. | Respiração, mãos, pausa ou mudança de postura. | Integrar corpo e decisão sem prometer controle completo. |
-| 19–25 s | A identidade transforma comportamentos repetidos em frases como: “eu sou assim”. | “Eu fiz isso” não é igual a “eu sou assim”. | Destaque tipográfico das duas frases. | Separar comportamento de identidade fixa. |
-| 25–30 s | E a percepção seleciona apenas uma parte de tudo o que aconteceu. | O que ficou fora do seu olhar? | Enquadramento parcial que se abre. | Mostrar que atenção e percepção são seletivas. |
-| 30–35 s | Isso não significa que a realidade seja inventada pela mente. Significa que a sua experiência passa por filtros. | A realidade existe. Sua leitura passa por filtros. | Tela mais limpa e ritmo desacelerado. | Corrigir a interpretação exagerada da capa original. |
-| 35–40 s | Antes de reagir, pergunte: o que aconteceu de fato e o que foi interpretação minha? | Domínio próprio começa examinando o filtro. | Olhar direto e fechamento da assinatura. | Fazer a ponte estoica e oferecer uma ação concreta. |
+### 1. Fato
 
-## Versão corrida para gravação
+Um veículo mudou de faixa e entrou na sua frente.
 
-Você não enxerga a realidade exatamente como ela é.
+**Só isso pode ser afirmado.**
 
-Você a interpreta por meio de influências que nem sempre percebe.
+### 2. Crença
 
-Suas crenças orientam aquilo que você espera encontrar.
+A crença atribui uma intenção ao movimento que você viu.
 
-O estado do seu corpo pode afetar a clareza com que você pensa e decide.
+> “Fez isso de propósito. Ninguém respeita ninguém.”
 
-A identidade transforma comportamentos repetidos em frases como: “eu sou assim”.
+### 3. Estado corporal
 
-E a percepção seleciona apenas uma parte de tudo o que aconteceu.
+O susto acelera o corpo e cria urgência para revidar.
 
-Isso não significa que a realidade seja inventada pela mente. Significa que a sua experiência passa por filtros.
+> Coração acelerado. Mãos tensas. Pé no acelerador.
 
-Antes de reagir, pergunte: o que aconteceu de fato e o que foi interpretação minha?
+### 4. Identidade
 
-Domínio próprio começa examinando o filtro.
+Um episódio no trânsito pode ativar um papel que você repete.
 
-## Versão reduzida
+> “Eu não levo desaforo para casa.”
 
-Você não percebe a realidade de forma neutra.
+### 5. Percepção
 
-Crenças orientam expectativas.  
-O estado do corpo influencia decisões.  
-A identidade transforma “eu fiz isso” em “eu sou assim”.  
-E a percepção seleciona apenas parte do que aconteceu.
+Você passa a enxergar provocação e deixa outras hipóteses de fora.
 
-A realidade não é inventada pela mente. Mas sua leitura passa por filtros.
+> Pode ter sido distração, erro ou um ponto cego.
 
-Antes de reagir, examine o filtro.
+### 6. Reação automática
 
-## Direção visual
+A interpretação vira reação:
 
-- Formato: 1080 × 1920 pixels.
-- Fundo: grafite ou preto com luz natural suave.
-- Paleta: off-white e dourado envelhecido.
-- Vinho somente em um destaque, se necessário.
-- Tipografia editorial elegante.
-- Legendas grandes, com no máximo duas linhas por bloco.
-- Preservar totalmente o rosto quando houver fotografia ou vídeo da autora.
-- Evitar textos sobre olhos, boca e região central do rosto.
-- Assinatura discreta da Mente Mulher Estoica.
-- Ritmo calmo, com cortes orientados pela mudança de conceito.
+- buzina;
+- xinga;
+- tenta alcançar.
 
-## Áudio
+Não porque confirmou a intenção, mas porque acreditou na primeira interpretação.
 
-Trilha instrumental discreta, reflexiva e sem clímax dramático. A voz deve permanecer em primeiro plano. Pausa curta antes da pergunta final.
+### 7. Pausa
 
-## Legenda
+> Eu vi a intenção ou apenas interpretei?  
+> Qual atitude protege minha segurança agora?
 
-Nem tudo o que você pensa sobre uma situação pertence ao fato.
+A pausa não nega o susto. Ela impede que o impulso assuma o volante.
 
-Crenças, estado corporal, identidade e percepção participam da forma como interpretamos o que acontece.
+### 8. Fechamento estoico
 
-O exercício não é negar a realidade. É separar o acontecimento da leitura automática que fazemos dele.
+> O carro entrou na sua frente.  
+> A intenção não veio junto.
 
-Domínio próprio também é aprender a examinar o próprio filtro.
+Você não controla o trânsito. Mas pode não entregar sua conduta a uma intenção que nem sequer confirmou.
 
-## Hashtags
+**Domínio próprio também protege vidas.**
 
-#ComportamentoHumano #Metacognição #Percepção #DomínioPróprio #EstoicismoAplicado
+## Regras de acessibilidade
+
+1. Contraste mínimo verificado antes da exportação.
+2. Off-white sobre preto como combinação principal.
+3. Dourado claro somente em destaques grandes.
+4. Nenhuma frase informativa em azul, verde ou ferrugem sobre preto.
+5. Texto central com tamanho adequado para celular.
+6. Tempo suficiente para leitura sem pausar o vídeo.
+7. Uma ideia principal por etapa.
 
 ## Rigor editorial
 
-- Não usar a frase “sua realidade é controlada pela mente”.
-- Não apresentar os quatro elementos como categorias independentes ou como explicação completa do comportamento.
-- Não afirmar que o estoicismo regula diretamente o sistema nervoso.
-- Não equiparar metacognição e estoicismo.
-- Apresentar a ligação estoica como aproximação: examinar impressões e julgamentos antes de assentir e agir.
+- O exemplo deve ser apresentado como fictício.
+- Não afirmar que todos reagem dessa maneira.
+- Não presumir intenção do outro motorista.
+- Não sugerir confronto ou perseguição.
+- Priorizar segurança e criação de distância.
+- Apresentar o estoicismo como exame do julgamento e escolha da conduta, não como supressão emocional.
 
 ## Fonte filosófica relacionada
 
