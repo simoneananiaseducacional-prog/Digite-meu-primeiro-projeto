@@ -1,0 +1,88 @@
+{
+  "brand": "MENTE MULHER ESTOICA",
+  "handle": "@mente.mulher.estoica",
+  "totalPages": 9,
+  "palette": {
+    "black": "#0E0D0E",
+    "blackSoft": "#171416",
+    "ivory": "#F2ECE3",
+    "ivorySoft": "#E6D8C7",
+    "wine": "#8E1834",
+    "wineDark": "#681126",
+    "taupe": "#BDA58D",
+    "orange": "#D85A1F"
+  },
+  "cards": [
+    {
+      "filename": "01-capa.png",
+      "angle": "EXCELÊNCIA • AUTOCONTROLE • AÇÃO",
+      "title": ["Excelência", "não é perfeição."],
+      "subtitle": ["É fazer bem", "o que depende de você."],
+      "cta": "DESLIZE →"
+    },
+    {
+      "filename": "02-inimigo.png",
+      "angle": "01 • INIMIGO",
+      "title": ["O problema", "não é errar."],
+      "body": ["É transformar o medo do erro", "num padrão impossível de sustentar."]
+    },
+    {
+      "filename": "03-historia.png",
+      "angle": "02 • HISTÓRIA",
+      "intro": ["Epicteto começava", "pela pergunta essencial:"],
+      "quote": ["“O que depende", "de mim aqui?”"],
+      "source": "Escolhas, julgamentos e ações: sim. Resultado total: não."
+    },
+    {
+      "filename": "04-dados.png",
+      "angle": "03 • DADOS",
+      "title": ["Perfeccionismo", "tem dois lados."],
+      "body": ["Padrões altos podem impulsionar desempenho.", "Preocupação rígida com erros se associa a mais burnout."],
+      "source": "Hill & Curran, 2016 • meta-análise de 43 estudos"
+    },
+    {
+      "filename": "05-confissao.png",
+      "angle": "04 • CONFISSÃO EDITORIAL",
+      "title": ["Às vezes", "a gente chama", "de exigência..."],
+      "body": ["o que, no fundo,", "é medo de entregar", "algo imperfeito."]
+    },
+    {
+      "filename": "06-contraste.png",
+      "angle": "05 • CONTRASTE",
+      "left": {
+        "title": "PERFEIÇÃO",
+        "items": ["controlar tudo", "adiar para evitar erro", "punir cada falha"]
+      },
+      "right": {
+        "title": "EXCELÊNCIA",
+        "items": ["definir um padrão alto", "agir com o que há", "rever e melhorar"]
+      }
+    },
+    {
+      "filename": "07-passo-a-passo.png",
+      "angle": "06 • PASSO A PASSO",
+      "title": "Antes de travar:",
+      "steps": [
+        "O que depende de mim?",
+        "O que já está sólido o bastante?",
+        "O que pode ser melhorado depois?"
+      ],
+      "source": "Critério antes de perfeição."
+    },
+    {
+      "filename": "08-demonstracao.png",
+      "angle": "07 • DEMONSTRAÇÃO",
+      "belief": "“Só publico quando estiver impecável.”",
+      "evidenceA": "Resultado: atraso + ansiedade",
+      "evidenceB": "“Publico quando estiver sólido, revisado e útil.”",
+      "result": "AÇÃO → REVISÃO → MELHORIA"
+    },
+    {
+      "filename": "09-encerramento.png",
+      "angle": "PARA NÃO ESQUECER",
+      "question": ["Excelência é", "consistência", "com critério."],
+      "closing": ["Não paralisia", "com aparência de rigor."],
+      "cta": "SALVE PARA O PRÓXIMO “AINDA NÃO ESTÁ BOM”."
+    }
+  ]
+}

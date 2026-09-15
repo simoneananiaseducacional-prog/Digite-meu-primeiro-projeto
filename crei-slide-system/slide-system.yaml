@@ -1,0 +1,176 @@
+version: "1.0"
+name: "CREI Slide System"
+purpose: "Transformar conteúdo técnico de Educação Especial Inclusiva em apresentações didáticas, ilustrativas, elegantes e interativas."
+
+canvas:
+  aspect_ratio: "16:9"
+  preferred_size_px: [1672, 941]
+  safe_margin_percent: 5
+
+palette:
+  background_primary: "#071B3A"
+  background_secondary: "#0B274C"
+  accent_orange: "#F57C00"
+  text_primary: "#F7F4ED"
+  text_secondary: "#D7DEE8"
+  warning_red: "#D94841"
+  success_green: "#7CB342"
+  rule: "Azul cria o palco; branco informa; laranja dirige o olhar. Cores extras só quando tiverem função semântica."
+
+typography:
+  title:
+    families: ["Playfair Display", "Cormorant Garamond", "Libre Baskerville"]
+    style: "editorial, elegante, forte"
+    max_words: 10
+    allow_italic_emphasis: true
+  body:
+    families: ["Montserrat", "Inter", "Aptos"]
+    max_visible_words_preferred: 40
+    max_visible_words_hard: 70
+  footnote:
+    style: "discreta, legível em projeção"
+
+visual_signature:
+  title_pattern: "palavra branca + palavra laranja + itálico editorial quando fizer sentido"
+  footer:
+    required: true
+    elements: ["CREI Pouso Alegre", "número do slide", "marca/símbolo"]
+  decorative_elements:
+    allowed: ["círculos", "linhas finas", "molduras", "setas", "lupa", "caminhos", "conexões", "pontos luminosos"]
+    rule: "Nunca competir com o conteúdo."
+
+pedagogy:
+  central_rule: "1 slide = 1 pergunta ou 1 ideia importante"
+  screen_speech_rule: "O slide mostra; a formadora explica."
+  complexity_rule: "Quanto mais complexo o conceito, mais simples e visual deve ser o slide."
+  visible_information_nuclei_max: 3
+  preferred_flow:
+    - provocar
+    - ouvir
+    - organizar
+    - ensinar
+    - transferir
+  audience_goal: "O cursista deve pensar 'agora eu entendi', e não 'quanta informação'."
+
+layout_types:
+  impact:
+    description: "Frase grande + imagem forte."
+  question:
+    description: "Pergunta dominante + apoio visual."
+  comparison:
+    description: "Dois ou três conceitos claramente diferenciados."
+  flow:
+    description: "Processo com etapas, setas e progressão visual."
+  case:
+    description: "Estudante fictício + situação + pistas observáveis."
+  interactive:
+    description: "Pergunta ao grupo + participação oral, duplas ou cartões."
+  synthesis:
+    description: "Mapa, quadro, revelação ou conclusão."
+
+images:
+  required_when_helpful: true
+  preferred_style: ["editorial", "cinematográfico", "semi-realista", "institucional sofisticado"]
+  preferred_subjects:
+    - "professor observando estudante"
+    - "estudante interagindo"
+    - "sala de aula"
+    - "grupo colaborando"
+    - "CAA e tecnologia assistiva"
+    - "barreira e recurso"
+    - "caminho, ponte, lupa ou conexão"
+  avoid:
+    - "clipart"
+    - "desenho infantilizado"
+    - "bonecos genéricos"
+    - "imagem aleatória para preencher espaço"
+    - "texto gerado dentro da imagem"
+    - "figuras humanas deformadas"
+  functional_rule: "Toda imagem precisa exteriorizar o conceito, não apenas decorar."
+
+content_rules:
+  title_max_words: 10
+  preferred_body_words: 40
+  max_body_words: 70
+  max_main_blocks: 3
+  paragraphs_on_slide: false
+  tiny_tables: false
+  legislation_center_stage: false
+  detailed_legislation_location: ["rodapé", "notas da formadora"]
+
+normative_rules:
+  distinguish:
+    - "norma federal"
+    - "norma estadual"
+    - "procedimento da rede"
+    - "orientação pedagógica"
+  never_invent_articles: true
+  when_current_law_matters: "verificar fonte oficial vigente"
+  slide_reference_format: "Base: [ato] nº [número]/[ano], art. [x], quando pertinente"
+  speech_rule: "Explicar a norma em linguagem simples; usar o artigo como sustentação da fala."
+
+education_special_rules:
+  professional_distinctions_required:
+    - "Professor do AEE"
+    - "Professor de Apoio/ACLTA de Minas Gerais"
+    - "Profissional de Apoio Escolar"
+  study_case:
+    visual_model: "estudante no centro + professor do AEE conduz + regente + família + equipe pedagógica"
+    core_dimensions:
+      - "demandas e barreiras"
+      - "contexto escolar"
+      - "potencialidades e apoios"
+      - "estratégias e recursos de acessibilidade"
+    phrase: "Conduzir não significa fazer sozinho."
+  documents:
+    federal_flow: ["Estudo de Caso", "PAEE", "PEI", "Implementar", "Acompanhar", "Revisar"]
+    minas_note: "PDI é instrumento da rede estadual mineira; não tratar automaticamente como sinônimo jurídico de PEI em toda rede municipal."
+  aee:
+    message: "AEE é serviço; professor do AEE é profissional; Sala de Recursos é espaço."
+    avoid_message: "AEE = reforço escolar"
+
+interaction:
+  preferred_questions:
+    - "O que observamos de fato?"
+    - "Isso é fato ou interpretação?"
+    - "Qual barreira aparece aqui?"
+    - "Que potencialidade estamos ignorando?"
+    - "Qual apoio responde a esta barreira?"
+    - "Quem precisa participar desta decisão?"
+    - "Como saberemos se funcionou?"
+  practice_rule: "A prática deve estar integrada à apresentação, não isolada como oficina paralela."
+
+speaker_notes:
+  required_fields:
+    - "objetivo do slide"
+    - "pergunta de abertura"
+    - "explicação principal"
+    - "exemplo"
+    - "referência normativa"
+    - "pergunta de transferência para a prática"
+
+quality_gate:
+  questions:
+    - "Está didático?"
+    - "Um leigo entende a ideia central em poucos segundos?"
+    - "A imagem ou diagrama ensina alguma coisa?"
+    - "Há texto demais?"
+    - "A norma está correta?"
+    - "A imagem tem função pedagógica?"
+    - "Está elegante e coerente com o CREI?"
+    - "A fala complementa o slide?"
+    - "O ritmo visual difere dos slides anteriores?"
+  fail_action: "revisar"
+
+anti_patterns:
+  - "fundo branco predominante"
+  - "arco-íris de cores"
+  - "muitas caixas iguais"
+  - "parágrafos longos"
+  - "tabelas pequenas"
+  - "excesso de ícones"
+  - "muitas fontes"
+  - "visual tecnológico genérico"
+  - "aparência infantil"
+  - "texto técnico sem tradução visual"
+  - "copiar norma para o centro do slide"

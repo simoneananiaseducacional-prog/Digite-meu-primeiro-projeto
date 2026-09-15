@@ -1,0 +1,152 @@
+{
+  "totalPages": 9,
+  "brand": "MENTE MULHER ESTOICA",
+  "fonts": {
+    "sans": "Nimbus Sans, Arial, Helvetica, DejaVu Sans, sans-serif",
+    "serif": "Nimbus Roman, Georgia, Times New Roman, DejaVu Serif, serif"
+  },
+  "palette": {
+    "black": "#0E0D0E",
+    "blackSoft": "#171416",
+    "ivory": "#F2ECE3",
+    "ivorySoft": "#E6D8C7",
+    "wine": "#8E1834",
+    "wineDark": "#681126",
+    "taupe": "#BDA58D"
+  },
+  "cover": {
+    "filename": "slide-01-capa.png",
+    "number": "7",
+    "topline": "POSICIONAMENTO • LIMITES • AUTOCONTROLE",
+    "titleLine1": "7 EFEITOS",
+    "titleLine2": "COLATERAIS",
+    "preTitle": "DE DEIXAR DE SER",
+    "subjectLine1": "SONGA",
+    "subjectLine2": "MONGA.",
+    "subtitleLine1": "Sem perder a educação.",
+    "subtitleLine2": "Sem abandonar a autocrítica.",
+    "cta": "DESLIZE →"
+  },
+  "slides": [
+    {
+      "filename": "slide-02.png",
+      "page": "02",
+      "number": "01",
+      "background": "black",
+      "onLight": false,
+      "accent": "wine",
+      "kickerText": "EFEITO COLATERAL",
+      "lines": [
+        { "text": "Quem se acostumou" },
+        { "text": "com o seu “sim”", "accent": true, "serif": true, "italic": true },
+        { "text": "vai estranhar" },
+        { "text": "o primeiro “não”.", "accent": true, "serif": true, "italic": true }
+      ]
+    },
+    {
+      "filename": "slide-03.png",
+      "page": "03",
+      "number": "02",
+      "background": "ivory",
+      "onLight": true,
+      "accent": "wine",
+      "kickerText": "EFEITO COLATERAL",
+      "lines": [
+        { "text": "Seu limite parecerá" },
+        { "text": "grosseria", "accent": true, "serif": true, "italic": true, "size": 89 },
+        { "text": "para quem se beneficiava", "size": 66 },
+        { "text": "da falta dele." }
+      ]
+    },
+    {
+      "filename": "slide-04.png",
+      "page": "04",
+      "number": "03",
+      "background": "wineDark",
+      "onLight": false,
+      "accent": "taupe",
+      "kickerText": "EFEITO COLATERAL",
+      "lines": [
+        { "text": "Você para de" },
+        { "text": "se explicar", "serif": true, "italic": true, "size": 89 },
+        { "text": "para quem só escuta" },
+        { "text": "para rebater." }
+      ]
+    },
+    {
+      "filename": "slide-05.png",
+      "page": "05",
+      "number": "04",
+      "background": "blackSoft",
+      "onLight": false,
+      "accent": "wine",
+      "kickerText": "EFEITO COLATERAL",
+      "lines": [
+        { "text": "Algumas relações" },
+        { "text": "esfriam", "accent": true, "serif": true, "italic": true, "size": 92 },
+        { "text": "quando percebem que o acesso", "size": 61 },
+        { "text": "deixou de ser ilimitado.", "size": 66 }
+      ]
+    },
+    {
+      "filename": "slide-06.png",
+      "page": "06",
+      "number": "05",
+      "background": "ivory",
+      "onLight": true,
+      "accent": "wine",
+      "kickerText": "VOCÊ APRENDE QUE",
+      "lines": [
+        { "text": "Firmeza", "accent": true, "serif": true, "italic": true, "size": 96 },
+        { "text": "não precisa de escândalo.", "size": 66 },
+        { "text": "Às vezes, uma frase curta", "size": 65 },
+        { "text": "resolve.", "accent": true, "serif": true, "italic": true, "size": 96 }
+      ]
+    },
+    {
+      "filename": "slide-07.png",
+      "page": "07",
+      "number": "06",
+      "background": "wineDark",
+      "onLight": false,
+      "accent": "taupe",
+      "kickerText": "EFEITO COLATERAL",
+      "lines": [
+        { "text": "Ser brava", "serif": true, "italic": true, "size": 94 },
+        { "text": "quando precisa" },
+        { "text": "é diferente de viver" },
+        { "text": "na defensiva.", "serif": true, "italic": true, "size": 90 }
+      ]
+    },
+    {
+      "filename": "slide-08.png",
+      "page": "08",
+      "number": "07",
+      "background": "black",
+      "onLight": false,
+      "accent": "wine",
+      "kickerText": "EFEITO COLATERAL",
+      "lines": [
+        { "text": "Você entende que", "size": 61 },
+        { "text": "a imaturidade", "accent": true, "serif": true, "italic": true, "size": 82 },
+        { "text": "de quem já deveria", "size": 63 },
+        { "text": "ter amadurecido", "accent": true, "serif": true, "italic": true, "size": 78 },
+        { "text": "não é responsabilidade sua.", "size": 55 },
+        { "text": "Nem algo que você", "size": 63 },
+        { "text": "precise corrigir.", "serif": true, "italic": true, "size": 77 }
+      ]
+    }
+  ],
+  "final": {
+    "filename": "slide-09-final.png",
+    "page": "09",
+    "kicker": "PARA NÃO ESQUECER",
+    "line1": "Seja lembrada por saber",
+    "line2": "se posicionar.",
+    "line3": "Brava às vezes? Sim.",
+    "line4": "Songa monga?",
+    "line5": "Deus me livre.",
+    "line6": "E amém",
+    "line7": "por isso!"
+  }
+}

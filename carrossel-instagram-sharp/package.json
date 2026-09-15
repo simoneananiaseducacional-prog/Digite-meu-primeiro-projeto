@@ -1,0 +1,17 @@
+{
+  "name": "carrossel-mente-mulher-estoica",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gerador portátil de carrossel 1080x1350 para uso com Claude Code.",
+  "main": "create_carousel.js",
+  "scripts": {
+    "gerar": "node create_carousel.js",
+    "validar": "node create_carousel.js --validate-only"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
+  }
+}

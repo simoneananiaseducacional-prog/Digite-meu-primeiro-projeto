@@ -1,0 +1,7 @@
+{
+  "name": "carrossel-excelencia-nao-perfeicao",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"gerar": "node create_carousel.js"},
+  "dependencies": {"sharp": "^0.34.3"}
+}

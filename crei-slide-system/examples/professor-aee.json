@@ -1,0 +1,60 @@
+{
+  "number": 18,
+  "title": "Quem conduz o Estudo de Caso?",
+  "centralIdea": "O professor do AEE conduz tecnicamente o processo, mas o Estudo de Caso é colaborativo.",
+  "layoutType": "flow",
+  "visibleText": [
+    "Professor do AEE: conduz, articula e sistematiza.",
+    "Regente + família + estudante + equipe pedagógica: participam e fornecem evidências.",
+    "Conduzir não significa fazer sozinho."
+  ],
+  "visualConcept": "Estudante no centro de uma cena colaborativa. Ao redor, professor do AEE, professor regente, família e equipe pedagógica conectados por linhas luminosas. O professor do AEE aparece como articulador técnico, sem ocupar o lugar do estudante nem dos demais participantes.",
+  "interaction": {
+    "question": "Se o professor do AEE conduz, quem fornece as informações necessárias para que o estudo represente de fato a vida escolar do estudante?",
+    "mode": "plenary",
+    "estimatedMinutes": 3
+  },
+  "normativeBasis": [
+    {
+      "act": "Decreto nº 12.686/2025",
+      "article": "art. 11",
+      "scope": "federal"
+    },
+    {
+      "act": "Decreto nº 12.773/2025",
+      "article": null,
+      "scope": "federal"
+    },
+    {
+      "act": "Portaria MEC nº 421/2026",
+      "article": "arts. 10 e 11",
+      "scope": "federal"
+    },
+    {
+      "act": "Orientação atual do Inep sobre Estudo de Caso e AEE",
+      "article": null,
+      "scope": "guidance"
+    }
+  ],
+  "speakerNotes": {
+    "opening": "Olhem para o estudante no centro. Quem aqui consegue compreender sozinho tudo o que acontece com ele na escola?",
+    "explanation": [
+      "O professor do AEE conduz e sistematiza o processo.",
+      "O professor regente traz evidências da sala comum e do currículo.",
+      "A família contribui com contexto e histórico.",
+      "A equipe pedagógica articula e acompanha.",
+      "O estudante participa quando pertinente.",
+      "Conduzir não significa centralizar toda a responsabilidade."
+    ],
+    "example": "Se a barreira aparece apenas em instruções longas na sala comum, essa informação precisa vir da observação do regente e do próprio contexto escolar; não é algo que o professor do AEE deveria presumir sozinho.",
+    "transferQuestion": "Na escola de vocês, como essas informações chegam hoje ao professor do AEE?"
+  },
+  "quality": {
+    "oneIdea": true,
+    "laypersonUnderstands": true,
+    "imageTeaches": true,
+    "textIsShort": true,
+    "normativeAccuracyChecked": true,
+    "creiAesthetic": true
+  }
+}
