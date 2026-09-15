@@ -36,3 +36,21 @@ A pasta `skills/` reúne instruções reutilizáveis para agentes e fluxos de tr
 Os comandos podem ser combinados. Exemplo:
 
 `/research /critic /compare: analise estas opções e indique a mais consistente.`
+
+# Projeto Mente Mulher Estoica
+
+Acervo na pasta [`mente-mulher-estoica/`](mente-mulher-estoica/), que reúne conteúdos e
+comandos do perfil @mente.mulher.estoica. É o histórico inicial para um futuro app de venda
+de conteúdos estoicos.
+
+Destaques deste acervo:
+- `mente-mulher-estoica/comandos.md` — biblioteca dos 9 comandos prontos da marca.
+- `mente-mulher-estoica/produtos.md` e `app.md` — catálogo de produtos e esboço do app.
+- `mente-mulher-estoica/diario/` — Diário Estoico de 30 Dias (fonte em Markdown e HTML para PDF).
+- `mente-mulher-estoica/serie-mulheres-estoicas/` — planejamento da série biográfica.
+- `mente-mulher-estoica/prototipo/` — protótipo visual do app.
+
+## Prompts de referência
+
+A pasta [`prompts-referencia/`](prompts-referencia/) reúne prompts úteis guardados como
+referência de estudo (autoria de terceiros, com crédito e sem revenda).
