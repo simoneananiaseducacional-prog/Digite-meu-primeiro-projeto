@@ -1,40 +1,40 @@
-# Diario Estoico de 30 Dias
+# Diário Estoico de 30 Dias
 
-*Reflexao guiada para nao se abandonar*
+*Reflexão guiada para não se abandonar*
 
 **Simone Ananias · Mente Mulher Estoica**
 
 ---
 
-## Apresentacao
+## Apresentação
 
-Este diario nao promete transformar sua vida em trinta dias. Promete algo mais honesto: trinta encontros com voce mesma, um por dia, para sair do impulso e voltar ao que depende de voce.
+Este diário não promete transformar sua vida em trinta dias. Promete algo mais honesto: trinta encontros com você mesma, um por dia, para sair do impulso e voltar ao que depende de você.
 
-O estoicismo ensina a separar o que esta sob nosso controle do que nao esta. A fe ensina a confiar no que resta. Aqui os dois caminham juntos, com Cristo no centro e a filosofia como quem antecipa uma verdade antiga.
+O estoicismo ensina a separar o que está sob nosso controle do que não está. A fé ensina a confiar no que resta. Aqui os dois caminham juntos, com Cristo no centro e a filosofia como quem antecipa uma verdade antiga.
 
-Nao ha certo nem errado no que voce vai escrever. Ha apenas o gesto de parar, olhar e registrar.
+Não há certo nem errado no que você vai escrever. Há apenas o gesto de parar, olhar e registrar.
 
-## Como usar este diario
+## Como usar este diário
 
-- Reserve poucos minutos, sempre no mesmo horario, de preferencia em silencio.
-- Leia a reflexao do dia devagar. Deixe a pergunta trabalhar antes de responder.
-- Escreva a mao, se puder. A letra lenta pensa melhor que o teclado.
-- Faca a pratica sugerida ainda no mesmo dia, por menor que pareca.
-- No fim de cada semana, releia o que escreveu. O padrao aparece quando ninguem apaga o rastro.
+- Reserve poucos minutos, sempre no mesmo horário, de preferência em silêncio.
+- Leia a reflexão do dia devagar. Deixe a pergunta trabalhar antes de responder.
+- Escreva à mão, se puder. A letra lenta pensa melhor que o teclado.
+- Faça a prática sugerida ainda no mesmo dia, por menor que pareça.
+- No fim de cada semana, releia o que escreveu. O padrão aparece quando ninguém apaga o rastro.
 
 ---
 
 ## Dia 1 · A dicotomia do controle
 
-Metade do sofrimento nasce de querer mandar no que nunca foi seu. O clima, a opiniao alheia, o passado. O que sobra para voce e grande o bastante: sua resposta.
+Metade do sofrimento nasce de querer mandar no que nunca foi seu. O clima, a opinião alheia, o passado. O que sobra para você é grande o bastante: sua resposta.
 
-**Pergunta do dia.** O que hoje voce tentou controlar e nao era seu para controlar?
+**Pergunta do dia.** O que hoje você tentou controlar e não era seu para controlar?
 
-**Pratica.** Escreva duas colunas: o que depende de mim, o que nao depende. Aja so na primeira.
+**Prática.** Escreva duas colunas: o que depende de mim, o que não depende. Aja só na primeira.
 
-**Biblia e Estoicismo.** Epicteto separa o que esta em nosso poder do que nao esta. O salmista entrega o resto: aquieta-te diante do Senhor e espera nele.
+**Bíblia e Estoicismo.** Epicteto separa o que está em nosso poder do que não está. O salmista entrega o resto: aquieta-te diante do Senhor e espera nele.
 
-> Cuide do que e seu, entregue o que nunca foi.
+> Cuide do que é seu, entregue o que nunca foi.
 
 _Registro:_
 
@@ -43,64 +43,64 @@ _Registro:_
 
 ## Dia 2 · O impulso e a pausa
 
-Entre o que acontece e o que voce faz existe um espaco. Estreito, mas real. Nesse espaco mora a liberdade que a pressa rouba.
+Entre o que acontece e o que você faz existe um espaço. Estreito, mas real. Nesse espaço mora a liberdade que a pressa rouba.
 
-**Pergunta do dia.** Onde a pressa falou por voce hoje?
+**Pergunta do dia.** Onde a pressa falou por você hoje?
 
-**Pratica.** Antes da proxima resposta dificil, conte ate dez respirando. So depois responda.
+**Prática.** Antes da próxima resposta difícil, conte até dez respirando. Só depois responda.
 
-**Biblia e Estoicismo.** Seneca dizia que a ira e uma loucura breve. O proverbio confirma: quem tarda em irar-se e melhor que o forte.
+**Bíblia e Estoicismo.** Sêneca dizia que a ira é uma loucura breve. O provérbio confirma: quem tarda em irar-se é melhor que o forte.
 
-> Deixe o espaco existir antes da reacao.
-
-_Registro:_
-
-
----
-
-## Dia 3 · A culpa que nao constroi
-
-Culpa util aponta um caminho e cala. Culpa inutil repete a acusacao sem ensinar nada. A segunda nao te melhora, so te consome.
-
-**Pergunta do dia.** Que culpa voce carrega que ja cumpriu o que tinha para dizer?
-
-**Pratica.** Nomeie um erro, escreva a licao dele em uma linha e feche o assunto.
-
-**Biblia e Estoicismo.** O estoico corrige a acao, nao se afoga nela. O evangelho oferece o mesmo: vai e nao peques mais, sem condenacao perpetua.
-
-> Aprenda com a falta, depois solte a acusacao.
+> Deixe o espaço existir antes da reação.
 
 _Registro:_
 
 
 ---
 
-## Dia 4 · A comparacao silenciosa
+## Dia 3 · A culpa que não constrói
 
-A comparacao mede sua vida inteira pelo recorte que o outro escolheu mostrar. E uma conta armada para voce perder.
+Culpa útil aponta um caminho e cala. Culpa inútil repete a acusação sem ensinar nada. A segunda não te melhora, só te consome.
 
-**Pergunta do dia.** Com quem voce se comparou hoje, e o que isso escondeu de bom no seu proprio dia?
+**Pergunta do dia.** Que culpa você carrega que já cumpriu o que tinha para dizer?
 
-**Pratica.** Passe cinco minutos longe da tela onde a comparacao costuma comecar.
+**Prática.** Nomeie um erro, escreva a lição dele em uma linha e feche o assunto.
 
-**Biblia e Estoicismo.** Marco Aurelio lembra de cuidar da propria alma, nao das dos outros. Paulo escreve para cada um provar a sua obra e nao a do vizinho.
+**Bíblia e Estoicismo.** O estoico corrige a ação, não se afoga nela. O evangelho oferece o mesmo: vai e não peques mais, sem condenação perpétua.
 
-> Meca o seu caminho pelo seu ontem, nao pelo hoje alheio.
+> Aprenda com a falta, depois solte a acusação.
 
 _Registro:_
 
 
 ---
 
-## Dia 5 · O valor que nao se pede
+## Dia 4 · A comparação silenciosa
 
-Quem precisa provar o proprio valor a cada sala ainda nao acredita nele. O valor firme nao pede plateia.
+A comparação mede sua vida inteira pelo recorte que o outro escolheu mostrar. É uma conta armada para você perder.
 
-**Pergunta do dia.** Onde voce tentou provar algo que nao precisava provar?
+**Pergunta do dia.** Com quem você se comparou hoje, e o que isso escondeu de bom no seu próprio dia?
 
-**Pratica.** Escolha uma situacao e decida ficar em silencio onde antes se justificaria.
+**Prática.** Passe cinco minutos longe da tela onde a comparação costuma começar.
 
-**Biblia e Estoicismo.** O sabio estoico nao depende do aplauso. A escritura ja diz que voce foi feita de modo assombroso, antes de qualquer aprovacao.
+**Bíblia e Estoicismo.** Marco Aurélio lembra de cuidar da própria alma, não das dos outros. Paulo escreve para cada um provar a sua obra e não a do vizinho.
+
+> Meça o seu caminho pelo seu ontem, não pelo hoje alheio.
+
+_Registro:_
+
+
+---
+
+## Dia 5 · O valor que não se pede
+
+Quem precisa provar o próprio valor a cada sala ainda não acredita nele. O valor firme não pede plateia.
+
+**Pergunta do dia.** Onde você tentou provar algo que não precisava provar?
+
+**Prática.** Escolha uma situação e decida ficar em silêncio onde antes se justificaria.
+
+**Bíblia e Estoicismo.** O sábio estoico não depende do aplauso. A escritura já diz que você foi feita de modo assombroso, antes de qualquer aprovação.
 
 > Saiba do seu valor sem cobrar recibo dos outros.
 
@@ -109,17 +109,17 @@ _Registro:_
 
 ---
 
-## Dia 6 · O silencio como forca
+## Dia 6 · O silêncio como força
 
-Nem toda provocacao merece resposta. O silencio escolhido nao e fraqueza, e o dominio de quem nao entrega as proprias chaves.
+Nem toda provocação merece resposta. O silêncio escolhido não é fraqueza, é o domínio de quem não entrega as próprias chaves.
 
-**Pergunta do dia.** A que voce respondeu hoje que teria mais forca em silencio?
+**Pergunta do dia.** A que você respondeu hoje que teria mais força em silêncio?
 
-**Pratica.** Deixe uma mensagem irritante sem resposta por vinte e quatro horas. Observe o que muda em voce.
+**Prática.** Deixe uma mensagem irritante sem resposta por vinte e quatro horas. Observe o que muda em você.
 
-**Biblia e Estoicismo.** Zenao dizia que temos dois ouvidos e uma boca para ouvir mais e falar menos. O proverbio: ate o tolo, calado, passa por sabio.
+**Bíblia e Estoicismo.** Zenão dizia que temos dois ouvidos e uma boca para ouvir mais e falar menos. O provérbio: até o tolo, calado, passa por sábio.
 
-> Guarde o silencio como quem guarda um bem.
+> Guarde o silêncio como quem guarda um bem.
 
 _Registro:_
 
@@ -128,49 +128,49 @@ _Registro:_
 
 ## Dia 7 · A dor que ensina
 
-A dor evitada volta maior. A dor olhada de frente vira material. Nenhuma mulher se reconstroi fugindo do que doi.
+A dor evitada volta maior. A dor olhada de frente vira material. Nenhuma mulher se reconstrói fugindo do que dói.
 
-**Pergunta do dia.** Que dor voce vem evitando olhar?
+**Pergunta do dia.** Que dor você vem evitando olhar?
 
-**Pratica.** Escreva sobre ela por dez minutos, sem corrigir, sem embelezar.
+**Prática.** Escreva sobre ela por dez minutos, sem corrigir, sem embelezar.
 
-**Biblia e Estoicismo.** Os estoicos treinavam encarar a adversidade como exercicio. Tiago fala do mesmo: a provacao produz perseveranca.
+**Bíblia e Estoicismo.** Os estoicos treinavam encarar a adversidade como exercício. Tiago fala do mesmo: a provação produz perseverança.
 
-> Encare a dor como quem le uma carta dificil ate o fim.
-
-_Registro:_
-
-
----
-
-## Dia 8 · O que se repete vira carater
-
-Voce nao e o que promete uma vez. E o que repete todos os dias. O carater e feito de gestos pequenos e teimosos.
-
-**Pergunta do dia.** Que pequeno habito, repetido, esta te formando agora, para o bem ou para o mal?
-
-**Pratica.** Escolha um gesto minimo de cuidado e faca hoje. Amanha, de novo.
-
-**Biblia e Estoicismo.** Aristoteles influenciou os estoicos: somos o que repetimos. A fe pede a mesma constancia: fieis no pouco.
-
-> Repita o bem ate ele virar quem voce e.
+> Encare a dor como quem lê uma carta difícil até o fim.
 
 _Registro:_
 
 
 ---
 
-## Dia 9 · A opiniao dos outros
+## Dia 8 · O que se repete vira caráter
 
-A opiniao alheia e um vento. Muda de direcao sem aviso e nao paga suas contas. Construir a vida sobre ela e construir sobre a areia.
+Você não é o que promete uma vez. É o que repete todos os dias. O caráter é feito de gestos pequenos e teimosos.
 
-**Pergunta do dia.** Que decisao sua ainda espera a aprovacao de alguem?
+**Pergunta do dia.** Que pequeno hábito, repetido, está te formando agora, para o bem ou para o mal?
 
-**Pratica.** Tome uma pequena decisao hoje sem consultar a plateia.
+**Prática.** Escolha um gesto mínimo de cuidado e faça hoje. Amanhã, de novo.
 
-**Biblia e Estoicismo.** Epicteto: se queres progredir, aceita parecer tola em coisas externas. O evangelho pergunta se buscamos agradar aos homens ou a Deus.
+**Bíblia e Estoicismo.** Aristóteles influenciou os estoicos: somos o que repetimos. A fé pede a mesma constância: fiéis no pouco.
 
-> Escolha pela sua consciencia, nao pela arquibancada.
+> Repita o bem até ele virar quem você é.
+
+_Registro:_
+
+
+---
+
+## Dia 9 · A opinião dos outros
+
+A opinião alheia é um vento. Muda de direção sem aviso e não paga suas contas. Construir a vida sobre ela é construir sobre a areia.
+
+**Pergunta do dia.** Que decisão sua ainda espera a aprovação de alguém?
+
+**Prática.** Tome uma pequena decisão hoje sem consultar a plateia.
+
+**Bíblia e Estoicismo.** Epicteto: se queres progredir, aceita parecer tola em coisas externas. O evangelho pergunta se buscamos agradar aos homens ou a Deus.
+
+> Escolha pela sua consciência, não pela arquibancada.
 
 _Registro:_
 
@@ -179,30 +179,30 @@ _Registro:_
 
 ## Dia 10 · O medo do futuro
 
-O medo antecipa mil versoes de amanha, quase todas falsas. Voce sofre por desastres que nunca chegam e perde o dia que existe.
+O medo antecipa mil versões de amanhã, quase todas falsas. Você sofre por desastres que nunca chegam e perde o dia que existe.
 
-**Pergunta do dia.** Que futuro imaginado esta roubando o seu presente?
+**Pergunta do dia.** Que futuro imaginado está roubando o seu presente?
 
-**Pratica.** Escreva o pior cenario, depois escreva o que voce faria se ele viesse. O medo encolhe quando tem nome.
+**Prática.** Escreva o pior cenário, depois escreva o que você faria se ele viesse. O medo encolhe quando tem nome.
 
-**Biblia e Estoicismo.** Seneca: sofremos mais na imaginacao que na realidade. Jesus: nao vos preocupeis com o amanha, basta a cada dia o seu mal.
+**Bíblia e Estoicismo.** Sêneca: sofremos mais na imaginação que na realidade. Jesus: não vos preocupeis com o amanhã, basta a cada dia o seu mal.
 
-> Viva o dia que esta aqui, nao o que talvez venha.
+> Viva o dia que está aqui, não o que talvez venha.
 
 _Registro:_
 
 
 ---
 
-## Dia 11 · A gratidao sobria
+## Dia 11 · A gratidão sóbria
 
-Gratidao nao e negar o que falta. E enxergar o que ja existe antes que a falta ocupe toda a vista.
+Gratidão não é negar o que falta. É enxergar o que já existe antes que a falta ocupe toda a vista.
 
-**Pergunta do dia.** Tres coisas simples de hoje pelas quais voce e grata?
+**Pergunta do dia.** Três coisas simples de hoje pelas quais você é grata?
 
-**Pratica.** Anote as tres agora, sem procurar grandeza. O pequeno basta.
+**Prática.** Anote as três agora, sem procurar grandeza. O pequeno basta.
 
-**Biblia e Estoicismo.** Marco Aurelio comecava o dia agradecendo. Paulo pede: em tudo dai gracas.
+**Bíblia e Estoicismo.** Marco Aurélio começava o dia agradecendo. Paulo pede: em tudo dai graças.
 
 > Conte o que tem antes de chorar o que falta.
 
@@ -211,15 +211,15 @@ _Registro:_
 
 ---
 
-## Dia 12 · O perdao sem ingenuidade
+## Dia 12 · O perdão sem ingenuidade
 
-Perdoar nao e dizer que a ferida nao doeu. E parar de beber o veneno esperando que o outro adoeca. O perdao liberta primeiro quem perdoa.
+Perdoar não é dizer que a ferida não doeu. É parar de beber o veneno esperando que o outro adoeça. O perdão liberta primeiro quem perdoa.
 
-**Pergunta do dia.** Que ressentimento voce ainda carrega que so pesa em voce?
+**Pergunta do dia.** Que ressentimento você ainda carrega que só pesa em você?
 
-**Pratica.** Escreva o nome, escreva a magoa, e escreva: escolho nao carregar isso hoje.
+**Prática.** Escreva o nome, escreva a mágoa, e escreva: escolho não carregar isso hoje.
 
-**Biblia e Estoicismo.** O estoico nao entrega sua paz a quem o feriu. Cristo ensina a perdoar setenta vezes sete, para nossa propria libertacao.
+**Bíblia e Estoicismo.** O estoico não entrega sua paz a quem o feriu. Cristo ensina a perdoar setenta vezes sete, para nossa própria libertação.
 
 > Solte o veneno, mesmo sem receber desculpa.
 
@@ -228,17 +228,17 @@ _Registro:_
 
 ---
 
-## Dia 13 · A palavra que voce da a si mesma
+## Dia 13 · A palavra que você dá a si mesma
 
-Voce cumpre com todos e falha so com uma pessoa: voce. A palavra dada a si mesma tambem e um compromisso de honra.
+Você cumpre com todos e falha só com uma pessoa: você. A palavra dada a si mesma também é um compromisso de honra.
 
-**Pergunta do dia.** Que promessa sua a voce mesma vem sendo quebrada?
+**Pergunta do dia.** Que promessa sua a você mesma vem sendo quebrada?
 
-**Pratica.** Escolha uma so, pequena, e cumpra hoje sem negociar.
+**Prática.** Escolha uma só, pequena, e cumpra hoje sem negociar.
 
-**Biblia e Estoicismo.** O estoico vive de acordo com o que afirma. O proverbio elogia quem jura para o proprio dano e nao muda.
+**Bíblia e Estoicismo.** O estoico vive de acordo com o que afirma. O provérbio elogia quem jura para o próprio dano e não muda.
 
-> Honre a palavra dada a voce como honraria a de outro.
+> Honre a palavra dada a você como honraria a de outro.
 
 _Registro:_
 
@@ -247,15 +247,15 @@ _Registro:_
 
 ## Dia 14 · O corpo como aliado
 
-O corpo cansado distorce tudo. Antes de acreditar que a vida desabou, pergunte se voce apenas nao dormiu, nao comeu, nao parou.
+O corpo cansado distorce tudo. Antes de acreditar que a vida desabou, pergunte se você apenas não dormiu, não comeu, não parou.
 
-**Pergunta do dia.** O que seu corpo pediu hoje que voce ignorou?
+**Pergunta do dia.** O que seu corpo pediu hoje que você ignorou?
 
-**Pratica.** Atenda um pedido simples do corpo: agua, sono, pausa, ar.
+**Prática.** Atenda um pedido simples do corpo: água, sono, pausa, ar.
 
-**Biblia e Estoicismo.** Os estoicos cuidavam do corpo como instrumento da alma. A escritura chama o corpo de templo, digno de cuidado.
+**Bíblia e Estoicismo.** Os estoicos cuidavam do corpo como instrumento da alma. A escritura chama o corpo de templo, digno de cuidado.
 
-> Cuide do corpo que carrega a sua missao.
+> Cuide do corpo que carrega a sua missão.
 
 _Registro:_
 
@@ -264,32 +264,32 @@ _Registro:_
 
 ## Dia 15 · A raiva examinada
 
-A raiva quase sempre esconde outra coisa: medo, cansaco, uma fronteira invadida. Examinada, ela informa. Obedecida, ela destroi.
+A raiva quase sempre esconde outra coisa: medo, cansaço, uma fronteira invadida. Examinada, ela informa. Obedecida, ela destrói.
 
-**Pergunta do dia.** O que sua ultima raiva estava tentando proteger?
+**Pergunta do dia.** O que sua última raiva estava tentando proteger?
 
-**Pratica.** Da proxima vez, antes de agir, pergunte: o que aqui e meu para resolver?
+**Prática.** Da próxima vez, antes de agir, pergunte: o que aqui é meu para resolver?
 
-**Biblia e Estoicismo.** Seneca escreveu um tratado inteiro sobre dominar a ira. O proverbio: melhor o paciente que o valente que domina cidades.
+**Bíblia e Estoicismo.** Sêneca escreveu um tratado inteiro sobre dominar a ira. O provérbio: melhor o paciente que o valente que domina cidades.
 
-> Leia a raiva antes de deixar que ela escreva por voce.
+> Leia a raiva antes de deixar que ela escreva por você.
 
 _Registro:_
 
 
 ---
 
-## Dia 16 · O desejo e a suficiencia
+## Dia 16 · O desejo e a suficiência
 
-O desejo sem freio nunca chega. Sempre falta a proxima coisa. A riqueza estoica nao e ter mais, e precisar de menos.
+O desejo sem freio nunca chega. Sempre falta a próxima coisa. A riqueza estoica não é ter mais, é precisar de menos.
 
-**Pergunta do dia.** O que voce acha que precisa e, olhando de perto, so quer?
+**Pergunta do dia.** O que você acha que precisa e, olhando de perto, só quer?
 
-**Pratica.** Adie uma compra por sete dias. Veja se o desejo sobrevive ao tempo.
+**Prática.** Adie uma compra por sete dias. Veja se o desejo sobrevive ao tempo.
 
-**Biblia e Estoicismo.** Epicteto: rico e quem se contenta com o que tem. Paulo aprendeu a viver com pouco e com muito, em contentamento.
+**Bíblia e Estoicismo.** Epicteto: rico é quem se contenta com o que tem. Paulo aprendeu a viver com pouco e com muito, em contentamento.
 
-> Deseje menos e descubra o quanto ja basta.
+> Deseje menos e descubra o quanto já basta.
 
 _Registro:_
 
@@ -298,49 +298,49 @@ _Registro:_
 
 ## Dia 17 · A morte como conselheira
 
-Lembrar que o tempo acaba nao entristece, organiza. Diante do fim, o mesquinho perde importancia e o essencial aparece.
+Lembrar que o tempo acaba não entristece, organiza. Diante do fim, o mesquinho perde importância e o essencial aparece.
 
-**Pergunta do dia.** Se este ano fosse o ultimo, o que voce deixaria de adiar?
+**Pergunta do dia.** Se este ano fosse o último, o que você deixaria de adiar?
 
-**Pratica.** Escolha uma coisa importante que voce vem adiando e de o primeiro passo hoje.
+**Prática.** Escolha uma coisa importante que você vem adiando e dê o primeiro passo hoje.
 
-**Biblia e Estoicismo.** Memento mori era pratica estoica diaria. O salmista pede: ensina-nos a contar os nossos dias, para alcancarmos coracao sabio.
+**Bíblia e Estoicismo.** Memento mori era prática estoica diária. O salmista pede: ensina-nos a contar os nossos dias, para alcançarmos coração sábio.
 
-> Conte os seus dias para nao desperdicar nenhum.
-
-_Registro:_
-
-
----
-
-## Dia 18 · A rotina como ancora
-
-Nos dias de tempestade emocional, a rotina segura. Nao porque e brilhante, mas porque e firme. O habito sustenta quando a vontade falha.
-
-**Pergunta do dia.** Que pequena rotina te devolve o chao quando tudo balanca?
-
-**Pratica.** Defina um gesto fixo para amanha de manha e cumpra, mesmo sem vontade.
-
-**Biblia e Estoicismo.** Os estoicos tinham disciplina diaria de exercicios da alma. A fe conhece a mesma forca na oracao constante.
-
-> Ancore o dia numa rotina que nao dependa do seu humor.
+> Conte os seus dias para não desperdiçar nenhum.
 
 _Registro:_
 
 
 ---
 
-## Dia 19 · A escuta antes da reacao
+## Dia 18 · A rotina como âncora
 
-Muita briga e so falta de escuta. Ouvimos para responder, nao para entender. Quem escuta de verdade desarma metade dos conflitos.
+Nos dias de tempestade emocional, a rotina segura. Não porque é brilhante, mas porque é firme. O hábito sustenta quando a vontade falha.
 
-**Pergunta do dia.** Quem voce ouviu hoje apenas esperando a sua vez de falar?
+**Pergunta do dia.** Que pequena rotina te devolve o chão quando tudo balança?
 
-**Pratica.** Numa conversa, resuma o que o outro disse antes de dar sua opiniao.
+**Prática.** Defina um gesto fixo para amanhã de manhã e cumpra, mesmo sem vontade.
 
-**Biblia e Estoicismo.** Os estoicos valorizavam a razao serena acima da reacao. Tiago: pronto para ouvir, tardio para falar.
+**Bíblia e Estoicismo.** Os estoicos tinham disciplina diária de exercícios da alma. A fé conhece a mesma força na oração constante.
 
-> Escute ate o fim antes de formar a resposta.
+> Ancore o dia numa rotina que não dependa do seu humor.
+
+_Registro:_
+
+
+---
+
+## Dia 19 · A escuta antes da reação
+
+Muita briga é só falta de escuta. Ouvimos para responder, não para entender. Quem escuta de verdade desarma metade dos conflitos.
+
+**Pergunta do dia.** Quem você ouviu hoje apenas esperando a sua vez de falar?
+
+**Prática.** Numa conversa, resuma o que o outro disse antes de dar sua opinião.
+
+**Bíblia e Estoicismo.** Os estoicos valorizavam a razão serena acima da reação. Tiago: pronto para ouvir, tardio para falar.
+
+> Escute até o fim antes de formar a resposta.
 
 _Registro:_
 
@@ -349,15 +349,15 @@ _Registro:_
 
 ## Dia 20 · O limite como cuidado
 
-Dizer nao a um pedido nao e egoismo, e o cuidado que protege o seu sim. Quem nunca recusa acaba presente em tudo e inteira em nada.
+Dizer não a um pedido não é egoísmo, é o cuidado que protege o seu sim. Quem nunca recusa acaba presente em tudo e inteira em nada.
 
-**Pergunta do dia.** A que voce disse sim hoje querendo dizer nao?
+**Pergunta do dia.** A que você disse sim hoje querendo dizer não?
 
-**Pratica.** Escolha um pedido e responda com um nao respeitoso e sem desculpas longas.
+**Prática.** Escolha um pedido e responda com um não respeitoso e sem desculpas longas.
 
-**Biblia e Estoicismo.** O estoico guarda seu tempo como bem escasso. Ate Jesus se retirava da multidao para orar a sos.
+**Bíblia e Estoicismo.** O estoico guarda seu tempo como bem escasso. Até Jesus se retirava da multidão para orar a sós.
 
-> Proteja o seu sim aprendendo a dizer nao.
+> Proteja o seu sim aprendendo a dizer não.
 
 _Registro:_
 
@@ -366,13 +366,13 @@ _Registro:_
 
 ## Dia 21 · A inveja transformada
 
-A inveja aponta, sem querer, o que voce deseja. Em vez de morder por dentro, deixe que ela mostre a direcao e depois trabalhe por ela.
+A inveja aponta, sem querer, o que você deseja. Em vez de morder por dentro, deixe que ela mostre a direção e depois trabalhe por ela.
 
-**Pergunta do dia.** O que a ultima ponta de inveja revelou que voce quer?
+**Pergunta do dia.** O que a última ponta de inveja revelou que você quer?
 
-**Pratica.** Transforme isso em uma meta concreta e escreva o primeiro passo.
+**Prática.** Transforme isso em uma meta concreta e escreva o primeiro passo.
 
-**Biblia e Estoicismo.** Os estoicos viam a inveja como juizo equivocado sobre bens externos. O proverbio: a inveja e a podridao dos ossos.
+**Bíblia e Estoicismo.** Os estoicos viam a inveja como juízo equivocado sobre bens externos. O provérbio: a inveja é a podridão dos ossos.
 
 > Deixe a inveja indicar o caminho e depois solte-a.
 
@@ -381,34 +381,34 @@ _Registro:_
 
 ---
 
-## Dia 22 · A constancia acima da intensidade
+## Dia 22 · A constância acima da intensidade
 
-Um dia de esforco enorme impressiona e nao muda nada. Trinta dias de esforco pequeno mudam a pessoa. A intensidade seduz, a constancia constroi.
+Um dia de esforço enorme impressiona e não muda nada. Trinta dias de esforço pequeno mudam a pessoa. A intensidade seduz, a constância constrói.
 
-**Pergunta do dia.** Onde voce vem esperando um grande gesto em vez de comecar pequeno todo dia?
+**Pergunta do dia.** Onde você vem esperando um grande gesto em vez de começar pequeno todo dia?
 
-**Pratica.** Reduza uma meta grande a uma versao minima e diaria. Faca a de hoje.
+**Prática.** Reduza uma meta grande a uma versão mínima e diária. Faça a de hoje.
 
-**Biblia e Estoicismo.** Os estoicos treinavam a virtude como habito diario. A fe fala da corrida que se corre com perseveranca, nao em um salto.
+**Bíblia e Estoicismo.** Os estoicos treinavam a virtude como hábito diário. A fé fala da corrida que se corre com perseverança, não em um salto.
 
-> Prefira o passo diario ao surto de um dia so.
+> Prefira o passo diário ao surto de um dia só.
 
 _Registro:_
 
 
 ---
 
-## Dia 23 · A fe no que nao se controla
+## Dia 23 · A fé no que não se controla
 
-Fazer a sua parte e entregar o resto nao e desistir. E reconhecer os limites da propria mao e descansar naquilo que a excede.
+Fazer a sua parte e entregar o resto não é desistir. É reconhecer os limites da própria mão e descansar naquilo que a excede.
 
-**Pergunta do dia.** O que voce ja fez o que podia, e agora precisa soltar?
+**Pergunta do dia.** O que você já fez o que podia, e agora precisa soltar?
 
-**Pratica.** Escreva o que esta nas suas maos e o que voce entrega. Depois respire e solte.
+**Prática.** Escreva o que está nas suas mãos e o que você entrega. Depois respire e solte.
 
-**Biblia e Estoicismo.** O estoico age e aceita o destino sem revolta. A fe faz o mesmo com confianca: lanca sobre Ele a tua ansiedade.
+**Bíblia e Estoicismo.** O estoico age e aceita o destino sem revolta. A fé faz o mesmo com confiança: lança sobre Ele a tua ansiedade.
 
-> Faca a sua parte e confie o resto ao que te excede.
+> Faça a sua parte e confie o resto ao que te excede.
 
 _Registro:_
 
@@ -417,13 +417,13 @@ _Registro:_
 
 ## Dia 24 · A vergonha e a verdade
 
-A vergonha escondida cresce no escuro. Dita em voz baixa para alguem de confianca, ela encolhe. O segredo e o alimento dela.
+A vergonha escondida cresce no escuro. Dita em voz baixa para alguém de confiança, ela encolhe. O segredo é o alimento dela.
 
-**Pergunta do dia.** Que verdade sobre voce ainda vive no escuro por vergonha?
+**Pergunta do dia.** Que verdade sobre você ainda vive no escuro por vergonha?
 
-**Pratica.** Escreva-a aqui, so para voce, com todas as letras. Tirar do escuro ja alivia.
+**Prática.** Escreva-a aqui, só para você, com todas as letras. Tirar do escuro já alivia.
 
-**Biblia e Estoicismo.** Os estoicos buscavam viver sem mascara, coerentes por dentro e por fora. A escritura: a verdade vos libertara.
+**Bíblia e Estoicismo.** Os estoicos buscavam viver sem máscara, coerentes por dentro e por fora. A escritura: a verdade vos libertará.
 
 > Traga a verdade para a luz e veja a vergonha diminuir.
 
@@ -432,15 +432,15 @@ _Registro:_
 
 ---
 
-## Dia 25 · O descanso nao e fraqueza
+## Dia 25 · O descanso não é fraqueza
 
-A cultura do esgotamento chama pausa de preguica. Mas ninguem constroi nada durando sobre ruinas. Descansar tambem e trabalho.
+A cultura do esgotamento chama pausa de preguiça. Mas ninguém constrói nada durando sobre ruínas. Descansar também é trabalho.
 
-**Pergunta do dia.** Quando foi a ultima vez que voce descansou sem culpa?
+**Pergunta do dia.** Quando foi a última vez que você descansou sem culpa?
 
-**Pratica.** Marque um intervalo de verdade hoje, sem tela, sem tarefa, sem justificativa.
+**Prática.** Marque um intervalo de verdade hoje, sem tela, sem tarefa, sem justificativa.
 
-**Biblia e Estoicismo.** Ate os estoicos previam o repouso da alma. O proprio Criador descansou no setimo dia e chamou o descanso de sagrado.
+**Bíblia e Estoicismo.** Até os estoicos previam o repouso da alma. O próprio Criador descansou no sétimo dia e chamou o descanso de sagrado.
 
 > Descanse antes de o corpo te obrigar a parar.
 
@@ -451,64 +451,64 @@ _Registro:_
 
 ## Dia 26 · A generosidade sem se anular
 
-Dar do que transborda alimenta. Dar do que voce nao tem esvazia e adoece. A generosidade saudavel comeca com o proprio copo cheio.
+Dar do que transborda alimenta. Dar do que você não tem esvazia e adoece. A generosidade saudável começa com o próprio copo cheio.
 
-**Pergunta do dia.** Onde voce vem dando do que nao tem para sobrar?
+**Pergunta do dia.** Onde você vem dando do que não tem para sobrar?
 
-**Pratica.** Reveja um compromisso feito por culpa e ajuste para o que cabe de verdade.
+**Prática.** Reveja um compromisso feito por culpa e ajuste para o que cabe de verdade.
 
-**Biblia e Estoicismo.** O estoico serve a comunidade sem se destruir. Paulo: cada um de com alegria, nao por constrangimento.
+**Bíblia e Estoicismo.** O estoico serve a comunidade sem se destruir. Paulo: cada um dê com alegria, não por constrangimento.
 
-> De do que transborda, nao do que te falta.
-
-_Registro:_
-
-
----
-
-## Dia 27 · O passado que ja cumpriu seu papel
-
-O passado ensinou o que tinha para ensinar. Reviver a cena mil vezes nao muda o final, so prende voce no que ja passou.
-
-**Pergunta do dia.** Que cena antiga voce ainda repete na cabeca sem necessidade?
-
-**Pratica.** Escreva a licao que ela deixou e agradeca por ela ter passado.
-
-**Biblia e Estoicismo.** Os estoicos focavam no instante presente como unico campo de acao. Paulo: esquecendo o que fica para tras, avanco para o que esta adiante.
-
-> Guarde a licao do passado e devolva o resto ao tempo.
+> Dê do que transborda, não do que te falta.
 
 _Registro:_
 
 
 ---
 
-## Dia 28 · A coerencia entre valor e escolha
+## Dia 27 · O passado que já cumpriu seu papel
 
-Voce diz que valoriza a paz e escolhe a briga. Diz que quer descanso e enche a agenda. A coerencia e quando a escolha confirma o valor.
+O passado ensinou o que tinha para ensinar. Reviver a cena mil vezes não muda o final, só prende você no que já passou.
 
-**Pergunta do dia.** Onde suas escolhas contradizem o que voce diz valorizar?
+**Pergunta do dia.** Que cena antiga você ainda repete na cabeça sem necessidade?
 
-**Pratica.** Escolha um valor e alinhe uma decisao de hoje a ele.
+**Prática.** Escreva a lição que ela deixou e agradeça por ela ter passado.
 
-**Biblia e Estoicismo.** Viver de acordo com a razao e o coracao do estoicismo. A fe pede o mesmo: nao ouvintes apenas, mas praticantes da palavra.
+**Bíblia e Estoicismo.** Os estoicos focavam no instante presente como único campo de ação. Paulo: esquecendo o que fica para trás, avanço para o que está adiante.
 
-> Faca a escolha confirmar aquilo que voce diz valer.
+> Guarde a lição do passado e devolva o resto ao tempo.
 
 _Registro:_
 
 
 ---
 
-## Dia 29 · A esperanca disciplinada
+## Dia 28 · A coerência entre valor e escolha
 
-Esperanca nao e esperar de bracos cruzados que tudo melhore. E agir hoje confiando que o esforco e a graca se encontram no caminho.
+Você diz que valoriza a paz e escolhe a briga. Diz que quer descanso e enche a agenda. A coerência é quando a escolha confirma o valor.
 
-**Pergunta do dia.** Em que area voce espera mudanca sem ainda ter mudado a acao?
+**Pergunta do dia.** Onde suas escolhas contradizem o que você diz valorizar?
 
-**Pratica.** Una uma oracao ou intencao a um passo concreto, ainda hoje.
+**Prática.** Escolha um valor e alinhe uma decisão de hoje a ele.
 
-**Biblia e Estoicismo.** O estoico une aceitacao a acao virtuosa. A fe une confianca a obra: a fe sem obras e morta.
+**Bíblia e Estoicismo.** Viver de acordo com a razão é o coração do estoicismo. A fé pede o mesmo: não ouvintes apenas, mas praticantes da palavra.
+
+> Faça a escolha confirmar aquilo que você diz valer.
+
+_Registro:_
+
+
+---
+
+## Dia 29 · A esperança disciplinada
+
+Esperança não é esperar de braços cruzados que tudo melhore. É agir hoje confiando que o esforço e a graça se encontram no caminho.
+
+**Pergunta do dia.** Em que área você espera mudança sem ainda ter mudado a ação?
+
+**Prática.** Una uma oração ou intenção a um passo concreto, ainda hoje.
+
+**Bíblia e Estoicismo.** O estoico une aceitação a ação virtuosa. A fé une confiança a obra: a fé sem obras é morta.
 
 > Espere trabalhando, confie agindo.
 
@@ -517,17 +517,17 @@ _Registro:_
 
 ---
 
-## Dia 30 · Quem voce se tornou em trinta dias
+## Dia 30 · Quem você se tornou em trinta dias
 
-Trinta dias atras, outra mulher abriu este diario. Voce nao virou outra pessoa. Voce voltou para si, um pouco mais firme, um pouco menos no impulso.
+Trinta dias atrás, outra mulher abriu este diário. Você não virou outra pessoa. Você voltou para si, um pouco mais firme, um pouco menos no impulso.
 
-**Pergunta do dia.** Relendo o caminho, o que mudou em como voce responde a vida?
+**Pergunta do dia.** Relendo o caminho, o que mudou em como você responde à vida?
 
-**Pratica.** Releia seus primeiros registros e escreva uma carta curta a mulher que comecou.
+**Prática.** Releia seus primeiros registros e escreva uma carta curta à mulher que começou.
 
-**Biblia e Estoicismo.** Os estoicos revisavam a propria alma ao fim de cada ciclo. A fe celebra o crescimento: de fe em fe, de forca em forca.
+**Bíblia e Estoicismo.** Os estoicos revisavam a própria alma ao fim de cada ciclo. A fé celebra o crescimento: de fé em fé, de força em força.
 
-> Siga cuidando do que e seu, um dia de cada vez.
+> Siga cuidando do que é seu, um dia de cada vez.
 
 _Registro:_
 
