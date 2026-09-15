@@ -369,14 +369,34 @@ def build_html():
     intro_html = "".join(f"<p>{esc(p)}</p>" for p in INTRO)
     como_html = "".join(f"<li>{esc(c)}</li>" for c in COMO_USAR)
 
+    def _sparkle(x, y, s):
+        return (
+            f"M{x},{y - s} L{x + 0.26 * s:.1f},{y - 0.26 * s:.1f} L{x + s},{y} "
+            f"L{x + 0.26 * s:.1f},{y + 0.26 * s:.1f} L{x},{y + s} "
+            f"L{x - 0.26 * s:.1f},{y + 0.26 * s:.1f} L{x - s},{y} "
+            f"L{x - 0.26 * s:.1f},{y - 0.26 * s:.1f} Z"
+        )
+
+    stars = "".join(
+        f'<path d="{_sparkle(x, y, s)}" fill="#d8b558" opacity="{o}"/>'
+        for (x, y, s, o) in [
+            (150, 58, 7, 1.0), (198, 108, 5, 0.9), (58, 96, 6, 0.9),
+            (178, 170, 4.5, 0.8), (66, 168, 4, 0.75),
+        ]
+    )
+
     emblema = (
-        '<svg width="66" height="66" viewBox="0 0 66 66" fill="none" '
+        '<svg width="152" height="152" viewBox="0 0 240 240" fill="none" '
         'xmlns="http://www.w3.org/2000/svg">'
-        '<circle cx="33" cy="33" r="29" stroke="#b8912f" stroke-width="1"/>'
-        '<circle cx="33" cy="33" r="22.5" stroke="#b8912f" stroke-width="0.5"/>'
-        '<path d="M33 17 V49" stroke="#d8b558" stroke-width="1"/>'
-        '<path d="M17 33 H49" stroke="#d8b558" stroke-width="0.5"/>'
-        '<circle cx="33" cy="33" r="2.6" fill="#d8b558"/>'
+        '<defs><mask id="lua">'
+        '<rect width="240" height="240" fill="white"/>'
+        '<circle cx="134" cy="108" r="30" fill="black"/>'
+        "</mask></defs>"
+        '<circle cx="120" cy="120" r="92" stroke="#b8912f" stroke-width="1"/>'
+        '<circle cx="120" cy="120" r="83" stroke="#8f6f22" stroke-width="0.6"/>'
+        '<circle cx="120" cy="112" r="34" fill="#d8b558" mask="url(#lua)"/>'
+        f"{stars}"
+        '<circle cx="120" cy="197" r="2.4" fill="#d8b558"/>'
         "</svg>"
     )
 
