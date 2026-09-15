@@ -1,0 +1,326 @@
+<title>Diário Estoico de 30 Dias</title>
+<style>
+  :root {
+    --tinta: #14110d;
+    --tinta-2: #1c1812;
+    --tinta-3: #241f17;
+    --pergaminho: #f4efe4;
+    --pergaminho-2: #cfc7b6;
+    --cinza: #a89f8d;
+    --dourado: #b8912f;
+    --dourado-claro: #d8b558;
+    --linha: #3a3225;
+    --measure: 34rem;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(1200px 700px at 50% -10%, #211c14 0%, var(--tinta) 60%),
+      var(--tinta);
+    color: var(--pergaminho);
+    font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+    font-size: 1.075rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 60rem; margin: 0 auto; padding-inline: 20px; }
+  h1, h2, h3, .display {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    text-wrap: balance;
+    letter-spacing: 0.01em;
+    margin: 0;
+  }
+  p { margin: 0; }
+  a { color: inherit; }
+  .eyebrow {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--dourado-claro);
+  }
+  .muted { color: var(--cinza); }
+  .rule {
+    width: 100%; height: 1px; border: 0;
+    background: linear-gradient(to right, transparent, var(--dourado), transparent);
+    margin: 0;
+  }
+
+  /* Hero */
+  .hero {
+    text-align: center;
+    display: flex; flex-direction: column; align-items: center; gap: 1.1rem;
+    padding-block: 4.5rem 3.5rem;
+  }
+  .hero .emblema { line-height: 0; margin-bottom: 0.2rem; }
+  .hero h1 { font-size: clamp(2.6rem, 7vw, 4.4rem); line-height: 1.04; }
+  .hero .sub { font-size: 1.25rem; font-style: italic; color: var(--dourado-claro); }
+  .hero .lead { max-width: var(--measure); color: var(--pergaminho-2); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.9rem; justify-content: center; align-items: center; margin-top: 0.6rem; }
+  .btn {
+    display: inline-block; text-decoration: none; cursor: pointer;
+    font-family: "EB Garamond", serif; font-size: 0.8rem;
+    letter-spacing: 0.24em; text-transform: uppercase;
+    padding: 1rem 1.8rem; border-radius: 2px; transition: all 0.25s ease;
+    border: 1px solid var(--dourado);
+  }
+  .btn-primary { background: var(--dourado); color: #1a1409; border-color: var(--dourado); }
+  .btn-primary:hover { background: var(--dourado-claro); border-color: var(--dourado-claro); }
+  .btn-ghost { background: transparent; color: var(--dourado-claro); }
+  .btn-ghost:hover { background: rgba(216,181,88,0.1); }
+  .price-tag { display: inline-flex; align-items: baseline; gap: 0.5rem; }
+  .price-tag .cifra { font-family: "Cormorant Garamond", serif; font-size: 2.4rem; color: var(--pergaminho); }
+  .price-tag .antigo { color: var(--cinza); text-decoration: line-through; font-size: 1.1rem; }
+
+  /* Section shell */
+  section { padding-block: 3.2rem; }
+  .section-label { text-align: center; margin-bottom: 1.8rem; }
+  .section-label h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-top: 0.6rem; }
+
+  /* Para quem */
+  .lista-quem { max-width: var(--measure); margin: 0 auto; display: grid; gap: 0.9rem; }
+  .lista-quem li {
+    list-style: none; padding-left: 2rem; position: relative; color: var(--pergaminho-2);
+  }
+  .lista-quem li::before {
+    content: ""; position: absolute; left: 0; top: 0.62em;
+    width: 9px; height: 9px; border: 1px solid var(--dourado); transform: rotate(45deg);
+  }
+  ul { padding: 0; margin: 0; }
+
+  /* O que tem dentro - grid de cartoes */
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+  .card {
+    background: var(--tinta-2); border: 1px solid var(--linha); border-radius: 4px;
+    padding: 1.5rem 1.4rem; display: flex; flex-direction: column; gap: 0.5rem;
+  }
+  .card .num { font-family: "Cormorant Garamond", serif; font-size: 1.5rem; color: var(--dourado-claro); }
+  .card h3 { font-size: 1.35rem; }
+  .card p { color: var(--pergaminho-2); font-size: 0.99rem; }
+
+  .fatos { display: flex; flex-wrap: wrap; gap: 1.6rem 2.6rem; justify-content: center; margin-top: 2rem; text-align: center; }
+  .fatos .n { font-family: "Cormorant Garamond", serif; font-size: 2.4rem; color: var(--dourado-claro); line-height: 1; }
+  .fatos .l { font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--cinza); margin-top: 0.3rem; }
+
+  /* Amostra de um dia */
+  .amostra {
+    max-width: var(--measure); margin: 0 auto;
+    background: var(--tinta-2); border: 1px solid var(--linha); border-radius: 6px;
+    padding: 2rem 1.9rem;
+  }
+  .amostra .dia-num { font-size: 0.66rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--dourado); }
+  .amostra h3 { font-size: 1.7rem; margin: 0.4rem 0 1rem; border-bottom: 1px solid var(--linha); padding-bottom: 0.7rem; }
+  .amostra .campo { margin-top: 0.85rem; color: var(--pergaminho-2); }
+  .amostra .campo b { color: var(--dourado); font-variant: small-caps; letter-spacing: 0.04em; font-weight: 400; }
+  .amostra .fecho { border-left: 2px solid var(--dourado); padding-left: 0.9rem; font-style: italic; margin-top: 1.2rem; color: var(--pergaminho); }
+
+  /* Autora */
+  .autora { max-width: var(--measure); margin: 0 auto; text-align: center; display: grid; gap: 1rem; }
+  .autora .nome { font-family: "Cormorant Garamond", serif; font-size: 1.7rem; }
+
+  /* Oferta */
+  .oferta {
+    max-width: 40rem; margin: 0 auto; text-align: center;
+    background: linear-gradient(180deg, var(--tinta-3), var(--tinta-2));
+    border: 1px solid var(--dourado); border-radius: 8px;
+    padding: 2.6rem 1.8rem; display: flex; flex-direction: column; align-items: center; gap: 1.1rem;
+  }
+  .oferta .inclui { display: grid; gap: 0.5rem; color: var(--pergaminho-2); font-size: 0.99rem; }
+  .oferta .inclui div::before { content: "✦  "; color: var(--dourado); }
+
+  /* FAQ */
+  .faq { max-width: var(--measure); margin: 0 auto; display: grid; gap: 0; }
+  details { border-bottom: 1px solid var(--linha); padding: 1.1rem 0; }
+  summary {
+    cursor: pointer; list-style: none; font-family: "Cormorant Garamond", serif;
+    font-size: 1.3rem; color: var(--pergaminho); display: flex; justify-content: space-between; gap: 1rem;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--dourado); font-size: 1.4rem; line-height: 1; }
+  details[open] summary::after { content: "\2013"; }
+  details p { margin-top: 0.7rem; color: var(--pergaminho-2); }
+
+  footer { text-align: center; padding-block: 3rem 3.5rem; color: var(--cinza); font-size: 0.85rem; }
+  footer .selo { letter-spacing: 0.4em; text-transform: uppercase; font-size: 0.66rem; color: var(--dourado-claro); }
+
+  a:focus-visible, summary:focus-visible, .btn:focus-visible {
+    outline: 2px solid var(--dourado-claro); outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  @media (max-width: 480px) {
+    .hero { padding-block: 3rem 2.4rem; }
+    body { font-size: 1.02rem; }
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital@0;1&display=swap">
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">Mente Mulher Estoica</div>
+    <div class="emblema">
+      <svg width="128" height="128" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs><mask id="lua"><rect width="240" height="240" fill="white"/><circle cx="134" cy="108" r="30" fill="black"/></mask></defs>
+        <circle cx="120" cy="120" r="92" stroke="#b8912f" stroke-width="1"/>
+        <circle cx="120" cy="120" r="83" stroke="#8f6f22" stroke-width="0.6"/>
+        <circle cx="120" cy="112" r="34" fill="#d8b558" mask="url(#lua)"/>
+        <path d="M150,51 L151.8,56.5 L157,58 L151.8,59.5 L150,65 L148.2,59.5 L143,58 L148.2,56.5 Z" fill="#d8b558"/>
+        <path d="M198,103 L199.3,108 L203,109 L199.3,110 L198,115 L196.7,110 L193,109 L196.7,108 Z" fill="#d8b558" opacity="0.9"/>
+        <path d="M58,90 L59.6,95 L64,96 L59.6,97 L58,102 L56.4,97 L52,96 L56.4,95 Z" fill="#d8b558" opacity="0.9"/>
+        <circle cx="120" cy="197" r="2.4" fill="#d8b558"/>
+      </svg>
+    </div>
+    <h1>Diário Estoico<br>de 30 Dias</h1>
+    <p class="sub">Reflexão guiada para não se abandonar</p>
+    <p class="lead">Trinta dias para sair do impulso e voltar ao que depende de você. Uma reflexão por dia, com filosofia estoica e fé, para mulheres que já se cansaram de sobreviver na culpa e na comparação.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#oferta">Quero meu diário</a>
+      <a class="btn btn-ghost" href="#dentro">Ver o que tem dentro</a>
+    </div>
+  </header>
+
+  <hr class="rule">
+
+  <section id="paraquem">
+    <div class="section-label">
+      <div class="eyebrow">Para quem é</div>
+      <h2>Você reconhece isto</h2>
+    </div>
+    <ul class="lista-quem">
+      <li>Você age no impulso e se arrepende depois.</li>
+      <li>Carrega uma culpa que pesa e não ensina nada.</li>
+      <li>Se compara e esquece o próprio valor.</li>
+      <li>Quer firmeza sem endurecer o coração.</li>
+      <li>Procura uma fé e uma filosofia que caibam no dia comum.</li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section id="dentro">
+    <div class="section-label">
+      <div class="eyebrow">O que tem dentro</div>
+      <h2>Um ritual simples, todo dia</h2>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Reflexão do dia</h3>
+        <p>Um pensamento curto e direto, para ler devagar antes de começar.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Pergunta e prática</h3>
+        <p>Uma pergunta que trabalha por dentro e uma prática pequena para o mesmo dia.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Bíblia e Estoicismo</h3>
+        <p>Uma ponte honesta entre fé e filosofia, com Cristo no centro.</p>
+      </div>
+      <div class="card">
+        <div class="num">04</div>
+        <h3>Espaço para escrever</h3>
+        <p>Linhas para o seu registro. O padrão aparece quando ninguém apaga o rastro.</p>
+      </div>
+    </div>
+    <div class="fatos">
+      <div><div class="n">30</div><div class="l">Dias de reflexão</div></div>
+      <div><div class="n">35</div><div class="l">Páginas</div></div>
+      <div><div class="n">A5</div><div class="l">Imprimir ou tablet</div></div>
+      <div><div class="n">PDF</div><div class="l">Acesso imediato</div></div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="amostra">
+    <div class="section-label">
+      <div class="eyebrow">Uma amostra</div>
+      <h2>Como é um dia por dentro</h2>
+    </div>
+    <div class="amostra">
+      <div class="dia-num">Dia 01</div>
+      <h3>A dicotomia do controle</h3>
+      <p class="muted">Metade do sofrimento nasce de querer mandar no que nunca foi seu. O clima, a opinião alheia, o passado. O que sobra para você é grande o bastante: sua resposta.</p>
+      <p class="campo"><b>Pergunta do dia.</b> O que hoje você tentou controlar e não era seu para controlar?</p>
+      <p class="campo"><b>Prática.</b> Escreva duas colunas: o que depende de mim, o que não depende. Aja só na primeira.</p>
+      <p class="campo"><b>Bíblia e Estoicismo.</b> Epicteto separa o que está em nosso poder do que não está. O salmista entrega o resto: aquieta-te diante do Senhor e espera nele.</p>
+      <p class="fecho">Cuide do que é seu, entregue o que nunca foi.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="autora">
+    <div class="section-label">
+      <div class="eyebrow">Quem escreve</div>
+      <h2>Sobre a autora</h2>
+    </div>
+    <div class="autora">
+      <div class="nome">Simone Ananias</div>
+      <p class="muted">Psicopedagoga, especialista em Inclusão e Comportamento, e criadora do perfil @mente.mulher.estoica. Escreve para mulheres em reconstrução, unindo estoicismo aplicado, inteligência emocional e fé, com uma voz direta, introspectiva e sem vitimismo.</p>
+    </div>
+  </section>
+
+  <section id="oferta">
+    <div class="oferta">
+      <div class="eyebrow">A oferta</div>
+      <div class="price-tag">
+        <span class="antigo">R$ 67</span>
+        <span class="cifra">R$ 47</span>
+      </div>
+      <div class="inclui">
+        <div>O ebook completo em PDF, com capa e acabamento</div>
+        <div>30 reflexões guiadas, abertura e encerramento</div>
+        <div>Para imprimir ou preencher no tablet</div>
+        <div>Pagamento único, acesso imediato</div>
+      </div>
+      <a class="btn btn-primary" href="#" id="comprar">Comprar agora</a>
+      <p class="muted" style="font-size:0.85rem;">Você recebe o arquivo logo após a compra.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="faq">
+    <div class="section-label">
+      <div class="eyebrow">Dúvidas</div>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>É físico ou digital?</summary>
+        <p>Digital, em PDF. Você recebe o arquivo e pode imprimir em casa ou preencher no tablet.</p>
+      </details>
+      <details>
+        <summary>Preciso entender de filosofia?</summary>
+        <p>Não. A linguagem é simples e direta. O estoicismo aparece como prática do dia a dia, não como teoria.</p>
+      </details>
+      <details>
+        <summary>É religioso?</summary>
+        <p>Traz pontes entre fé e estoicismo, com respeito e sem imposição. Você aproveita mesmo sem se considerar religiosa.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva por dia?</summary>
+        <p>Poucos minutos. A proposta é constância, não intensidade: um encontro curto com você mesma, todo dia.</p>
+      </details>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:1.2rem;">
+    <h2 style="font-size:clamp(1.9rem,5vw,3rem); max-width:24ch;">Comece hoje a não se abandonar</h2>
+    <a class="btn btn-primary" href="#oferta">Quero meu diário</a>
+  </section>
+
+  <footer>
+    <div class="selo">Mente Mulher Estoica</div>
+    <p style="margin-top:0.6rem;">Diário Estoico de 30 Dias · por Simone Ananias</p>
+  </footer>
+
+</div>
