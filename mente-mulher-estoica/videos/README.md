@@ -52,6 +52,24 @@ python3 legendar.py gravacao.mp4 --roteiro ../roteiros/x.md --musica musica/pian
 Com `--roteiro`, o tempo das legendas é **estimado** pelo tamanho de cada trecho. Isso
 funciona bem quando você lê em ritmo constante. Se ficar dessincronizado, use um `.srt`.
 
+### 3. Indicação: vídeo em cima, você apontando embaixo (`reagir.py`)
+
+Para indicar um vídeo: ele fica em cima, numa moldura com filete dourado, e a sua
+foto fica embaixo, apontando para ele e fundida ao fundo preto por um degradê. Entre
+os dois aparecem o crédito do autor e uma chamada opcional.
+
+```bash
+# Confira o layout numa imagem antes
+python3 reagir.py video.mp4 --foto minha-foto.jpg --credito @autor --previa
+
+# Vídeo final, cortando a vinheta do autor no segundo 10,6
+python3 reagir.py video.mp4 --foto minha-foto.jpg --credito @autor --chamada "Presta atenção nisso." --ate 10.6
+```
+
+- **A foto:** de preferência vertical, com você do peito para cima e a mão apontando para o alto. Por padrão ela fica em P&B, como a marca; use `--colorida` para manter as cores.
+- **Enquadramento:** `--foco` escolhe que parte da foto aparece (0 = topo, 0,5 = meio). Se a cabeça ficar cortada, diminua o valor.
+- **Sem foto:** o script usa uma silhueta de teste.
+
 ## Áudio: as quatro formas
 
 | Forma | Como |
@@ -92,6 +110,7 @@ E a linha logo abaixo aparece junto, na mesma tela.
 | --- | --- |
 | `reel_frases.py` | Gera o reel de frases animadas. |
 | `legendar.py` | Legenda um vídeo gravado e acrescenta a frase final. |
+| `reagir.py` | Formato indicação: vídeo em cima, sua foto apontando embaixo. |
 | `roteiro.py` | Lê os roteiros em Markdown. |
 | `estilo.py` | Identidade visual: cores, fontes, área segura do Reels, telas. Mude aqui para alterar a aparência de todos os vídeos. |
 | `midia.py` | Integração com o ffmpeg (vídeo e mixagem de áudio). |

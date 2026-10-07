@@ -41,12 +41,14 @@ def gravador(caminho, estatico=True):
     )
 
 
-def leitor(caminho):
-    """Abre um vídeo já ajustado para 1080x1920 a 30 fps, entregando quadros RGB crus."""
-    filtro = (f"scale={LARGURA}:{ALTURA}:force_original_aspect_ratio=increase,"
-              f"crop={LARGURA}:{ALTURA},fps={FPS}")
+def leitor(caminho, largura=LARGURA, altura=ALTURA, ate=None):
+    """Abre um vídeo ajustado (cortando as sobras) para largura x altura a 30 fps,
+    entregando quadros RGB crus. `ate` corta o vídeo nesse segundo."""
+    filtro = (f"scale={largura}:{altura}:force_original_aspect_ratio=increase,"
+              f"crop={largura}:{altura},fps={FPS}")
+    corte = ["-t", f"{ate:.3f}"] if ate else []
     return subprocess.Popen(
-        ["ffmpeg", "-loglevel", "error", "-i", str(caminho), "-vf", filtro,
+        ["ffmpeg", "-loglevel", "error", *corte, "-i", str(caminho), "-vf", filtro,
          "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
         stdout=subprocess.PIPE,
     )
