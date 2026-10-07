@@ -105,7 +105,7 @@ def montar_base(foto, foco, colorida):
     return estilo.Camada(foto_de_baixo(foto, foco, colorida)).compor(base)
 
 
-def gerar(video, foto, saida, credito="", chamada="", ate=None, foco=0.2,
+def gerar(video, foto, saida, credito="", chamada="", ate=None, foco=0.1,
           colorida=False, musica=None, volume_musica=0.15, previa=False):
     largura, altura = dimensoes_do_video(video)
     base = montar_base(foto, foco, colorida)
@@ -157,8 +157,8 @@ def main():
     p.add_argument("--credito", default="", help="arroba do autor do vídeo, ex.: @autor")
     p.add_argument("--chamada", default="", help="frase curta entre o vídeo e a foto")
     p.add_argument("--ate", type=float, help="corta o vídeo neste segundo (ex.: tirar a vinheta final)")
-    p.add_argument("--foco", type=float, default=0.2,
-                   help="que parte da foto aparece: 0 = topo, 0.5 = meio, 1 = base (padrão 0.2)")
+    p.add_argument("--foco", type=float, default=0.1,
+                   help="que parte da foto aparece: 0 = topo, 0.5 = meio, 1 = base (padrão 0.1)")
     p.add_argument("--colorida", action="store_true", help="mantém a foto colorida (padrão: P&B)")
     p.add_argument("--musica", help="música de fundo, baixinha sob o áudio original")
     p.add_argument("--volume-musica", type=float, default=0.15)
