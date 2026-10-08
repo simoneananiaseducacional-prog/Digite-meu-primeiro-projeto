@@ -3,105 +3,125 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Diario Estoico de 30 Dias</title>
+<title>Diário Estoico de 30 Dias</title>
 <style>
-  @page { size: A5; margin: 16mm 14mm; }
+  @page { size: A5; margin: 0; }
   :root {
     --preto: #14110d;
     --branco: #f6f2ea;
     --cinza: #6f6a60;
     --dourado: #b8912f;
+    --dourado-claro: #d8b558;
   }
   * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
   body {
-    margin: 0;
     background: var(--branco);
     color: var(--preto);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.65;
     font-size: 12pt;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
+
+  /* Capa */
   .capa {
-    min-height: 92vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: var(--preto);
+    height: 100vh; width: 100%;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    background: radial-gradient(circle at 50% 30%, #241f17 0%, var(--preto) 72%);
     color: var(--branco);
     padding: 3rem 2rem;
     page-break-after: always;
+    position: relative;
   }
-  .capa .selo {
-    letter-spacing: 0.5em; font-size: 0.6rem; text-transform: uppercase; color: var(--dourado);
+  .capa::before, .capa::after {
+    content: ""; position: absolute; left: 12mm; right: 12mm; height: 1px;
+    background: linear-gradient(to right, transparent, var(--dourado), transparent);
   }
-  .capa h1 {
-    font-size: 2rem; font-weight: normal; margin: 1.2rem 0 0.6rem; letter-spacing: 0.04em;
-  }
-  .capa .sub { color: var(--dourado); font-style: italic; }
-  .capa .autora { margin-top: 2.5rem; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cinza); }
+  .capa::before { top: 14mm; }
+  .capa::after { bottom: 14mm; }
+  .capa .selo { letter-spacing: 0.55em; font-size: 0.62rem; text-transform: uppercase; color: var(--dourado-claro); }
+  .emblema { margin: 1.6rem 0 1.3rem; line-height: 0; }
+  .capa h1 { font-size: 2.15rem; font-weight: normal; margin: 0.3rem 0.5rem 0.7rem; letter-spacing: 0.03em; line-height: 1.2; }
+  .capa .sub { color: var(--dourado-claro); font-style: italic; font-size: 1.02rem; }
+  .capa .autora { margin-top: 2.6rem; font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase; color: #b7b0a2; }
 
-  .bloco { padding: 1rem 0.5rem; page-break-after: always; }
-  .bloco h2, .dia h2 {
-    font-size: 1.3rem; font-weight: normal; letter-spacing: 0.03em; margin: 0 0 1rem;
+  /* Abertura e encerramento */
+  .epigrafe, .encerra {
+    height: 100vh; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    padding: 3rem 2.6rem; page-break-after: always;
   }
-  .rotulo {
-    font-size: 0.62rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--dourado); margin-bottom: 0.6rem;
-  }
+  .epigrafe p { font-size: 1.25rem; font-style: italic; max-width: 24em; line-height: 1.6; }
+  .epigrafe .fonte, .encerra .fonte { margin-top: 1.4rem; font-size: 0.64rem; letter-spacing: 0.32em; text-transform: uppercase; color: var(--dourado); }
+  .encerra h2 { font-size: 1.5rem; font-weight: normal; color: var(--dourado); margin: 0 0 1rem; }
+  .encerra p { max-width: 24em; }
+  .encerra .imperativo { font-style: italic; font-size: 1.12rem; margin-top: 1.4rem; }
+
+  /* Blocos e dias */
+  .bloco { padding: 18mm 15mm; page-break-after: always; }
+  .bloco h2, .dia h2 { font-size: 1.3rem; font-weight: normal; letter-spacing: 0.02em; margin: 0.2rem 0 1rem; }
+  .rotulo { font-size: 0.62rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--dourado); margin-bottom: 0.7rem; }
   .bloco ul { padding-left: 1.1rem; }
-  .bloco li { margin-bottom: 0.5rem; }
+  .bloco li { margin-bottom: 0.55rem; }
 
-  .dia { padding: 0.6rem 0.4rem 1rem; page-break-after: always; }
-  .dia-num {
-    font-size: 0.62rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--dourado);
-  }
-  .dia .reflexao { font-size: 1.02rem; }
+  .dia { padding: 16mm 15mm; page-break-after: always; }
+  .dia-num { font-size: 0.62rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--dourado); }
+  .dia h2 { border-bottom: 1px solid #e2dccc; padding-bottom: 0.5rem; }
+  .dia .reflexao { font-size: 1.04rem; }
   .campo { font-size: 0.95rem; }
   .campo span { color: var(--dourado); font-variant: small-caps; letter-spacing: 0.05em; }
-  .fecho {
-    border-left: 2px solid var(--dourado); padding-left: 0.9rem; font-style: italic; margin: 1.2rem 0;
-  }
-  .registro-rotulo {
-    font-size: 0.58rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--cinza); margin-bottom: 0.4rem;
-  }
+  .fecho { border-left: 2px solid var(--dourado); padding-left: 0.9rem; font-style: italic; margin: 1.2rem 0; }
+  .registro-rotulo { font-size: 0.58rem; letter-spacing: 0.4em; text-transform: uppercase; color: var(--cinza); margin: 0.4rem 0; }
   .linhas {
     background-image: repeating-linear-gradient(
       to bottom, transparent 0, transparent 26px, #d8d0c2 26px, #d8d0c2 27px);
-    height: 135px;
+    height: 130px;
   }
   @media screen {
-    body { max-width: 640px; margin: 0 auto; padding: 2rem 1.5rem; }
-    .capa { min-height: 60vh; border-radius: 4px; }
+    body { background: #565048; padding: 14px 0; }
+    .capa, .epigrafe, .encerra, .bloco, .dia {
+      max-width: 560px; margin: 14px auto; background-color: var(--branco);
+      box-shadow: 0 3px 18px rgba(0,0,0,0.3);
+    }
+    .capa { background: radial-gradient(circle at 50% 30%, #241f17 0%, var(--preto) 72%); }
   }
 </style>
 </head>
 <body>
   <section class="capa">
     <div class="selo">Mente Mulher Estoica</div>
-    <h1>Diario Estoico de 30 Dias</h1>
-    <div class="sub">Reflexao guiada para nao se abandonar</div>
+    <div class="emblema"><svg width="152" height="152" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><mask id="lua"><rect width="240" height="240" fill="white"/><circle cx="134" cy="108" r="30" fill="black"/></mask></defs><circle cx="120" cy="120" r="92" stroke="#b8912f" stroke-width="1"/><circle cx="120" cy="120" r="83" stroke="#8f6f22" stroke-width="0.6"/><circle cx="120" cy="112" r="34" fill="#d8b558" mask="url(#lua)"/><path d="M150,51 L151.8,56.2 L157,58 L151.8,59.8 L150,65 L148.2,59.8 L143,58 L148.2,56.2 Z" fill="#d8b558" opacity="1.0"/><path d="M198,103 L199.3,106.7 L203,108 L199.3,109.3 L198,113 L196.7,109.3 L193,108 L196.7,106.7 Z" fill="#d8b558" opacity="0.9"/><path d="M58,90 L59.6,94.4 L64,96 L59.6,97.6 L58,102 L56.4,97.6 L52,96 L56.4,94.4 Z" fill="#d8b558" opacity="0.9"/><path d="M178,165.5 L179.2,168.8 L182.5,170 L179.2,171.2 L178,174.5 L176.8,171.2 L173.5,170 L176.8,168.8 Z" fill="#d8b558" opacity="0.8"/><path d="M66,164 L67.0,167.0 L70,168 L67.0,169.0 L66,172 L65.0,169.0 L62,168 L65.0,167.0 Z" fill="#d8b558" opacity="0.75"/><circle cx="120" cy="197" r="2.4" fill="#d8b558"/></svg></div>
+    <h1>Diário Estoico de 30 Dias</h1>
+    <div class="sub">Reflexão guiada para não se abandonar</div>
     <div class="autora">Simone Ananias · Mente Mulher Estoica</div>
   </section>
 
-  <section class="bloco">
-    <div class="rotulo">Apresentacao</div>
-    <p>Este diario nao promete transformar sua vida em trinta dias. Promete algo mais honesto: trinta encontros com voce mesma, um por dia, para sair do impulso e voltar ao que depende de voce.</p><p>O estoicismo ensina a separar o que esta sob nosso controle do que nao esta. A fe ensina a confiar no que resta. Aqui os dois caminham juntos, com Cristo no centro e a filosofia como quem antecipa uma verdade antiga.</p><p>Nao ha certo nem errado no que voce vai escrever. Ha apenas o gesto de parar, olhar e registrar.</p>
+  <section class="epigrafe">
+    <p>Não é o que acontece com você, é o que você faz com o que acontece. Este diário existe para devolver essa escolha às suas mãos, um dia de cada vez.</p>
+    <div class="fonte">Abertura</div>
   </section>
 
   <section class="bloco">
-    <div class="rotulo">Como usar este diario</div>
-    <ul><li>Reserve poucos minutos, sempre no mesmo horario, de preferencia em silencio.</li><li>Leia a reflexao do dia devagar. Deixe a pergunta trabalhar antes de responder.</li><li>Escreva a mao, se puder. A letra lenta pensa melhor que o teclado.</li><li>Faca a pratica sugerida ainda no mesmo dia, por menor que pareca.</li><li>No fim de cada semana, releia o que escreveu. O padrao aparece quando ninguem apaga o rastro.</li></ul>
+    <div class="rotulo">Apresentação</div>
+    <p>Este diário não promete transformar sua vida em trinta dias. Promete algo mais honesto: trinta encontros com você mesma, um por dia, para sair do impulso e voltar ao que depende de você.</p><p>O estoicismo ensina a separar o que está sob nosso controle do que não está. A fé ensina a confiar no que resta. Aqui os dois caminham juntos, com Cristo no centro e a filosofia como quem antecipa uma verdade antiga.</p><p>Não há certo nem errado no que você vai escrever. Há apenas o gesto de parar, olhar e registrar.</p>
+  </section>
+
+  <section class="bloco">
+    <div class="rotulo">Como usar este diário</div>
+    <ul><li>Reserve poucos minutos, sempre no mesmo horário, de preferência em silêncio.</li><li>Leia a reflexão do dia devagar. Deixe a pergunta trabalhar antes de responder.</li><li>Escreva à mão, se puder. A letra lenta pensa melhor que o teclado.</li><li>Faça a prática sugerida ainda no mesmo dia, por menor que pareça.</li><li>No fim de cada semana, releia o que escreveu. O padrão aparece quando ninguém apaga o rastro.</li></ul>
   </section>
 
     <article class="dia">
       <div class="dia-num">Dia 01</div>
       <h2>A dicotomia do controle</h2>
-      <p class="reflexao">Metade do sofrimento nasce de querer mandar no que nunca foi seu. O clima, a opiniao alheia, o passado. O que sobra para voce e grande o bastante: sua resposta.</p>
-      <p class="campo"><span>Pergunta do dia.</span> O que hoje voce tentou controlar e nao era seu para controlar?</p>
-      <p class="campo"><span>Pratica.</span> Escreva duas colunas: o que depende de mim, o que nao depende. Aja so na primeira.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Epicteto separa o que esta em nosso poder do que nao esta. O salmista entrega o resto: aquieta-te diante do Senhor e espera nele.</p>
-      <p class="fecho">Cuide do que e seu, entregue o que nunca foi.</p>
+      <p class="reflexao">Metade do sofrimento nasce de querer mandar no que nunca foi seu. O clima, a opinião alheia, o passado. O que sobra para você é grande o bastante: sua resposta.</p>
+      <p class="campo"><span>Pergunta do dia.</span> O que hoje você tentou controlar e não era seu para controlar?</p>
+      <p class="campo"><span>Prática.</span> Escreva duas colunas: o que depende de mim, o que não depende. Aja só na primeira.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Epicteto separa o que está em nosso poder do que não está. O salmista entrega o resto: aquieta-te diante do Senhor e espera nele.</p>
+      <p class="fecho">Cuide do que é seu, entregue o que nunca foi.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -110,11 +130,11 @@
     <article class="dia">
       <div class="dia-num">Dia 02</div>
       <h2>O impulso e a pausa</h2>
-      <p class="reflexao">Entre o que acontece e o que voce faz existe um espaco. Estreito, mas real. Nesse espaco mora a liberdade que a pressa rouba.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Onde a pressa falou por voce hoje?</p>
-      <p class="campo"><span>Pratica.</span> Antes da proxima resposta dificil, conte ate dez respirando. So depois responda.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Seneca dizia que a ira e uma loucura breve. O proverbio confirma: quem tarda em irar-se e melhor que o forte.</p>
-      <p class="fecho">Deixe o espaco existir antes da reacao.</p>
+      <p class="reflexao">Entre o que acontece e o que você faz existe um espaço. Estreito, mas real. Nesse espaço mora a liberdade que a pressa rouba.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Onde a pressa falou por você hoje?</p>
+      <p class="campo"><span>Prática.</span> Antes da próxima resposta difícil, conte até dez respirando. Só depois responda.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Sêneca dizia que a ira é uma loucura breve. O provérbio confirma: quem tarda em irar-se é melhor que o forte.</p>
+      <p class="fecho">Deixe o espaço existir antes da reação.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -122,12 +142,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 03</div>
-      <h2>A culpa que nao constroi</h2>
-      <p class="reflexao">Culpa util aponta um caminho e cala. Culpa inutil repete a acusacao sem ensinar nada. A segunda nao te melhora, so te consome.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que culpa voce carrega que ja cumpriu o que tinha para dizer?</p>
-      <p class="campo"><span>Pratica.</span> Nomeie um erro, escreva a licao dele em uma linha e feche o assunto.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O estoico corrige a acao, nao se afoga nela. O evangelho oferece o mesmo: vai e nao peques mais, sem condenacao perpetua.</p>
-      <p class="fecho">Aprenda com a falta, depois solte a acusacao.</p>
+      <h2>A culpa que não constrói</h2>
+      <p class="reflexao">Culpa útil aponta um caminho e cala. Culpa inútil repete a acusação sem ensinar nada. A segunda não te melhora, só te consome.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que culpa você carrega que já cumpriu o que tinha para dizer?</p>
+      <p class="campo"><span>Prática.</span> Nomeie um erro, escreva a lição dele em uma linha e feche o assunto.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O estoico corrige a ação, não se afoga nela. O evangelho oferece o mesmo: vai e não peques mais, sem condenação perpétua.</p>
+      <p class="fecho">Aprenda com a falta, depois solte a acusação.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -135,12 +155,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 04</div>
-      <h2>A comparacao silenciosa</h2>
-      <p class="reflexao">A comparacao mede sua vida inteira pelo recorte que o outro escolheu mostrar. E uma conta armada para voce perder.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Com quem voce se comparou hoje, e o que isso escondeu de bom no seu proprio dia?</p>
-      <p class="campo"><span>Pratica.</span> Passe cinco minutos longe da tela onde a comparacao costuma comecar.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Marco Aurelio lembra de cuidar da propria alma, nao das dos outros. Paulo escreve para cada um provar a sua obra e nao a do vizinho.</p>
-      <p class="fecho">Meca o seu caminho pelo seu ontem, nao pelo hoje alheio.</p>
+      <h2>A comparação silenciosa</h2>
+      <p class="reflexao">A comparação mede sua vida inteira pelo recorte que o outro escolheu mostrar. É uma conta armada para você perder.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Com quem você se comparou hoje, e o que isso escondeu de bom no seu próprio dia?</p>
+      <p class="campo"><span>Prática.</span> Passe cinco minutos longe da tela onde a comparação costuma começar.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Marco Aurélio lembra de cuidar da própria alma, não das dos outros. Paulo escreve para cada um provar a sua obra e não a do vizinho.</p>
+      <p class="fecho">Meça o seu caminho pelo seu ontem, não pelo hoje alheio.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -148,11 +168,11 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 05</div>
-      <h2>O valor que nao se pede</h2>
-      <p class="reflexao">Quem precisa provar o proprio valor a cada sala ainda nao acredita nele. O valor firme nao pede plateia.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Onde voce tentou provar algo que nao precisava provar?</p>
-      <p class="campo"><span>Pratica.</span> Escolha uma situacao e decida ficar em silencio onde antes se justificaria.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O sabio estoico nao depende do aplauso. A escritura ja diz que voce foi feita de modo assombroso, antes de qualquer aprovacao.</p>
+      <h2>O valor que não se pede</h2>
+      <p class="reflexao">Quem precisa provar o próprio valor a cada sala ainda não acredita nele. O valor firme não pede plateia.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Onde você tentou provar algo que não precisava provar?</p>
+      <p class="campo"><span>Prática.</span> Escolha uma situação e decida ficar em silêncio onde antes se justificaria.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O sábio estoico não depende do aplauso. A escritura já diz que você foi feita de modo assombroso, antes de qualquer aprovação.</p>
       <p class="fecho">Saiba do seu valor sem cobrar recibo dos outros.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
@@ -161,12 +181,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 06</div>
-      <h2>O silencio como forca</h2>
-      <p class="reflexao">Nem toda provocacao merece resposta. O silencio escolhido nao e fraqueza, e o dominio de quem nao entrega as proprias chaves.</p>
-      <p class="campo"><span>Pergunta do dia.</span> A que voce respondeu hoje que teria mais forca em silencio?</p>
-      <p class="campo"><span>Pratica.</span> Deixe uma mensagem irritante sem resposta por vinte e quatro horas. Observe o que muda em voce.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Zenao dizia que temos dois ouvidos e uma boca para ouvir mais e falar menos. O proverbio: ate o tolo, calado, passa por sabio.</p>
-      <p class="fecho">Guarde o silencio como quem guarda um bem.</p>
+      <h2>O silêncio como força</h2>
+      <p class="reflexao">Nem toda provocação merece resposta. O silêncio escolhido não é fraqueza, é o domínio de quem não entrega as próprias chaves.</p>
+      <p class="campo"><span>Pergunta do dia.</span> A que você respondeu hoje que teria mais força em silêncio?</p>
+      <p class="campo"><span>Prática.</span> Deixe uma mensagem irritante sem resposta por vinte e quatro horas. Observe o que muda em você.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Zenão dizia que temos dois ouvidos e uma boca para ouvir mais e falar menos. O provérbio: até o tolo, calado, passa por sábio.</p>
+      <p class="fecho">Guarde o silêncio como quem guarda um bem.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -175,11 +195,11 @@
     <article class="dia">
       <div class="dia-num">Dia 07</div>
       <h2>A dor que ensina</h2>
-      <p class="reflexao">A dor evitada volta maior. A dor olhada de frente vira material. Nenhuma mulher se reconstroi fugindo do que doi.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que dor voce vem evitando olhar?</p>
-      <p class="campo"><span>Pratica.</span> Escreva sobre ela por dez minutos, sem corrigir, sem embelezar.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos treinavam encarar a adversidade como exercicio. Tiago fala do mesmo: a provacao produz perseveranca.</p>
-      <p class="fecho">Encare a dor como quem le uma carta dificil ate o fim.</p>
+      <p class="reflexao">A dor evitada volta maior. A dor olhada de frente vira material. Nenhuma mulher se reconstrói fugindo do que dói.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que dor você vem evitando olhar?</p>
+      <p class="campo"><span>Prática.</span> Escreva sobre ela por dez minutos, sem corrigir, sem embelezar.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos treinavam encarar a adversidade como exercício. Tiago fala do mesmo: a provação produz perseverança.</p>
+      <p class="fecho">Encare a dor como quem lê uma carta difícil até o fim.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -187,12 +207,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 08</div>
-      <h2>O que se repete vira carater</h2>
-      <p class="reflexao">Voce nao e o que promete uma vez. E o que repete todos os dias. O carater e feito de gestos pequenos e teimosos.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que pequeno habito, repetido, esta te formando agora, para o bem ou para o mal?</p>
-      <p class="campo"><span>Pratica.</span> Escolha um gesto minimo de cuidado e faca hoje. Amanha, de novo.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Aristoteles influenciou os estoicos: somos o que repetimos. A fe pede a mesma constancia: fieis no pouco.</p>
-      <p class="fecho">Repita o bem ate ele virar quem voce e.</p>
+      <h2>O que se repete vira caráter</h2>
+      <p class="reflexao">Você não é o que promete uma vez. É o que repete todos os dias. O caráter é feito de gestos pequenos e teimosos.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que pequeno hábito, repetido, está te formando agora, para o bem ou para o mal?</p>
+      <p class="campo"><span>Prática.</span> Escolha um gesto mínimo de cuidado e faça hoje. Amanhã, de novo.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Aristóteles influenciou os estoicos: somos o que repetimos. A fé pede a mesma constância: fiéis no pouco.</p>
+      <p class="fecho">Repita o bem até ele virar quem você é.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -200,12 +220,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 09</div>
-      <h2>A opiniao dos outros</h2>
-      <p class="reflexao">A opiniao alheia e um vento. Muda de direcao sem aviso e nao paga suas contas. Construir a vida sobre ela e construir sobre a areia.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que decisao sua ainda espera a aprovacao de alguem?</p>
-      <p class="campo"><span>Pratica.</span> Tome uma pequena decisao hoje sem consultar a plateia.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Epicteto: se queres progredir, aceita parecer tola em coisas externas. O evangelho pergunta se buscamos agradar aos homens ou a Deus.</p>
-      <p class="fecho">Escolha pela sua consciencia, nao pela arquibancada.</p>
+      <h2>A opinião dos outros</h2>
+      <p class="reflexao">A opinião alheia é um vento. Muda de direção sem aviso e não paga suas contas. Construir a vida sobre ela é construir sobre a areia.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que decisão sua ainda espera a aprovação de alguém?</p>
+      <p class="campo"><span>Prática.</span> Tome uma pequena decisão hoje sem consultar a plateia.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Epicteto: se queres progredir, aceita parecer tola em coisas externas. O evangelho pergunta se buscamos agradar aos homens ou a Deus.</p>
+      <p class="fecho">Escolha pela sua consciência, não pela arquibancada.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -214,11 +234,11 @@
     <article class="dia">
       <div class="dia-num">Dia 10</div>
       <h2>O medo do futuro</h2>
-      <p class="reflexao">O medo antecipa mil versoes de amanha, quase todas falsas. Voce sofre por desastres que nunca chegam e perde o dia que existe.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que futuro imaginado esta roubando o seu presente?</p>
-      <p class="campo"><span>Pratica.</span> Escreva o pior cenario, depois escreva o que voce faria se ele viesse. O medo encolhe quando tem nome.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Seneca: sofremos mais na imaginacao que na realidade. Jesus: nao vos preocupeis com o amanha, basta a cada dia o seu mal.</p>
-      <p class="fecho">Viva o dia que esta aqui, nao o que talvez venha.</p>
+      <p class="reflexao">O medo antecipa mil versões de amanhã, quase todas falsas. Você sofre por desastres que nunca chegam e perde o dia que existe.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que futuro imaginado está roubando o seu presente?</p>
+      <p class="campo"><span>Prática.</span> Escreva o pior cenário, depois escreva o que você faria se ele viesse. O medo encolhe quando tem nome.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Sêneca: sofremos mais na imaginação que na realidade. Jesus: não vos preocupeis com o amanhã, basta a cada dia o seu mal.</p>
+      <p class="fecho">Viva o dia que está aqui, não o que talvez venha.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -226,11 +246,11 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 11</div>
-      <h2>A gratidao sobria</h2>
-      <p class="reflexao">Gratidao nao e negar o que falta. E enxergar o que ja existe antes que a falta ocupe toda a vista.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Tres coisas simples de hoje pelas quais voce e grata?</p>
-      <p class="campo"><span>Pratica.</span> Anote as tres agora, sem procurar grandeza. O pequeno basta.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Marco Aurelio comecava o dia agradecendo. Paulo pede: em tudo dai gracas.</p>
+      <h2>A gratidão sóbria</h2>
+      <p class="reflexao">Gratidão não é negar o que falta. É enxergar o que já existe antes que a falta ocupe toda a vista.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Três coisas simples de hoje pelas quais você é grata?</p>
+      <p class="campo"><span>Prática.</span> Anote as três agora, sem procurar grandeza. O pequeno basta.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Marco Aurélio começava o dia agradecendo. Paulo pede: em tudo dai graças.</p>
       <p class="fecho">Conte o que tem antes de chorar o que falta.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
@@ -239,11 +259,11 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 12</div>
-      <h2>O perdao sem ingenuidade</h2>
-      <p class="reflexao">Perdoar nao e dizer que a ferida nao doeu. E parar de beber o veneno esperando que o outro adoeca. O perdao liberta primeiro quem perdoa.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que ressentimento voce ainda carrega que so pesa em voce?</p>
-      <p class="campo"><span>Pratica.</span> Escreva o nome, escreva a magoa, e escreva: escolho nao carregar isso hoje.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O estoico nao entrega sua paz a quem o feriu. Cristo ensina a perdoar setenta vezes sete, para nossa propria libertacao.</p>
+      <h2>O perdão sem ingenuidade</h2>
+      <p class="reflexao">Perdoar não é dizer que a ferida não doeu. É parar de beber o veneno esperando que o outro adoeça. O perdão liberta primeiro quem perdoa.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que ressentimento você ainda carrega que só pesa em você?</p>
+      <p class="campo"><span>Prática.</span> Escreva o nome, escreva a mágoa, e escreva: escolho não carregar isso hoje.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O estoico não entrega sua paz a quem o feriu. Cristo ensina a perdoar setenta vezes sete, para nossa própria libertação.</p>
       <p class="fecho">Solte o veneno, mesmo sem receber desculpa.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
@@ -252,12 +272,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 13</div>
-      <h2>A palavra que voce da a si mesma</h2>
-      <p class="reflexao">Voce cumpre com todos e falha so com uma pessoa: voce. A palavra dada a si mesma tambem e um compromisso de honra.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que promessa sua a voce mesma vem sendo quebrada?</p>
-      <p class="campo"><span>Pratica.</span> Escolha uma so, pequena, e cumpra hoje sem negociar.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O estoico vive de acordo com o que afirma. O proverbio elogia quem jura para o proprio dano e nao muda.</p>
-      <p class="fecho">Honre a palavra dada a voce como honraria a de outro.</p>
+      <h2>A palavra que você dá a si mesma</h2>
+      <p class="reflexao">Você cumpre com todos e falha só com uma pessoa: você. A palavra dada a si mesma também é um compromisso de honra.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que promessa sua a você mesma vem sendo quebrada?</p>
+      <p class="campo"><span>Prática.</span> Escolha uma só, pequena, e cumpra hoje sem negociar.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O estoico vive de acordo com o que afirma. O provérbio elogia quem jura para o próprio dano e não muda.</p>
+      <p class="fecho">Honre a palavra dada a você como honraria a de outro.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -266,11 +286,11 @@
     <article class="dia">
       <div class="dia-num">Dia 14</div>
       <h2>O corpo como aliado</h2>
-      <p class="reflexao">O corpo cansado distorce tudo. Antes de acreditar que a vida desabou, pergunte se voce apenas nao dormiu, nao comeu, nao parou.</p>
-      <p class="campo"><span>Pergunta do dia.</span> O que seu corpo pediu hoje que voce ignorou?</p>
-      <p class="campo"><span>Pratica.</span> Atenda um pedido simples do corpo: agua, sono, pausa, ar.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos cuidavam do corpo como instrumento da alma. A escritura chama o corpo de templo, digno de cuidado.</p>
-      <p class="fecho">Cuide do corpo que carrega a sua missao.</p>
+      <p class="reflexao">O corpo cansado distorce tudo. Antes de acreditar que a vida desabou, pergunte se você apenas não dormiu, não comeu, não parou.</p>
+      <p class="campo"><span>Pergunta do dia.</span> O que seu corpo pediu hoje que você ignorou?</p>
+      <p class="campo"><span>Prática.</span> Atenda um pedido simples do corpo: água, sono, pausa, ar.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos cuidavam do corpo como instrumento da alma. A escritura chama o corpo de templo, digno de cuidado.</p>
+      <p class="fecho">Cuide do corpo que carrega a sua missão.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -279,11 +299,11 @@
     <article class="dia">
       <div class="dia-num">Dia 15</div>
       <h2>A raiva examinada</h2>
-      <p class="reflexao">A raiva quase sempre esconde outra coisa: medo, cansaco, uma fronteira invadida. Examinada, ela informa. Obedecida, ela destroi.</p>
-      <p class="campo"><span>Pergunta do dia.</span> O que sua ultima raiva estava tentando proteger?</p>
-      <p class="campo"><span>Pratica.</span> Da proxima vez, antes de agir, pergunte: o que aqui e meu para resolver?</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Seneca escreveu um tratado inteiro sobre dominar a ira. O proverbio: melhor o paciente que o valente que domina cidades.</p>
-      <p class="fecho">Leia a raiva antes de deixar que ela escreva por voce.</p>
+      <p class="reflexao">A raiva quase sempre esconde outra coisa: medo, cansaço, uma fronteira invadida. Examinada, ela informa. Obedecida, ela destrói.</p>
+      <p class="campo"><span>Pergunta do dia.</span> O que sua última raiva estava tentando proteger?</p>
+      <p class="campo"><span>Prática.</span> Da próxima vez, antes de agir, pergunte: o que aqui é meu para resolver?</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Sêneca escreveu um tratado inteiro sobre dominar a ira. O provérbio: melhor o paciente que o valente que domina cidades.</p>
+      <p class="fecho">Leia a raiva antes de deixar que ela escreva por você.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -291,12 +311,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 16</div>
-      <h2>O desejo e a suficiencia</h2>
-      <p class="reflexao">O desejo sem freio nunca chega. Sempre falta a proxima coisa. A riqueza estoica nao e ter mais, e precisar de menos.</p>
-      <p class="campo"><span>Pergunta do dia.</span> O que voce acha que precisa e, olhando de perto, so quer?</p>
-      <p class="campo"><span>Pratica.</span> Adie uma compra por sete dias. Veja se o desejo sobrevive ao tempo.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Epicteto: rico e quem se contenta com o que tem. Paulo aprendeu a viver com pouco e com muito, em contentamento.</p>
-      <p class="fecho">Deseje menos e descubra o quanto ja basta.</p>
+      <h2>O desejo e a suficiência</h2>
+      <p class="reflexao">O desejo sem freio nunca chega. Sempre falta a próxima coisa. A riqueza estoica não é ter mais, é precisar de menos.</p>
+      <p class="campo"><span>Pergunta do dia.</span> O que você acha que precisa e, olhando de perto, só quer?</p>
+      <p class="campo"><span>Prática.</span> Adie uma compra por sete dias. Veja se o desejo sobrevive ao tempo.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Epicteto: rico é quem se contenta com o que tem. Paulo aprendeu a viver com pouco e com muito, em contentamento.</p>
+      <p class="fecho">Deseje menos e descubra o quanto já basta.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -305,11 +325,11 @@
     <article class="dia">
       <div class="dia-num">Dia 17</div>
       <h2>A morte como conselheira</h2>
-      <p class="reflexao">Lembrar que o tempo acaba nao entristece, organiza. Diante do fim, o mesquinho perde importancia e o essencial aparece.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Se este ano fosse o ultimo, o que voce deixaria de adiar?</p>
-      <p class="campo"><span>Pratica.</span> Escolha uma coisa importante que voce vem adiando e de o primeiro passo hoje.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Memento mori era pratica estoica diaria. O salmista pede: ensina-nos a contar os nossos dias, para alcancarmos coracao sabio.</p>
-      <p class="fecho">Conte os seus dias para nao desperdicar nenhum.</p>
+      <p class="reflexao">Lembrar que o tempo acaba não entristece, organiza. Diante do fim, o mesquinho perde importância e o essencial aparece.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Se este ano fosse o último, o que você deixaria de adiar?</p>
+      <p class="campo"><span>Prática.</span> Escolha uma coisa importante que você vem adiando e dê o primeiro passo hoje.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Memento mori era prática estoica diária. O salmista pede: ensina-nos a contar os nossos dias, para alcançarmos coração sábio.</p>
+      <p class="fecho">Conte os seus dias para não desperdiçar nenhum.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -317,12 +337,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 18</div>
-      <h2>A rotina como ancora</h2>
-      <p class="reflexao">Nos dias de tempestade emocional, a rotina segura. Nao porque e brilhante, mas porque e firme. O habito sustenta quando a vontade falha.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que pequena rotina te devolve o chao quando tudo balanca?</p>
-      <p class="campo"><span>Pratica.</span> Defina um gesto fixo para amanha de manha e cumpra, mesmo sem vontade.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos tinham disciplina diaria de exercicios da alma. A fe conhece a mesma forca na oracao constante.</p>
-      <p class="fecho">Ancore o dia numa rotina que nao dependa do seu humor.</p>
+      <h2>A rotina como âncora</h2>
+      <p class="reflexao">Nos dias de tempestade emocional, a rotina segura. Não porque é brilhante, mas porque é firme. O hábito sustenta quando a vontade falha.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que pequena rotina te devolve o chão quando tudo balança?</p>
+      <p class="campo"><span>Prática.</span> Defina um gesto fixo para amanhã de manhã e cumpra, mesmo sem vontade.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos tinham disciplina diária de exercícios da alma. A fé conhece a mesma força na oração constante.</p>
+      <p class="fecho">Ancore o dia numa rotina que não dependa do seu humor.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -330,12 +350,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 19</div>
-      <h2>A escuta antes da reacao</h2>
-      <p class="reflexao">Muita briga e so falta de escuta. Ouvimos para responder, nao para entender. Quem escuta de verdade desarma metade dos conflitos.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Quem voce ouviu hoje apenas esperando a sua vez de falar?</p>
-      <p class="campo"><span>Pratica.</span> Numa conversa, resuma o que o outro disse antes de dar sua opiniao.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos valorizavam a razao serena acima da reacao. Tiago: pronto para ouvir, tardio para falar.</p>
-      <p class="fecho">Escute ate o fim antes de formar a resposta.</p>
+      <h2>A escuta antes da reação</h2>
+      <p class="reflexao">Muita briga é só falta de escuta. Ouvimos para responder, não para entender. Quem escuta de verdade desarma metade dos conflitos.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Quem você ouviu hoje apenas esperando a sua vez de falar?</p>
+      <p class="campo"><span>Prática.</span> Numa conversa, resuma o que o outro disse antes de dar sua opinião.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos valorizavam a razão serena acima da reação. Tiago: pronto para ouvir, tardio para falar.</p>
+      <p class="fecho">Escute até o fim antes de formar a resposta.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -344,11 +364,11 @@
     <article class="dia">
       <div class="dia-num">Dia 20</div>
       <h2>O limite como cuidado</h2>
-      <p class="reflexao">Dizer nao a um pedido nao e egoismo, e o cuidado que protege o seu sim. Quem nunca recusa acaba presente em tudo e inteira em nada.</p>
-      <p class="campo"><span>Pergunta do dia.</span> A que voce disse sim hoje querendo dizer nao?</p>
-      <p class="campo"><span>Pratica.</span> Escolha um pedido e responda com um nao respeitoso e sem desculpas longas.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O estoico guarda seu tempo como bem escasso. Ate Jesus se retirava da multidao para orar a sos.</p>
-      <p class="fecho">Proteja o seu sim aprendendo a dizer nao.</p>
+      <p class="reflexao">Dizer não a um pedido não é egoísmo, é o cuidado que protege o seu sim. Quem nunca recusa acaba presente em tudo e inteira em nada.</p>
+      <p class="campo"><span>Pergunta do dia.</span> A que você disse sim hoje querendo dizer não?</p>
+      <p class="campo"><span>Prática.</span> Escolha um pedido e responda com um não respeitoso e sem desculpas longas.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O estoico guarda seu tempo como bem escasso. Até Jesus se retirava da multidão para orar a sós.</p>
+      <p class="fecho">Proteja o seu sim aprendendo a dizer não.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -357,10 +377,10 @@
     <article class="dia">
       <div class="dia-num">Dia 21</div>
       <h2>A inveja transformada</h2>
-      <p class="reflexao">A inveja aponta, sem querer, o que voce deseja. Em vez de morder por dentro, deixe que ela mostre a direcao e depois trabalhe por ela.</p>
-      <p class="campo"><span>Pergunta do dia.</span> O que a ultima ponta de inveja revelou que voce quer?</p>
-      <p class="campo"><span>Pratica.</span> Transforme isso em uma meta concreta e escreva o primeiro passo.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos viam a inveja como juizo equivocado sobre bens externos. O proverbio: a inveja e a podridao dos ossos.</p>
+      <p class="reflexao">A inveja aponta, sem querer, o que você deseja. Em vez de morder por dentro, deixe que ela mostre a direção e depois trabalhe por ela.</p>
+      <p class="campo"><span>Pergunta do dia.</span> O que a última ponta de inveja revelou que você quer?</p>
+      <p class="campo"><span>Prática.</span> Transforme isso em uma meta concreta e escreva o primeiro passo.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos viam a inveja como juízo equivocado sobre bens externos. O provérbio: a inveja é a podridão dos ossos.</p>
       <p class="fecho">Deixe a inveja indicar o caminho e depois solte-a.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
@@ -369,12 +389,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 22</div>
-      <h2>A constancia acima da intensidade</h2>
-      <p class="reflexao">Um dia de esforco enorme impressiona e nao muda nada. Trinta dias de esforco pequeno mudam a pessoa. A intensidade seduz, a constancia constroi.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Onde voce vem esperando um grande gesto em vez de comecar pequeno todo dia?</p>
-      <p class="campo"><span>Pratica.</span> Reduza uma meta grande a uma versao minima e diaria. Faca a de hoje.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos treinavam a virtude como habito diario. A fe fala da corrida que se corre com perseveranca, nao em um salto.</p>
-      <p class="fecho">Prefira o passo diario ao surto de um dia so.</p>
+      <h2>A constância acima da intensidade</h2>
+      <p class="reflexao">Um dia de esforço enorme impressiona e não muda nada. Trinta dias de esforço pequeno mudam a pessoa. A intensidade seduz, a constância constrói.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Onde você vem esperando um grande gesto em vez de começar pequeno todo dia?</p>
+      <p class="campo"><span>Prática.</span> Reduza uma meta grande a uma versão mínima e diária. Faça a de hoje.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos treinavam a virtude como hábito diário. A fé fala da corrida que se corre com perseverança, não em um salto.</p>
+      <p class="fecho">Prefira o passo diário ao surto de um dia só.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -382,12 +402,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 23</div>
-      <h2>A fe no que nao se controla</h2>
-      <p class="reflexao">Fazer a sua parte e entregar o resto nao e desistir. E reconhecer os limites da propria mao e descansar naquilo que a excede.</p>
-      <p class="campo"><span>Pergunta do dia.</span> O que voce ja fez o que podia, e agora precisa soltar?</p>
-      <p class="campo"><span>Pratica.</span> Escreva o que esta nas suas maos e o que voce entrega. Depois respire e solte.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O estoico age e aceita o destino sem revolta. A fe faz o mesmo com confianca: lanca sobre Ele a tua ansiedade.</p>
-      <p class="fecho">Faca a sua parte e confie o resto ao que te excede.</p>
+      <h2>A fé no que não se controla</h2>
+      <p class="reflexao">Fazer a sua parte e entregar o resto não é desistir. É reconhecer os limites da própria mão e descansar naquilo que a excede.</p>
+      <p class="campo"><span>Pergunta do dia.</span> O que você já fez o que podia, e agora precisa soltar?</p>
+      <p class="campo"><span>Prática.</span> Escreva o que está nas suas mãos e o que você entrega. Depois respire e solte.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O estoico age e aceita o destino sem revolta. A fé faz o mesmo com confiança: lança sobre Ele a tua ansiedade.</p>
+      <p class="fecho">Faça a sua parte e confie o resto ao que te excede.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -396,10 +416,10 @@
     <article class="dia">
       <div class="dia-num">Dia 24</div>
       <h2>A vergonha e a verdade</h2>
-      <p class="reflexao">A vergonha escondida cresce no escuro. Dita em voz baixa para alguem de confianca, ela encolhe. O segredo e o alimento dela.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que verdade sobre voce ainda vive no escuro por vergonha?</p>
-      <p class="campo"><span>Pratica.</span> Escreva-a aqui, so para voce, com todas as letras. Tirar do escuro ja alivia.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos buscavam viver sem mascara, coerentes por dentro e por fora. A escritura: a verdade vos libertara.</p>
+      <p class="reflexao">A vergonha escondida cresce no escuro. Dita em voz baixa para alguém de confiança, ela encolhe. O segredo é o alimento dela.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que verdade sobre você ainda vive no escuro por vergonha?</p>
+      <p class="campo"><span>Prática.</span> Escreva-a aqui, só para você, com todas as letras. Tirar do escuro já alivia.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos buscavam viver sem máscara, coerentes por dentro e por fora. A escritura: a verdade vos libertará.</p>
       <p class="fecho">Traga a verdade para a luz e veja a vergonha diminuir.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
@@ -408,11 +428,11 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 25</div>
-      <h2>O descanso nao e fraqueza</h2>
-      <p class="reflexao">A cultura do esgotamento chama pausa de preguica. Mas ninguem constroi nada durando sobre ruinas. Descansar tambem e trabalho.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Quando foi a ultima vez que voce descansou sem culpa?</p>
-      <p class="campo"><span>Pratica.</span> Marque um intervalo de verdade hoje, sem tela, sem tarefa, sem justificativa.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Ate os estoicos previam o repouso da alma. O proprio Criador descansou no setimo dia e chamou o descanso de sagrado.</p>
+      <h2>O descanso não é fraqueza</h2>
+      <p class="reflexao">A cultura do esgotamento chama pausa de preguiça. Mas ninguém constrói nada durando sobre ruínas. Descansar também é trabalho.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Quando foi a última vez que você descansou sem culpa?</p>
+      <p class="campo"><span>Prática.</span> Marque um intervalo de verdade hoje, sem tela, sem tarefa, sem justificativa.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Até os estoicos previam o repouso da alma. O próprio Criador descansou no sétimo dia e chamou o descanso de sagrado.</p>
       <p class="fecho">Descanse antes de o corpo te obrigar a parar.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
@@ -422,11 +442,11 @@
     <article class="dia">
       <div class="dia-num">Dia 26</div>
       <h2>A generosidade sem se anular</h2>
-      <p class="reflexao">Dar do que transborda alimenta. Dar do que voce nao tem esvazia e adoece. A generosidade saudavel comeca com o proprio copo cheio.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Onde voce vem dando do que nao tem para sobrar?</p>
-      <p class="campo"><span>Pratica.</span> Reveja um compromisso feito por culpa e ajuste para o que cabe de verdade.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O estoico serve a comunidade sem se destruir. Paulo: cada um de com alegria, nao por constrangimento.</p>
-      <p class="fecho">De do que transborda, nao do que te falta.</p>
+      <p class="reflexao">Dar do que transborda alimenta. Dar do que você não tem esvazia e adoece. A generosidade saudável começa com o próprio copo cheio.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Onde você vem dando do que não tem para sobrar?</p>
+      <p class="campo"><span>Prática.</span> Reveja um compromisso feito por culpa e ajuste para o que cabe de verdade.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O estoico serve a comunidade sem se destruir. Paulo: cada um dê com alegria, não por constrangimento.</p>
+      <p class="fecho">Dê do que transborda, não do que te falta.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -434,12 +454,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 27</div>
-      <h2>O passado que ja cumpriu seu papel</h2>
-      <p class="reflexao">O passado ensinou o que tinha para ensinar. Reviver a cena mil vezes nao muda o final, so prende voce no que ja passou.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Que cena antiga voce ainda repete na cabeca sem necessidade?</p>
-      <p class="campo"><span>Pratica.</span> Escreva a licao que ela deixou e agradeca por ela ter passado.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos focavam no instante presente como unico campo de acao. Paulo: esquecendo o que fica para tras, avanco para o que esta adiante.</p>
-      <p class="fecho">Guarde a licao do passado e devolva o resto ao tempo.</p>
+      <h2>O passado que já cumpriu seu papel</h2>
+      <p class="reflexao">O passado ensinou o que tinha para ensinar. Reviver a cena mil vezes não muda o final, só prende você no que já passou.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Que cena antiga você ainda repete na cabeça sem necessidade?</p>
+      <p class="campo"><span>Prática.</span> Escreva a lição que ela deixou e agradeça por ela ter passado.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos focavam no instante presente como único campo de ação. Paulo: esquecendo o que fica para trás, avanço para o que está adiante.</p>
+      <p class="fecho">Guarde a lição do passado e devolva o resto ao tempo.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -447,12 +467,12 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 28</div>
-      <h2>A coerencia entre valor e escolha</h2>
-      <p class="reflexao">Voce diz que valoriza a paz e escolhe a briga. Diz que quer descanso e enche a agenda. A coerencia e quando a escolha confirma o valor.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Onde suas escolhas contradizem o que voce diz valorizar?</p>
-      <p class="campo"><span>Pratica.</span> Escolha um valor e alinhe uma decisao de hoje a ele.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Viver de acordo com a razao e o coracao do estoicismo. A fe pede o mesmo: nao ouvintes apenas, mas praticantes da palavra.</p>
-      <p class="fecho">Faca a escolha confirmar aquilo que voce diz valer.</p>
+      <h2>A coerência entre valor e escolha</h2>
+      <p class="reflexao">Você diz que valoriza a paz e escolhe a briga. Diz que quer descanso e enche a agenda. A coerência é quando a escolha confirma o valor.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Onde suas escolhas contradizem o que você diz valorizar?</p>
+      <p class="campo"><span>Prática.</span> Escolha um valor e alinhe uma decisão de hoje a ele.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Viver de acordo com a razão é o coração do estoicismo. A fé pede o mesmo: não ouvintes apenas, mas praticantes da palavra.</p>
+      <p class="fecho">Faça a escolha confirmar aquilo que você diz valer.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
@@ -460,11 +480,11 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 29</div>
-      <h2>A esperanca disciplinada</h2>
-      <p class="reflexao">Esperanca nao e esperar de bracos cruzados que tudo melhore. E agir hoje confiando que o esforco e a graca se encontram no caminho.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Em que area voce espera mudanca sem ainda ter mudado a acao?</p>
-      <p class="campo"><span>Pratica.</span> Una uma oracao ou intencao a um passo concreto, ainda hoje.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> O estoico une aceitacao a acao virtuosa. A fe une confianca a obra: a fe sem obras e morta.</p>
+      <h2>A esperança disciplinada</h2>
+      <p class="reflexao">Esperança não é esperar de braços cruzados que tudo melhore. É agir hoje confiando que o esforço e a graça se encontram no caminho.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Em que área você espera mudança sem ainda ter mudado a ação?</p>
+      <p class="campo"><span>Prática.</span> Una uma oração ou intenção a um passo concreto, ainda hoje.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> O estoico une aceitação a ação virtuosa. A fé une confiança a obra: a fé sem obras é morta.</p>
       <p class="fecho">Espere trabalhando, confie agindo.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
@@ -473,16 +493,23 @@
     </article>
     <article class="dia">
       <div class="dia-num">Dia 30</div>
-      <h2>Quem voce se tornou em trinta dias</h2>
-      <p class="reflexao">Trinta dias atras, outra mulher abriu este diario. Voce nao virou outra pessoa. Voce voltou para si, um pouco mais firme, um pouco menos no impulso.</p>
-      <p class="campo"><span>Pergunta do dia.</span> Relendo o caminho, o que mudou em como voce responde a vida?</p>
-      <p class="campo"><span>Pratica.</span> Releia seus primeiros registros e escreva uma carta curta a mulher que comecou.</p>
-      <p class="campo be"><span>Biblia e Estoicismo.</span> Os estoicos revisavam a propria alma ao fim de cada ciclo. A fe celebra o crescimento: de fe em fe, de forca em forca.</p>
-      <p class="fecho">Siga cuidando do que e seu, um dia de cada vez.</p>
+      <h2>Quem você se tornou em trinta dias</h2>
+      <p class="reflexao">Trinta dias atrás, outra mulher abriu este diário. Você não virou outra pessoa. Você voltou para si, um pouco mais firme, um pouco menos no impulso.</p>
+      <p class="campo"><span>Pergunta do dia.</span> Relendo o caminho, o que mudou em como você responde à vida?</p>
+      <p class="campo"><span>Prática.</span> Releia seus primeiros registros e escreva uma carta curta à mulher que começou.</p>
+      <p class="campo be"><span>Bíblia e Estoicismo.</span> Os estoicos revisavam a própria alma ao fim de cada ciclo. A fé celebra o crescimento: de fé em fé, de força em força.</p>
+      <p class="fecho">Siga cuidando do que é seu, um dia de cada vez.</p>
       <div class="registro">
         <div class="registro-rotulo">Registro</div>
         <div class="linhas"></div>
       </div>
     </article>
+  <section class="encerra">
+    <h2>Palavra final</h2>
+    <p>Trinta dias não terminam nada. Começam um jeito diferente de responder à vida: com mais pausa, menos impulso e um cuidado firme por si mesma.</p>
+    <p>Volte a estas páginas sempre que precisar lembrar do que é seu.</p>
+    <p class="imperativo">Siga cuidando do que é seu, um dia de cada vez.</p>
+    <div class="fonte">Mente Mulher Estoica · Simone Ananias</div>
+  </section>
 </body>
 </html>
