@@ -83,6 +83,20 @@ python3 abertura.py video.mp4 --foto minha-foto.jpg \
     --credito @autor --ate 12.7
 ```
 
+### 5. A frase da caneca (`caneca.py`)
+
+Foto da caneca com a frase do dia: zoom lento, vapor animado subindo do café e, no alto,
+uma linha de contexto que ajuda a frase a ser entendida. A segunda linha (`--virada`)
+entra depois e leva o olhar até a caneca.
+
+```bash
+python3 caneca.py foto-caneca.png --cafe 440,660,200 \
+    --contexto "Antes de responder|aquela mensagem," --virada "*leia a caneca.*"
+```
+
+`--cafe x,y,raio` é o centro da superfície do café na foto original e metade da largura
+dela, em pixels: é de lá que o vapor sobe. Sem `--musica`, escolha a trilha no app.
+
 ## Áudio: as quatro formas
 
 | Forma | Como |
@@ -125,6 +139,7 @@ E a linha logo abaixo aparece junto, na mesma tela.
 | `legendar.py` | Legenda um vídeo gravado e acrescenta a frase final. |
 | `reagir.py` | Formato indicação: vídeo em cima, sua foto apontando embaixo. |
 | `abertura.py` | Formato abertura: sua foto com frase, o vídeo e um fecho estoico. |
+| `caneca.py` | Série "a frase da caneca": vapor animado e linha de contexto. |
 | `roteiro.py` | Lê os roteiros em Markdown. |
 | `estilo.py` | Identidade visual: cores, fontes, área segura do Reels, telas. Mude aqui para alterar a aparência de todos os vídeos. |
 | `midia.py` | Integração com o ffmpeg (vídeo e mixagem de áudio). |
