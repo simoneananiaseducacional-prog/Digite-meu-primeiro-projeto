@@ -70,6 +70,19 @@ python3 reagir.py video.mp4 --foto minha-foto.jpg --credito @autor --chamada "Pr
 - **Enquadramento:** `--foco` escolhe que parte da foto aparece (0 = topo, 0,5 = meio). Se a cabeça ficar cortada, diminua o valor.
 - **Sem foto:** o script usa uma silhueta de teste.
 
+### 4. Abertura: sua foto, o vídeo e um fecho estoico (`abertura.py`)
+
+Começa com a sua foto e uma frase no alto (3 s, zoom lento). Depois entra o vídeo, com
+o crédito do autor, e fecha com uma citação estoica na tela da marca, que amarra a cena
+ao estoicismo. Nos textos, `|` quebra a linha e `*trecho*` vira destaque dourado.
+
+```bash
+python3 abertura.py video.mp4 --foto minha-foto.jpg \
+    --texto "O estoicismo|*em uma cena.*" \
+    --final "Não é pouco o tempo que temos.|*É muito o que perdemos.*" --autor SÊNECA \
+    --credito @autor --ate 12.7
+```
+
 ## Áudio: as quatro formas
 
 | Forma | Como |
@@ -111,6 +124,7 @@ E a linha logo abaixo aparece junto, na mesma tela.
 | `reel_frases.py` | Gera o reel de frases animadas. |
 | `legendar.py` | Legenda um vídeo gravado e acrescenta a frase final. |
 | `reagir.py` | Formato indicação: vídeo em cima, sua foto apontando embaixo. |
+| `abertura.py` | Formato abertura: sua foto com frase, o vídeo e um fecho estoico. |
 | `roteiro.py` | Lê os roteiros em Markdown. |
 | `estilo.py` | Identidade visual: cores, fontes, área segura do Reels, telas. Mude aqui para alterar a aparência de todos os vídeos. |
 | `midia.py` | Integração com o ffmpeg (vídeo e mixagem de áudio). |

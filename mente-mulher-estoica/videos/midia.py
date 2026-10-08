@@ -55,7 +55,7 @@ def leitor(caminho, largura=LARGURA, altura=ALTURA, ate=None):
 
 
 def juntar_audio(video_mudo, saida, voz=None, musica=None, volume_musica=0.25,
-                 atraso_voz=0.0):
+                 atraso_voz=0.0, fade_final=0.0):
     """Coloca no vídeo a voz (narração ou áudio original) e/ou a música de fundo.
 
     A música é repetida se for curta, cortada no fim do vídeo e some em fade-out.
@@ -67,7 +67,9 @@ def juntar_audio(video_mudo, saida, voz=None, musica=None, volume_musica=0.25,
     if voz:
         cmd += ["-i", str(voz)]
         atraso = int(atraso_voz * 1000)
-        filtros.append(f"[{n}:a]adelay={atraso}|{atraso},apad[voz]")
+        fade = (f",afade=t=out:st={max(total - fade_final, 0):.2f}:d={fade_final}"
+                if fade_final else "")
+        filtros.append(f"[{n}:a]adelay={atraso}|{atraso},apad{fade}[voz]")
         rotulos.append("[voz]")
         n += 1
     if musica:

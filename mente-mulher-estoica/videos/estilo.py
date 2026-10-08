@@ -184,7 +184,12 @@ def tela_final(frase):
     A última frase ganha o itálico dourado, como a assinatura do vídeo.
     """
     frases = [f for f in re.split(r"(?<=[.!?…])\s+", frase.strip()) if f] or [frase]
-    linhas = [(f, i == len(frases) - 1 and len(frases) > 1) for i, f in enumerate(frases)]
+    return tela_final_linhas([(f, i == len(frases) - 1 and len(frases) > 1)
+                              for i, f in enumerate(frases)])
+
+
+def tela_final_linhas(linhas):
+    """Como `tela_final`, mas com as linhas e destaques já definidos: [(texto, destaque)]."""
     img = tela_de_texto(linhas)
     caixa = img.getbbox()
     if caixa:
