@@ -41,5 +41,6 @@ Epicteto não tinha liberdade nenhuma por fora. E mesmo assim ninguém conseguiu
 ## Depois da gravação
 
 ```bash
-python3 ../videos/legendar.py gravacao.mp4 --roteiro epicteto-e-a-manipulacao.md --colorida
+cd mente-mulher-estoica/videos
+python3 legendar.py gravacao.mp4 --roteiro ../roteiros/epicteto-e-a-manipulacao.md
 ```
