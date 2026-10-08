@@ -94,6 +94,14 @@ python3 caneca.py foto-caneca.png --cafe 440,660,200 \
     --contexto "Antes de responder|aquela mensagem," --virada "*leia a caneca.*"
 ```
 
+Para reaproveitar a mesma foto com outra frase, `trocar_frase.py` apaga a frase antiga
+da caneca e escreve a nova acompanhando a curva:
+
+```bash
+python3 trocar_frase.py foto-caneca.png --frase "Nem tudo merece|a minha resposta." \
+    --area 225,835,690,1085 --centro 452,940 --raio 300 --inclinacao 3.5 --tamanho 88 --entrelinha 84
+```
+
 `--cafe x,y,raio` é o centro da superfície do café na foto original e metade da largura
 dela, em pixels: é de lá que o vapor sobe. Sem `--musica`, escolha a trilha no app.
 
@@ -140,10 +148,11 @@ E a linha logo abaixo aparece junto, na mesma tela.
 | `reagir.py` | Formato indicação: vídeo em cima, sua foto apontando embaixo. |
 | `abertura.py` | Formato abertura: sua foto com frase, o vídeo e um fecho estoico. |
 | `caneca.py` | Série "a frase da caneca": vapor animado e linha de contexto. |
+| `trocar_frase.py` | Troca a frase escrita na caneca de uma foto. |
 | `roteiro.py` | Lê os roteiros em Markdown. |
 | `estilo.py` | Identidade visual: cores, fontes, área segura do Reels, telas. Mude aqui para alterar a aparência de todos os vídeos. |
 | `midia.py` | Integração com o ffmpeg (vídeo e mixagem de áudio). |
-| `fontes/` | Cormorant Garamond e Montserrat (licença OFL, uso livre). |
+| `fontes/` | Cormorant Garamond, Montserrat e as cursivas Sacramento, Great Vibes e Allura (licença OFL, uso livre). |
 | `musica/` | Onde ficam as trilhas de fundo. |
 | `saida/` | Vídeos e prévias gerados (fora do Git, por serem pesados). |
 
