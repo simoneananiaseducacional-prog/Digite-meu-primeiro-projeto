@@ -320,6 +320,10 @@ def cena_sintese():
 CENAS = [cena_capa, cena_gps, cena_como_que, cena_fluxo, cena_decisao, cena_caso,
          cena_legitima, cena_registro, cena_sintese]
 
+# Duração mínima de cada cena para caber a narração (~2,5 palavras por segundo,
+# ritmo das vozes de "texto para fala" de apps como o CapCut). Ver video_fluxo_narracao.md.
+DURACAO_FALA = [8, 25, 20, 27, 23, 21, 15, 13.6, 10]
+
 
 # ---------------------------------------------------------------- render
 
@@ -363,10 +367,22 @@ def barra(q, progresso):
 
 def montar():
     cenas = []
-    for fn in CENAS:
+    for fn, alvo in zip(CENAS, DURACAO_FALA):
         dur, camadas = fn()
-        cenas.append((dur, [(Camada(t), ti) for t, ti in camadas]))
+        # Cena mais longa para a fala: espalha as entradas no mesmo ritmo
+        f = max(alvo / dur, 1.0)
+        cenas.append((dur * f, [(Camada(t), ti * f if ti > 0.5 else ti) for t, ti in camadas]))
     return cenas
+
+
+def cronograma():
+    """Início e fim de cada cena, para encaixar a narração."""
+    t, saida = 0.0, []
+    for fn, alvo in zip(CENAS, DURACAO_FALA):
+        dur = max(fn()[0], alvo)
+        saida.append((t, t + dur))
+        t += dur
+    return saida
 
 
 def quadro_da_cena(base, camadas, t):
@@ -417,9 +433,14 @@ def previa(pasta):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--previa", action="store_true")
+    p.add_argument("--cronograma", action="store_true", help="mostra o início de cada cena")
     p.add_argument("--saida", default=str(SAIDA / "fluxo-flexibilizacao-adaptacao.mp4"))
     a = p.parse_args()
     SAIDA.mkdir(parents=True, exist_ok=True)
+    if a.cronograma:
+        for n, (i, f) in enumerate(cronograma(), 1):
+            print(f"{n}  {int(i // 60)}:{int(i % 60):02d} – {int(f // 60)}:{int(f % 60):02d}")
+        return
     if a.previa:
         previa(SAIDA / "previa-fluxo")
         print(f"Prévias em {SAIDA / 'previa-fluxo'}")
