@@ -33,6 +33,15 @@ neurociência".
 (Aneu Sereno é real: amigo de Sêneca e, segundo os historiadores, provavelmente parente.
 A descendência da Soberana é ficção, e o vídeo deixa isso claro pelo tom.)
 
+## Figurino atual: romana do século I perdida em 2026
+
+O humor vem do contraste (como no He-Man na cidade): uma mulher da Roma de Sêneca
+diante do trânsito, do boleto e do grupo da família, sem entender a tecnologia, mas
+entendendo as pessoas. Túnica longa preta com barrados dourados de folhas de louro,
+cinto dourado fino, faixa dourada fina no ombro esquerdo, ombro direito descoberto com a
+tatuagem de lótus, sandálias douradas, tabuinha de cera e estilete. **Sem manto volumoso**
+(pesa a imagem e atrapalha nas cenas). A versão de armadura ficou como primeiro estudo.
+
 ## Visual
 
 Traços tirados das fotos da Simone (cabelo, rosto, pele) e da descrição dela (corpo):
@@ -47,6 +56,8 @@ Traços tirados das fotos da Simone (cabelo, rosto, pele) e da descrição dela 
   dos 40 anos), presença madura e segura.
 - **Detalhes que são dela:** unhas pink/magenta, anel largo listrado, pulseira de
   contas pretas, pingente em gota de quartzo rosa (a joia de poder da heroína).
+- **Tatuagem de flor de lótus no ombro direito**, como a da Simone. O ombro direito
+  fica sempre descoberto para ela aparecer. É o mesmo símbolo das canecas e da marca.
 - **Armadura** preta com detalhes dourados, capa preta com forro dourado, **flor de lótus
   dourada** no peito (o mesmo símbolo das canecas).
 - **Arma:** uma **caneta-pena dourada** enorme, segurada como espada.
