@@ -9,8 +9,19 @@ grego para a tranquilidade da alma.
 
 ## Visual
 
-- Mulher adulta, pele clara, cabelo **preto, muito longo e bem liso**, olhos castanhos,
-  sobrancelhas marcadas, batom nude rosado, meio sorriso irônico e olhar sereno.
+Traços tirados das fotos da Simone (cabelo, rosto, pele) e da descrição dela (corpo):
+
+- **Cabelo:** preto intenso, muito longo (abaixo do peito), totalmente liso, volumoso e
+  brilhante, repartido ao meio, com mechas emoldurando o rosto.
+- **Rosto:** oval, maçãs do rosto marcadas, queixo delicado; olhos castanho-escuros
+  amendoados, cílios longos e escuros; sobrancelhas pretas grossas e bem arqueadas;
+  nariz reto e fino; lábios cheios com batom rosado queimado (mauve) fosco.
+- **Pele:** clara, com fundo levemente dourado (morena clara de cabelo preto).
+- **Corpo:** esbelto, cintura fina, postura ereta e elegante, mulher adulta (por volta
+  dos 40 anos), presença madura e serena.
+- **Detalhes que são dela:** unhas pink/magenta, anel largo listrado, pulseira de
+  contas pretas, pingente em gota de quartzo rosa (pode virar a joia mágica da heroína).
+- Meio sorriso irônico, olhar sereno, às vezes olhando para cima, pensativa.
 - Armadura **preta com detalhes dourados**, ombreiras discretas, capa preta por dentro dourada.
 - Uma **flor de lótus dourada** no peito (o mesmo símbolo das canecas).
 - Arma: uma **caneta-pena dourada** enorme, segurada como espada.
@@ -60,12 +71,30 @@ imagens, envie a primeira como referência para ela sair sempre igual.
 **1. Ataraxia, corpo inteiro (a imagem de referência)**
 
 > Personagem original em estilo de desenho animado de super-heroína dos anos 1980, traço
-> de animação clássica com contornos marcados e cores chapadas. Mulher adulta de pele clara,
-> cabelo preto muito longo e totalmente liso, olhos castanhos, sobrancelhas marcadas, meio
-> sorriso sereno e irônico. Veste armadura preta com detalhes dourados, ombreiras discretas,
-> capa preta com forro dourado e uma flor de lótus dourada no peito. Segura uma grande
-> caneta-pena dourada como se fosse uma espada. Pose heroica de corpo inteiro, de frente.
-> Fundo cinza-escuro liso. Sem texto, sem logotipos. Formato vertical.
+> de animação clássica com contornos marcados e cores chapadas. Mulher adulta, por volta
+> de 40 anos, de pele clara com fundo levemente dourado. Cabelo preto intenso, muito longo
+> (abaixo do peito), totalmente liso, volumoso e brilhante, repartido ao meio, com mechas
+> emoldurando o rosto. Rosto oval, maçãs do rosto marcadas, olhos castanho-escuros
+> amendoados com cílios longos, sobrancelhas pretas grossas e bem arqueadas, nariz reto e
+> fino, lábios cheios com batom rosado queimado fosco, meio sorriso sereno e irônico.
+> Corpo esbelto, cintura fina, postura ereta e elegante. Veste armadura preta com detalhes
+> dourados, ombreiras discretas, capa preta com forro dourado e uma flor de lótus dourada
+> no peito; pingente em gota de quartzo rosa no pescoço; unhas pink; pulseira de contas
+> pretas. Segura uma grande caneta-pena dourada como se fosse uma espada. Pose heroica de
+> corpo inteiro, de frente. Fundo cinza-escuro liso. Sem texto, sem logotipos. Formato vertical.
+
+*Versão em inglês (muitas IAs de imagem entendem melhor):*
+
+> Original character in classic 1980s superhero cartoon style, bold outlines, flat cel-shaded
+> colors. Adult woman around 40, fair skin with a warm golden undertone. Jet-black, very long
+> (below the chest), perfectly straight, voluminous glossy hair, center part, face-framing
+> strands. Oval face, defined cheekbones, almond-shaped dark brown eyes with long lashes,
+> thick well-arched black eyebrows, straight slim nose, full lips with matte mauve lipstick,
+> serene ironic half-smile. Slender build, narrow waist, upright elegant posture. Wears black
+> armor with gold details, subtle shoulder pads, black cape with gold lining, a golden lotus
+> emblem on the chest, a rose-quartz teardrop pendant, pink nails, black bead bracelet.
+> Holds a large golden quill pen like a sword. Heroic full-body front pose. Plain dark gray
+> background. No text, no logos. Vertical format.
 
 **2. Ataraxia, transformação**
 
