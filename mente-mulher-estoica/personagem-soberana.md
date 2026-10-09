@@ -33,6 +33,12 @@ neurociência".
 (Aneu Sereno é real: amigo de Sêneca e, segundo os historiadores, provavelmente parente.
 A descendência da Soberana é ficção, e o vídeo deixa isso claro pelo tom.)
 
+## Imagem oficial
+
+`personagem/soberana-oficial.png` é a referência oficial: toda imagem nova parte dela.
+(`soberana-referencia.png`, de armadura, e `soberana-romana.png`, de manto pesado, ficam
+como estudos.)
+
 ## Figurino atual: romana do século I perdida em 2026
 
 O humor vem do contraste (como no He-Man na cidade): uma mulher da Roma de Sêneca
