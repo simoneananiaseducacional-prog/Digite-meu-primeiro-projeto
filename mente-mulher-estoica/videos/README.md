@@ -159,6 +159,7 @@ E a linha logo abaixo aparece junto, na mesma tela.
 | `abertura.py` | Formato abertura: sua foto com frase, o vídeo e um fecho estoico. |
 | `caneca.py` | Série "a frase da caneca": vapor animado e linha de contexto. |
 | `trocar_frase.py` | Troca a frase escrita na caneca de uma foto. |
+| `ela_e_eu.py` | Formato "Ela é… / Eu sou…": rótulo e resposta no alto, sua foto ou vídeo embaixo, citação no fim. |
 | `frase_na_cena.py` | Série "Estoicismo na prática": cena animada com uma frase e o fecho da série. |
 | `roteiro.py` | Lê os roteiros em Markdown. |
 | `estilo.py` | Identidade visual: cores, fontes, área segura do Reels, telas. Mude aqui para alterar a aparência de todos os vídeos. |
