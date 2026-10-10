@@ -1,0 +1,107 @@
+"""Série "Estoicismo na prática": a cena animada com uma frase só na tela.
+
+A frase fica no terço de baixo do vídeo (acima da área dos botões do Reels), do começo
+ao fim, sobre uma faixa escura suave que garante a leitura. No alto ficariam os rostos. No final, o último quadro escurece e entra o nome da série. O áudio do
+vídeo de origem é descartado (a música é escolhida no próprio Instagram).
+
+Exemplo:
+    python3 frase_na_cena.py fila.mov \\
+        --frase "Furaram a fila. Eu não gritei. Só mostrei, com educação, onde ela termina."
+"""
+
+import argparse
+import sys
+from pathlib import Path
+
+import numpy as np
+from PIL import Image, ImageDraw, ImageFilter
+
+import estilo
+import midia
+
+SERIE = "ESTOICISMO NA PRÁTICA"
+ENTRA, FECHO = 0.4, 2.5
+
+
+def camada_frase(frase):
+    """Faixa escura suave no terço de baixo e a frase em serifa clara, com sombra difusa."""
+    f = estilo.serifa(70, 600)
+    linhas = estilo.quebrar_linhas(frase, f, estilo.LARGURA - 2 * estilo.MARGEM_X)
+    centro = estilo.BASE_SEGURA - 170
+    y = centro - (len(linhas) - 1) * 43
+
+    escuro = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
+    dist = np.abs(np.arange(estilo.ALTURA, dtype=np.float32) - centro)
+    alfa = np.clip(1 - dist / (len(linhas) * 43 + 260), 0, 1) ** 0.8 * 0.72
+    escuro.putalpha(Image.fromarray(np.repeat((alfa * 255).astype(np.uint8)[:, None], estilo.LARGURA, 1)))
+
+    texto = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
+    d = ImageDraw.Draw(texto)
+    for linha in linhas:
+        d.text((estilo.LARGURA / 2, y), linha, font=f, fill=estilo.BRANCO + (255,), anchor="mm")
+        y += 86
+    sombra = Image.new("RGBA", texto.size, (0, 0, 0, 0))
+    sombra.putalpha(texto.getchannel("A").filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v * 0.85)))
+    return estilo.Camada(escuro), estilo.Camada(Image.alpha_composite(sombra, texto))
+
+
+def camada_serie():
+    img = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    cy = estilo.ALTURA / 2
+    d.line((estilo.LARGURA / 2 - 60, cy - 70, estilo.LARGURA / 2 + 60, cy - 70), fill=estilo.DOURADO + (255,), width=2)
+    estilo.texto_espacado(d, (estilo.LARGURA / 2, cy), SERIE, estilo.sem_serifa(34, 500), estilo.DOURADO + (255,), 10)
+    estilo.texto_espacado(d, (estilo.LARGURA / 2, cy + 70), estilo.ASSINATURA, estilo.sem_serifa(22, 400),
+                          estilo.BRANCO + (255,), 8)
+    return estilo.Camada(img)
+
+
+def gerar(video, saida, frase, ate=None):
+    fundo_txt, txt = camada_frase(frase)
+    serie = camada_serie()
+    mudo = saida.with_suffix(".mudo.mp4")
+    ff = midia.gravador(mudo, estatico=False)
+    tamanho = estilo.LARGURA * estilo.ALTURA * 3
+    entrada = midia.leitor(video, ate=ate)
+    k, ultimo = 0, None
+    while True:
+        bruto = entrada.stdout.read(tamanho)
+        if len(bruto) < tamanho:
+            break
+        q = np.frombuffer(bruto, np.uint8).reshape(estilo.ALTURA, estilo.LARGURA, 3).astype(np.float32)
+        ultimo = q.copy()  # o fecho parte do quadro limpo, sem a frase
+        t = k / estilo.FPS
+        p = estilo.suavizar((t - ENTRA) / 0.6) if t > ENTRA else 0.0
+        fundo_txt.compor(q, p)
+        txt.compor(q, p, int(round((1 - p) * 16)))
+        ff.stdin.write(estilo.para_bytes(q))
+        k += 1
+    entrada.wait()
+    # Fecho: o último quadro escurece e entra o nome da série
+    for i in range(int(FECHO * estilo.FPS)):
+        t = i / estilo.FPS
+        m = estilo.suavizar(t / 0.7) * 0.8
+        q = ultimo * (1 - m)
+        p = estilo.suavizar((t - 0.4) / 0.7) if t > 0.4 else 0.0
+        serie.compor(q, p)
+        ff.stdin.write(estilo.para_bytes(q))
+    ff.stdin.close()
+    ff.wait()
+    midia.juntar_audio(mudo, saida)
+    return midia.duracao(saida)
+
+
+def main():
+    p = argparse.ArgumentParser(description="Cena animada com uma frase na tela e o fecho da série")
+    p.add_argument("video")
+    p.add_argument("--frase", required=True)
+    p.add_argument("--ate", type=float, help="corta o vídeo neste segundo")
+    p.add_argument("--saida")
+    a = p.parse_args()
+    saida = Path(a.saida) if a.saida else estilo.PASTA / "saida" / f"{Path(a.video).stem[:40]}-frase.mp4"
+    saida.parent.mkdir(parents=True, exist_ok=True)
+    print(f"Pronto: {saida} ({gerar(a.video, saida, a.frase, a.ate):.1f} s)")
+
+
+if __name__ == "__main__":
+    sys.exit(main())

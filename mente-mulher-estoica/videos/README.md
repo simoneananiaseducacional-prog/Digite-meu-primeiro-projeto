@@ -105,6 +105,16 @@ python3 trocar_frase.py foto-caneca.png --frase "Nem tudo merece|a minha respost
 `--cafe x,y,raio` é o centro da superfície do café na foto original e metade da largura
 dela, em pixels: é de lá que o vapor sobe. Sem `--musica`, escolha a trilha no app.
 
+### 6. Estoicismo na prática (`frase_na_cena.py`)
+
+A cena animada (gerada no CapCut, sem fala) com uma frase só na tela, do começo ao fim, no
+terço de baixo do vídeo. No final, o último quadro escurece e entra o nome da série. O som
+do vídeo de origem é descartado: a música é escolhida no Instagram.
+
+```bash
+python3 frase_na_cena.py fila.mov --frase "Furaram a fila. Eu não gritei. Só mostrei, com educação, onde ela termina."
+```
+
 ## Áudio: as quatro formas
 
 | Forma | Como |
@@ -149,6 +159,7 @@ E a linha logo abaixo aparece junto, na mesma tela.
 | `abertura.py` | Formato abertura: sua foto com frase, o vídeo e um fecho estoico. |
 | `caneca.py` | Série "a frase da caneca": vapor animado e linha de contexto. |
 | `trocar_frase.py` | Troca a frase escrita na caneca de uma foto. |
+| `frase_na_cena.py` | Série "Estoicismo na prática": cena animada com uma frase e o fecho da série. |
 | `roteiro.py` | Lê os roteiros em Markdown. |
 | `estilo.py` | Identidade visual: cores, fontes, área segura do Reels, telas. Mude aqui para alterar a aparência de todos os vídeos. |
 | `midia.py` | Integração com o ffmpeg (vídeo e mixagem de áudio). |
