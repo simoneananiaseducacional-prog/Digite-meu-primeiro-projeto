@@ -18,6 +18,10 @@ Destaque no Instagram: **"Da série..."**, com a capa do rosto dela.
 
 A pessoa ri, se reconhece e entende uma escolha estoica sem sentir que recebeu uma palestra.
 
+**Humor inteligente: faz rir primeiro e refletir depois.** Exemplo de referência: Epicteto,
+*Manual*, 33 ("ainda bem que não conhecem os outros defeitos"). Cuidado de sentido: não
+alimentar fofoca não é aceitar calúnia. O estoicismo não pede passividade diante da injustiça.
+
 ## Cuidados
 
 - **Nada que soe como indireta a colegas de trabalho.** Os temas são da vida pessoal:
