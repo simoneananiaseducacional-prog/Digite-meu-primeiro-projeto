@@ -10,7 +10,8 @@ Destaque no Instagram: **"Da série..."**, com a capa do rosto dela.
    responder no impulso.
 2. **Um exagero visual engraçado:** três leões entrando na cozinha, por exemplo.
 3. **Uma escolha da personagem:** ela sente, faz aquela cara de "ah, não…" e escolhe
-   como agir. Ela não é uma sábia perfeita: pode perder a paciência por um segundo,
+   como agir. Ela não é uma sábia perfeita: pode se irritar, hesitar, fazer cara feia,
+   perder a paciência por um segundo,
    respirar e se recompor. A graça está na distância entre o impulso e a atitude escolhida.
 4. **Uma frase curta que fecha a piada.** A explicação filosófica fica em uma ou duas
    linhas na legenda.
