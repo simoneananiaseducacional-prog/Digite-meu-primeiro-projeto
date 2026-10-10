@@ -1,3 +1,8 @@
+> **Arquivado.** A personagem Soberana foi substituída. Os desenhos agora mostram a própria
+> Simone (imagem `personagem/soberana-contemporanea.png`: blusa preta e cardigã vinho), na série
+> **Estoicismo na prática**: uma ação, sem fala, e uma frase em primeira pessoa na tela.
+> Este arquivo fica só como histórico.
+
 # Soberana, a que governa a própria mente
 
 Personagem original da @mente.mulher.estoica para vídeos curtos com humor: uma heroína de
