@@ -82,7 +82,7 @@ def _trechos(linha):
     return saida
 
 
-def camada_tiktok(frase):
+def camada_tiktok(frase, topo=False):
     """Legenda de rede social: Montserrat grossa, branca, contorno preto, emojis coloridos."""
     f = estilo.sem_serifa(64, 800)
     fe = ImageFont.truetype(str(EMOJI), 109) if EMOJI.exists() else None
@@ -92,7 +92,10 @@ def camada_tiktok(frase):
               for l in estilo.quebrar_linhas(parte.strip(), f, largura)]
     img = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
-    y = estilo.BASE_SEGURA - 40 - (len(linhas) - 1) * 84  # terço de baixo, longe dos rostos
+    if topo:
+        y = estilo.TOPO_SEGURO + 60
+    else:
+        y = estilo.BASE_SEGURA - 40 - (len(linhas) - 1) * 84  # terço de baixo, longe dos rostos
     for linha in linhas:
         trechos = _trechos(linha)
         larg = sum(lado_emoji * len(t) if e else f.getlength(t) for t, e in trechos)
@@ -128,7 +131,7 @@ def camada_serie():
 
 
 def gerar(video, saida, frase, ate=None, cobrir=None, topo=False, tiktok=False):
-    fundo_txt, txt = camada_tiktok(frase) if tiktok else camada_frase(frase, cobrir, topo)
+    fundo_txt, txt = camada_tiktok(frase, topo) if tiktok else camada_frase(frase, cobrir, topo)
     serie = camada_serie()
     mudo = saida.with_suffix(".mudo.mp4")
     ff = midia.gravador(mudo, estatico=False)
