@@ -26,7 +26,8 @@ ENTRA, FECHO = 0.4, 2.5
 def camada_frase(frase):
     """Faixa escura suave no terço de baixo e a frase em serifa clara, com sombra difusa."""
     f = estilo.serifa(70, 600)
-    linhas = estilo.quebrar_linhas(frase, f, estilo.LARGURA - 2 * estilo.MARGEM_X)
+    linhas = [l for parte in frase.split("|")
+              for l in estilo.quebrar_linhas(parte.strip(), f, estilo.LARGURA - 2 * estilo.MARGEM_X)]
     centro = estilo.BASE_SEGURA - 170
     y = centro - (len(linhas) - 1) * 43
 
@@ -94,7 +95,7 @@ def gerar(video, saida, frase, ate=None):
 def main():
     p = argparse.ArgumentParser(description="Cena animada com uma frase na tela e o fecho da série")
     p.add_argument("video")
-    p.add_argument("--frase", required=True)
+    p.add_argument("--frase", required=True, help="| força a quebra de linha")
     p.add_argument("--ate", type=float, help="corta o vídeo neste segundo")
     p.add_argument("--saida")
     a = p.parse_args()
