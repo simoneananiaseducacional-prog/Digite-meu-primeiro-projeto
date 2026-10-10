@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw, ImageOps
 import estilo
 import midia
 
-TEMPO_PAR, TEMPO_FINAL = 2.6, 4.5
+TEMPO_PAR, TEMPO_FINAL = 3.0, 4.5
 METADE = estilo.ALTURA // 2
 CLARO = (233, 229, 223)
 ESCURO = (34, 32, 30)
@@ -32,10 +32,11 @@ VIDEO = {".mp4", ".mov", ".m4v"}
 
 def quadros_midia(caminho, n):
     """n quadros (largura x METADE), em P&B, de uma foto (zoom lento) ou de um vídeo."""
+    caminho, _, inicio = str(caminho).partition("@")  # "video.mp4@6" começa no segundo 6
     caminho = Path(caminho)
     if caminho.suffix.lower() in VIDEO:
         bruto = subprocess.run(
-            ["ffmpeg", "-loglevel", "error", "-i", str(caminho), "-vf",
+            ["ffmpeg", "-loglevel", "error", "-ss", inicio or "0", "-i", str(caminho), "-vf",
              f"fps={estilo.FPS},scale={estilo.LARGURA}:{METADE}:force_original_aspect_ratio=increase,"
              f"crop={estilo.LARGURA}:{METADE}:(iw-{estilo.LARGURA})/2:(ih-{METADE})*0.15,format=gray",
              "-frames:v", str(n), "-f", "rawvideo", "-pix_fmt", "gray", "-"],
@@ -73,7 +74,7 @@ def camada_texto(rotulo, resposta):
     d.line((estilo.LARGURA / 2 - 40, y + 4, estilo.LARGURA / 2 + 40, y + 4), fill=estilo.DOURADO + (255,), width=3)
     f2 = estilo.sem_serifa(68, 800)
     y += 80
-    for l in estilo.quebrar_linhas(resposta, f2, largura):
+    for l in estilo.quebrar_linhas(resposta.replace(" / ", "\n"), f2, largura):  # " / " quebra a linha
         d.text((estilo.LARGURA / 2, y), l, font=f2, fill=ESCURO + (255,), anchor="mm")
         y += 82
     return estilo.Camada(img)
@@ -114,7 +115,7 @@ def gerar(pares, final, autor, saida):
 
 def main():
     p = argparse.ArgumentParser(description="Formato 'Ela é… / Eu sou…'")
-    p.add_argument("--par", action="append", required=True, help='"rótulo|resposta|foto-ou-video"')
+    p.add_argument("--par", action="append", required=True, help='"rótulo|resposta|foto-ou-video" (video.mp4@6 começa no segundo 6)')
     p.add_argument("--final", default="", help="citação final; | quebra linha, *x* destaca")
     p.add_argument("--autor", default="")
     p.add_argument("--saida")
