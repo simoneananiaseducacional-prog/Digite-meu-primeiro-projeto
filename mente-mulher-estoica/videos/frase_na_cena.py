@@ -23,17 +23,24 @@ SERIE = "ESTOICISMO NA PRÁTICA"
 ENTRA, FECHO = 0.4, 2.5
 
 
-def camada_frase(frase):
-    """Faixa escura suave no terço de baixo e a frase em serifa clara, com sombra difusa."""
-    f = estilo.serifa(70, 600)
+def camada_frase(frase, cobrir=None):
+    """Faixa escura suave no terço de baixo e a frase em serifa clara, com sombra difusa.
+
+    Com `cobrir=(y0, y1)`, a faixa fica quase opaca entre y0 e y1 e a frase vai no meio
+    dela: serve para esconder um texto que o gerador de vídeo gravou na imagem."""
+    f = estilo.serifa(60 if cobrir else 70, 600)
     linhas = [l for parte in frase.split("|")
               for l in estilo.quebrar_linhas(parte.strip(), f, estilo.LARGURA - 2 * estilo.MARGEM_X)]
-    centro = estilo.BASE_SEGURA - 170
+    centro = (cobrir[0] + cobrir[1]) / 2 if cobrir else estilo.BASE_SEGURA - 170
     y = centro - (len(linhas) - 1) * 43
 
     escuro = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
-    dist = np.abs(np.arange(estilo.ALTURA, dtype=np.float32) - centro)
-    alfa = np.clip(1 - dist / (len(linhas) * 43 + 260), 0, 1) ** 0.8 * 0.72
+    eixo = np.arange(estilo.ALTURA, dtype=np.float32)
+    if cobrir:
+        fora = np.maximum(cobrir[0] - eixo, eixo - cobrir[1])
+        alfa = np.clip(1 - fora / 70, 0, 1)
+    else:
+        alfa = np.clip(1 - np.abs(eixo - centro) / (len(linhas) * 43 + 260), 0, 1) ** 0.8 * 0.72
     escuro.putalpha(Image.fromarray(np.repeat((alfa * 255).astype(np.uint8)[:, None], estilo.LARGURA, 1)))
 
     texto = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
@@ -57,8 +64,8 @@ def camada_serie():
     return estilo.Camada(img)
 
 
-def gerar(video, saida, frase, ate=None):
-    fundo_txt, txt = camada_frase(frase)
+def gerar(video, saida, frase, ate=None, cobrir=None):
+    fundo_txt, txt = camada_frase(frase, cobrir)
     serie = camada_serie()
     mudo = saida.with_suffix(".mudo.mp4")
     ff = midia.gravador(mudo, estatico=False)
@@ -70,10 +77,13 @@ def gerar(video, saida, frase, ate=None):
         if len(bruto) < tamanho:
             break
         q = np.frombuffer(bruto, np.uint8).reshape(estilo.ALTURA, estilo.LARGURA, 3).astype(np.float32)
-        ultimo = q.copy()  # o fecho parte do quadro limpo, sem a frase
         t = k / estilo.FPS
         p = estilo.suavizar((t - ENTRA) / 0.6) if t > ENTRA else 0.0
-        fundo_txt.compor(q, p)
+        if cobrir:
+            fundo_txt.compor(q, 1.0)  # a faixa já começa opaca, para esconder o texto gravado
+        ultimo = q.copy()  # o fecho parte do quadro sem a frase
+        if not cobrir:
+            fundo_txt.compor(q, p)
         txt.compor(q, p, int(round((1 - p) * 16)))
         ff.stdin.write(estilo.para_bytes(q))
         k += 1
@@ -97,11 +107,13 @@ def main():
     p.add_argument("video")
     p.add_argument("--frase", required=True, help="| força a quebra de linha")
     p.add_argument("--ate", type=float, help="corta o vídeo neste segundo")
+    p.add_argument("--cobrir", help="y0,y1: faixa opaca que esconde texto gravado no vídeo; a frase vai nela")
     p.add_argument("--saida")
     a = p.parse_args()
     saida = Path(a.saida) if a.saida else estilo.PASTA / "saida" / f"{Path(a.video).stem[:40]}-frase.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
-    print(f"Pronto: {saida} ({gerar(a.video, saida, a.frase, a.ate):.1f} s)")
+    print(f"Pronto: {saida} ({gerar(a.video, saida, a.frase, a.ate,
+                                         tuple(int(v) for v in a.cobrir.split(",")) if a.cobrir else None):.1f} s)")
 
 
 if __name__ == "__main__":
