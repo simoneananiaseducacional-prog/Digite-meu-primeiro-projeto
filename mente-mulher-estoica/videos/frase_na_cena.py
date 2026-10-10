@@ -23,7 +23,7 @@ SERIE = "ESTOICISMO NA PRÁTICA"
 ENTRA, FECHO = 0.4, 2.5
 
 
-def camada_frase(frase, cobrir=None):
+def camada_frase(frase, cobrir=None, topo=False):
     """Faixa escura suave no terço de baixo e a frase em serifa clara, com sombra difusa.
 
     Com `cobrir=(y0, y1)`, a faixa fica quase opaca entre y0 e y1 e a frase vai no meio
@@ -31,7 +31,12 @@ def camada_frase(frase, cobrir=None):
     f = estilo.serifa(60 if cobrir else 70, 600)
     linhas = [l for parte in frase.split("|")
               for l in estilo.quebrar_linhas(parte.strip(), f, estilo.LARGURA - 2 * estilo.MARGEM_X)]
-    centro = (cobrir[0] + cobrir[1]) / 2 if cobrir else estilo.BASE_SEGURA - 170
+    if cobrir:
+        centro = (cobrir[0] + cobrir[1]) / 2
+    elif topo:
+        centro = estilo.TOPO_SEGURO + 40 + len(linhas) * 43
+    else:
+        centro = estilo.BASE_SEGURA - 170
     y = centro - (len(linhas) - 1) * 43
 
     escuro = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
@@ -64,8 +69,8 @@ def camada_serie():
     return estilo.Camada(img)
 
 
-def gerar(video, saida, frase, ate=None, cobrir=None):
-    fundo_txt, txt = camada_frase(frase, cobrir)
+def gerar(video, saida, frase, ate=None, cobrir=None, topo=False):
+    fundo_txt, txt = camada_frase(frase, cobrir, topo)
     serie = camada_serie()
     mudo = saida.with_suffix(".mudo.mp4")
     ff = midia.gravador(mudo, estatico=False)
@@ -107,13 +112,14 @@ def main():
     p.add_argument("video")
     p.add_argument("--frase", required=True, help="| força a quebra de linha")
     p.add_argument("--ate", type=float, help="corta o vídeo neste segundo")
+    p.add_argument("--topo", action="store_true", help="frase no alto da tela, em vez do terço de baixo")
     p.add_argument("--cobrir", help="y0,y1: faixa opaca que esconde texto gravado no vídeo; a frase vai nela")
     p.add_argument("--saida")
     a = p.parse_args()
     saida = Path(a.saida) if a.saida else estilo.PASTA / "saida" / f"{Path(a.video).stem[:40]}-frase.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
     print(f"Pronto: {saida} ({gerar(a.video, saida, a.frase, a.ate,
-                                         tuple(int(v) for v in a.cobrir.split(",")) if a.cobrir else None):.1f} s)")
+                                         tuple(int(v) for v in a.cobrir.split(",")) if a.cobrir else None, a.topo):.1f} s)")
 
 
 if __name__ == "__main__":
