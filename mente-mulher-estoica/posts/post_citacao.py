@@ -83,7 +83,8 @@ def escrever(img, linhas, credito, caixa):
     tam = 150
     while tam > 40:
         f = ImageFont.truetype(str(FONTE), tam)
-        if max(f.getlength(l) for l in linhas) <= util:
+        cabe_alt = tam * 0.98 * len(linhas) <= (y1 - y0) * 0.6
+        if max(f.getlength(l) for l in linhas) <= util and cabe_alt:
             break
         tam -= 2
     entre = tam * 0.98
