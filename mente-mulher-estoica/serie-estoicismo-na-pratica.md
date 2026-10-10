@@ -33,7 +33,9 @@ A pessoa ri, se reconhece e entende uma escolha estoica sem sentir que recebeu u
 1. Gerar a cena no CapCut a partir do prompt, com a imagem de referência.
 2. Montar com `videos/frase_na_cena.py`: tira o som do CapCut, coloca a frase e o fecho
    da série. Opções: `--topo` (frase no alto), `--cobrir y0,y1` (esconde texto que o
-   CapCut gravou na imagem), `|` força quebra de linha.
+   CapCut gravou na imagem), `|` força quebra de linha. Para esta série, o padrão é
+   `--estilo tiktok`: legenda de rede social, letra grossa com contorno e emojis. A frase
+   não precisa ser refinada; o tom é de bom humor.
 3. A música é escolhida no Instagram.
 4. Primeira linha da legenda: *Da série: estoicismo na prática.*
 
@@ -42,4 +44,4 @@ A pessoa ri, se reconhece e entende uma escolha estoica sem sentir que recebeu u
 | Episódio | Frase | Fundamento (legenda) |
 | --- | --- | --- |
 | A fila da padaria | "Minha vontade: soltar os leões do Coliseu. / Meu estoicismo: 'O fim da fila é ali, querido.'" | Marco Aurélio, *Meditações*, 8.59 |
-| Os três leões | "Matar um leão por dia, tudo bem. / Mas os três vão ter que pegar senha." | Marco Aurélio, *Meditações*, 8.36 |
+| Os três leões | "Matar um leão por dia, tudo bem… / mas os três vão ter que pegar senha 😂☕" | Marco Aurélio, *Meditações*, 8.36 |

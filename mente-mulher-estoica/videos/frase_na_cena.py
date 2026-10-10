@@ -1,8 +1,12 @@
 """Série "Estoicismo na prática": a cena animada com uma frase só na tela.
 
 A frase fica no terço de baixo do vídeo (acima da área dos botões do Reels), do começo
-ao fim, sobre uma faixa escura suave que garante a leitura. No alto ficariam os rostos. No final, o último quadro escurece e entra o nome da série. O áudio do
-vídeo de origem é descartado (a música é escolhida no próprio Instagram).
+ao fim, sobre uma faixa escura suave que garante a leitura. No final, o último quadro
+escurece e entra o nome da série. O áudio do vídeo de origem é descartado (a música é
+escolhida no próprio Instagram).
+
+Com `--estilo tiktok`, a frase vira legenda de rede social: letra grossa branca com
+contorno preto, no terço de baixo, sem faixa escura, e aceita emojis.
 
 Exemplo:
     python3 frase_na_cena.py fila.mov \\
@@ -14,7 +18,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 import estilo
 import midia
@@ -58,6 +62,60 @@ def camada_frase(frase, cobrir=None, topo=False):
     return estilo.Camada(escuro), estilo.Camada(Image.alpha_composite(sombra, texto))
 
 
+EMOJI = Path("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf")
+
+
+def _eh_emoji(c):
+    o = ord(c)
+    return o >= 0x1F000 or 0x2600 <= o <= 0x27BF or o in (0xFE0F, 0x200D)
+
+
+def _trechos(linha):
+    """Separa a linha em trechos de texto e de emoji: [(texto, eh_emoji)]."""
+    saida = []
+    for c in linha:
+        e = _eh_emoji(c)
+        if saida and saida[-1][1] == e:
+            saida[-1] = (saida[-1][0] + c, e)
+        else:
+            saida.append((c, e))
+    return saida
+
+
+def camada_tiktok(frase):
+    """Legenda de rede social: Montserrat grossa, branca, contorno preto, emojis coloridos."""
+    f = estilo.sem_serifa(64, 800)
+    fe = ImageFont.truetype(str(EMOJI), 109) if EMOJI.exists() else None
+    lado_emoji = 74
+    largura = estilo.LARGURA - 2 * 90
+    linhas = [l for parte in frase.split("|")
+              for l in estilo.quebrar_linhas(parte.strip(), f, largura)]
+    img = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    y = estilo.BASE_SEGURA - 40 - (len(linhas) - 1) * 84  # terço de baixo, longe dos rostos
+    for linha in linhas:
+        trechos = _trechos(linha)
+        larg = sum(lado_emoji * len(t) if e else f.getlength(t) for t, e in trechos)
+        x = (estilo.LARGURA - larg) / 2
+        for t, e in trechos:
+            if e and fe:
+                for c in t:
+                    if c in "\ufe0f\u200d":
+                        continue
+                    g = Image.new("RGBA", (136, 128), (0, 0, 0, 0))
+                    ImageDraw.Draw(g).text((0, 0), c, font=fe, embedded_color=True)
+                    g = g.crop(g.getbbox() or (0, 0, 1, 1)).resize((lado_emoji, lado_emoji), Image.LANCZOS)
+                    img.alpha_composite(g, (int(x), int(y - lado_emoji / 2)))
+                    x += lado_emoji
+            else:
+                d.text((x, y), t, font=f, fill=(255, 255, 255, 255), anchor="lm",
+                       stroke_width=7, stroke_fill=(0, 0, 0, 255))
+                x += f.getlength(t)
+        y += 84
+    vazia = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
+    return estilo.Camada(vazia), estilo.Camada(img)
+
+
 def camada_serie():
     img = Image.new("RGBA", (estilo.LARGURA, estilo.ALTURA), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
@@ -69,8 +127,8 @@ def camada_serie():
     return estilo.Camada(img)
 
 
-def gerar(video, saida, frase, ate=None, cobrir=None, topo=False):
-    fundo_txt, txt = camada_frase(frase, cobrir, topo)
+def gerar(video, saida, frase, ate=None, cobrir=None, topo=False, tiktok=False):
+    fundo_txt, txt = camada_tiktok(frase) if tiktok else camada_frase(frase, cobrir, topo)
     serie = camada_serie()
     mudo = saida.with_suffix(".mudo.mp4")
     ff = midia.gravador(mudo, estatico=False)
@@ -112,6 +170,8 @@ def main():
     p.add_argument("video")
     p.add_argument("--frase", required=True, help="| força a quebra de linha")
     p.add_argument("--ate", type=float, help="corta o vídeo neste segundo")
+    p.add_argument("--estilo", choices=["marca", "tiktok"], default="marca",
+                   help="marca: serifa clara com faixa escura; tiktok: letra grossa com contorno e emojis")
     p.add_argument("--topo", action="store_true", help="frase no alto da tela, em vez do terço de baixo")
     p.add_argument("--cobrir", help="y0,y1: faixa opaca que esconde texto gravado no vídeo; a frase vai nela")
     p.add_argument("--saida")
@@ -119,7 +179,8 @@ def main():
     saida = Path(a.saida) if a.saida else estilo.PASTA / "saida" / f"{Path(a.video).stem[:40]}-frase.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
     print(f"Pronto: {saida} ({gerar(a.video, saida, a.frase, a.ate,
-                                         tuple(int(v) for v in a.cobrir.split(",")) if a.cobrir else None, a.topo):.1f} s)")
+                                         tuple(int(v) for v in a.cobrir.split(",")) if a.cobrir else None, a.topo,
+                                         a.estilo == "tiktok"):.1f} s)")
 
 
 if __name__ == "__main__":
