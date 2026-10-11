@@ -1,6 +1,7 @@
 # Cidadela (letra oficial)
 
 Música própria da Simone. Letra em português, som internacional.
+Créditos: **Simone Ananias feat. Dario Kael** (Dario Kael é personagem criado por ela para a voz masculina).
 "Cidadela" vem de Marco Aurélio, *Meditações*, 8.48: a mente livre de paixões é uma cidadela.
 
 **Ao gerar:** cole o ESTILO no campo de estilo e a LETRA no campo de letra, sem mudar nada.
