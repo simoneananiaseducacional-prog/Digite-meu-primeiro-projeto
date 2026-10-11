@@ -18,33 +18,39 @@ Exclude: thin, nasal, metallic, childlike or shrill female voice, melisma, vocal
 
 ## Letra
 
+Versão aprovada em 11/10/2026. A história segue três tempos: como era antes, a virada, quem eu sou agora.
+O refrão fala do que ela escolhe, não de quem a feriu. "Do que é meu, eu sou rainha / Do que não é,
+me libertei" vem da dicotomia do controle (Epicteto, *Manual*, 1). "A alma que se governa" vem de
+Sêneca, *Cartas*, 113.30 ("imperare sibi maximum imperium est").
+
 ```
 [Intro - solo oud in hijaz scale, then darbuka enters, then the beat drops in]
 (Ci-da-de-la!)
 
-[Verse 1 - Female]
-Não precisei levantar a voz
-Pra encontrar a minha paz
-Aprendi no silêncio
-O que o grito não faz
+[Verse 1 - Female, low and intimate]
+Eu medi cada palavra
+Silenciei o meu querer
+Apaguei a minha luz
+Para outro florescer
 
-[Verse 2 - Male, gritty]
-Muralha levantada
-Cada pedra uma lição
-Quem tentou me derrubar
-Me deu o chão
+[Verse 2 - Female]
+Chamei de amor o que era medo
+Chamei de zelo a prisão
+Até que, um dia, no silêncio
+Ouvi meu próprio coração
 
 [Pre-Chorus - Duet, building]
-Pode vir o vento
-Pode vir o fogo
-Eu não volto atrás
-Eu não entro no jogo
+Pedra a pedra me refiz
+Ergui muralha, fiz raiz
+Hoje eu sei escolher
+Posso amar sem me perder
 
 [Chorus - Duet, anthem]
 Ci-da-de-la!
-Quem me quis presa na cela
-Hoje encontra a sentinela
-Acendi a minha vela
+Minha voz é minha bandeira
+Minha escolha, minha lei
+Do que é meu, eu sou rainha
+Do que não é, me libertei
 Eu sou minha cidadela
 
 [Drop - heavy bass, oud and saxophone hook, darbuka, chant]
@@ -54,27 +60,31 @@ Eu sou minha cidadela
 Ci-da-de-la!
 
 [Verse 3 - Female]
-Não devo explicação
-A quem não quis me ouvir
-O que depende de mim
-Eu decido construir
+Nenhuma mão alheia
+Define o meu valor
+A alma que se governa
+Não mendiga amor
 
 [Instrumental Break - darbuka solo, belly dance rhythm, ney flute]
 
 [Bridge - Male and Female, half-time, dark]
-Minha fé é meu alicerce
-Minha mente, meu portão
+Minha fé é alicerce
+Minha mente é o portão
 Quem me feriu não governa
 O meu coração
 
 [Final Chorus - Duet, full power]
 Ci-da-de-la!
-Quem me quis presa na cela
-Hoje encontra a sentinela
-Acendi a minha vela
+Minha voz é minha bandeira
+Minha escolha, minha lei
+Do que é meu, eu sou rainha
+Do que não é, me libertei
 Eu sou minha cidadela
 
 [Outro - chant, fade]
 Ô-ô-ô, ô-ô-ô
 Eu sou minha cidadela
 ```
+
+Se o "Ci-da-de-la!" não encaixar na melodia, tire essa linha e abra o refrão direto em
+"Minha voz é minha bandeira".
