@@ -8,12 +8,15 @@ Se a IA trocar a letra ou o tema, descarte e gere de novo.
 
 ## Estilo
 
+Versão 2 (11/10/2026): a primeira geração saiu rock demais (guitarras na frente, batida fraca).
+O alvo é dance pop árabe, para dançar, não música de clube pesada. A voz foi aprovada; não mexer nela.
+
 ```
-Ethnic tech house meets dark pop-rock, festival club anthem, 124 BPM, four-on-the-floor kick on every beat, NOT half-time, NOT slow, NOT hip-hop groove, heavy rolling bass, darbuka and riq in a belly dance rhythm, Turkish oud melodies in hijaz scale, distorted electric guitar riffs, clear breakdown before each chorus, then a massive drop with heavy bass, cinematic, international mainstream sound.
-Female lead vocal: warm, full-bodied, powerful chest voice, natural raspy rock-soul grit, strong mid-low presence, percussive attack, fierce and confident, intense emotion. Strong high notes but never thin.
+Middle Eastern dance-pop, oriental pop fusion, Arabic pop, danceable mid-tempo groove at 116 BPM, belly dance rhythm with darbuka and riq, Turkish oud and qanun melodies in hijaz scale, ney flute accents, warm bass, light electronic dance beat, catchy and sensual, cinematic, international mainstream pop sound like a global radio hit.
+Female lead vocal: warm, full-bodied, powerful chest voice, natural raspy grit, strong mid-low presence, percussive attack, fierce and confident, intense emotion. Strong high notes but never thin.
 Male vocal: deep baritone, gritty, raspy, warrior tone.
 Sung in Brazilian Portuguese with neutral international pronunciation. Catchy chantable chorus. Duet. Keep the lyrics exactly as written.
-Exclude: thin, nasal, metallic, childlike or shrill female voice, melisma, vocal runs, sertanejo, country, gospel, worship, choir, pagode, forró, MPB, axé, Brazilian regional styles, acoustic ballad.
+Exclude: rock, hard rock, distorted guitars, heavy metal, heavy techno, hard club music, thin or nasal female voice, melisma, vocal runs, sertanejo, country, gospel, worship, choir, pagode, forró, MPB, axé, Brazilian regional styles.
 ```
 
 ## Letra
