@@ -8,15 +8,17 @@ Se a IA trocar a letra ou o tema, descarte e gere de novo.
 
 ## Estilo
 
-Versão 2 (11/10/2026): a primeira geração saiu rock demais (guitarras na frente, batida fraca).
-O alvo é dance pop árabe, para dançar, não música de clube pesada. A voz foi aprovada; não mexer nela.
+Versão aprovada (11/10/2026, "Minha Cidadela - VN2"). Criada como música NOVA (não Cover), com a voz
+salva no Suno "Voz de Simone Ananias" (tirada da primeira versão), Influência de estilo e do áudio em ~70%.
+Referências: Maela Vane e Iron Jarl (cerca de 125 BPM, grave forte, arranjo enxuto). Histórico: a 1ª saiu
+rock demais; a 2ª, árabe demais; o Cover herdava a voz "de mocinha" da música de origem.
 
 ```
-Middle Eastern dance-pop, oriental pop fusion, Arabic pop, danceable mid-tempo groove at 116 BPM, belly dance rhythm with darbuka and riq, Turkish oud and qanun melodies in hijaz scale, ney flute accents, warm bass, light electronic dance beat, catchy and sensual, cinematic, international mainstream pop sound like a global radio hit.
-Female lead vocal: warm, full-bodied, powerful chest voice, natural raspy grit, strong mid-low presence, percussive attack, fierce and confident, intense emotion. Strong high notes but never thin.
-Male vocal: deep baritone, gritty, raspy, warrior tone.
-Sung in Brazilian Portuguese with neutral international pronunciation. Catchy chantable chorus. Duet. Keep the lyrics exactly as written.
-Exclude: rock, hard rock, distorted guitars, heavy metal, heavy techno, hard club music, thin or nasal female voice, melisma, vocal runs, sertanejo, country, gospel, worship, choir, pagode, forró, MPB, axé, Brazilian regional styles.
+Male vocal: monstrous giant voice, extremely deep bass, guttural, gravelly, growling power, menacing and huge, like a giant warrior roaring, half-spoken, never soft.
+Female lead vocal: commanding mature woman, low alto, dark smoky tone, firm, authoritative, raspy grit, never sweet.
+Dark electronic dance-pop power anthem, 124 BPM, deep heavy sub-bass, punchy four-on-the-floor kick, minimal dark synths, sparse arrangement. Slow dark intro that builds for 20 seconds before the beat drops. Big chanted chorus. Short oud riff in the intro and one break.
+Sung in Brazilian Portuguese with neutral international pronunciation. Duet. Keep the lyrics exactly as written.
+Exclude: soft male voice, tenor, boyish voice, thin voice, sweet or girly voice, melisma, rock, distorted guitars, traditional Arabic music, sertanejo, gospel, pagode, MPB.
 ```
 
 ## Letra
@@ -27,7 +29,7 @@ me libertei" vem da dicotomia do controle (Epicteto, *Manual*, 1). "A alma que s
 Sêneca, *Cartas*, 113.30 ("imperare sibi maximum imperium est").
 
 ```
-[Intro - solo oud in hijaz scale, then darbuka enters, then the beat drops in]
+[Intro - slow, dark and sparse instrumental, deep pulsing bass, short oud motif, builds slowly for 20 seconds, then the beat drops]
 (Ci-da-de-la!)
 
 [Verse 1 - Female, low and intimate]
@@ -56,10 +58,10 @@ Do que é meu, eu sou rainha
 Do que não é, me libertei
 Eu sou minha cidadela
 
-[Drop - heavy bass, oud hook, darbuka, chant]
-Ô-ô-ô, ô-ô-ô
+[Drop - Male monster voice, growled war chant, heavy bass]
+(Hey! Ha!) (Hey! Ha!)
 Eu sou minha cidadela
-Ô-ô-ô, ô-ô-ô
+(Hey! Ha!) (Hey! Ha!)
 Ci-da-de-la!
 
 [Verse 3 - Female]
@@ -68,9 +70,9 @@ Define o meu valor
 A alma que se governa
 Não mendiga amor
 
-[Instrumental Break - darbuka solo, belly dance rhythm, ney flute]
+[Instrumental Break - short oud riff, darbuka accents]
 
-[Bridge - Male and Female, half-time, dark, instruments pull back, voices up front]
+[Bridge - Male monster voice and Female, half-time, dark, voices up front]
 Minha fé é alicerce
 Minha mente é o portão
 Quem me feriu não governa
@@ -84,14 +86,10 @@ Do que é meu, eu sou rainha
 Do que não é, me libertei
 Eu sou minha cidadela
 
-[Outro - chant, fade]
-Ô-ô-ô, ô-ô-ô
+[Outro - Male monster voice, fade]
+(Hey! Ha!) (Hey! Ha!)
 Eu sou minha cidadela
 ```
 
 Se o "Ci-da-de-la!" não encaixar na melodia, tire essa linha e abra o refrão direto em
 "Minha voz é minha bandeira".
-
-**Versão 2 (depois):** para testar o saxofone, troque o `[Drop]` por
-`[Drop - heavy bass, oud and saxophone hook, darbuka, chant]` e acrescente `sultry saxophone hooks` no estilo.
-Compare as duas e veja se o sax acrescenta personalidade ou disputa atenção com a voz.
