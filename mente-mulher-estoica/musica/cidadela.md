@@ -9,7 +9,7 @@ Se a IA trocar a letra ou o tema, descarte e gere de novo.
 ## Estilo
 
 ```
-Ethnic tech house meets dark pop-rock, festival club anthem, 124 BPM, four-on-the-floor kick on every beat, NOT half-time, NOT slow, NOT hip-hop groove, heavy rolling bass, darbuka and riq in a belly dance rhythm, Turkish oud melodies in hijaz scale, sultry saxophone hooks, distorted electric guitar riffs, clear breakdown before each chorus, then a massive drop with heavy bass, cinematic, international mainstream sound.
+Ethnic tech house meets dark pop-rock, festival club anthem, 124 BPM, four-on-the-floor kick on every beat, NOT half-time, NOT slow, NOT hip-hop groove, heavy rolling bass, darbuka and riq in a belly dance rhythm, Turkish oud melodies in hijaz scale, distorted electric guitar riffs, clear breakdown before each chorus, then a massive drop with heavy bass, cinematic, international mainstream sound.
 Female lead vocal: warm, full-bodied, powerful chest voice, natural raspy rock-soul grit, strong mid-low presence, percussive attack, fierce and confident, intense emotion. Strong high notes but never thin.
 Male vocal: deep baritone, gritty, raspy, warrior tone.
 Sung in Brazilian Portuguese with neutral international pronunciation. Catchy chantable chorus. Duet. Keep the lyrics exactly as written.
@@ -48,12 +48,12 @@ Posso amar sem me perder
 [Chorus - Duet, anthem]
 Ci-da-de-la!
 Minha voz é minha bandeira
-Minha escolha, minha lei
+Minha vida, eu guiarei
 Do que é meu, eu sou rainha
 Do que não é, me libertei
 Eu sou minha cidadela
 
-[Drop - heavy bass, oud and saxophone hook, darbuka, chant]
+[Drop - heavy bass, oud hook, darbuka, chant]
 Ô-ô-ô, ô-ô-ô
 Eu sou minha cidadela
 Ô-ô-ô, ô-ô-ô
@@ -67,7 +67,7 @@ Não mendiga amor
 
 [Instrumental Break - darbuka solo, belly dance rhythm, ney flute]
 
-[Bridge - Male and Female, half-time, dark]
+[Bridge - Male and Female, half-time, dark, instruments pull back, voices up front]
 Minha fé é alicerce
 Minha mente é o portão
 Quem me feriu não governa
@@ -76,7 +76,7 @@ O meu coração
 [Final Chorus - Duet, full power]
 Ci-da-de-la!
 Minha voz é minha bandeira
-Minha escolha, minha lei
+Minha vida, eu guiarei
 Do que é meu, eu sou rainha
 Do que não é, me libertei
 Eu sou minha cidadela
@@ -88,3 +88,7 @@ Eu sou minha cidadela
 
 Se o "Ci-da-de-la!" não encaixar na melodia, tire essa linha e abra o refrão direto em
 "Minha voz é minha bandeira".
+
+**Versão 2 (depois):** para testar o saxofone, troque o `[Drop]` por
+`[Drop - heavy bass, oud and saxophone hook, darbuka, chant]` e acrescente `sultry saxophone hooks` no estilo.
+Compare as duas e veja se o sax acrescenta personalidade ou disputa atenção com a voz.
