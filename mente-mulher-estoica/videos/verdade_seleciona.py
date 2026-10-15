@@ -19,7 +19,8 @@ from PIL import Image, ImageDraw
 import estilo
 import midia
 
-DURACAO = 18.0
+DURACAO = 18.0  # duração da animação na velocidade base
+LENTO = 1.4  # >1 deixa tudo mais calmo; o vídeo final dura DURACAO * LENTO
 CINZA_CLARO = (160, 154, 146)
 NOTA = (205, 196, 182)
 CX = estilo.LARGURA // 2
@@ -123,15 +124,15 @@ def main():
     fundo = np.clip(estilo.granulado(estilo.fundo()), 0, 255).astype(np.uint8)
     mudo = saida.with_suffix(".mudo.mp4")
     ff = midia.gravador(mudo, estatico=False)
-    for k in range(int(DURACAO * estilo.FPS)):
-        ff.stdin.write(estilo.para_bytes(quadro(k / estilo.FPS, fundo)))
+    for k in range(int(DURACAO * LENTO * estilo.FPS)):
+        ff.stdin.write(estilo.para_bytes(quadro(k / estilo.FPS / LENTO, fundo)))
     ff.stdin.close()
     ff.wait()
     if musica:
-        inicio = QUEDA_BATIDA - (DURACAO - 4.2)  # a batida cai quando a frase final entra
+        inicio = QUEDA_BATIDA - (DURACAO - 4.2) * LENTO  # a batida cai quando a frase final entra
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(mudo), "-ss", f"{inicio:.2f}",
-                        "-t", str(DURACAO), "-i", musica, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
-                        "-af", f"afade=t=in:d=1,afade=t=out:st={DURACAO - 2:.2f}:d=2", "-c:a", "aac",
+                        "-t", str(DURACAO * LENTO), "-i", musica, "-map", "0:v", "-map", "1:a", "-c:v", "copy",
+                        "-af", f"afade=t=in:d=1,afade=t=out:st={DURACAO * LENTO - 2:.2f}:d=2", "-c:a", "aac",
                         "-b:a", "192k", "-movflags", "+faststart", str(saida)], check=True)
         mudo.unlink()
     else:
