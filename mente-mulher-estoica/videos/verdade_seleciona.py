@@ -91,7 +91,7 @@ def quadro(t, fundo):
 
     # O que se afasta e o que fica
     texto(img, (CX, CY + RAIO + 130), "quem só ficava pelo seu silêncio",
-          estilo.serifa_italica(40, 500), NOTA, aparece(t, 4.4) * (1 - aparece(t, 6.0)) * some)
+          estilo.serifa_italica(58, 600), estilo.BRANCO, aparece(t, 4.4) * (1 - aparece(t, 6.0)) * some)
     texto(img, (CX, CY + RAIO + 130), "Quem fica.", estilo.serifa(66, 600), estilo.BRANCO, aparece(t, 6.6) * some)
     texto(img, (CX, CY + RAIO + 260), "Deixe.", estilo.serifa_italica(110, 600), estilo.DOURADO,
           aparece(t, 8.6, 0.9) * some)
