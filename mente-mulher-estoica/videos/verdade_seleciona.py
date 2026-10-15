@@ -105,7 +105,7 @@ def quadro(t, fundo):
     ac = aparece(t, DURACAO - 2.8, 0.9)
     if ac > 0:
         cred = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        estilo.texto_espacado(ImageDraw.Draw(cred), (CX, 1110), "SIMONE ANANIAS", estilo.sem_serifa(24, 500),
+        estilo.texto_espacado(ImageDraw.Draw(cred), (CX, 1110), estilo.ASSINATURA, estilo.sem_serifa(24, 500),
                               estilo.CINZA + (int(255 * ac),), 8)
         img.alpha_composite(cred)
     return np.asarray(img.convert("RGB"), np.float32)
