@@ -1,4 +1,4 @@
-"""Reel animado "A verdade seleciona": um círculo de pessoas em volta da sua verdade.
+"""Reel animado "A verdade seleciona": um círculo de pessoas em volta da verdade.
 
 A verdade aparece no centro, uma onda dourada se espalha e a maioria das pessoas se
 afasta. Ficam poucas, ligadas a você por fios dourados. Fecha com a frase autoral.
@@ -87,7 +87,7 @@ def quadro(t, fundo):
             d.ellipse((x - tam, y - tam, x + tam, y + tam), fill=cor + (int(255 * a),))
     img.alpha_composite(camada)
 
-    texto(img, (CX, CY), "a sua verdade", estilo.serifa_italica(58, 600), estilo.DOURADO, aparece(t, 2.2) * some)
+    texto(img, (CX, CY), "a verdade", estilo.serifa_italica(58, 600), estilo.DOURADO, aparece(t, 2.2) * some)
 
     # O que se afasta e o que fica
     texto(img, (CX, CY + RAIO + 130), "quem só ficava pelo seu silêncio",
