@@ -3,6 +3,7 @@
 Terceira música da Simone. Mesma linha da Cidadela e da Fortaleza: dance pop escuro, grave forte, dueto.
 Créditos: **Simone Ananias feat. Dario Kael**.
 Tema: ser verdadeira afasta muita gente, mas deixa por perto as pessoas certas.
+Versos falam com quem ouve ("você"); refrão em "eu", para a pessoa cantar como dela.
 Gancho para grudar na cabeça: "Poucos, mas certos".
 
 **Ao gerar no Suno:** música NOVA (não Cover), voz salva "Voz de Simone Ananias",
@@ -25,22 +26,22 @@ Exclude: soft male voice, tenor, boyish voice, thin voice, sweet or girly voice,
 (Pou-cos... mas cer-tos)
 
 [Verse 1 - Female, low and intimate]
-Minha casa vivia cheia
+Sua casa vivia cheia
 De abraço emprestado
-Bastou eu dizer o que penso
+Bastou dizer o que pensa
 E ninguém ficou do lado
 
 [Verse 2 - Female, deep and velvety]
 Me chamaram de difícil
-Porque eu não fingi
+Porque você não fingiu
 O preço da verdade
-Eu paguei e não fugi
+Você pagou e não fugiu
 
 [Pre-Chorus - Duet, building]
-Quem gostava do meu silêncio
-Não gostava de mim
-Pode ir, pode ir, pode ir
-Quem é meu fica aqui
+Quem gostava do seu silêncio
+Nunca gostou de você
+Deixa ir, deixa ir, deixa ir
+Quem é seu não vai correr
 
 [Chorus - Duet, powerful anthem]
 Falei a verdade e a sala esvaziou
@@ -55,9 +56,9 @@ Quem ficou, ficou por mim
 (Pou-cos!) (Mas cer-tos!)
 
 [Verse 3 - Female, low and firm]
-Não diminuo a minha voz
+Não diminua a sua voz
 Pra caber em ninguém
-Quem ama a minha verdade
+Quem ama a sua verdade
 Ama o resto também
 
 [Bridge - Male deep growl and Female, half-time, voices up front]
@@ -67,9 +68,9 @@ Não é solidão, é direção
 Eu escolhi o meu chão
 
 [Build - Duet, rising intensity]
-Pode ir, pode ir, pode ir
-Quem é meu fica aqui
-Pode ir, pode ir, pode ir
+Deixa ir, deixa ir, deixa ir
+Quem é seu não vai correr
+Deixa ir, deixa ir, deixa ir
 Quem é meu fica aqui
 
 [Final Chorus - Duet, full power]
