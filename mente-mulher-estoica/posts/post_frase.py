@@ -25,9 +25,10 @@ NOME = "Mente Mulher Estoica"
 ARROBA = "@mente_mulher_estoica"
 
 
-def avatar(tam):
-    cx, cy, r = ROSTO
-    rosto = Image.open(AVATAR).convert("RGB").crop((cx - r, cy - r, cx + r, cy + r)).resize((tam, tam), Image.LANCZOS)
+def avatar(tam, foto=AVATAR, rosto_xyr=ROSTO):
+    """Recorta o rosto (centro x, centro y, raio) da foto em um círculo."""
+    cx, cy, r = rosto_xyr
+    rosto = Image.open(foto).convert("RGB").crop((cx - r, cy - r, cx + r, cy + r)).resize((tam, tam), Image.LANCZOS)
     mascara = Image.new("L", (tam * 4, tam * 4), 0)
     ImageDraw.Draw(mascara).ellipse((0, 0, tam * 4, tam * 4), fill=255)
     rosto.putalpha(mascara.resize((tam, tam), Image.LANCZOS))
