@@ -76,3 +76,16 @@ Ninguém vai saber
 Até o sol chegar
 (Meia-noite...)
 ```
+
+## Versão country chiclete (remix)
+
+Estilo:
+
+```
+Catchy country pop dance hit, 120 BPM, bright banjo riff hook that repeats all song long, fiddle melody, acoustic steel-string guitar strumming, stomp and clap beat, line dance energy, deep modern bass and punchy kick under the country instruments, western whistle in the intro. Very catchy chanted "Meia-noite, meia-noite" hook that everyone sings along, repetitive and addictive, viral TikTok country dance. Male and female duet, voices low and firm, with a little country twang. Fun, magnetic, never sad.
+Sung in Brazilian Portuguese with neutral international pronunciation. Keep the lyrics exactly as written.
+Exclude: sertanejo, sertanejo universitário, modão, forró, arrocha, piseiro, accordion, pagode, funk, gospel, MPB, ballad, sad, sweet voice, melisma.
+```
+
+Mesma letra, com as marcações de seção trocadas para banjo, rabeca, palmas e batida de pé
+(a versão completa está na resposta do chat de 18/10/2026).
