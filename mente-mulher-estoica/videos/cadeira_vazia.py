@@ -39,10 +39,10 @@ def zoom(img, z):
     return img.resize((W, H), Image.BILINEAR, box=(x0, y0, x0 + w, y0 + h))
 
 
-def sombra(alfa):
-    """Faixa escura no meio da tela para o texto ficar legível sobre a foto."""
+def sombra(alfa, centro=0.5):
+    """Faixa escura na altura do texto para ele ficar legível sobre a foto."""
     y = np.linspace(0, 1, H)[:, None]
-    faixa = np.exp(-((y - 0.5) / 0.22) ** 2) * alfa
+    faixa = np.exp(-((y - centro) / 0.2) ** 2) * alfa
     return (1 - faixa)[..., None]
 
 
@@ -56,7 +56,7 @@ def texto(img, xy, s, f, cor, alfa):
     img.alpha_composite(camada)
 
 
-def quadro(t, foto, cadeira, cadeira_pb):
+def quadro(t, foto, cadeira, cadeira_pb, y1=945):
     # Cena 1: ela, aproximando devagar; cena 2: a cadeira, perdendo a cor
     if t < TROCA + 0.8:
         a = np.asarray(zoom(foto, 1.0 + 0.06 * t / TROCA), np.float32)
@@ -67,18 +67,17 @@ def quadro(t, foto, cadeira, cadeira_pb):
         b = cor + (pb - cor) * aparece(t, TROCA + 0.6, 1.4)
         mistura = aparece(t, TROCA, 0.8)
         a = b if mistura >= 1 else a * (1 - mistura) + b * mistura
-    escuro = 0.55 * (1 - aparece(t, TROCA - 0.6, 0.6)) + 0.6 * aparece(t, TROCA + 1.6, 0.8)
-    a = a * sombra(escuro)
+    a = a * sombra(0.55 * (1 - aparece(t, TROCA - 0.6, 0.6)), y1 / H) * sombra(0.6 * aparece(t, TROCA + 1.6, 0.8))
     img = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8)).convert("RGBA")
 
     some1 = 1 - aparece(t, TROCA - 0.6, 0.5)
-    f1, f2 = estilo.serifa(76, 600), estilo.serifa_italica(96, 600)
-    texto(img, (CX, 840), "Vou te contar o que eu faço", f1, estilo.BRANCO, aparece(t, 0.4) * some1)
-    texto(img, (CX, 935), "quando alguém", f1, estilo.BRANCO, aparece(t, 1.4) * some1)
-    texto(img, (CX, 1050), "me desrespeita.", f2, estilo.DOURADO, aparece(t, 2.2, 0.8) * some1)
+    f1, f2 = estilo.serifa(84, 600), estilo.serifa_italica(104, 600)
+    texto(img, (CX, y1 - 105), "Vou te contar o que eu faço", f1, estilo.BRANCO, aparece(t, 0.4) * some1)
+    texto(img, (CX, y1 - 5), "quando alguém", f1, estilo.BRANCO, aparece(t, 1.4) * some1)
+    texto(img, (CX, y1 + 115), "me desrespeita.", f2, estilo.DOURADO, aparece(t, 2.2, 0.8) * some1)
 
-    texto(img, (CX, 820), "Eu não discuto.", f1, estilo.BRANCO, aparece(t, TROCA + 1.8))
-    texto(img, (CX, 915), "Eu não explico.", f1, estilo.BRANCO, aparece(t, TROCA + 2.8))
+    texto(img, (CX, 810), "Eu não discuto.", f1, estilo.BRANCO, aparece(t, TROCA + 1.8))
+    texto(img, (CX, 910), "Eu não explico.", f1, estilo.BRANCO, aparece(t, TROCA + 2.8))
     texto(img, (CX, 1050), "Eu me retiro.", estilo.serifa_italica(110, 600), estilo.DOURADO,
           aparece(t, TROCA + 4.0, 0.8))
     ac = aparece(t, TROCA + 5.0, 0.8)
@@ -96,6 +95,8 @@ def main():
     p.add_argument("cadeira")
     p.add_argument("saida", nargs="?")
     p.add_argument("--recorte-cadeira", help="x0,y0,x1,y1 da cadeira vazia dentro da imagem")
+    p.add_argument("--altura-texto", type=int, default=945,
+                   help="altura (px, de 1920) do centro do texto na foto dela; use onde a roupa é lisa")
     a = p.parse_args()
     saida = Path(a.saida) if a.saida else estilo.PASTA / "saida" / "cadeira-vazia.mp4"
     saida.parent.mkdir(parents=True, exist_ok=True)
@@ -111,7 +112,7 @@ def main():
     mudo = saida.with_suffix(".mudo.mp4")
     ff = midia.gravador(mudo, estatico=False)
     for k in range(int(DURACAO * FPS)):
-        ff.stdin.write(estilo.para_bytes(quadro(k / FPS, foto, cadeira, cadeira_pb)))
+        ff.stdin.write(estilo.para_bytes(quadro(k / FPS, foto, cadeira, cadeira_pb, a.altura_texto)))
     ff.stdin.close()
     ff.wait()
     midia.juntar_audio(mudo, saida)
