@@ -27,6 +27,8 @@ conhecimento do app.
 | `diario/` | **Diário Estoico de 30 Dias**, produto de reflexão guiada. Fonte em Markdown e HTML pronto para virar PDF. |
 | `serie-mulheres-estoicas/` | Planejamento da **série biográfica** Diário das Mulheres Estoicas (9 protagonistas). |
 | `perfil/` | Estrutura dos destaques do perfil no Instagram. |
+| `roteiros/` | Roteiros de vídeo em Markdown, prontos para virar reel. |
+| `videos/` | **Fábrica de vídeos**: gera reels de frases animadas e legenda vídeos gravados a partir dos roteiros. Veja `videos/README.md`. |
 | `fontes/` | Materiais de referência para estudo (autoria de terceiros, não revender). |
 
 ## Identidade da marca (resumo)
