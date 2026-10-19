@@ -54,6 +54,9 @@ fundo preto com vinheta e granulado, texto em Cormorant Garamond off-white, dest
 dourado itálico (#C4A062) e a assinatura MENTE MULHER ESTOICA no pé.
 Posts de outros perfis que ela manda são referência de ideia e estrutura, **nunca de visual**.
 
-- Carrossel de frases: `posts/carrossel_marca.py`
+- Carrossel de frases **(estilo preferido dela)**: `posts/carrossel_destaque.py` — aspas grandes,
+  Montserrat bem grossa, trechos em dourado, foto dela + "Mente Mulher Estoica" no pé;
+  temas `claro`, `preto` e `vinho`
+- Carrossel de frases em serifa (alternativa): `posts/carrossel_marca.py`
 - Carrossel de lista numerada: `posts/carrossel_lista.py`
 - Reels animados: `videos/` (estilo.py define cores, fontes e área segura)
