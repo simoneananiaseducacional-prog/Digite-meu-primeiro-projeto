@@ -2,7 +2,7 @@
 regra em serifa grande e, embaixo, uma linha em itálico com o porquê.
 
 Arquivo de texto: 1ª linha é a capa; cada linha "regra || porquê" vira um card numerado;
-a última linha é o fechamento ("|" quebra a linha).
+a última linha é o fechamento. Na capa, na regra e no fechamento, "|" quebra a linha.
 
     python3 carrossel_lista.py textos/se-respeita.txt --saida saida/se-respeita
 """
@@ -53,7 +53,7 @@ def rodape(d):
 def card_capa(texto):
     img = base(); d = ImageDraw.Draw(img)
     f = estilo.serifa(92, 600)
-    centralizado(d, [(estilo.quebrar_linhas(texto, f, LARG - 2 * MX), f, estilo.BRANCO, 104, 50),
+    centralizado(d, [(estilo.quebrar_linhas(texto.replace("|", "\n"), f, LARG - 2 * MX), f, estilo.BRANCO, 104, 50),
                      (["arraste →"], estilo.serifa_italica(44, 500), estilo.DOURADO, 50, 0)], ALT / 2)
     rodape(d)
     return img
@@ -63,7 +63,7 @@ def card_item(n, regra, porque):
     img = base(); d = ImageDraw.Draw(img)
     fr, fp = estilo.serifa(84, 700), estilo.serifa_italica(58, 500)
     centralizado(d, [([f"{n}."], estilo.serifa(110, 600), estilo.DOURADO, 120, 30),
-                     (estilo.quebrar_linhas(regra, fr, LARG - 2 * MX), fr, estilo.BRANCO, 96, 50),
+                     (estilo.quebrar_linhas(regra.replace("|", "\n"), fr, LARG - 2 * MX), fr, estilo.BRANCO, 96, 50),
                      (estilo.quebrar_linhas(porque, fp, LARG - 2 * MX - 40), fp, NOTA, 70, 0)], ALT / 2)
     rodape(d)
     return img
