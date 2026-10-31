@@ -38,7 +38,7 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 
 ## Formatos que funcionam
 
-- **Diagrama animado** (fundo preto, serifa branca e dourada, caminhos vermelhos que apagam e um dourado que fica). "Para onde vai a sua energia?" teve 28,3 mil views e 363 envios. Scripts: `videos/diagrama_energia.py`, `videos/diagrama_controle.py`, `videos/diagrama_pessoas_dificeis.py`.
+- **Diagrama animado** (fundo preto, serifa branca e dourada, caminhos vermelhos que apagam e um dourado que fica). "Para onde vai a sua energia?" passou de 34,5 mil views, 433 envios, 341 salvamentos e 133 seguidores, com média de 9 segundos assistidos, e seguiu crescendo dias depois de postado (aprendizado da própria página, não regra do Instagram). Para saber se o motivo é o formato, testar a mesma estrutura com temas diferentes antes de mudar o diagrama. Scripts: `videos/diagrama_energia.py`, `videos/diagrama_controle.py`, `videos/diagrama_pessoas_dificeis.py`.
 - **Card tweet** (fundo preto, foto de perfil, nome com selo, frase grande com o fim em dourado). Inspirado num post de frase com 2,8 mil envios. Script: `posts/card_tweet.py`. Testar a frase no Stories antes de pôr no feed.
 
 Repetir esses formatos com temas novos antes de inventar outro. Frases sem promessa absoluta ("você não vai se decepcionar", "não explode"): o estoicismo diminui o domínio da emoção, não a elimina.
