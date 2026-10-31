@@ -1,4 +1,6 @@
-> **Padrão atualizado em 31/10/2026:** consulte primeiro a [Biblioteca editorial de engajamento](estrategia-engajamento/README.md). Os exemplos abaixo são históricos e podem conter handle antigo, restrição indevida de público e duração rígida de Reels. O identificador atual é **@mente_mulher_estoica**, o público não é exclusivamente feminino e a duração de cada Reel deve seguir o conteúdo e os testes de desempenho.\n\n# Biblioteca de Comandos · Mente Mulher Estoica
+> **Padrão atualizado em 31/10/2026:** consulte primeiro a [Biblioteca editorial de engajamento](estrategia-engajamento/README.md). Os exemplos abaixo são históricos e podem conter handle antigo, restrição indevida de público e duração rígida de Reels. O identificador atual é **@mente_mulher_estoica**, o público não é exclusivamente feminino e a duração de cada Reel deve seguir o conteúdo e os testes de desempenho.
+
+# Biblioteca de Comandos · Mente Mulher Estoica
 
 Nove comandos prontos, agrupados por função. Cada bloco de código é para copiar e colar,
 como mensagem no Claude ou no campo Instruções de um projeto. O contexto da marca já está
