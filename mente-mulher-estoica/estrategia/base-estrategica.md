@@ -250,6 +250,7 @@ Comparar conteúdos com duração, formato e condições semelhantes. Não trata
 | E02 | O que realmente está sob o seu controle? | Diagrama animado | 17 s | — | — | Pronto para publicar |
 | E03 | Pessoas difíceis (versão 2) | Diagrama animado | 21 s | — | — | Pronto para publicar |
 | E04 | 10 coisas que mulheres emocionalmente maduras pararam de fazer | Foto + gancho, lista na legenda | 7 s | 31/10/2026, por volta das 11h | Sim | Aguardando métricas (coletar às 14h, 11h de 01/11, 03/11 e 07/11) |
+| E06 | Nem toda provocação merece uma resposta | Diagrama animado | 17 s | — | Não (formato já validado) | Pronto para publicar (Instagram e Facebook) |
 | E05 | Escuta essa colega (abertura + vídeo de @luanaalaminii) | React | 48 s | — | — | Aguardando permissão |
 
 Medições de cada experimento entram abaixo, com data:
