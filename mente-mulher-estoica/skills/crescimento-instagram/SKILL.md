@@ -43,6 +43,14 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 
 Repetir esses formatos com temas novos antes de inventar outro. Frases sem promessa absoluta ("você não vai se decepcionar", "não explode"): o estoicismo diminui o domínio da emoção, não a elimina.
 
+## Comparação a favor
+
+Ideia de @luanaalaminii: "use a comparação a seu favor, faça um pouco melhor que eles". Quando a Simone trouxer um post que performou bem em outro perfil, identificar por que funcionou (formato, gancho, interação) e criar a versão dela um pouco melhor: com fonte, com a identidade da página e com crédito quando usar material de outra pessoa. Nunca copiar o texto.
+
+Exemplos que já deram certo:
+- Post de frase da @grancursosonline virou card tweet com foto, selo e fonte (`posts/card_tweet.py`).
+- Story de sábado do @paulodygital (foto do dia, frase em caixa branca e figurinha de controle deslizante) virou story com café, Sêneca e a pergunta "Quanto você precisava desse lembrete hoje?".
+
 ## Reel de teste
 
 Para vídeo novo, sugerir ativar "Reel de teste" na tela final: vai só para não seguidores e não aparece no perfil. Se performar, publicar no perfil. Na grade ficam só os que deram certo.
