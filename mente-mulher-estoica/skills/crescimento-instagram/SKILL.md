@@ -71,4 +71,7 @@ Quando a Simone mandar um vídeo, roteiro ou carrossel para revisar, passe pela 
 
 ## Arquivo
 
+A base de conhecimento completa (aprendizados numerados, protocolo de testes e histórico de experimentos) fica em `estrategia/base-estrategica.md`. Cada dica nova vira um registro numerado lá, no formato A a H. Ao receber Insights, acrescentar a medição com data sem apagar as anteriores.
+
+
 Tudo que for criado (script, roteiro, legenda) vai para o repositório GitHub da Simone: scripts em `videos/` ou `posts/`, legendas em `posts/textos/legendas-<mês>-<ano>.md`, e as lições novas entram nesta skill. Fotos pessoais nunca.
