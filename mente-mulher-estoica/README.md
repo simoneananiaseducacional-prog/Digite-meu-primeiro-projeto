@@ -27,6 +27,8 @@ conhecimento do app.
 | `diario/` | **Diário Estoico de 30 Dias**, produto de reflexão guiada. Fonte em Markdown e HTML pronto para virar PDF. |
 | `serie-mulheres-estoicas/` | Planejamento da **série biográfica** Diário das Mulheres Estoicas (9 protagonistas). |
 | `perfil/` | Estrutura dos destaques do perfil no Instagram. |
+| `roteiros/` | Roteiros de vídeo em Markdown, prontos para virar reel. |
+| `videos/` | **Fábrica de vídeos**: gera reels de frases animadas e legenda vídeos gravados a partir dos roteiros. Veja `videos/README.md`. |
 | `fontes/` | Materiais de referência para estudo (autoria de terceiros, não revender). |
 
 ## Identidade da marca (resumo)
@@ -44,3 +46,17 @@ conhecimento do app.
 - Evoluir o `prototipo/` para as telas do MVP descritas em `app.md`.
 - Reunir o conteúdo das primeiras reflexões diárias (30 a 90 dias).
 - Reunir mais conteúdos (roteiros, carrosséis, legendas) neste acervo.
+
+## Padrão visual (regra da Simone, 19/10/2026)
+
+Todo post, carrossel e reel segue a identidade da marca, sem exceção:
+fundo preto com vinheta e granulado, texto em Cormorant Garamond off-white, destaque em
+dourado itálico (#C4A062) e a assinatura MENTE MULHER ESTOICA no pé.
+Posts de outros perfis que ela manda são referência de ideia e estrutura, **nunca de visual**.
+
+- Carrossel de frases **(estilo preferido dela)**: `posts/carrossel_destaque.py` — aspas grandes,
+  Montserrat bem grossa, trechos em dourado, foto dela + "Mente Mulher Estoica" no pé;
+  temas `claro`, `preto` e `vinho`
+- Carrossel de frases em serifa (alternativa): `posts/carrossel_marca.py`
+- Carrossel de lista numerada: `posts/carrossel_lista.py`
+- Reels animados: `videos/` (estilo.py define cores, fontes e área segura)
