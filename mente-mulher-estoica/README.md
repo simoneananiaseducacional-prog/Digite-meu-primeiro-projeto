@@ -1,4 +1,6 @@
-> **Atualização editorial (31/10/2026):** o perfil oficial é **@mente_mulher_estoica**. Antes de criar conteúdo, consulte a [biblioteca de engajamento e padrões atuais](estrategia-engajamento/README.md). Este acervo contém descrições e perfis históricos que não substituem o padrão mais recente.\n\n# Mente Mulher Estoica
+> **Atualização editorial (31/10/2026):** o perfil oficial é **@mente_mulher_estoica**. Antes de criar conteúdo, consulte a [biblioteca de engajamento e padrões atuais](estrategia-engajamento/README.md). Este acervo contém descrições e perfis históricos que não substituem o padrão mais recente.
+
+# Mente Mulher Estoica
 
 Acervo versionado de conteúdos, comandos e materiais do perfil **@mente.mulher.estoica**.
 
