@@ -185,6 +185,21 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **Adaptação:** "10 coisas que mulheres emocionalmente maduras pararam de fazer", com foto da Simone e legenda com fontes.
 - **Decisão:** testar com o recurso "Teste" do Instagram.
 
+### 008. Posts parecidos, alcances muito diferentes
+**Classificação:** Observação (31/10/2026, prints da Simone).
+
+| Post | Formato | Gancho fala com quem assiste? | Visualizações |
+|---|---|---|---|
+| Para onde vai a sua energia? | Diagrama animado | Sim, pergunta ("sua energia") | 34,7 mil |
+| Se você reage e depois se arrepende, olha isso | Mapa animado | Sim, dor de quem assiste | 8,4 mil |
+| Estoica o suficiente para deixar que as pessoas façam suas escolhas | Texto parado | Não, fala de "eu" | 3,5 mil |
+| Estoica o suficiente para não responder a toda provocação | Texto parado | Não, fala de "eu" | 645 |
+
+- **Hipótese:** o que separa os dois maiores não é o fundo preto, que todos têm, mas o gancho em "você" com uma dor ou pergunta, mais o movimento que conta uma escolha.
+- **Cuidado:** variação grande entre posts parecidos é normal no Instagram. Um sucesso entre vários posts medianos não prova a causa.
+- **Experimento:** publicar diagramas com gancho em "você" (E02, E03, E06) e comparar com a série "Estoica o suficiente".
+- **Decisão:** testar.
+
 ---
 
 ## 5. Identidade visual oficial
