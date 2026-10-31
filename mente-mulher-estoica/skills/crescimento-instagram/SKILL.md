@@ -6,7 +6,7 @@ description: Checklist de crescimento para o perfil @mente_mulher_estoica. Use q
 # Crescimento do perfil @mente_mulher_estoica
 
 Base: checklist de @ojeancarlo.s (Jean Carlos), adaptado às regras da página.
-Responda em português simples, direto, um passo de cada vez.
+Responda em português simples e CURTO. A Simone não quer textos longos: vá direto ao que fazer.
 
 ## Regras da página (valem para tudo abaixo)
 
@@ -36,7 +36,16 @@ Responda em português simples, direto, um passo de cada vez.
 - [ ] **Um pedido no fim:** salvar, mandar para alguém, comentar ou seguir. Escolha um só. Para esta página, "manda para alguém" e "salva" funcionam melhor que "curte".
 - [ ] **Fonte conferida** e escrita no vídeo ou na legenda.
 
-Formato que já provou funcionar: diagrama animado em fundo preto com serifa branca e dourada ("Para onde vai a sua energia?", 28,3 mil views e 363 envios). Repetir o formato com temas novos antes de inventar outro.
+## Formatos que funcionam
+
+- **Diagrama animado** (fundo preto, serifa branca e dourada, caminhos vermelhos que apagam e um dourado que fica). "Para onde vai a sua energia?" teve 28,3 mil views e 363 envios. Scripts: `videos/diagrama_energia.py`, `videos/diagrama_controle.py`, `videos/diagrama_pessoas_dificeis.py`.
+- **Card tweet** (fundo preto, foto de perfil, nome com selo, frase grande com o fim em dourado). Inspirado num post de frase com 2,8 mil envios. Script: `posts/card_tweet.py`. Testar a frase no Stories antes de pôr no feed.
+
+Repetir esses formatos com temas novos antes de inventar outro. Frases sem promessa absoluta ("você não vai se decepcionar", "não explode"): o estoicismo diminui o domínio da emoção, não a elimina.
+
+## Reel de teste
+
+Para vídeo novo, sugerir ativar "Reel de teste" na tela final: vai só para não seguidores e não aparece no perfil. Se performar, publicar no perfil. Na grade ficam só os que deram certo.
 
 ## 3. Constância
 
@@ -51,3 +60,7 @@ O post original diz "posta todo santo dia, com ou sem vontade". Para a Simone, q
 ## Como usar esta skill
 
 Quando a Simone mandar um vídeo, roteiro ou carrossel para revisar, passe pela lista da seção 2 e diga só o que está faltando, em ordem de importância. Quando ela pedir bio, entregue as três linhas prontas para colar.
+
+## Arquivo
+
+Tudo que for criado (script, roteiro, legenda) vai para o repositório GitHub da Simone: scripts em `videos/` ou `posts/`, legendas em `posts/textos/legendas-<mês>-<ano>.md`, e as lições novas entram nesta skill. Fotos pessoais nunca.
