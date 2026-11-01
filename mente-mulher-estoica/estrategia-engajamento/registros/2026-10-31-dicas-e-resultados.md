@@ -33,3 +33,12 @@
 - Não atribuir causalidade onde há apenas correlação.
 - Não exigir resposta a DMs, follow-back ou automação de comentários. A autora expressou preferência por não manter respostas automáticas no Instagram.
 - Preservar o perfil correto: **@mente_mulher_estoica**.
+
+
+## 6. Referência observada em 31/10 — @nathaliarcuri (carrossel publicado em 09/10)
+- **Fonte:** prints da publicação fornecidos por Simone, oito cards. Manchete: “Seja tóxica. Diga NÃO.”; cards seguintes explicam como empreendedoras podem delegar, cobrar pelo trabalho, não oferecer descontos por amizade, recusar demandas sem justificar tudo e proteger o tempo e a própria sustentabilidade. CTA final: comentar “MESA”.
+- **Indicadores mostrados nos prints:** cerca de 9.990 curtidas, 526 comentários, 330 reposts e 1.319 envios naquele instante. Esses números sozinhos não provam o efeito do gancho ou a qualidade da conversão; faltam alcance, base de seguidores, origem das visualizações e impacto da distribuição.
+- **Padrão potencialmente útil:** capa de contraste/paradoxo, conteúdo com progressão temática, exemplos concretos e textos de fácil leitura. A sequência entrega o tema prometido e desloca uma palavra provocativa para uma discussão prática sobre limites.
+- **Cuidado editorial:** evitar importar literalmente “seja tóxica”, que confunde assertividade com comportamento tóxico. Não copiar fotografia, identidade, textos nem a CTA que induz a comentar palavra-chave para receber material no direct; Simone não quer esse fluxo de DMs automáticas. A lição da criadora é sobre NEGAR pedidos com critério, não hostilizar pessoas.
+- **Adaptação autoral proposta:** “Você não precisa ser agradável o tempo todo. Precisa aprender a ser justa. Inclusive com você.” Construir carrossel em torno de discernimento, justiça, coragem e temperança, incluindo exemplos reais de quando dizer não é responsável e quando ainda é necessário ajudar. Público da página é amplo, não exclusivo a mulheres.
+- **Status:** referência criativa/hipótese de estratégia; validar experimentalmente antes de formular regra de engajamento.
