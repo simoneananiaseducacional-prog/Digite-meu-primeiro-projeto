@@ -31,7 +31,8 @@ CONTAGEM = 3.0
 def tempos():
     t, out = 0.0, []
     for f in FRASES:
-        d = 1.1 + 0.42 * len(f.split())
+        n = len(f.split())
+        d = 1.1 + 0.42 * n + (1.0 if n <= 4 else 2.0)  # folga para ler com calma
         out.append((t, t + d, f)); t += d
     return out, t + 1.5
 
