@@ -18,18 +18,26 @@
 4. **Coerência de marca:** manter @mente_mulher_estoica, estética editorial natural e humana, sem pose excessivamente artificial, sem CTA genérica (“vamos juntas”, “siga…”), sem travessões e sem tom de autoajuda vaga.
 5. **Comparação com teste vigente:** os Reels em diagrama têm resultados próprios relatados no registro de 01/11. Este carrossel é formato complementar para testar salvamentos, envios e visitas ao perfil, não substituto baseado em métricas de outra conta.
 
-## Proposta autoral para teste
-**Título provisório:** “O que o estoicismo me fez questionar”.
-**Formato:** álbum/carrossel de 7 a 8 quadros, com fotos reais da autora, composição editorial 4:5 para feed; adaptar dimensão se for TikTok.
-**Progressão textual a desenvolver, sem copiar:**
-1. Capa: “O que o estoicismo me fez questionar”.
-2. “Estou sofrendo pelo que aconteceu ou pelo que estou supondo?” (impressões/julgamento; Epicteto, Manual 5, conferir fonte antes da publicação).
-3. “Estou gastando energia tentando controlar escolhas que não são minhas?” (Epicteto, Manual 1).
-4. “Estou confundindo silêncio com omissão?” (responsabilidade e justiça; análise autoral).
-5. “Perder algo significa, necessariamente, perder o que importa?” (avaliar contextos; não romantizar perdas).
-6. “Minhas expectativas estão orientando minha ação ou tentando garantir o resultado?” (controle e ação).
-7. “Qual atitude minha hoje expressa sabedoria, coragem, justiça e temperança?” (aplicação cotidiana).
-8. Fecho discreto e identificador @mente_mulher_estoica, sem convite genérico.
+## Roteiro editorial revisado — foco em identificação e conversão
+
+**Objetivo:** criar identificação imediata em quem ainda não conhece a autora e comunicar a promessa do perfil: filosofia aplicada às situações reais, com critério e responsabilidade. Cada card deve funcionar em poucos segundos, com emoção reconhecível, uma única ideia e progressão, não como lista solta.
+
+**Exceção justificada de voz:** usar primeira pessoa NESTA série de relato autoral, sem alterar regra geral dos cards. Publicar como aprendizado pessoal somente após Simone validar se as frases representam mesmo suas experiências. Evitar repetição dos temas saturados de "silêncio" e "controle".
+
+**Formato:** 8 cards (4:5 no Instagram), com fotografias reais, distintas e não artificiais da autora. Fotos não devem simular uma vida de luxo; capa serifada, texto curto e legível, paleta editorial, assinatura discreta. Primeiro card deve atrair quem ainda não segue, e último dizer por que vale conhecer a página, sem CTA vazia.
+
+1. **Capa:** “O que eu aprendi com o estoicismo” / apoio menor: “Não foi a deixar de sentir. Foi a enxergar melhor.”
+2. **Percepção:** “Nem tudo o que penso é verdade. Às vezes, estou reagindo a uma suposição.”
+3. **Impulso:** “Posso sentir raiva sem fazer dela a minha resposta.”
+4. **Firmeza:** “Ser firme não exige levantar a voz. Exige saber por que estou dizendo não.”
+5. **Reputação:** “Nem toda opinião sobre mim merece virar uma preocupação minha.”
+6. **Aceitação e limite:** “Aceitar o que aconteceu não me obriga a aceitar que se repita.”
+7. **Presença:** “O passado pode me ensinar. Mas não pode viver o presente por mim.”
+8. **Fecho/proposta de valor:** “O estoicismo não me prometeu uma vida fácil. Me ensinou a ter mais critério na vida que tenho.” / assinatura discreta: “Reflexões sobre escolhas, limites e comportamento humano · @mente_mulher_estoica”.
+
+**Rigor:** são formulações autorais, não citações. Epicteto, Manual 1 e 5 fundamenta o exame das impressões e a distinção do que depende de nós; Sêneca, Sobre a ira, livros I–II, inspira a reflexão sobre raiva e assentimento; responsabilidade, justiça e temperança inspiram a firmeza e a resposta ponderada. Antes de publicar bibliografia em legenda, confirmar passagens específicas e tradução. Não afirmar que qualquer mulher consegue simplesmente desligar emoções ou que deve aceitar injustiças.
+
+**Hipótese de conversão:** reconhecimento (“isso acontece comigo”) → contraste (“não tinha pensado assim”) → autoridade prática (“ela não vende só frases bonitas”) → promessa concreta no fecho (“quero ler mais”). Testar contra capa alternativa com pergunta real, sem clickbait. Sem garantia de crescimento.
 
 ## Experimento e critério
 Comparar com carrosséis autorais de tema e janela semelhantes, após 24 e 72 horas. Registrar visualizações/alcance, salvamentos por alcance, envios por alcance, visitas ao perfil e seguidores atribuídos quando disponíveis; registrar tempo de produção e distribuição orgânica/paga. Não comparar os números absolutos da conta alheia com desempenho próprio.
