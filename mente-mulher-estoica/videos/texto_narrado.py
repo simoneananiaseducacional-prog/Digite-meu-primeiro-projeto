@@ -10,20 +10,17 @@ import estilo, midia
 
 W, H, FPS = 1080, 1920, 30
 FRASES = [
-    "Talvez as pessoas nunca entendam",
-    "por que você ficou mais reservada.",
-    "Não foi frieza.",
-    "Foi aprendizado.",
-    "Você entregou os bastidores da sua alma",
-    "para quem só queria plateia.",
-    "E aprendeu que nem todo mundo",
-    "merece acesso a tudo o que você é.",
-    "Marco Aurélio dizia que não existe refúgio",
-    "mais tranquilo do que a própria mente.",
-    "Hoje você fala menos, escolhe mais",
-    "e protege a sua paz.",
-    "Isso não é distância.",
-    "É maturidade.",
+    "Você se afastou de alguém e agora sente culpa?",
+    "Talvez você tenha passado tanto tempo tentando agradar,",
+    "que dizer \"não\" parece maldade.",
+    "Antes de deixar a culpa decidir, pergunta para você:",
+    "eu desrespeitei essa pessoa,",
+    "ou só deixei de aceitar o que me fazia mal?",
+    "Você pode agir com respeito.",
+    "Mas não controla como o outro vai reagir ao seu \"não\".",
+    "Sentir culpa não quer dizer que você errou.",
+    "Quer dizer que vale olhar com calma.",
+    "E decidir com justiça, não com medo.",
 ]
 CONTAGEM = 3.0
 
