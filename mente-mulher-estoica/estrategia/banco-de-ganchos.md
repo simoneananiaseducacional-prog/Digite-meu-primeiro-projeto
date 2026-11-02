@@ -44,6 +44,12 @@ Inspiração: carrossel "60 ganchos pequenos que prendem a atenção rápido", d
 - Nem toda provocação merece uma resposta.
 - Troca "por que isso aconteceu?" por "qual o próximo passo?".
 
+## Ganchos de curiosidade genuína (desafio e processo)
+
+- Vou aplicar uma prática estoica por dia durante 30 dias. Dia 1:
+- Passei uma semana sem responder ninguém no impulso. O que aconteceu:
+- Fiz as 3 perguntas de Sêneca antes de dormir por 7 noites.
+
 ## Ganchos de lista e de humor
 
 - 10 coisas que mulheres emocionalmente maduras pararam de fazer.

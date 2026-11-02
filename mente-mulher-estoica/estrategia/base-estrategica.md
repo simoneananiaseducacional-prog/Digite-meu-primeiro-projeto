@@ -214,6 +214,13 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **Descartado:** "postar por essa câmera força o algoritmo a entregar para um número absurdo de pessoas". Não há fonte oficial; o botão de postar é o mesmo.
 - **Decisão:** ler a seção Boas Práticas antes de planejar a semana; postar pelo caminho normal.
 
+### 011. Curiosidade genuína (@giportugaldesigner)
+**Classificação:** Hipótese.
+- **Dica:** reels que vão bem despertam curiosidade de forma genuína. Exemplo dela: "Vou gravar 100 vídeos em 180 dias" com a parede de post-its (608 mil views no vídeo citado).
+- **Evidência:** só o caso dela. "Segredinho infalível" e "absolutamente todos os virais" são exagero; os "4 pilares" não aparecem nos prints.
+- **Adaptação:** curiosidade genuína = o gancho abre uma pergunta real que o vídeo responde de verdade, sem isca. Para a página: desafio pessoal com processo visível (ex.: "30 dias aplicando uma prática estoica por dia"), pergunta que a pessoa quer ver respondida, ou um "antes e depois" honesto.
+- **Decisão:** testar um reel de desafio pessoal e comparar com os diagramas.
+
 ---
 
 ## 5. Identidade visual oficial
