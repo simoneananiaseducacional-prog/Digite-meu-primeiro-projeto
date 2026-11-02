@@ -7,7 +7,7 @@ Consultar a **Biblioteca de Engajamento** (`mente-mulher-estoica/estrategia-enga
 - `base-estrategica.md`: aprendizados numerados e o que já foi testado.
 
 ## Conferência obrigatória (mostrar para a Simone antes de entregar)
-Todo post ou vídeo vem com esta tabela curta, preenchida a partir da Biblioteca:
+Todo post, vídeo e legenda vem com esta tabela curta, preenchida a partir da Biblioteca:
 
 | Item | Como ficou |
 |---|---|
