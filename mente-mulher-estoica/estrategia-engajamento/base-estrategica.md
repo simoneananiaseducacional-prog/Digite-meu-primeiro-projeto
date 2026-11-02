@@ -234,6 +234,10 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **Adaptação:** coletar perguntas no Stories e usá-las como gancho. Detalhes em `registros/2026-11-02-gancho-caixinha-de-pergunta.md`.
 - **Decisão:** testar.
 
+### 014. Hashtags de tema, não de marca
+**Classificação:** Decisão da Simone (02/11/2026).
+- Tirar #mentemulherestoica e #mulheresestoicas. Usar hashtags de tema: estoicismo, inteligência emocional, autoconhecimento, comportamento humano, neurociência, psicanálise (quando couber) e o filósofo citado.
+
 ---
 
 ## 5. Identidade visual oficial

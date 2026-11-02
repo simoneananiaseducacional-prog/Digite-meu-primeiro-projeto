@@ -17,7 +17,7 @@ Quem se prepara não precisa reagir no impulso.
 
 Salva para rever amanhã de manhã, antes de começar o dia. 🤍
 
-#estoicismo #marcoaurelio #inteligenciaemocional #autoconhecimento #mentemulherestoica
+#estoicismo #marcoaurelio #inteligenciaemocional #autoconhecimento #comportamentohumano
 
 ## Reel "O que está sob o seu controle?" (videos/diagrama_controle.py)
 
@@ -34,7 +34,7 @@ Quando coloca no que controla, recupera a paz.
 
 Manda para alguém que está tentando controlar o que não pode. 🤍
 
-#estoicismo #epicteto #inteligenciaemocional #autoconhecimento #mentemulherestoica
+#estoicismo #epicteto #inteligenciaemocional #autoconhecimento #comportamentohumano
 
 ## Reel "Aprender ou confirmar" (react com @clailtonluz)
 
@@ -55,7 +55,7 @@ Comenta aqui: qual foi a última vez que você mudou de opinião?
 
 🎥 @clailtonluz
 
-#estoicismo #epicteto #socrates #autoconhecimento #inteligenciaemocional #humildade #desenvolvimentohumano #mentemulherestoica
+#estoicismo #epicteto #socrates #autoconhecimento #inteligenciaemocional #humildade #desenvolvimentohumano #comportamentohumano
 
 ## Cards tweet (posts/card_tweet.py)
 
@@ -68,7 +68,7 @@ Legenda geral:
 Qual dessas você precisava ler hoje? 🤍
 Manda para alguém que precisa também.
 
-#estoicismo #inteligenciaemocional #autoconhecimento #mentemulherestoica
+#estoicismo #inteligenciaemocional #autoconhecimento #comportamentohumano
 
 Legenda do card 3:
 Epicteto ensinava que algumas coisas dependem de nós, outras não (Manual, 1).
@@ -78,4 +78,4 @@ A sua resposta, o seu próximo passo, a sua paz: isso é seu.
 
 Manda para alguém que está carregando o que não é dela. 🤍
 
-#estoicismo #epicteto #inteligenciaemocional #autoconhecimento #mentemulherestoica
+#estoicismo #epicteto #inteligenciaemocional #autoconhecimento #comportamentohumano

@@ -14,7 +14,7 @@ Salva para lembrar disso no dia em que a cabeça não parar. 🤍
 
 🎥 @junqueira.cristina
 
-#estoicismo #seneca #autoconhecimento #inteligenciaemocional #mentemulherestoica
+#estoicismo #seneca #autoconhecimento #inteligenciaemocional #comportamentohumano
 
 ## Reel "Sentir culpa não quer dizer que você errou" (voz da Simone)
 
@@ -26,4 +26,4 @@ Antes de se culpar, pergunte com honestidade: houve desrespeito da minha parte, 
 
 Manda para alguém que precisa ouvir isso hoje.
 
-#estoicismo #epicteto #inteligenciaemocional #limites #mentemulherestoica
+#estoicismo #epicteto #inteligenciaemocional #limites #comportamentohumano

@@ -40,6 +40,11 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 
 Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar para análise" e opções de compartilhamento e remix, usar a skill `mente-mulher-estoica/estrategia-engajamento/skills/instagram-auditoria-configuracoes/SKILL.md` (Biblioteca de Engajamento, branch main). Configuração não é "hack do algoritmo": mudar uma opção não garante alcance.
 
+## Hashtags
+
+Não usar #mentemulherestoica nem #mulheresestoicas: quase ninguém busca, e o objetivo não é atrair só quem se identifica como "mulher estoica". Usar de 3 a 5 hashtags de tema, escolhidas pelo assunto do post:
+#estoicismo #inteligenciaemocional #autoconhecimento #comportamentohumano #neurociencia #psicanalise (só quando o post tocar psicanálise de fato), mais o nome do filósofo citado (#seneca, #epicteto, #marcoaurelio).
+
 ## Banco de ganchos
 
 Antes de criar qualquer vídeo, escolher o gancho em `mente-mulher-estoica/estrategia-engajamento/banco-de-ganchos.md` (modelos adaptados de @jessicaporfino, separados por dor, pergunta, revelação, corte, lista e humor). Ficam proibidos ganchos de promessa exagerada (dinheiro, "quebrou a internet", "instantaneamente"). Depois de postar, anotar o resultado na tabela do banco.
