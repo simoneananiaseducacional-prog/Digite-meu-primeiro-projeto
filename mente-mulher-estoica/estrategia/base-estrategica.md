@@ -200,6 +200,13 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **Experimento:** publicar diagramas com gancho em "você" (E02, E03, E06) e comparar com a série "Estoica o suficiente".
 - **Decisão:** testar.
 
+### 009. Banco de ganchos (@jessicaporfino)
+**Classificação:** Observação.
+- **Dica:** carrossel com 60 modelos curtos de gancho e CTA "comenta GANCHOS que eu te mando no direct" (259 envios em 12 horas).
+- **Adaptação:** modelos traduzidos para o tema da página em `estrategia/banco-de-ganchos.md`, sem os de promessa exagerada.
+- **Hipótese extra:** o CTA "comenta PALAVRA que eu te mando" também pode servir para o PDF "7 frases estoicas".
+- **Decisão:** usar o banco em todo reel novo e registrar o resultado de cada gancho.
+
 ---
 
 ## 5. Identidade visual oficial

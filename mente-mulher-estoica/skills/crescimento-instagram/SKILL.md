@@ -36,6 +36,10 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 - [ ] **Um pedido no fim:** salvar, mandar para alguém, comentar ou seguir. Escolha um só. Para esta página, "manda para alguém" e "salva" funcionam melhor que "curte".
 - [ ] **Fonte conferida** e escrita no vídeo ou na legenda.
 
+## Banco de ganchos
+
+Antes de criar qualquer vídeo, escolher o gancho em `estrategia/banco-de-ganchos.md` (modelos adaptados de @jessicaporfino, separados por dor, pergunta, revelação, corte, lista e humor). Ficam proibidos ganchos de promessa exagerada (dinheiro, "quebrou a internet", "instantaneamente"). Depois de postar, anotar o resultado na tabela do banco.
+
 ## Formatos que funcionam
 
 - **Diagrama animado** (fundo preto, serifa branca e dourada, caminhos vermelhos que apagam e um dourado que fica). "Para onde vai a sua energia?" passou de 34,5 mil views, 433 envios, 341 salvamentos e 133 seguidores, com média de 9 segundos assistidos, e seguiu crescendo dias depois de postado (aprendizado da própria página, não regra do Instagram). Para saber se o motivo é o formato, testar a mesma estrutura com temas diferentes antes de mudar o diagrama. Scripts: `videos/diagrama_energia.py`, `videos/diagrama_controle.py`, `videos/diagrama_pessoas_dificeis.py`.
