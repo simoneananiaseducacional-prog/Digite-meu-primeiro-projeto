@@ -12,6 +12,11 @@
 - [Registro de 02/11/2026 — checklist extraído de um Reel](registros/2026-11-02-checklist-configuracoes-instagram.md): o que os prints mostram, riscos e limites das alegações de crescimento.
 - **Regra:** não desligar proteção contra spam nem liberar toda reutilização em nome de um suposto bônus de alcance; preservar a preferência por DMs sem automação.
 
+## Skill obrigatória de validação de cada conteúdo
+- [Skill: Validação Editorial e Aprendizado de Engajamento](skills/validacao-editorial/SKILL.md): consultar **a cada nova proposta de post, Reel, Story, carrossel, legenda, gancho, roteiro ou modelo recebido**. Exige comparação com os registros de maior alcance da própria página, gancho, curiosidade com entrega, identificação do público, rigor estoico, estética da marca e **tabela de conformidade antes de aprovar**.
+- **Regra operacional:** a autora não precisa lembrar o assistente de consultar o GitHub. O modelo recebido é ponto de partida, não aprovação automática. Se a conexão estiver indisponível, registrar a limitação e não afirmar que conferiu a Skill ou as métricas.
+- Para mudanças de configuração do Instagram, combinar com a Skill de Auditoria de Configurações e Alcance indicada acima.
+
 ## Regras inegociáveis da marca
 - Estoicismo verificável, aplicado a comportamento humano, relações, decisões, responsabilidade, justiça, autocontrole e vida real. O perfil recebe todos os públicos; a palavra "Mulher" integra a identidade, mas não obriga conteúdo dirigido exclusivamente a mulheres.
 - Voz humana, natural, madura, perspicaz, firme quando necessário; leve/humorada quando pertinente. Sem tom de coach, sem frases genéricas de autoajuda, sem travessões desnecessários, sem interação forçada (ex.: “comente um número”, “siga para…”).
