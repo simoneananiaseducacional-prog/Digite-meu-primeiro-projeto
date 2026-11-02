@@ -1,8 +1,8 @@
-> **Atualização editorial (31/10/2026):** o perfil oficial é **@mente_mulher_estoica**. Antes de criar conteúdo, consulte a [biblioteca de engajamento e padrões atuais](estrategia-engajamento/README.md). Este acervo contém descrições e perfis históricos que não substituem o padrão mais recente.
+> **Atualização editorial (02/11/2026):** perfil **@mente_mulher_estoica**. Consultar a [Biblioteca de Engajamento](estrategia-engajamento/README.md) e a [skill de validação](estrategia-engajamento/skills/validacao-editorial/SKILL.md) antes de qualquer conteúdo ou revisão. Eixos: **estoicismo, psicanálise e neurociência**. A série Mulheres Estoicas não integra o planejamento atual.
 
 # Mente Mulher Estoica
 
-Acervo versionado de conteúdos, comandos e materiais do perfil **@mente.mulher.estoica**.
+Acervo versionado de conteúdos, comandos e materiais do perfil **@mente_mulher_estoica**.
 
 ## Visão
 
@@ -27,16 +27,15 @@ conhecimento do app.
 | Pasta | O que é |
 | --- | --- |
 | `diario/` | **Diário Estoico de 30 Dias**, produto de reflexão guiada. Fonte em Markdown e HTML pronto para virar PDF. |
-| `serie-mulheres-estoicas/` | Planejamento da **série biográfica** Diário das Mulheres Estoicas (9 protagonistas). |
+| `serie-mulheres-estoicas/` | **Acervo histórico**, não utilizar como série ou tema editorial recorrente sem solicitação expressa. |
 | `perfil/` | Estrutura dos destaques do perfil no Instagram. |
 | `fontes/` | Materiais de referência para estudo (autoria de terceiros, não revender). |
 
 ## Identidade da marca (resumo)
 
-- **Autora:** Simone Ananias — psicopedagoga, especialista em Inclusão e Comportamento.
-- **Nicho:** estoicismo aplicado, inteligência emocional, fé e reconstrução pessoal, com a
-  série *Bíblia e Estoicismo*.
-- **Público:** mulheres de 25 a 45 anos, muitas mães, em reconstrução emocional.
+- **Autora:** Simone Ananias, pedagoga e psicopedagoga, especialista em Educação Especial Inclusiva.
+- **Linha editorial:** estoicismo, psicanálise e neurociência, com reflexões sobre autoconhecimento, escolhas e relações. Distinguir abordagem psicanalítica de achados empíricos em neurociência.
+- **Público:** pessoas adultas interessadas nesses temas, sem delimitação exclusiva por gênero.
 - **Voz:** direta, introspectiva, firme, feminina, sem vitimismo, sem registro de coach.
 - **Estética:** preto e branco editorial, preto e dourado, tipografia serifada, muito respiro.
 
