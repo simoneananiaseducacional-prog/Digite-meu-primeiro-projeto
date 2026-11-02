@@ -1,4 +1,4 @@
-> **Padrão atualizado em 31/10/2026:** consulte primeiro a [Biblioteca editorial de engajamento](estrategia-engajamento/README.md). Os exemplos abaixo são históricos e podem conter handle antigo, restrição indevida de público e duração rígida de Reels. O identificador atual é **@mente_mulher_estoica**, o público não é exclusivamente feminino e a duração de cada Reel deve seguir o conteúdo e os testes de desempenho.
+> **Atualização editorial (02/11/2026):** antes de usar qualquer comando, consultar [Biblioteca de Engajamento](estrategia-engajamento/README.md) e [Skill de Validação](estrategia-engajamento/skills/validacao-editorial/SKILL.md). Os comandos devem seguir os eixos **estoicismo, psicanálise e neurociência** e não reativar a série ou hashtag “Mulheres Estoicas”.
 
 # Biblioteca de Comandos · Mente Mulher Estoica
 
@@ -13,22 +13,16 @@ o complementa.
 
 ## Contexto fixo (voz e formato da marca)
 
-> Perfil **@mente.mulher.estoica**. Nicho: estoicismo aplicado, inteligência emocional,
-> comportamento, fé e reconstrução pessoal, com a série **Bíblia e Estoicismo** (fé e filosofia
-> como complementares, Cristo no centro e o estoicismo como antecipação). Autora: **Simone
-> Ananias**, psicopedagoga, especialista em Inclusão e Comportamento. Público: mulheres de
-> 25 a 45 anos, muitas mães, que já se cansaram de sobreviver no impulso, na culpa, na
-> comparação ou em relações desequilibradas.
+> Perfil **@mente_mulher_estoica**. Linha editorial vigente: **estoicismo, psicanálise e neurociência**, além de filosofia prática, autoconhecimento, maturidade emocional, relações e escolhas. Fé quando pertinente. Público adulto de diferentes gêneros.
 >
-> **Voz:** direta, profunda, introspectiva, quase silenciosa, feminina e firme, sem vitimismo.
+> **Voz:** natural, reflexiva, firme, intelectualmente responsável, sem tom de coach, travessões gratuitos, engajamento forçado ou clichés de IA.
 >
-> **Proibido:** travessão, ponto de exclamação, registro de coach ("vira a chave", "você é forte,
-> capaz, merecedora"), primeira pessoa "eu" nas legendas, clichê de IA. Fecho em imperativo
-> universal, sem flexão de gênero.
+> **Rigor:** verificar citações filosóficas; distinguir psicanálise (perspectiva teórica) de neurociência (pesquisa empírica). Não atribuir formação em psicologia/psicanálise ou realizar diagnósticos.
 >
-> **Estética:** preto e branco editorial, preto e dourado, tipografia serifada elegante, muito
-> respiro. Feed em 1080 x 1350. Reels de 30 a 60 segundos, com legenda na tela e capa com
-> frase-título.
+> **Visual:** editorial preto/grafite/off-white, acentos discretos, leitura clara; duração e formato definidos pelo tema.
+>
+> **Não usar automaticamente:** a série ou hashtag “Mulheres Estoicas”; o rótulo “comportamento humano” como identidade editorial; público exclusivamente feminino.
+
 
 ---
 
@@ -41,9 +35,9 @@ Atue como estrategista sênior de crescimento no Instagram para o perfil Mente M
 
 Para cada ideia, traga: conceito, gancho, formato ideal, por que parece nova e por que geraria salvamento ou compartilhamento.
 
-Nicho: mulheres, reconstrução emocional, estoicismo aplicado, fé, autocontrole, valor próprio e elegância interior.
+Nicho: estoicismo, psicanálise e neurociência, com aplicações à vida cotidiana, relações e escolhas.
 
-Público: mulheres de 25 a 45 anos, muitas mães, que já se cansaram de sobreviver no impulso, na culpa, na comparação ou em relações desequilibradas.
+Público: pessoas adultas interessadas em estoicismo, psicanálise, neurociência e autoconhecimento.
 
 Objetivo: crescer com profundidade, gerar identificação, autoridade e conteúdo salvável.
 
@@ -53,7 +47,7 @@ Voz: direta, introspectiva, firme, sem registro de coach, sem exclamação, sem 
 ### 2. O Mapa dos 10 mil
 
 ```
-Atue como estrategista de crescimento orgânico e monte o plano de crescimento de @mente.mulher.estoica.
+Atue como estrategista de crescimento orgânico e monte o plano de crescimento de @mente_mulher_estoica.
 
 Regras: sem clichê, foco em conteúdo salvável e compartilhável, ideias fáceis de executar sozinha, linguagem prática. Tudo dentro da voz e da estética da marca.
 
@@ -61,7 +55,7 @@ Formato:
 - 5 pilares de conteúdo
 - 10 temas com maior potencial de alcance
 - 10 temas com maior potencial de novos seguidores
-- Diferenciais de posicionamento a explorar (série Bíblia e Estoicismo, síntese autoral entre fonte estoica e exegese honesta, recorte feminino real na filosofia)
+- Diferenciais de posicionamento: reflexão estoica fundamentada; diálogo criterioso com psicanálise e neurociência; aplicações reais.
 
 No fim, 3 apostas de post fixado.
 ```
@@ -69,9 +63,9 @@ No fim, 3 apostas de post fixado.
 ### 3. Calendário de 30 dias
 
 ```
-Atue como editor de conteúdo e monte um calendário de 30 dias para @mente.mulher.estoica crescer de forma orgânica.
+Atue como editor de conteúdo e monte um calendário de 30 dias para @mente_mulher_estoica crescer de forma orgânica.
 
-Regras: 1 conteúdo principal por dia, temas conectados entre si, variando topo, meio e fundo de funil. Alterne carrossel, reel e story. Inclua na rotação a série Bíblia e Estoicismo e o Diário das Mulheres Estoicas. CTA só quando fizer sentido, nunca genérico. Respeite a voz e a estética da marca.
+Regras: frequência sustentável de publicação, temas conectados entre si, variando topo, meio e fundo de funil. Alterne carrossel, reel e story. Distribua temas de estoicismo, psicanálise e neurociência, sem inserir automaticamente a série Mulheres Estoicas; fé quando pertinente. CTA só quando fizer sentido, nunca genérico. Respeite a voz e a estética da marca.
 
 Formato: tabela com Dia, Formato, Tema, Gancho, Objetivo (alcance, autoridade ou relacionamento). No fim, aponte os 5 conteúdos com maior potencial de salvamento.
 ```
@@ -87,9 +81,9 @@ Atue como copywriter especialista em Instagram. Gere 15 ganchos de abertura para
 
 Cada gancho para o scroll sem clickbait e soa inteligente, nativo e forte. No fim, ranqueie os 5 melhores.
 
-Ideia: mulheres que confundem amor com esforço excessivo e esquecem do próprio valor.
+Ideia: quando o desejo de aprovação enfraquece os próprios limites.
 
-Público: mulheres adultas em reconstrução emocional.
+Público: pessoas adultas interessadas nesses temas.
 
 Voz: elegante, firme, feminina, estoica, profunda, sem vitimismo, sem exclamação, sem travessão.
 ```
@@ -101,9 +95,9 @@ Voz: elegante, firme, feminina, estoica, profunda, sem vitimismo, sem exclamaç�
 ```
 Atue como roteirista de Reels focado em crescimento de perfil, com fala forte e objetiva, no tom da Mulher Estoica.
 
-Crie 15 ideias de Reels com potencial real de atrair seguidoras qualificadas do nicho (estoicismo, inteligência emocional, fé e reconstrução pessoal).
+Crie 15 ideias de Reels para público interessado em estoicismo, psicanálise, neurociência e filosofia prática.
 
-Regras: gancho forte nos três primeiros segundos, um assunto por vídeo, linguagem humana, sem clichê de coach, sem exclamação, sem travessão. Duração alvo de 30 a 60 segundos. Toda ideia precisa funcionar no mudo, então descreva a legenda na tela. Toda ideia tem uma frase-título curta para a capa.
+Regras: gancho forte nos três primeiros segundos, um assunto por vídeo, linguagem humana, sem clichê de coach, sem exclamação, sem travessão. Duração adequada ao conteúdo e à retenção observada no perfil. Toda ideia precisa funcionar no mudo, então descreva a legenda na tela. Toda ideia tem uma frase-título curta para a capa.
 
 Formato: tabela com Gancho (a fala do primeiro segundo), Ideia central, Estrutura em blocos curtos, Frase-título da capa, Nota de 0 a 10 de potencial.
 ```
@@ -115,9 +109,9 @@ Atue como estrategista de conteúdo faceless para Instagram. Transforme a ideia 
 
 Sem rosto, sem voz, sem trend, sem edição complexa. Para cada versão, entregue estrutura, texto na tela, direção visual (preto e branco editorial), legenda e CTA. Legenda sem travessão, sem exclamação, com fecho em imperativo universal.
 
-Ideia: uma mulher forte não é a que aguenta tudo, é a que aprende a não se abandonar.
+Ideia: reconhecer o que depende de você sem confundir aceitação com passividade.
 
-Público: mulheres que buscam autocontrole, fé, reconstrução e valor próprio.
+Público: pessoas que buscam autoconhecimento e filosofia prática.
 
 Objetivo: gerar salvamento, compartilhamento e identificação com profundidade.
 ```
@@ -131,7 +125,7 @@ Objetivo: gerar salvamento, compartilhamento e identificação com profundidade.
 ### 7. Otimizador de Perfil
 
 ```
-Atue como consultor de Instagram e analise o perfil @mente.mulher.estoica para aumentar a conversão de visitante em seguidor, sem trair a estética preto e branco editorial nem a voz da marca (direta, introspectiva, sem registro de coach, sem travessão, sem exclamação).
+Atue como consultor de Instagram e analise o perfil @mente_mulher_estoica para aumentar a conversão de visitante em seguidor, sem trair a estética preto e branco editorial nem a voz da marca (direta, introspectiva, sem registro de coach, sem travessão, sem exclamação).
 
 Avalie: bio, foto, nome, destaques, posts fixados e a promessa que o perfil comunica nos primeiros três segundos.
 
@@ -149,15 +143,15 @@ Faça cada linha puxar a próxima, corte o que estiver fraco e mantenha um tom n
 
 Conteúdo: (cole seu texto aqui)
 
-Voz: feminina, firme, elegante, estoica, humana e profunda.
+Voz: firme, elegante, estoica, humana e profunda.
 
-Público: mulheres adultas em reconstrução emocional.
+Público: pessoas adultas interessadas nesses temas.
 ```
 
 ### 9. Análise de conteúdo do nicho
 
 ```
-Atue como analista de conteúdo. Quando eu colar links ou descrições de Reels, carrosséis e posts que performam no nicho (estoicismo, inteligência emocional, filosofia, fé), identifique os padrões que se repetem: estilo visual, gatilho emocional, formato, estrutura de gancho.
+Atue como analista de conteúdo. Quando eu colar links ou descrições de Reels, carrosséis e posts que performam no nicho (estoicismo, psicanálise, neurociência e filosofia prática), identifique os padrões que se repetem: estilo visual, gatilho emocional, formato, estrutura de gancho.
 
 Regras: separe o que é padrão real do nicho do que é ruído. Traduza cada padrão em uma aplicação concreta para a Mulher Estoica, sempre respeitando a voz introspectiva e a estética preto e branco editorial. Nada de copiar conteúdo alheio.
 
