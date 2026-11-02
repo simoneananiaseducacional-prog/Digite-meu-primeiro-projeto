@@ -2,7 +2,7 @@
 
 Versão 2.0 | 31 de outubro de 2026
 
-Base permanente de conhecimento estratégico da página @mente_mulher_estoica. Reúne ensinamentos encontrados no Instagram, analisa sua validade, confronta com os resultados reais da página e transforma as melhores práticas em processos de criação. Servirá de fonte para a skill `skills/crescimento-instagram`.
+Base permanente de conhecimento estratégico da página @mente_mulher_estoica. Reúne ensinamentos encontrados no Instagram, analisa sua validade, confronta com os resultados reais da página e transforma as melhores práticas em processos de criação. Servirá de fonte para a skill `mente-mulher-estoica/estrategia-engajamento/skills/crescimento-instagram`.
 
 **Princípio editorial do projeto**
 Atrair pela curiosidade. Conquistar pela profundidade. Crescer pela confiança.
@@ -203,7 +203,7 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 ### 009. Banco de ganchos (@jessicaporfino)
 **Classificação:** Observação.
 - **Dica:** carrossel com 60 modelos curtos de gancho e CTA "comenta GANCHOS que eu te mando no direct" (259 envios em 12 horas).
-- **Adaptação:** modelos traduzidos para o tema da página em `estrategia/banco-de-ganchos.md`, sem os de promessa exagerada.
+- **Adaptação:** modelos traduzidos para o tema da página em `mente-mulher-estoica/estrategia-engajamento/banco-de-ganchos.md`, sem os de promessa exagerada.
 - **Hipótese extra:** o CTA "comenta PALAVRA que eu te mando" também pode servir para o PDF "7 frases estoicas".
 - **Decisão:** usar o banco em todo reel novo e registrar o resultado de cada gancho.
 

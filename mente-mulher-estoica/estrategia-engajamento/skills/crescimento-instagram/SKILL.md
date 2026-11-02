@@ -42,7 +42,7 @@ Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar pa
 
 ## Banco de ganchos
 
-Antes de criar qualquer vídeo, escolher o gancho em `estrategia/banco-de-ganchos.md` (modelos adaptados de @jessicaporfino, separados por dor, pergunta, revelação, corte, lista e humor). Ficam proibidos ganchos de promessa exagerada (dinheiro, "quebrou a internet", "instantaneamente"). Depois de postar, anotar o resultado na tabela do banco.
+Antes de criar qualquer vídeo, escolher o gancho em `mente-mulher-estoica/estrategia-engajamento/banco-de-ganchos.md` (modelos adaptados de @jessicaporfino, separados por dor, pergunta, revelação, corte, lista e humor). Ficam proibidos ganchos de promessa exagerada (dinheiro, "quebrou a internet", "instantaneamente"). Depois de postar, anotar o resultado na tabela do banco.
 
 ## Formatos que funcionam
 
@@ -79,7 +79,7 @@ Quando a Simone mandar um vídeo, roteiro ou carrossel para revisar, passe pela 
 
 ## Arquivo
 
-A base de conhecimento completa (aprendizados numerados, protocolo de testes e histórico de experimentos) fica em `estrategia/base-estrategica.md`. Cada dica nova vira um registro numerado lá, no formato A a H. Ao receber Insights, acrescentar a medição com data sem apagar as anteriores.
+Tudo de engajamento fica reunido na **Biblioteca de Engajamento** (`mente-mulher-estoica/estrategia-engajamento/`), com o índice no `README.md`. A base de conhecimento completa (aprendizados numerados, protocolo de testes e histórico de experimentos) fica em `mente-mulher-estoica/estrategia-engajamento/base-estrategica.md`. Cada dica nova vira um registro numerado lá, no formato A a H. Ao receber Insights, acrescentar a medição com data sem apagar as anteriores.
 
 
 Tudo que for criado (script, roteiro, legenda) vai para o repositório GitHub da Simone: scripts em `videos/` ou `posts/`, legendas em `posts/textos/legendas-<mês>-<ano>.md`, e as lições novas entram nesta skill. Fotos pessoais nunca.
