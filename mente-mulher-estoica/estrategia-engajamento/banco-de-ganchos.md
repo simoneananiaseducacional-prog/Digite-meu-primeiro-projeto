@@ -64,5 +64,5 @@ Quando a Simone trouxer um gancho que prendeu a atenção dela, anotar aqui: o t
 
 | Gancho usado | Reel | Data | Views | Envios | Salvamentos |
 |---|---|---|---|---|---|
-| Para onde vai a sua energia? | Diagrama da energia | 29/10/2026 | 34.7 mil | 433 | 341 |
+| Para onde vai a sua energia? | Diagrama da energia | 29/10/2026 | 37,3 mil (02/11) | 470 | 341 (31/10) |
 | 10 coisas que mulheres emocionalmente maduras pararam de fazer | 7 s com foto | 31/10/2026 | 468 (31/10) | | |
