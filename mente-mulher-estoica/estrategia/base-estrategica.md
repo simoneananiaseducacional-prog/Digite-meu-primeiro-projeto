@@ -207,6 +207,13 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **Hipótese extra:** o CTA "comenta PALAVRA que eu te mando" também pode servir para o PDF "7 frases estoicas".
 - **Decisão:** usar o banco em todo reel novo e registrar o resultado de cada gancho.
 
+### 010. "Boas Práticas" do Painel Profissional (@owillianensina)
+**Classificação:** Observação, com uma parte descartada.
+- **Dica:** Painel Profissional > Boas Práticas > Alcance, e postar pela câmera dessa tela.
+- **Evidência:** a seção Boas Práticas existe e traz orientações oficiais do próprio Instagram. Vale ler.
+- **Descartado:** "postar por essa câmera força o algoritmo a entregar para um número absurdo de pessoas". Não há fonte oficial; o botão de postar é o mesmo.
+- **Decisão:** ler a seção Boas Práticas antes de planejar a semana; postar pelo caminho normal.
+
 ---
 
 ## 5. Identidade visual oficial
