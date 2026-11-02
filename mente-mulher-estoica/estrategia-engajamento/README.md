@@ -6,6 +6,12 @@
 
 > Esta biblioteca atualiza as orientações operacionais de engajamento presentes em comandos mais antigos. Em caso de conflito sobre handle, duração ou estilo, usar as orientações mais recentes aprovadas pela autora.
 
+
+## Auditoria das configurações do Instagram
+- [Skill: Instagram — Auditoria de Configurações e Alcance](../../skills/instagram-auditoria-configuracoes/SKILL.md): fluxo para conferir Status da Conta, filtragem de spam, indexação em buscadores, compartilhamento, repost e reutilização, sem confundir elegibilidade com distribuição real.
+- [Registro de 02/11/2026 — checklist extraído de um Reel](registros/2026-11-02-checklist-configuracoes-instagram.md): o que os prints mostram, riscos e limites das alegações de crescimento.
+- **Regra:** não desligar proteção contra spam nem liberar toda reutilização em nome de um suposto bônus de alcance; preservar a preferência por DMs sem automação.
+
 ## Regras inegociáveis da marca
 - Estoicismo verificável, aplicado a comportamento humano, relações, decisões, responsabilidade, justiça, autocontrole e vida real. O perfil recebe todos os públicos; a palavra "Mulher" integra a identidade, mas não obriga conteúdo dirigido exclusivamente a mulheres.
 - Voz humana, natural, madura, perspicaz, firme quando necessário; leve/humorada quando pertinente. Sem tom de coach, sem frases genéricas de autoajuda, sem travessões desnecessários, sem interação forçada (ex.: “comente um número”, “siga para…”).
