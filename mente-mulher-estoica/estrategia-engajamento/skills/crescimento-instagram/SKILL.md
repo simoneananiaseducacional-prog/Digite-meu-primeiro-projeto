@@ -73,6 +73,10 @@ O post original diz "posta todo santo dia, com ou sem vontade". Para a Simone, q
 - [ ] Anotar no banco de ganchos todo gancho de outro perfil que prendeu a atenção dela (texto do gancho, perfil, data). Usar como inspiração, nunca copiar.
 - [ ] Depois de 48 horas, olhar: alcance de não seguidores, envios, salvamentos e retenção nos 3 primeiros segundos. Comparar com o vídeo da energia.
 
+## Regra de ouro: modelo não substitui a skill
+
+Mesmo quando a Simone manda um modelo para seguir, passar pela skill antes de entregar e mostrar a tabela de conferência (gancho do banco, curiosidade genuína, post de alto alcance usado como referência, duração, fonte, pedido). Seguir só o modelo visual levou a um vídeo correto, mas com o gancho do post de 1,5 mil em vez do padrão do post de 37 mil.
+
 ## Como usar esta skill
 
 Quando a Simone mandar um vídeo, roteiro ou carrossel para revisar, passe pela lista da seção 2 e diga só o que está faltando, em ordem de importância. Quando ela pedir bio, entregue as três linhas prontas para colar.

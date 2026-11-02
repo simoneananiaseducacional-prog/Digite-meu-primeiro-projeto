@@ -10,7 +10,7 @@ import estilo, midia
 
 W, H, FPS = 1080, 1920, 30
 B, G, C = estilo.BRANCO, estilo.DOURADO, estilo.CINZA
-TITULO = ("8 coisas que você precisa", "deixar para trás.")
+TITULO = ("O que você ainda carrega", "que já devia ter deixado?")
 ITENS = [
     "Explicar demais o seu \"não\".",
     "Se forçar a superar antes da hora.",

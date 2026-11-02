@@ -223,6 +223,11 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **Adaptação:** curiosidade genuína = o gancho abre uma pergunta real que o vídeo responde de verdade, sem isca. Para a página: desafio pessoal com processo visível (ex.: "30 dias aplicando uma prática estoica por dia"), pergunta que a pessoa quer ver respondida, ou um "antes e depois" honesto.
 - **Decisão:** testar um reel de desafio pessoal e comparar com os diagramas.
 
+### 012. Modelo não substitui a skill
+**Classificação:** Regra de processo (decisão da Simone, 02/11/2026).
+- **O que aconteceu:** o vídeo "8 coisas" seguiu o modelo visual do "Isso depende de mim?" (1,5 mil) e não o padrão do post de 37 mil (pergunta em "você").
+- **Decisão:** todo post passa pela skill e sai com a tabela de conferência, mesmo quando há modelo.
+
 ---
 
 ## 5. Identidade visual oficial
