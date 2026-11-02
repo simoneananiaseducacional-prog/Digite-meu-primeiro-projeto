@@ -38,7 +38,7 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 
 ## Configurações da conta
 
-Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar para análise" e opções de compartilhamento e remix, usar a skill `skills/instagram-auditoria-configuracoes/SKILL.md` (na branch main, ligada à Biblioteca de Engajamento em `mente-mulher-estoica/estrategia-engajamento/`). Configuração não é "hack do algoritmo": mudar uma opção não garante alcance.
+Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar para análise" e opções de compartilhamento e remix, usar a skill `mente-mulher-estoica/estrategia-engajamento/skills/instagram-auditoria-configuracoes/SKILL.md` (Biblioteca de Engajamento, branch main). Configuração não é "hack do algoritmo": mudar uma opção não garante alcance.
 
 ## Banco de ganchos
 
