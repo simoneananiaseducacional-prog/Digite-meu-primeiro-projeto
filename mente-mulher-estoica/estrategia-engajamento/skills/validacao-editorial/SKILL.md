@@ -5,7 +5,7 @@ description: Protocolo editorial obrigatório para criar, revisar e aprovar qual
 
 # Skill de Validação Editorial e Aprendizado de Engajamento
 
-**Versão:** 1.0 — 02/11/2026  
+**Versão:** 1.1 — 02/11/2026  
 **Perfil:** @mente_mulher_estoica  
 **Fonte de verdade:** [Biblioteca editorial de engajamento](../../README.md).
 
@@ -15,7 +15,7 @@ description: Protocolo editorial obrigatório para criar, revisar e aprovar qual
 Para pedidos de configuração e auditoria do Instagram, combinar esta skill com [a skill de auditoria](../instagram-auditoria-configuracoes/SKILL.md), que possui sua própria tabela obrigatória.
 
 ## 2. Consultas obrigatórias a cada demanda editorial
-1. **Abrir a versão atual do [índice da Biblioteca](../../README.md).** Respeitar instruções mais recentes em caso de conflito com comandos antigos.
+1. **Abrir a versão atual do [índice da Biblioteca](../../README.md).** Conferir o posicionamento vigente: estoicismo, psicanálise e neurociência; não sugerir a série ou a hashtag Mulheres Estoicas automaticamente. O público não é exclusivo de mulheres. Respeitar instruções recentes em caso de conflito com arquivos antigos.
 2. **Consultar os registros relevantes de resultados e referências**, começando pelos de [31/10](../../registros/2026-10-31-dicas-e-resultados.md) e [01/11](../../registros/2026-11-01-diagramas-e-resultados.md), e procurando os registros posteriores, se existirem.
 3. **Consultar os [comandos editoriais históricos](../../../comandos.md)** e, se a tarefa envolver composição de instruções, a [skill de comandos](../../../../skills/comandos-gpt/SKILL.md). Aplicar apenas o que for compatível com o índice atualizado.
 4. Se a solicitação citar uma referência externa, conferir exatamente o que foi mostrado ou documentado; não atribuir a ela resultados que não foram apresentados.
@@ -30,11 +30,11 @@ Para pedidos de configuração e auditoria do Instagram, combinar esta skill com
 
 **D. Identificação e utilidade.** Exigir uma situação humana reconhecível, linguagem simples e uma ideia que valha compartilhar ou salvar. Evitar abstração filosófica sem aplicação, autoajuda genérica, indiretas pessoais ou artificialidade.
 
-**E. Coerência autoral.** Voz natural, adulta, madura, perspicaz; estoicismo verificável e distinção entre filosofia, psicologia, fé e evidências científicas. Verificar obra e passagem de citações literais. Uma adaptação não deve parecer citação atribuída. Não copiar referências de terceiros.
+**E. Coerência autoral.** Voz natural, adulta, madura, perspicaz; estoicismo verificável, psicanálise identificada como abordagem teórica e neurociência sustentada por fontes científicas apropriadas quando houver alegações empíricas; distinguir filosofia, fé e evidências. Verificar obra e passagem de citações literais. Uma adaptação não deve parecer citação atribuída. Não copiar referências de terceiros.
 
 **F. Execução e formato.** Selecionar formato em função do conteúdo, não de promessas algorítmicas. Priorizar leitura sem som, contraste, respiro e mensagem sequencial; estética editorial preto/grafite/off-white, acentos discretos; 9:16 para Reels/Stories e 4:5 para feed, salvo pedido diferente. Observar áreas cobertas pela interface. Em fotos da autora, preservar sua identidade e proporções reais.
 
-**G. Legenda, CTA e mensuração.** A legenda acrescenta contexto em vez de repetir literalmente o vídeo. CTA apenas quando orgânico e legítimo, sem pedir números nem automatizar DMs. Indicar o indicador que melhor avalia o objetivo e, se for teste, uma janela comparável de 24 h e 72 h, sem afirmar resultados antes da publicação.
+**G. Legenda, CTA e mensuração.** Antes de escrever ou revisar uma legenda, verificar novamente o posicionamento e as hashtags pertinentes, sem inserir automaticamente #mulheresestoicas. A legenda acrescenta contexto em vez de repetir literalmente o vídeo. CTA apenas quando orgânico e legítimo, sem pedir números nem automatizar DMs. Indicar o indicador que melhor avalia o objetivo e, se for teste, uma janela comparável de 24 h e 72 h, sem afirmar resultados antes da publicação.
 
 ## 4. Tabela de auditoria obrigatória em cada entrega
 
