@@ -305,11 +305,16 @@ Comparar conteúdos com duração, formato e condições semelhantes. Não trata
 | # | Conteúdo | Formato | Duração | Publicação | Teste? | Status |
 |---|---|---|---|---|---|---|
 | E01 | Para onde vai a sua energia? | Diagrama animado | 16 s | anterior a 31/10/2026 | — | Medições na seção 3 |
-| E02 | O que realmente está sob o seu controle? | Diagrama animado | 17 s | — | — | Pronto para publicar |
-| E03 | Pessoas difíceis (versão 2) | Diagrama animado | 21 s | — | — | Pronto para publicar |
+| E02 | O que realmente está sob o seu controle? | Diagrama animado | 17 s | — | — | Publicado (confirmado em 02/11) |
+| E03 | Pessoas difíceis (versão 2) | Diagrama animado | 21 s | — | — | Publicado (confirmado em 02/11) |
 | E04 | 10 coisas que mulheres emocionalmente maduras pararam de fazer | Foto + gancho, lista na legenda | 7 s | 31/10/2026, por volta das 11h | Sim | Aguardando métricas (coletar às 14h, 11h de 01/11, 03/11 e 07/11) |
-| E06 | Nem toda provocação merece uma resposta | Diagrama animado | 17 s | — | Não (formato já validado) | Pronto para publicar (Instagram e Facebook) |
+| E06 | Nem toda provocação merece uma resposta | Diagrama animado | 17 s | — | Não (formato já validado) | Publicado (confirmado em 02/11) |
 | E05 | Escuta essa colega (abertura + vídeo de @luanaalaminii) | React | 48 s | — | — | Aguardando permissão |
+
+| E07 | Você está sofrendo pelo que aconteceu ou pelo que imaginou? (Sêneca) | Diagrama animado | 17 s | — | Não | Publicado |
+| E08 | O que você ainda carrega que já devia ter deixado? (trilha com bagagens) | Lista em trilha | 29 s | 03/11/2026 (previsto) | Não | 8º da série "Mapas da mente" |
+
+**Série "Mapas da mente":** nome dado em 02/11/2026 aos vídeos de diagrama (mapa dos 4 inimigos, energia, controle, pessoas difíceis, provocação, imaginação, "Isso depende de mim?" e as 8 coisas).
 
 Medições de cada experimento entram abaixo, com data:
 
