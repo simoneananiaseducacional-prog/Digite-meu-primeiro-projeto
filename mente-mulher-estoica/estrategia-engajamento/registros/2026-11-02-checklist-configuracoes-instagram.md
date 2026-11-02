@@ -30,7 +30,7 @@
 - Proteger o controle da marca e não habilitar automaticamente remixes, compartilhamentos irrestritos nem DM automática.
 - Testar configurações apenas após registrar o estado de @mente_mulher_estoica e a linha de base de Insights.
 - Fazer comparação de janelas equivalentes (7/14 dias) entre orgânico e pago, lembrando que correlação não significa causalidade.
-- Ver Skill: [Instagram: Auditoria de Configurações e Alcance](../../../skills/instagram-auditoria-configuracoes/SKILL.md).
+- Ver Skill: [Instagram: Auditoria de Configurações e Alcance](../skills/instagram-auditoria-configuracoes/SKILL.md).
 
 ## Fontes para contextualização
 
