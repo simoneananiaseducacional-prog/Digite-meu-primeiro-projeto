@@ -36,6 +36,10 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 - [ ] **Um pedido no fim:** salvar, mandar para alguém, comentar ou seguir. Escolha um só. Para esta página, "manda para alguém" e "salva" funcionam melhor que "curte".
 - [ ] **Fonte conferida** e escrita no vídeo ou na legenda.
 
+## Configurações da conta
+
+Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar para análise" e opções de compartilhamento e remix, usar a skill `skills/instagram-auditoria-configuracoes/SKILL.md` (na branch main, ligada à Biblioteca de Engajamento em `mente-mulher-estoica/estrategia-engajamento/`). Configuração não é "hack do algoritmo": mudar uma opção não garante alcance.
+
 ## Banco de ganchos
 
 Antes de criar qualquer vídeo, escolher o gancho em `estrategia/banco-de-ganchos.md` (modelos adaptados de @jessicaporfino, separados por dor, pergunta, revelação, corte, lista e humor). Ficam proibidos ganchos de promessa exagerada (dinheiro, "quebrou a internet", "instantaneamente"). Depois de postar, anotar o resultado na tabela do banco.
