@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 31/10/2026  
+**Atualização:** 02/11/2026  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -8,7 +8,7 @@
 
 
 ## Auditoria das configurações do Instagram
-- [Skill: Instagram — Auditoria de Configurações e Alcance](../../skills/instagram-auditoria-configuracoes/SKILL.md): fluxo para conferir Status da Conta, filtragem de spam, indexação em buscadores, compartilhamento, repost e reutilização, sem confundir elegibilidade com distribuição real.
+- [Skill: Instagram — Auditoria de Configurações e Alcance](skills/instagram-auditoria-configuracoes/SKILL.md): fluxo para conferir Status da Conta, filtragem de spam, indexação em buscadores, compartilhamento, repost e reutilização, sem confundir elegibilidade com distribuição real.
 - [Registro de 02/11/2026 — checklist extraído de um Reel](registros/2026-11-02-checklist-configuracoes-instagram.md): o que os prints mostram, riscos e limites das alegações de crescimento.
 - **Regra:** não desligar proteção contra spam nem liberar toda reutilização em nome de um suposto bônus de alcance; preservar a preferência por DMs sem automação.
 
