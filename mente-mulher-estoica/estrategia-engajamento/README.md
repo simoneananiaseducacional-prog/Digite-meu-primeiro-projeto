@@ -23,6 +23,9 @@
 
 
 
+## Pesquisas temáticas e referências verificadas
+- [Estamos aqui de passagem: o tempo, o apego e o valor do que é transitório](../pesquisas/2026-11-02-vida-como-passagem-freud-erickson.md) (02/11/2026): pesquisa reunindo Epicteto, Sêneca, Jesus, Marco Aurélio, Buda, Jó, Freud e Milton H. Erickson, além de estudos psicológicos; distingue citações verificadas, sínteses autorais, interpretações e correlações. **Importante:** o Elicit não autorizou acesso à API, então não atribuir resultados a ele; o vínculo com Erickson é interpretativo, sem citação direta sobre a vida como empréstimo.
+
 ## Auditoria das configurações do Instagram
 - [Skill: Instagram — Auditoria de Configurações e Alcance](skills/instagram-auditoria-configuracoes/SKILL.md): fluxo para conferir Status da Conta, filtragem de spam, indexação em buscadores, compartilhamento, repost e reutilização, sem confundir elegibilidade com distribuição real.
 - [Registro de 02/11/2026 — checklist extraído de um Reel](registros/2026-11-02-checklist-configuracoes-instagram.md): o que os prints mostram, riscos e limites das alegações de crescimento.
