@@ -6,6 +6,20 @@ Consultar a **Biblioteca de Engajamento** (`mente-mulher-estoica/estrategia-enga
 - `banco-de-ganchos.md`: escolher o gancho.
 - `base-estrategica.md`: aprendizados numerados e o que já foi testado.
 
+## Conferência obrigatória (mostrar para a Simone antes de entregar)
+Todo post ou vídeo vem com esta tabela curta, preenchida a partir da Biblioteca:
+
+| Item | Como ficou |
+|---|---|
+| Gancho (de qual grupo do banco de ganchos) | |
+| Curiosidade genuína: que pergunta abre e onde o vídeo responde | |
+| Referência da página: qual post de alto alcance serve de modelo e por quê | |
+| Duração (menos de 30 s) | |
+| Fonte | |
+| Um pedido no fim | |
+
+Se algum item não fecha, ajustar antes de entregar.
+
 ## Toda dica nova da Simone
 Registrar na Biblioteca de Engajamento, sempre:
 1. Nota em `registros/AAAA-MM-DD-assunto.md` (fonte, dica, evidência, adaptação, classificação, decisão).
