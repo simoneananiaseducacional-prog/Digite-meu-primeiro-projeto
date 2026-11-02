@@ -238,6 +238,11 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 **Classificação:** Decisão da Simone (02/11/2026).
 - Tirar #mentemulherestoica e #mulheresestoicas. Usar hashtags de tema: estoicismo, inteligência emocional, autoconhecimento, comportamento humano, neurociência, psicanálise (quando couber) e o filósofo citado.
 
+### 015. Variar o desenho dentro da identidade
+**Classificação:** Decisão da Simone (02/11/2026).
+- O vídeo "8 coisas" com cápsula e seta ficou igual a um post já publicado. Manter a identidade (preto, serifa, dourado) mas mudar o desenho a cada post: trilhas, ícones, linhas, tracejados, vinho, movimento.
+- Primeira variação: `videos/lista_caminho.py` (trilha pontilhada com bagagens deixadas para trás).
+
 ---
 
 ## 5. Identidade visual oficial

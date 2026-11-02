@@ -40,6 +40,10 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 
 Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar para análise" e opções de compartilhamento e remix, usar a skill `mente-mulher-estoica/estrategia-engajamento/skills/instagram-auditoria-configuracoes/SKILL.md` (Biblioteca de Engajamento, branch main). Configuração não é "hack do algoritmo": mudar uma opção não garante alcance.
 
+## Variar o desenho dentro da identidade
+
+Manter fundo escuro, serifa, branco e dourado, mas não repetir o mesmo desenho (cápsula + seta) em posts seguidos: na grade e no feed, post igual parece repetido e a pessoa não abre. Alternar recursos: trilha pontilhada, linha do tempo, ícones simples (bagagem, porta, balança, ampulheta), riscos em vinho, círculos, setas curvas, movimento de câmera. Scripts: `videos/diagrama_*.py`, `videos/lista_diagrama.py` (cápsula), `videos/lista_caminho.py` (trilha com bagagens).
+
 ## Hashtags
 
 Não usar #mentemulherestoica nem #mulheresestoicas: quase ninguém busca, e o objetivo não é atrair só quem se identifica como "mulher estoica". Usar de 3 a 5 hashtags de tema, escolhidas pelo assunto do post:
