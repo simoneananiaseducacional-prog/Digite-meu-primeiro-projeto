@@ -228,6 +228,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **O que aconteceu:** o vídeo "8 coisas" seguiu o modelo visual do "Isso depende de mim?" (1,5 mil) e não o padrão do post de 37 mil (pergunta em "você").
 - **Decisão:** todo post passa pela skill e sai com a tabela de conferência, mesmo quando há modelo.
 
+### 013. Gancho com caixinha de pergunta (@petjordan)
+**Classificação:** Hipótese.
+- **Dica:** abrir o reel com a figurinha "Faça uma pergunta", com uma dúvida real, e responder.
+- **Adaptação:** coletar perguntas no Stories e usá-las como gancho. Detalhes em `registros/2026-11-02-gancho-caixinha-de-pergunta.md`.
+- **Decisão:** testar.
+
 ---
 
 ## 5. Identidade visual oficial

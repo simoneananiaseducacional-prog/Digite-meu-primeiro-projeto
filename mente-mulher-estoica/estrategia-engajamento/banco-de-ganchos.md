@@ -50,6 +50,14 @@ Inspiração: carrossel "60 ganchos pequenos que prendem a atenção rápido", d
 - Passei uma semana sem responder ninguém no impulso. O que aconteceu:
 - Fiz as 3 perguntas de Sêneca antes de dormir por 7 noites.
 
+## Ganchos de caixinha de pergunta (dúvida real no primeiro quadro)
+
+- "Por que eu sinto culpa quando digo não?"
+- "Como parar de remoer uma briga?"
+- "Por que eu reajo no impulso mesmo sabendo que vou me arrepender?"
+- "Como não levar para o pessoal o que o outro faz?"
+Coletar as perguntas reais pela caixinha do Stories antes de gravar.
+
 ## Ganchos de lista e de humor
 
 - 10 coisas que mulheres emocionalmente maduras pararam de fazer.

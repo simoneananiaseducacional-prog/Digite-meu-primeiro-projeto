@@ -18,6 +18,7 @@
 **Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
 
 ## Registros de dicas
+- [02/11/2026: gancho com caixinha de pergunta (@petjordan)](registros/2026-11-02-gancho-caixinha-de-pergunta.md)
 - [02/11/2026: curiosidade genuína (@giportugaldesigner)](registros/2026-11-02-curiosidade-genuina.md)
 
 ## Auditoria das configurações do Instagram
