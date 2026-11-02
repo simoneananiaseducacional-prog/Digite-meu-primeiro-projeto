@@ -24,7 +24,7 @@ ITENS = [
     "Depender da aprovação dos outros.",
     "Esquecer o quanto você já avançou.",
 ]
-INICIO, PASSO, FIM = 1.0, 2.7, 3.0
+INICIO, PASSO, FIM = 0.8, 3.2, 2.5
 T = INICIO + PASSO * len(ITENS) + FIM
 VX, VY, ESP = 800, 930, 230  # posição do "Você" e espaço entre bagagens
 
@@ -81,10 +81,10 @@ def main():
         i = int(prog)
         if t >= INICIO and i < len(ITENS):
             t0 = INICIO + i * PASSO
-            a = min(ap(t, t0 + 0.2, 0.35), 1 - ap(t, t0 + PASSO - 0.3, 0.3))
+            a = min(ap(t, t0, 0.2), 1 - ap(t, t0 + PASSO - 0.15, 0.15))
             for j, l in enumerate(estilo.quebrar_linhas(ITENS[i], fi, 860)):
                 d.text((W/2, 1200 + j * 76), l, font=fi, fill=ca(B, a), anchor='mm')
-            d.text((W/2, 1380), "Deixe para trás.", font=estilo.sem_serifa(34, 600), fill=ca(G, a * ap(t, t0 + 1.0)), anchor='mm')
+            d.text((W/2, 1380), "Deixe para trás.", font=estilo.sem_serifa(34, 600), fill=ca(G, a * ap(t, t0 + 0.6)), anchor='mm')
         tf = INICIO + PASSO * len(ITENS)
         if t >= tf:
             a = ap(t, tf, 0.5)
