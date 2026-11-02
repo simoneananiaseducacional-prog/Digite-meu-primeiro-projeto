@@ -33,6 +33,7 @@ Responda em português simples e CURTO. A Simone não quer textos longos: vá di
 - [ ] **Gancho forte no primeiro quadro.** A primeira frase fala do problema de quem assiste ("Se você responde no impulso..."). Proibido começar com apresentação ou "hoje vou falar sobre".
 - [ ] **Frase fixa no topo** dizendo do que é o vídeo, visível o tempo todo.
 - [ ] **Menos de 30 segundos.** Os melhores resultados da página ficaram abaixo disso.
+- [ ] **Tempo de leitura:** cada frase fica pelo menos 3 segundos inteira na tela, com entrada e saída rápidas (até 0,2 s). Se não couber em 30 s, cortar itens, não tempo.
 - [ ] **Um pedido no fim:** salvar, mandar para alguém, comentar ou seguir. Escolha um só. Para esta página, "manda para alguém" e "salva" funcionam melhor que "curte".
 - [ ] **Fonte conferida** e escrita no vídeo ou na legenda.
 
