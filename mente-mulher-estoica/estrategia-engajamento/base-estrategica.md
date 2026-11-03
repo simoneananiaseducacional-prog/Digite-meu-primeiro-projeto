@@ -125,6 +125,8 @@ A mensagem é transmitida pelo texto e pelo movimento. O espectador acompanha vi
 | Seguidores atribuídos | 110 | 133 | +23 |
 | Tempo médio assistido | 9 s | 9 s | estável |
 
+Medição de 03/11/2026: 37,4 mil visualizações, 1.251 curtidas, 470 compartilhamentos, 372 salvamentos, 128 reposts. Segue recebendo curtidas quase uma semana depois.
+
 Medição de 02/11/2026: 37,3 mil visualizações, 1.250 curtidas, 8 comentários, 470 compartilhamentos, 128 reposts. O vídeo continua crescendo cinco dias depois de postado.
 
 Medição intermediária informada: 33.460 visualizações, 25.239 visualizadores, 430 compartilhamentos, 333 salvamentos, 117 reposts, 129 seguidores.
