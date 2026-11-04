@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 02/11/2026 (posicionamento revisado)  
+**Atualização:** 04/11/2026 (novas dicas arquivadas; posicionamento revisado em 02/11)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -25,6 +25,10 @@
 
 ## Pesquisas temáticas e referências verificadas
 - [Estamos aqui de passagem: o tempo, o apego e o valor do que é transitório](../pesquisas/2026-11-02-vida-como-passagem-freud-erickson.md) (02/11/2026): pesquisa reunindo Epicteto, Sêneca, Jesus, Marco Aurélio, Buda, Jó, Freud e Milton H. Erickson, além de estudos psicológicos; distingue citações verificadas, sínteses autorais, interpretações e correlações. **Importante:** o Elicit não autorizou acesso à API, então não atribuir resultados a ele; o vínculo com Erickson é interpretativo, sem citação direta sobre a vida como empréstimo.
+
+## Dicas de engajamento recebidas em 04/11/2026
+
+- [SEO, hashtags, frequência e reaproveitamento entre formatos — @jessicadomarktingg e @afonsomolina](registros/2026-11-04-dicas-seo-frequencia-reaproveitamento.md): sete capturas de publicações de terceiros, com dicas extraídas, autoria, classificação de evidências, aplicações originais e testes sugeridos. **Prioridade editorial:** transformar temas que já funcionaram em formatos complementares, com valor novo e linguagem natural. Não tratar como regras do algoritmo as afirmações absolutas de que hashtags não funcionam, contas pequenas são favorecidas, ou três posts diários são obrigatórios. Testar cadência sustentável e resultados após 24 h e 72 h.
 
 ## Auditoria das configurações do Instagram
 - [Skill: Instagram — Auditoria de Configurações e Alcance](skills/instagram-auditoria-configuracoes/SKILL.md): fluxo para conferir Status da Conta, filtragem de spam, indexação em buscadores, compartilhamento, repost e reutilização, sem confundir elegibilidade com distribuição real.
