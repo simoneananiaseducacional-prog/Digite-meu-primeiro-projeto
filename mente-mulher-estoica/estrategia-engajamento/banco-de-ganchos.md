@@ -23,6 +23,7 @@ Inspiração: carrossel "60 ganchos pequenos que prendem a atenção rápido", d
 
 - Você está sofrendo pelo que aconteceu ou pelo que imaginou?
 - Para onde vai a sua energia?
+- De onde vêm os seus problemas? (Mapas da mente, interpretação)
 - O que realmente está sob o seu controle?
 - Você é culpada de tentar agradar todo mundo?
 - Seja honesta: quantas vezes você cedeu só para evitar briga?
