@@ -250,6 +250,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - O vídeo do amor saiu com "Agradar para ser amada.". A página recebe todos os públicos, então o texto não pode falar só com mulheres.
 - Preferir formas sem gênero ("ter amor", "quem precisou agradar", "você") em vídeo, card e legenda. Se não houver forma neutra, usar a forma geral.
 
+### 017. Em animação: ou ação, ou texto
+**Classificação:** Decisão da Simone (05/11/2026).
+- Na fábula da abelha, ler e acompanhar o desenho ao mesmo tempo confundiu. A ação para quando o texto aparece.
+- Fala de personagem sai de balão ligado a ele; narração fica no topo. Momentos-chave (queda, tropeço) mais lentos.
+- Balão em Montserrat, legível; serifa fica para narração e citação.
+
 ---
 
 ## 5. Identidade visual oficial

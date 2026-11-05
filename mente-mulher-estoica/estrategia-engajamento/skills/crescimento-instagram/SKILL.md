@@ -45,6 +45,10 @@ Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar pa
 
 Manter fundo escuro, serifa, branco e dourado, mas não repetir o mesmo desenho (cápsula + seta) em posts seguidos: na grade e no feed, post igual parece repetido e a pessoa não abre. Alternar recursos: trilha pontilhada, linha do tempo, ícones simples (bagagem, porta, balança, ampulheta), riscos em vinho, círculos, setas curvas, movimento de câmera. Scripts: `videos/diagrama_*.py`, `videos/lista_diagrama.py` (cápsula), `videos/lista_caminho.py` (trilha com bagagens).
 
+## Animação com personagens
+
+Ou ação, ou texto: o desenho para enquanto a frase aparece. Fala sai de balão ligado a quem fala (Montserrat). Queda, choque e virada em câmera lenta. (base 017)
+
 ## Linguagem para todos
 
 A página não é só para mulheres. Conferir se o texto do vídeo, do card e da legenda serve para qualquer pessoa: "ter amor" em vez de "ser amada", "quem precisou" em vez de "a mulher que". (base 016)
