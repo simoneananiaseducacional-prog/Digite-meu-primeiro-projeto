@@ -256,6 +256,13 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Fala de personagem sai de balão ligado a ele; narração fica no topo. Momentos-chave (queda, tropeço) mais lentos.
 - Balão em Montserrat, legível; serifa fica para narração e citação.
 
+### 018. Formato: pessoa falando com palavras salpicadas
+**Classificação:** Referência trazida pela Simone (05/11/2026), @mateus.salvadori.
+- A pessoa fala para a câmera e as ideias-chave surgem espalhadas pela tela, uma a uma, sincronizadas com a fala, até formar uma nuvem.
+- Por que prende: rosto gera conexão, e a tela se enchendo cria curiosidade até o fim.
+- Adaptação: Simone grava (rosto, mãos ou silhueta); as palavras entram em serifa branca e a mais importante em dourado, fora do rosto e na área segura.
+- **Decisão:** testar.
+
 ---
 
 ## 5. Identidade visual oficial

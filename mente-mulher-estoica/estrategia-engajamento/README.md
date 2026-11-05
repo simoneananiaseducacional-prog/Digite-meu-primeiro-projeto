@@ -18,6 +18,7 @@
 **Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
 
 ## Registros de dicas
+- [05/11/2026: palavras salpicadas sobre a fala (@mateus.salvadori)](registros/2026-11-05-palavras-salpicadas.md)
 - [05/11/2026: animação, ou ação ou texto](registros/2026-11-05-animacao-acao-ou-texto.md)
 - [05/11/2026: linguagem para todos](registros/2026-11-05-linguagem-para-todos.md)
 - [02/11/2026: gancho com caixinha de pergunta (@petjordan)](registros/2026-11-02-gancho-caixinha-de-pergunta.md)
