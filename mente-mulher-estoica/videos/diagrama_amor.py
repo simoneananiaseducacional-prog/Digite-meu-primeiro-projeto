@@ -10,11 +10,11 @@ VERM = (190, 60, 60)
 saida = Path(sys.argv[1])
 fundo = np.clip(estilo.granulado(estilo.fundo()), 0, 255).astype(np.uint8)
 def ap(t, t0, d=0.6): return estilo.suavizar((t - t0) / d) if t > t0 else 0.0
-O = (230, 1000)
+O = (170, 1000)
 # alvo, rótulo, explicação, cor, quando entra
-ramos = [((560, 790), 'Agradar para ser amada.', 'quando o carinho tinha preço', VERM, 2.8),
-         ((560, 1210), 'Amar é se sacrificar.', 'o que a falta ensinou', VERM, 4.6),
-         ((560, 1000), 'Amar sem se abandonar.', 'o que dá para reaprender', G, 6.6)]
+ramos = [((500, 790), 'Agradar para ter amor.', 'quando o carinho tinha preço', VERM, 2.8),
+         ((500, 1210), 'Amar é se sacrificar.', 'o que a falta ensinou', VERM, 4.6),
+         ((500, 1000), 'Amar sem se abandonar.', 'o que dá para reaprender', G, 6.6)]
 T_APAGA = 8.6   # os caminhos vermelhos esmaecem e só o dourado fica
 T = 17.0
 def seta(d, a, b, p, cor, a8):

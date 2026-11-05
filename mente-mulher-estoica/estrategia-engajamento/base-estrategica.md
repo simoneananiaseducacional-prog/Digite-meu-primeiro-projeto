@@ -245,6 +245,11 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - O vídeo "8 coisas" com cápsula e seta ficou igual a um post já publicado. Manter a identidade (preto, serifa, dourado) mas mudar o desenho a cada post: trilhas, ícones, linhas, tracejados, vinho, movimento.
 - Primeira variação: `videos/lista_caminho.py` (trilha pontilhada com bagagens deixadas para trás).
 
+### 016. Linguagem neutra: a página é para todos
+**Classificação:** Decisão da Simone (05/11/2026).
+- O vídeo do amor saiu com "Agradar para ser amada.". A página recebe todos os públicos, então o texto não pode falar só com mulheres.
+- Preferir formas sem gênero ("ter amor", "quem precisou agradar", "você") em vídeo, card e legenda. Se não houver forma neutra, usar a forma geral.
+
 ---
 
 ## 5. Identidade visual oficial

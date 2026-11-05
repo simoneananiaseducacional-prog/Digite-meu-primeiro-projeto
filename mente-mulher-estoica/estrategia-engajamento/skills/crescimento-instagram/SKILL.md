@@ -45,6 +45,10 @@ Para conferir Status da Conta, privacidade, indexação no Google, "Sinalizar pa
 
 Manter fundo escuro, serifa, branco e dourado, mas não repetir o mesmo desenho (cápsula + seta) em posts seguidos: na grade e no feed, post igual parece repetido e a pessoa não abre. Alternar recursos: trilha pontilhada, linha do tempo, ícones simples (bagagem, porta, balança, ampulheta), riscos em vinho, círculos, setas curvas, movimento de câmera. Scripts: `videos/diagrama_*.py`, `videos/lista_diagrama.py` (cápsula), `videos/lista_caminho.py` (trilha com bagagens).
 
+## Linguagem para todos
+
+A página não é só para mulheres. Conferir se o texto do vídeo, do card e da legenda serve para qualquer pessoa: "ter amor" em vez de "ser amada", "quem precisou" em vez de "a mulher que". (base 016)
+
 ## Hashtags
 
 Não usar #mentemulherestoica nem #mulheresestoicas: quase ninguém busca, e o objetivo não é atrair só quem se identifica como "mulher estoica". Usar de 3 a 5 hashtags de tema, escolhidas pelo assunto do post:
