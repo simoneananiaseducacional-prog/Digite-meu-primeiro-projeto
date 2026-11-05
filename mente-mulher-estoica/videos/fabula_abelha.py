@@ -34,17 +34,20 @@ def borboleta(d, x, y, abre, a, rot=0, cor=B):
         d.line([R(0, -26), R(s * 14, -46)], fill=rgba(cor, a), width=2)
     d.line([R(0, -26), R(0, 30)], fill=rgba(cor, a), width=5)
 
-def abelha(d, x, y, a, bate):
-    for s in (-1, 1):
-        w = el(x + s * 4, y - 30, 14, 22 * (0.6 + 0.4 * abs(math.sin(bate))), s * 0.4)
+def abelha(d, x, y, a, bate, dirx=1):
+    """dirx=1 cabeça à direita; dirx=-1 cabeça à esquerda (ferrão para a direita)."""
+    for sd in (-1, 1):
+        w = el(x + sd * 4, y - 30, 14, 22 * (0.6 + 0.4 * abs(math.sin(bate))), sd * 0.4)
         d.line(w + [w[0]], fill=rgba(B, a * 0.7), width=2)
     corpo = el(x, y, 38, 24)
     d.polygon(corpo, fill=rgba(G, a * 0.18)); d.line(corpo + [corpo[0]], fill=rgba(G, a), width=4)
     for dx in (-8, 10):
+        dx *= dirx
         hh = 24 * math.sqrt(max(0, 1 - (dx / 38) ** 2))
         d.line([(x + dx, y - hh + 2), (x + dx, y + hh - 2)], fill=rgba(G, a), width=5)
-    d.ellipse((x + 34, y - 15, x + 60, y + 11), outline=rgba(G, a), width=4)
-    d.polygon([(x - 38, y - 6), (x - 38, y + 6), (x - 56, y)], fill=rgba(G, a))
+    hx = x + dirx * 47
+    d.ellipse((hx - 13, y - 13, hx + 13, y + 13), outline=rgba(G, a), width=4)
+    d.polygon([(x - dirx * 38, y - 7), (x - dirx * 38, y + 7), (x - dirx * 60, y)], fill=rgba(G, a))
 
 def besouro(d, x, y, a, passo, s=1.0, virado=0.0, dirx=-1):
     """virado: 0 de pé, 1 de patas para cima."""
@@ -73,8 +76,8 @@ rng = np.random.default_rng(7)
 EMBOLO = [(720 + 40 * math.sin(k * 0.9) * math.cos(k * 0.37), CHAO - 14 + 10 * math.sin(k * 1.7)) for k in range(26)]
 PEDRAS = [260, 420, 760]
 
-T = 29.6
-T_CHOQUE = 5.4
+T = 30.0
+T_CHOQUE = 5.2
 def voo1(t):  # caminho da borboleta antes do choque
     x = lerp(-80, 560, cl(t / T_CHOQUE)); return x, 1000 + 34 * math.sin(t * 2.0)
 K, CX, CY = 1.35, 540, 1100
@@ -103,12 +106,12 @@ for k in range(int(T * FPS)):
     cena = Image.new('RGBA', img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(cena)
     d.line([(90, CHAO + 40), (990, CHAO + 40)], fill=rgba(C, 0.35 * ap(t, 0.2)), width=2)
     flor(d, 860, ap(t, 0.3, 0.8))
-    # cena 4: o besouro passa atropelando as pedrinhas
-    PASSA0, PASSA1 = 12.6, 15.2
+    # cena: o besouro passa atropelando as pedrinhas
+    PASSA0, PASSA1 = 10.4, 12.2
     bx = lerp(-120, 1200, cl((t - PASSA0) / (PASSA1 - PASSA0)))
     for px in PEDRAS:
         pulo = 30 * (1 - abs(bx - px) / 50) if (PASSA0 < t < PASSA1 + 0.2 and abs(bx - px) < 50) else 0
-        d.ellipse((px - 7, CHAO + 26 - pulo, px + 7, CHAO + 40 - pulo), fill=rgba(C, 0.6 * ap(t, 12.2)))
+        d.ellipse((px - 7, CHAO + 26 - pulo, px + 7, CHAO + 40 - pulo), fill=rgba(C, 0.6 * ap(t, 10.0)))
     # fio do casulo
     if t < T_CHOQUE:
         pts = [voo1(t - i * 0.08) for i in range(18)]
@@ -122,7 +125,7 @@ for k in range(int(T * FPS)):
         d.line(EMBOLO[:n], fill=rgba(G, 0.8), width=2)
         c = el(EMBOLO[n - 1][0] + 6, EMBOLO[n - 1][1], 9, 15)
         d.line(c + [c[0]], fill=rgba(G, 0.8), width=2)
-    # impacto
+    # impacto do atropelo
     if T_CHOQUE < t < T_CHOQUE + 0.7:
         a = 1 - (t - T_CHOQUE) / 0.7
         for j in range(8):
@@ -130,52 +133,59 @@ for k in range(int(T * FPS)):
             d.line([(560 + 50 * math.cos(ang), 1010 + 50 * math.sin(ang)), (560 + 80 * math.cos(ang), 1010 + 80 * math.sin(ang))], fill=rgba(VERM, a), width=3)
     # borboleta
     bate = abs(math.sin(t * 7))
-    VOA = 25.0
+    VOA = 25.5
     if t < T_CHOQUE:
         x, y = voo1(t); borboleta(d, x, y, 0.35 + 0.65 * bate, ap(t, 0.2))
     elif t < VOA:
-        q = cl((t - T_CHOQUE) / 1.5)
+        q = cl((t - T_CHOQUE) / 1.4)
         x = lerp(560, 380, q); y = lerp(1000, CHAO - 10, q * q)
         borboleta(d, x, y, lerp(0.5, 0.25, q), 1, rot=lerp(0, 1.2 + 4 * math.pi, q) if q < 1 else 1.2, cor=B if q < 1 else (200, 200, 200))
     else:
-        q = cl((t - VOA) / 3.6)
-        q = cl((t - VOA) / 1.6); x = lerp(380, 300, q); y = lerp(CHAO - 10, 860, q) + 22 * math.sin(t * 2.6) * q
+        q = cl((t - VOA) / 1.4); x = lerp(380, 300, q); y = lerp(CHAO - 10, 860, q) + 22 * math.sin(t * 2.6) * q
         borboleta(d, x, y, 0.35 + 0.65 * bate * cl(q * 4), 1 - ap(t, T - 0.8, 0.6), rot=lerp(1.2, 0, cl(q * 3)))
     # besouro
-    if 3.4 < t < 7.6:
-        x = lerp(1200, -150, (t - 3.4) / 4.2); besouro(d, x, CHAO - 2, 1, t * 16)
+    if 3.2 < t < 7.4:
+        x = lerp(1200, -150, (t - 3.2) / 4.2); besouro(d, x, CHAO - 2, 1, t * 16)
     if PASSA0 < t < PASSA1:
         besouro(d, bx, CHAO - 2, 0.9, t * 22, s=0.8, dirx=1)
-    VOLTA, TROPECA = 19.4, 21.0
-    if t > VOLTA:
-        if t < TROPECA:
-            x = lerp(1200, 740, (t - VOLTA) / (TROPECA - VOLTA)); besouro(d, x, CHAO - 2, 1, t * 16)
+    ABX = 540                       # onde a abelha pousa, ferrão para a direita
+    PONTA = ABX + 60
+    CORRE, BATE = 19.7, 21.1
+    if t > CORRE:
+        if t < BATE:
+            x = lerp(1200, PONTA + 59, cl((t - CORRE) / (BATE - CORRE)) ** 1.3); besouro(d, x, CHAO - 2, 1, t * 20)
         else:
-            q = cl((t - TROPECA) / 1.0)
-            x = lerp(740, 800, q); y = CHAO - 2 - 80 * math.sin(q * math.pi)
+            q = cl((t - BATE) / 1.1)
+            x = lerp(PONTA + 59, 800, q); y = CHAO - 2 - 90 * math.sin(q * math.pi)
             besouro(d, x, y, 1 - ap(t, T - 0.8, 0.6), t * (10 if q >= 1 else 16), virado=q)
+    if BATE < t < BATE + 0.8:
+        a = 1 - (t - BATE) / 0.8
+        for j in range(8):
+            ang = j * math.pi / 4
+            d.line([(PONTA + 30 * math.cos(ang), CHAO - 26 + 30 * math.sin(ang)), (PONTA + 60 * math.cos(ang), CHAO - 26 + 60 * math.sin(ang))], fill=rgba(G, a), width=3)
     # abelha
-    if t > 12.0:
-        if t < 18.6:
-            q = cl((t - 12.0) / 1.0); x = lerp(1150, 600, q); y = lerp(700, 900, q) + 10 * math.sin(t * 3)
+    if t > 9.6:
+        if t < 15.6:
+            q = cl((t - 9.6) / 0.9); x = lerp(1150, 600, q); y = lerp(700, 900, q) + 10 * math.sin(t * 3); dx = -1
         elif t < VOA:
-            q = cl((t - 18.6) / 0.9); x = lerp(600, 500, q); y = lerp(900, CHAO - 26, q * q)
+            q = cl((t - 15.6) / 0.9); x = lerp(600, ABX, q); y = lerp(900, CHAO - 26, q * q); dx = -1
         else:
-            q = cl((t - VOA) / 1.4); x = lerp(500, 845, q); y = lerp(CHAO - 26, 852, q) + 6 * math.sin(t * 3) * q
-        abelha(d, x, y, ap(t, 12.0) * (1 - ap(t, T - 0.8, 0.6)), t * 30)
+            q = cl((t - VOA) / 1.2); x = lerp(ABX, 845, q); y = lerp(CHAO - 26, 852, q) + 6 * math.sin(t * 3) * q; dx = 1
+        abelha(d, x, y, ap(t, 9.6) * (1 - ap(t, T - 0.8, 0.6)), t * 30, dx)
     cena = cena.transform(img.size, Image.AFFINE, (1/K, 0, CX - CX/K, 0, 1/K, CY - CY/K), resample=Image.BICUBIC)
     cam = Image.alpha_composite(cam, cena); d = ImageDraw.Draw(cam)
     # narradora (topo) e falas (balões)
-    txt(d, 470, 'Ela só seguia', F1, B, jan(t, 0.4, 3.6)); txt(d, 545, 'o próprio caminho.', F2, G, jan(t, 0.8, 3.6))
-    txt(d, 470, 'Até que alguém', F1, B, jan(t, 7.0, 10.0)); txt(d, 545, 'passou por cima.', F2, VERM, jan(t, 7.4, 10.0))
-    balao(d, tela(380, CHAO - 50), (400, 930), ['Por que ele fez', 'isso comigo?'], B, jan(t, 10.2, 12.6))
-    balao(d, tela(600, 870), (560, 660), ['Não era sobre você.', 'Era sobre a pressa dele.'], G, jan(t, 15.3, 19.2))
-    txt(d, 470, '“Quem erra,', F2, G, jan(t, 22.0, 25.4)); txt(d, 545, 'erra contra si mesmo.”', F2, G, jan(t, 22.4, 25.4))
-    txt(d, 615, 'Marco Aurélio, Meditações, 9.4', F3, C, jan(t, 22.8, 25.4))
-    txt(d, 470, 'Leve como a borboleta.', F1, B, ap(t, 26.4) * (1 - ap(t, T - 0.8, 0.6)))
-    txt(d, 550, 'Firme como a abelha.', F2, G, ap(t, 27.0) * (1 - ap(t, T - 0.8, 0.6)))
-    if ap(t, 26.6) > 0:
-        estilo.texto_espacado(d, (W/2, 1400), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(22, 500), rgba(C, ap(t, 26.6) * (1 - ap(t, T - 0.8, 0.6))), 6)
+    txt(d, 470, 'Ela só seguia', F1, B, jan(t, 0.4, 3.4)); txt(d, 545, 'o próprio caminho.', F2, G, jan(t, 0.8, 3.4))
+    balao(d, tela(380, CHAO - 50), (400, 930), ['Por que ele fez', 'isso comigo?'], B, jan(t, 6.8, 9.6))
+    balao(d, tela(600, 870), (560, 660), ['Não era sobre você.', 'Era sobre a pressa dele.'], G, jan(t, 12.3, 15.5))
+    balao(d, tela(ABX, CHAO - 60), (560, 930), ['Não vou atacar.', 'Só não saio do meu lugar.'], G, jan(t, 16.6, 19.6))
+    txt(d, 470, '“Quem erra,', F2, G, jan(t, 22.3, 25.5)); txt(d, 548, 'erra contra si mesmo.”', F2, G, jan(t, 22.7, 25.5))
+    txt(d, 620, 'Marco Aurélio, Meditações, 9.4', F3, C, jan(t, 23.1, 25.5))
+    fim = 1 - ap(t, T - 0.8, 0.6)
+    txt(d, 470, 'Seja leve como a borboleta', F1, B, ap(t, 26.8) * fim)
+    txt(d, 550, 'e firme como a abelha.', F2, G, ap(t, 27.3) * fim)
+    if ap(t, 27.6) > 0:
+        estilo.texto_espacado(d, (W/2, 1400), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(22, 500), rgba(C, ap(t, 27.6) * fim), 6)
     img = Image.alpha_composite(img, cam)
     q = np.asarray(img.convert('RGB'), np.float32) * (1 - ap(t, T - 0.6, 0.6))
     ff.stdin.write(estilo.para_bytes(q))
