@@ -271,6 +271,16 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Adaptação: fundo preto, serifa com acento correto (Playfair), última tela em dourado, fonte estoica na tela final ou na legenda.
 - **Decisão:** testar.
 
+### 020. Série "Estoicismo nos relacionamentos" e cuidado com a evidência
+**Classificação:** Decisão da Simone (06/11/2026), a partir de levantamento no Consensus conferido nas fontes originais.
+- Ideia central: o estoicismo não ensina a mudar o caráter de quem está ao seu lado; ensina a examinar a própria conduta, reconhecer a realidade e decidir como agir.
+- Estoicismo não é reprimir emoção, tolerar desrespeito nem ficar em relação prejudicial.
+- Nunca dizer que "a ciência comprovou" o estoicismo nos relacionamentos. Dizer: a filosofia oferece princípios; a psicologia ajuda a separar práticas emocionais saudáveis das prejudiciais.
+- Estudos sobre "estoicismo" como contenção emocional (Karl et al., 2022; Johnson e Samp; Yalch e Newcomb) medem a versão popular, não a filosofia. Associação não é causa.
+- Debnam et al. (mulheres negras e a expectativa de serem sempre fortes) não se generaliza para todas as mulheres; serve como pergunta filosófica.
+- Ordem da série: 1) responsabilidade individual; 2) aceitação não é passividade; 3) comunicação; 4) coragem de pôr limites ou encerrar. Começa falando com mulheres; depois a perspectiva masculina.
+- Detalhes: `registros/2026-11-06-serie-relacionamentos.md`.
+
 ---
 
 ## 5. Identidade visual oficial
