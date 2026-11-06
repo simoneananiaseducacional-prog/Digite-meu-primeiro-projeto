@@ -50,6 +50,11 @@ def serifa_italica(tamanho, peso=500):
     return fonte("CormorantGaramond-Italic.ttf", tamanho, peso)
 
 
+def playfair(tamanho, italica=False):
+    """Playfair Display estática: acentos corretos (a Cormorant variável desloca o circunflexo)."""
+    return ImageFont.truetype(str(FONTES / ('PlayfairDisplay-Italic.ttf' if italica else 'PlayfairDisplay.ttf')), tamanho)
+
+
 def sem_serifa(tamanho, peso=500):
     return fonte("Montserrat.ttf", tamanho, peso)
 

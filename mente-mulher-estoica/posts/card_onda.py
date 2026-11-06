@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw, ImageOps
 W, H = 1080, 1350
 foto, saida, frase, autora, sub = sys.argv[1:6]
 corte = float(sys.argv[6]) if len(sys.argv) > 6 else 0.55
+rodape = sys.argv[7] if len(sys.argv) > 7 else ''
 B, G, C = estilo.BRANCO, estilo.DOURADO, estilo.CINZA
 FUNDO = (16, 16, 16)
 im = ImageOps.exif_transpose(Image.open(foto)).convert('RGB')
@@ -32,14 +33,17 @@ d = ImageDraw.Draw(card, 'RGBA')
 d.polygon(pts + [(W, H), (0, H)], fill=FUNDO)
 d.line(pts, fill=G + (255,), width=3)
 y = max(onda(x) for x in range(0, 500)) + 50
-d.text((84, y), '“', font=estilo.serifa(190, 700), fill=G, anchor='lt')
-y += 105
-f = estilo.serifa(62, 600)
+d.text((84, y), '“', font=estilo.playfair(150), fill=G, anchor='lt')
+y += 85
+f = estilo.playfair(52)
 for linha in frase.split('|'):
-    d.text((90, y), linha, font=f, fill=B, anchor='lt'); y += 74
-y += 30
+    d.text((90, y), linha, font=f, fill=B, anchor='lt'); y += 70
+y += 22
 d.line([(92, y + 14), (122, y + 14)], fill=G, width=2)
 estilo.texto_espacado(d, (136, y + 2), autora.upper(), estilo.sem_serifa(26, 600), G, 4) if False else d.text((136, y), autora.upper(), font=estilo.sem_serifa(26, 600), fill=G, anchor='lt')
-d.text((136, y + 40), sub, font=estilo.serifa_italica(32, 500), fill=C, anchor='lt')
+d.text((136, y + 40), sub, font=estilo.playfair(28, True), fill=C, anchor='lt')
+if rodape:
+    d.line([(W/2 - 60, H - 62), (W/2 + 60, H - 62)], fill=C, width=1)
+    estilo.texto_espacado(d, (W/2, H - 38), rodape.upper(), estilo.sem_serifa(22, 500), C, 6)
 card.save(saida)
 print('ok')
