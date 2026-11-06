@@ -30,6 +30,24 @@
 
 - [SEO, hashtags, frequência e reaproveitamento entre formatos — @jessicadomarktingg e @afonsomolina](registros/2026-11-04-dicas-seo-frequencia-reaproveitamento.md): sete capturas de publicações de terceiros, com dicas extraídas, autoria, classificação de evidências, aplicações originais e testes sugeridos. **Prioridade editorial:** transformar temas que já funcionaram em formatos complementares, com valor novo e linguagem natural. Não tratar como regras do algoritmo as afirmações absolutas de que hashtags não funcionam, contas pequenas são favorecidas, ou três posts diários são obrigatórios. Testar cadência sustentável e resultados após 24 h e 72 h.
 
+## Onde fica cada coisa (comece por aqui)
+- [Skill de crescimento do perfil](skills/crescimento-instagram/SKILL.md): checklist antes e depois de postar, formatos que funcionam, reel de teste. **Nome da skill: `crescimento-instagram`.**
+- [Skill de auditoria de configurações](skills/instagram-auditoria-configuracoes/SKILL.md). **Nome da skill: `instagram-auditoria-configuracoes`.**
+- [Base estratégica](base-estrategica.md): aprendizados numerados (001 em diante), protocolo de testes e histórico de experimentos.
+- [Banco de ganchos](banco-de-ganchos.md): ganchos prontos por tipo, com tabela de resultados.
+- [Registros](registros/): uma nota por dica recebida, com data.
+- Legendas publicadas: `mente-mulher-estoica/posts/textos/legendas-<mês>-<ano>.md`.
+
+**Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
+
+## Registros de dicas
+- [06/11/2026: carrossel-ensaio (@unvellum)](registros/2026-11-06-carrossel-ensaio.md)
+- [05/11/2026: palavras salpicadas sobre a fala (@mateus.salvadori)](registros/2026-11-05-palavras-salpicadas.md)
+- [05/11/2026: animação, ou ação ou texto](registros/2026-11-05-animacao-acao-ou-texto.md)
+- [05/11/2026: linguagem para todos](registros/2026-11-05-linguagem-para-todos.md)
+- [02/11/2026: gancho com caixinha de pergunta (@petjordan)](registros/2026-11-02-gancho-caixinha-de-pergunta.md)
+- [02/11/2026: curiosidade genuína (@giportugaldesigner)](registros/2026-11-02-curiosidade-genuina.md)
+
 ## Auditoria das configurações do Instagram
 - [Skill: Instagram — Auditoria de Configurações e Alcance](skills/instagram-auditoria-configuracoes/SKILL.md): fluxo para conferir Status da Conta, filtragem de spam, indexação em buscadores, compartilhamento, repost e reutilização, sem confundir elegibilidade com distribuição real.
 - [Registro de 02/11/2026 — checklist extraído de um Reel](registros/2026-11-02-checklist-configuracoes-instagram.md): o que os prints mostram, riscos e limites das alegações de crescimento.
