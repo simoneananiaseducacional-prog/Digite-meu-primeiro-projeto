@@ -263,6 +263,14 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Adaptação: Simone grava (rosto, mãos ou silhueta); as palavras entram em serifa branca e a mais importante em dourado, fora do rosto e na área segura.
 - **Decisão:** testar.
 
+### 019. Carrossel-ensaio: uma frase por tela
+**Classificação:** Referência trazida pela Simone (06/11/2026), @unvellum.
+- 10 telas, fundo liso, serifa grande, uma frase curta por tela; juntas formam um raciocínio que só fecha no fim ("nenhuma semente prospera em um solo que a envenena").
+- Marca no topo, contador "2/10" embaixo, música no carrossel.
+- Por que prende: cada tela termina aberta e puxa a próxima; o fim vira frase de salvar e compartilhar (10 reposts com 103 curtidas).
+- Adaptação: fundo preto, serifa com acento correto (Playfair), última tela em dourado, fonte estoica na tela final ou na legenda.
+- **Decisão:** testar.
+
 ---
 
 ## 5. Identidade visual oficial
