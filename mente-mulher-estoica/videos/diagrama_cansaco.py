@@ -38,7 +38,7 @@ for k in range(int(T * FPS)):
         p = min(1, max(0, (t - t0) / 0.7))
         if p > 0: seta(d, (O[0] + 20, O[1]), (alvo[0] - 20, alvo[1]), p, cor, int(230 * apaga))
         txt(d, (alvo[0] + 10, alvo[1] - 8), rot, estilo.serifa(48, 700), B, ap(t, t0 + 0.6) * apaga, 'ls')
-        txt(d, (alvo[0] + 10, alvo[1] + 34), sub, estilo.serifa_italica(36, 500), C, ap(t, t0 + 0.8) * apaga, 'ls')
+        txt(d, (alvo[0] + 10, alvo[1] + 48), sub, estilo.serifa_italica(46, 600), (205, 200, 190), ap(t, t0 + 0.8) * apaga, 'ls')
     if a0 > 0:
         d.ellipse((O[0] - 12, O[1] - 12, O[0] + 12, O[1] + 12), fill=B + (int(255 * a0),))
         txt(d, (O[0], O[1] - 48), 'Você', estilo.sem_serifa(34, 600), B, a0)
