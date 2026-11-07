@@ -17,7 +17,7 @@ def jan(t, t0, t1): return ap(t, t0) * (1 - ap(t, t1 - 0.3, 0.3))
 def cl(p): return max(0.0, min(1.0, p))
 def lerp(a, b, p): return a + (b - a) * p
 def rgba(c, a): return c + (int(255 * cl(a)),)
-T = 30.0
+T = 32.6
 
 def barco(d, x, y, cor, a):
     if a <= 0.01: return
@@ -46,7 +46,7 @@ def farol(d, x, y, cor, a):
     d.ellipse((x - 9, y - 92, x + 9, y - 74), fill=rgba(cor, a))
 
 # linha do tempo das ações
-ENTRA1, JUNTA, SEPARA, TENTA, AFASTA = 3.3, 7.3, 11.3, 15.5, 19.7
+ENTRA1, JUNTA, SEPARA, TENTA, AFASTA = 4.3, 9.7, 11.0, 16.4, 22.0
 def posicoes(t):
     x1 = lerp(-160, 300, estilo.suavizar(cl((t - ENTRA1) / 1.0))); y1 = 1040
     x2 = lerp(-160, 300, estilo.suavizar(cl((t - JUNTA) / 1.0))); y2 = 1290
@@ -98,19 +98,18 @@ for k in range(int(T * FPS)):
             d.line([p0, p1], fill=rgba(G, some), width=4)
     barco(d, x1, y1 + bob1, G, ap(t, ENTRA1, 0.3) * fim)
     barco(d, x2, y2 + bob2, C2, ap(t, JUNTA, 0.3) * fim)
-    bussola(d, x1 + 55, y1 - 250 + bob1, ap(t, 4.4, 0.6) * fim, t)
+    bussola(d, x1 + 55, y1 - 250 + bob1, ap(t, 5.4, 0.6) * fim, t)
     # textos no topo (só quando a cena está parada)
-    txt(d, 470, 'Dá para navegar juntos', F1, B, jan(t, 0.3, 3.3)); txt(d, 550, 'rumo a portos diferentes?', F2, G, jan(t, 0.7, 3.3))
-    txt(d, 470, 'Ela navegava guiada', F1, B, jan(t, 4.4, 7.2)); txt(d, 550, 'pela bússola dos seus valores.', F2, G, jan(t, 4.8, 7.2))
-    txt(d, 470, 'Um dia, decidiram', F1, B, jan(t, 8.4, 11.2)); txt(d, 550, 'seguir juntos.', F2, G, jan(t, 8.8, 11.2))
-    txt(d, 470, 'Mas nem sempre olhavam', F1, B, jan(t, 12.6, 15.4)); txt(d, 550, 'para o mesmo horizonte.', F2, C2, jan(t, 13.0, 15.4))
-    txt(d, 470, 'Ela podia conduzir o próprio barco.', F1, B, jan(t, 16.6, 19.6)); txt(d, 550, 'Não o leme do outro.', F2, G, jan(t, 17.0, 19.6))
-    txt(d, 470, 'Dois barcos só navegam juntos', F1, B, jan(t, 20.8, 23.8)); txt(d, 550, 'quando os dois escolhem o porto.', F2, G, jan(t, 21.2, 23.8))
-    txt(d, 470, '“Se não sabes para que porto navegas,', estilo.playfair(48, True), G, ap(t, 23.9) * fim)
-    txt(d, 540, 'nenhum vento é favorável.”', estilo.playfair(48, True), G, ap(t, 24.3) * fim)
-    txt(d, 605, 'Sêneca, Cartas a Lucílio, 71', estilo.playfair(30, True), C, ap(t, 24.9) * fim)
-    if ap(t, 25.6) > 0:
-        estilo.texto_espacado(d, (W/2, 1450), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(22, 500), rgba(C, ap(t, 25.6) * fim), 6)
+    txt(d, 470, 'Dá para navegar juntos', F1, B, jan(t, 0.3, 4.3)); txt(d, 550, 'rumo a portos diferentes?', F2, G, jan(t, 0.6, 4.3))
+    txt(d, 470, 'Ela navegava guiada', F1, B, jan(t, 5.4, 9.6)); txt(d, 550, 'pela bússola dos seus valores.', F2, G, jan(t, 5.7, 9.6))
+    txt(d, 470, 'Mas nem sempre olhavam', F1, B, jan(t, 12.3, 16.3)); txt(d, 550, 'para o mesmo horizonte.', F2, C2, jan(t, 12.6, 16.3))
+    txt(d, 470, 'Ela podia conduzir o próprio barco.', F1, B, jan(t, 17.7, 21.9)); txt(d, 550, 'Não o leme do outro.', F2, G, jan(t, 18.0, 21.9))
+    txt(d, 470, 'Dois barcos só navegam juntos', F1, B, jan(t, 23.1, 27.1)); txt(d, 550, 'quando os dois escolhem o porto.', F2, G, jan(t, 23.4, 27.1))
+    txt(d, 470, '“Se não sabes para que porto navegas,', estilo.playfair(48, True), G, ap(t, 27.2) * fim)
+    txt(d, 540, 'nenhum vento é favorável.”', estilo.playfair(48, True), G, ap(t, 27.5) * fim)
+    txt(d, 605, 'Sêneca, Cartas a Lucílio, 71', estilo.playfair(30, True), C, ap(t, 27.9) * fim)
+    if ap(t, 28.2) > 0:
+        estilo.texto_espacado(d, (W/2, 1450), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(22, 500), rgba(C, ap(t, 28.2) * fim), 6)
     img = Image.alpha_composite(img, cam)
     q2 = np.asarray(img.convert('RGB'), np.float32) * (1 - ap(t, T - 0.6, 0.6))
     ff.stdin.write(estilo.para_bytes(q2))
