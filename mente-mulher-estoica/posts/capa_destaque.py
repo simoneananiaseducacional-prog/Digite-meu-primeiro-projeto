@@ -62,3 +62,22 @@ for sd in (-1, 1):   # olhos sorrindo (arcos para cima)
 d.arc((CX - 140, CY - 40, CX + 140, CY + 170), 20, 160, fill=G, width=9)   # sorriso
 im.convert('RGB').save(out / 'destaque-humor.png')
 print('ok')
+
+# MAPAS DA MENTE: um ponto que se abre em três caminhos; só o do meio é dourado
+im, d = tela()
+O = (CX - 230, CY)
+def seta(a, b, cor, w):
+    d.line([a, b], fill=cor, width=w)
+    ang = math.atan2(b[1] - a[1], b[0] - a[0])
+    for sd in (-1, 1):
+        d.line([b, (b[0] - 40 * math.cos(ang + sd * 0.45), b[1] - 40 * math.sin(ang + sd * 0.45))], fill=cor, width=w)
+VERM = (190, 60, 60)
+seta((O[0] + 30, O[1] - 20), (CX + 210, CY - 230), (115, 45, 45), 6)
+seta((O[0] + 30, O[1] + 20), (CX + 210, CY + 230), (115, 45, 45), 6)
+seta((O[0] + 34, O[1]), (CX + 250, CY), G, 9)
+d.ellipse((O[0] - 26, O[1] - 26, O[0] + 26, O[1] + 26), fill=B)
+for (x, y), cor in (((CX + 245, CY - 245), (115, 45, 45)), ((CX + 245, CY + 245), (115, 45, 45))):
+    d.ellipse((x - 10, y - 10, x + 10, y + 10), fill=cor)
+d.ellipse((CX + 268, CY - 16, CX + 300, CY + 16), fill=G)
+im.convert('RGB').save(out / 'destaque-mapas.png')
+print('ok mapas')
