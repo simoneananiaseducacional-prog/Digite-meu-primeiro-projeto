@@ -28,13 +28,13 @@ def quadro(src_t): return FR[min(len(FR) - 1, int(src_t * FPS))]
 CONGELA1 = 8.0                         # a figura no meio da multidão
 def fonte(t):
     if t < 8.0: return t                              # multidão e a figura saindo
-    if t < 18.0: return CONGELA1                      # mapa das virtudes
+    if t < 18.0: return CONGELA1 + (t - 8.0) * 0.2    # mapa das virtudes, em câmera lenta
     if t < 23.0: return 10.0 + (t - 18.0)             # beira da ponte, salto, floresta
     return 15.0 + min(t - 23.0, 4.5)                  # ela caminha na mata
 T = 29.6
 VIRTUDES = [('Sabedoria', 'ver a mentira', 8.6), ('Coragem', 'sair da fila', 10.9),
             ('Justiça', 'não desprezar quem ficou', 13.2), ('Temperança', 'não virar a única que enxerga', 15.5)]
-LUZ = (628, SY + 255 * 1.5)            # a luz no peito da figura, no quadro congelado
+LUZ = (628, SY + SH - 6)               # a linha dourada nasce embaixo da figura
 F_TOP, F_TOPI = estilo.playfair(56), estilo.playfair(56, True)
 F_V, F_S = estilo.playfair(44), estilo.playfair(38, True)
 def txt(d, xy, s, f, cor, a, anc='mm'):
@@ -45,22 +45,20 @@ for k in range(int(T * FPS)):
     t = k / FPS
     base = fundo.copy()
     mapa = ap(t, 8.0, 0.5) * (1 - ap(t, 17.7, 0.4))
-    cena = quadro(fonte(t)).astype(np.float32) * (1 - 0.35 * mapa)
+    cena = quadro(fonte(t)).astype(np.float32) * (1 - 0.2 * mapa)
     base[SY:SY + SH] = cena.astype(np.uint8)
     img = Image.fromarray(base).convert('RGBA'); cam = Image.new('RGBA', img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(cam)
     d.rectangle((0, SY, W - 1, SY + SH), outline=rgba(G, 0.25), width=1)
     # mapa: a luz dela vira uma linha dourada que desce até as virtudes
     if mapa > 0:
-        pulso = 1 + 0.15 * math.sin(t * 4)
-        for r, al in ((34, 0.9), (52, 0.4)):
-            rr = r * pulso
-            d.ellipse((LUZ[0] - rr, LUZ[1] - rr, LUZ[0] + rr, LUZ[1] + rr), outline=rgba(G, al * mapa), width=4)
+        pulso = 1 + 0.25 * math.sin(t * 4)
+        d.ellipse((LUZ[0] - 9 * pulso, LUZ[1] - 9 * pulso, LUZ[0] + 9 * pulso, LUZ[1] + 9 * pulso), fill=rgba(G, mapa))
         q = cl((t - 8.2) / 0.8)
         pts = []
         for i in range(31):
             u = i / 30
             x = (1 - u) ** 2 * LUZ[0] + 2 * (1 - u) * u * 520 + u * u * 150
-            y = (1 - u) ** 2 * (LUZ[1] + 40) + 2 * (1 - u) * u * 1010 + u * u * 1000
+            y = (1 - u) ** 2 * LUZ[1] + 2 * (1 - u) * u * 1010 + u * u * 1000
             pts.append((x, y))
         n = max(2, int(31 * q))
         d.line(pts[:n], fill=rgba(G, mapa), width=4, joint='curve')
@@ -75,8 +73,10 @@ for k in range(int(T * FPS)):
                 txt(d, (190, y - 4), v, F_V, G, a, 'lm')
                 txt(d, (190, y + 42), s, F_S, B, a, 'lm')
     # textos fora da cena
-    txt(d, (W/2, 200), 'Por que é tão difícil', F_TOP, B, jan(t, 0.3, 7.6))
-    txt(d, (W/2, 272), 'sair da multidão?', F_TOPI, G, jan(t, 0.8, 7.6))
+    txt(d, (W/2, 200), 'Por que é tão difícil', F_TOP, B, jan(t, 0.3, 18.0))
+    txt(d, (W/2, 272), 'sair da multidão?', F_TOPI, G, jan(t, 0.8, 18.0))
+    txt(d, (W/2, 1090), 'Todos seguem na mesma direção.', F_TOP, B, jan(t, 0.8, 7.9))
+    txt(d, (W/2, 1175), 'Até que alguém decide sair.', F_TOPI, G, jan(t, 3.8, 7.9))
     txt(d, (W/2, 1120), 'Ela não saiu das pessoas.', F_TOP, B, jan(t, 18.6, 22.8))
     txt(d, (W/2, 1200), 'Saiu da mentira.', F_TOPI, G, jan(t, 19.1, 22.8))
     fim = 1 - ap(t, T - 0.8, 0.6)
