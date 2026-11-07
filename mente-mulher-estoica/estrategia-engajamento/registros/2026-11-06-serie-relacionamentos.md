@@ -31,3 +31,18 @@ Depois: a perspectiva masculina (a virtude exige responsabilidade dos dois).
 
 ## Ideia central
 O estoicismo não ensina você a mudar o caráter de quem está ao seu lado. Ensina a examinar a própria conduta, reconhecer a realidade e decidir como agir diante dela.
+
+## Referências do levantamento (Consensus, 06/11/2026)
+- Aikin, S., & McGill-Rutherford, E. (2014). Stoicism, Feminism and Autonomy. https://doi.org/10.5840/symposion2014112
+- Boostani, A., Momeni, K., & Arab-Zozani, M. (2025). Application of Stoic Philosophy Teachings in Nursing and Allied Health: A Scoping Review. SAGE Open Nursing, 11. https://doi.org/10.1177/23779608251408240
+- Broad, J., & Barnes, D. (2023). Women and Stoic ethics in early modern England. Philosophy Compass. https://doi.org/10.1111/phc3.12933
+- Brown, A., Stedman, N., Sowcik, M., & Bunch, J. (2023). Exploring Stoicism in Leadership. Journal of Leadership Education. https://doi.org/10.12806/v22/i1/r2
+- Debnam, K. J., Avery, L. R., & Lynch, K. (2024). More Than a Woman: Strong Black Woman Schema in Black Women's Romantic Relationships. Trauma, Violence & Abuse, 27, 294-304. https://doi.org/10.1177/15248380241308881
+- Hill, L., & Blazejak, E. (2021). Stoic Feminism and Early Modern Women Writers. https://doi.org/10.1007/978-981-16-2742-2_6
+- Johnson, E. P., & Samp, J. A. (2021). Stoicism and Verbal Aggression in Serial Arguments. Journal of Interpersonal Violence, 37. https://doi.org/10.1177/0886260521994583
+- Karl, J., et al. (2022). Misunderstood Stoicism. Journal of Happiness Studies, 23, 3531-3547. https://doi.org/10.1007/s10902-022-00563-w
+- MacLellan, A., & Lewis, M. (2026). The relationship between Stoic attitudes, resilience, and mental health. Philosophical Psychology. https://doi.org/10.1080/09515089.2026.2631140
+- Polizzi, C. P., & Lynn, S. (2021). Regulating Emotionality to Manage Adversity. Cognitive Therapy and Research. https://doi.org/10.1007/s10608-020-10186-1
+- Yalch, M., & Newcomb, K. M. (2026). The Interpersonal Nature of Stoicism. Journal of Humanistic Psychology. https://doi.org/10.1177/00221678261426415
+
+Observação: o resumo do Consensus fala em "consenso científico"; os próprios estudos não sustentam isso (ver regras acima).
