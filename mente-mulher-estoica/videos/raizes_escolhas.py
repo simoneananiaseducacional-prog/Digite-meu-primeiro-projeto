@@ -63,8 +63,8 @@ for k in range(int(T * FPS)):
         txt(d, (x - 40, y), marca, FL, VERM, a, 'rm')
         txt(d, (x + 40, y), resposta, FR, G, ap(t, t0 + 1.3, 0.5) * fim, 'lm')
     # textos no topo
-    txt(d, (W/2, 230), 'Minha história', F1, B, jan(t, 0.3, 4.3)); txt(d, (W/2, 310), 'me influencia.', F2, G, jan(t, 0.7, 4.3))
-    txt(d, (W/2, 230), 'Não precisa decidir', F1, B, jan(t, 17.8, 21.8)); txt(d, (W/2, 310), 'todas as minhas escolhas.', F2, G, jan(t, 18.2, 21.8))
+    txt(d, (W/2, 230), 'Nem tudo o que você aprendeu', F1, B, jan(t, 0.3, 4.3)); txt(d, (W/2, 310), 'precisa continuar te guiando.', F2, G, jan(t, 0.7, 4.3))
+    txt(d, (W/2, 230), 'Suas raízes fazem parte de você.', F1, B, jan(t, 17.8, 21.8)); txt(d, (W/2, 310), 'Suas escolhas também podem abrir caminhos.', estilo.playfair(52, True), G, jan(t, 18.2, 21.8))
     txt(d, (W/2, 200), '“Diga a cada impressão difícil:', estilo.playfair(48, True), G, ap(t, 22.0) * fim)
     txt(d, (W/2, 265), 'você é só uma impressão,', estilo.playfair(48, True), G, ap(t, 22.3) * fim)
     txt(d, (W/2, 330), 'não aquilo que parece ser.”', estilo.playfair(48, True), G, ap(t, 22.6) * fim)
