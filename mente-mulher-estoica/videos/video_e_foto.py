@@ -26,34 +26,40 @@ def txt(d, y, s, f, cor, a):
     if a <= 0.01: return
     d.text((W/2 + 2, y + 3), s, font=f, fill=(0, 0, 0, int(170 * a)), anchor='mm')
     d.text((W/2, y), s, font=f, fill=cor + (int(255 * a),), anchor='mm')
-T = 22.0
+A1, V0, V1, T = 7.0, 7.0, 16.0, 21.5     # foto + Sêneca | vídeo | foto + resposta
+def foto_quadro(u, dur, desloc):
+    z = 1 + 0.06 * u / dur
+    cw, ch = W / z, H / z
+    f = Image.fromarray(np.clip(FOTO, 0, 255).astype(np.uint8)).crop((int((W - cw) * desloc), int((H - ch) * 0.5), int((W - cw) * desloc + cw), int((H - ch) * 0.5 + ch))).resize((W, H), Image.BILINEAR)
+    return np.asarray(f, np.float32)[..., None].repeat(3, 2)
 ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
 for k in range(int(T * FPS)):
     t = k / FPS
-    if t < CORTE:
-        q = FR[min(k, len(FR) - 1)].astype(np.float32) * (1 - ap(t, CORTE - 0.5, 0.5))
+    if t < A1:
+        g = foto_quadro(t, A1, 0.45) * ap(t, 0, 0.5) * (1 - ap(t, A1 - 0.4, 0.4))
+        out = Image.fromarray(np.clip(estilo.granulado(g), 0, 255).astype(np.uint8)).convert('RGBA')
+    elif t < V1:
+        src = int((t - V0) * FPS)
+        q = FR[min(src, len(FR) - 1)].astype(np.float32) * ap(t, V0, 0.3) * (1 - ap(t, V1 - 0.4, 0.4))
         out = Image.fromarray(q.astype(np.uint8)).convert('RGBA')
     else:
-        u = t - CORTE
-        z = 1 + 0.06 * u / (T - CORTE)
-        cw, ch = W / z, H / z
-        f = Image.fromarray(np.clip(FOTO, 0, 255).astype(np.uint8)).crop((int((W - cw) * 0.45), int((H - ch) * 0.5), int((W - cw) * 0.45 + cw), int((H - ch) * 0.5 + ch))).resize((W, H), Image.BILINEAR)
-        g = np.asarray(f, np.float32)[..., None].repeat(3, 2)
-        flash = max(0.0, 1 - u / 0.35)                              # corte com um clarão breve
-        g = g * (1 - flash) + 255 * flash
-        g = g * (1 - ap(t, T - 0.6, 0.6))
+        u = t - V1
+        g = foto_quadro(u, T - V1, 0.55)
+        flash = max(0.0, 1 - u / 0.35)
+        g = (g * (1 - flash) + 255 * flash) * (1 - ap(t, T - 0.6, 0.6))
         out = Image.fromarray(np.clip(estilo.granulado(g), 0, 255).astype(np.uint8)).convert('RGBA')
     cam = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(cam)
     fim = 1 - ap(t, T - 0.8, 0.6)
-    txt(d, 300, 'Ela existe.', F1, B, jan(t, CORTE + 0.5, CORTE + 4.6))
-    txt(d, 390, 'E não fica calada.', F2, G, jan(t, CORTE + 1.1, CORTE + 4.6))
-    txt(d, 250, '“Quem disse que a natureza', F3, G, ap(t, CORTE + 4.8) * fim)
-    txt(d, 315, 'foi avara com as mulheres?', F3, G, ap(t, CORTE + 5.0) * fim)
-    txt(d, 400, 'Elas têm o mesmo vigor', F3, B, ap(t, CORTE + 5.8) * fim)
-    txt(d, 465, 'e a mesma capacidade para o bem.”', F3, B, ap(t, CORTE + 6.0) * fim)
-    txt(d, 540, 'Sêneca, Consolação a Márcia, 16', estilo.playfair(30, True), (215, 215, 215), ap(t, CORTE + 6.6) * fim)
-    if ap(t, CORTE + 7.2) > 0:
-        estilo.texto_espacado(d, (W/2, 1450), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(22, 500), (225, 225, 225, int(255 * ap(t, CORTE + 7.2) * fim)), 6)
+    sai = 1 - ap(t, A1 - 0.5, 0.4)
+    txt(d, 250, '“Quem disse que a natureza', F3, G, ap(t, 0.5) * sai)
+    txt(d, 315, 'foi avara com as mulheres?', F3, G, ap(t, 0.8) * sai)
+    txt(d, 400, 'Elas têm o mesmo vigor', F3, B, ap(t, 2.4) * sai)
+    txt(d, 465, 'e a mesma capacidade para o bem.”', F3, B, ap(t, 2.7) * sai)
+    txt(d, 540, 'Sêneca, Consolação a Márcia, 16', estilo.playfair(30, True), (215, 215, 215), ap(t, 3.3) * sai)
+    txt(d, 300, 'Ela existe.', F1, B, ap(t, V1 + 0.5) * fim)
+    txt(d, 390, 'E não fica calada.', F2, G, ap(t, V1 + 1.1) * fim)
+    if ap(t, V1 + 1.8) > 0:
+        estilo.texto_espacado(d, (W/2, 1450), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(22, 500), (225, 225, 225, int(255 * ap(t, V1 + 1.8) * fim)), 6)
     out = Image.alpha_composite(out, cam)
     ff.stdin.write(estilo.para_bytes(np.asarray(out.convert('RGB'), np.float32)))
 ff.stdin.close(); ff.wait()
