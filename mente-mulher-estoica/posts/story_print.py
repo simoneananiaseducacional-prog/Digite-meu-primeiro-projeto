@@ -47,8 +47,8 @@ if modo == 'humor':
     d.text((W/2, 260), 'Estoicismo?', font=estilo.playfair(66), fill=B, anchor='mm')
     d.text((W/2, 350), 'Quem vai querer saber disso?', font=estilo.playfair(60, True), fill=B, anchor='mm')
     yb = y + recorte.height + 215
-    d.text((W/2, yb), 'Fico feliz de encontrar tanta gente', font=estilo.playfair(48), fill=B, anchor='mm')
-    d.text((W/2, yb + 66), 'que também gosta de pensar sobre a vida.', font=estilo.playfair(46, True), fill=G, anchor='mm')
+    d.text((W/2, yb), 'Spoiler: era sobre a sua vida', font=estilo.playfair(52), fill=B, anchor='mm')
+    d.text((W/2, yb + 72), 'o tempo todo.', font=estilo.playfair(56, True), fill=G, anchor='mm')
     # anotação manuscrita com seta apontando para o círculo
     from PIL import ImageFont
     mao = ImageFont.truetype(str(estilo.FONTES / 'Sacramento-Regular.ttf'), 84)
