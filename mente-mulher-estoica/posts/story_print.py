@@ -51,10 +51,10 @@ if modo == 'humor':
     d.text((W/2, yb + 72), 'o tempo todo.', font=estilo.playfair(56, True), fill=G, anchor='mm')
     # anotação manuscrita com seta apontando para o círculo
     from PIL import ImageFont
-    mao = ImageFont.truetype(str(estilo.FONTES / 'Sacramento-Regular.ttf'), 92)
+    mao = ImageFont.truetype(str(estilo.FONTES / 'Sacramento-Regular.ttf'), 84)
     # seta pela margem esquerda, fora do print, subindo até o círculo
-    d.text((290, 1655), 'a prova', font=mao, fill=G, anchor='mm')
-    seta = [(185, 1660), (120, 1625), (100, 1540), (125, 1478)]
+    d.text((230, 1655), '40,6 mil visualizações', font=mao, fill=G, anchor='lm')
+    seta = [(215, 1660), (120, 1625), (100, 1540), (125, 1478)]
     d.line(seta, fill=G, width=5, joint='curve')
     d.line([(125, 1478), (100, 1500)], fill=G, width=5); d.line([(125, 1478), (130, 1510)], fill=G, width=5)
 else:
