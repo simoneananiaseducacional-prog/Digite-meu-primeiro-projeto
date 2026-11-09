@@ -30,3 +30,9 @@ Registrar na Biblioteca de Engajamento, sempre:
 
 ## Regras da página
 Sem travessão nos textos da Simone. Fonte específica em toda citação. Crédito a outros criadores. Respostas curtas e simples. Fotos pessoais nunca vão para o repositório.
+
+## Sincronização com a main (combinado em 09/11/2026)
+A Biblioteca de referência é a da branch **main**. Antes de criar ou revisar qualquer post:
+1. `git fetch origin main` e juntar a main no ramo de trabalho (`git merge origin/main`), para ler a versão mais recente.
+2. Seguir as regras da main quando houver conflito com registros antigos deste ramo.
+Atualizações aprovadas pela Simone devem chegar à main (por pull request revisado). Juntar ramos uma vez não sincroniza conversas futuras.
