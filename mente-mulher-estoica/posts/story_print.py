@@ -8,6 +8,7 @@ from PIL import Image, ImageDraw, ImageFilter
 W, H = 1080, 1920
 B, G, C = estilo.BRANCO, estilo.DOURADO, estilo.CINZA
 src = Image.open(sys.argv[1]).convert('RGB')
+vis = src.crop((28, 1688, 250, 1758))   # o olho e o número de visualizações
 # desfoca as fotos de quem compartilhou (faixa dos avatares)
 box = (30, 1370, 620, 1630)
 src.paste(src.crop(box).filter(ImageFilter.GaussianBlur(22)), box[:2])
@@ -29,8 +30,18 @@ if modo == 'humor':
     d.text((W/2, 260), 'Estoicismo?', font=estilo.playfair(66), fill=B, anchor='mm')
     d.text((W/2, 350), 'Quem vai querer saber disso?', font=estilo.playfair(60, True), fill=B, anchor='mm')
     yb = y + recorte.height + 75
-    d.text((W/2, yb), 'Eu, três posts depois:', font=estilo.playfair(48), fill=B, anchor='mm')
-    d.text((W/2, yb + 70), 'Sêneca, precisamos conversar.', font=estilo.playfair(56, True), fill=G, anchor='mm')
+    d.text((W/2, yb), 'Spoiler: era sobre a sua vida', font=estilo.playfair(52), fill=B, anchor='mm')
+    d.text((W/2, yb + 72), 'o tempo todo.', font=estilo.playfair(56, True), fill=G, anchor='mm')
+    # visualizações como figurinha inclinada sobre o canto do print
+    v = vis.resize((vis.width * 2, vis.height * 2), Image.LANCZOS)
+    pad = 26
+    tag = Image.new('RGBA', (v.width + 2 * pad, v.height + 2 * pad), (0, 0, 0, 0))
+    td = ImageDraw.Draw(tag)
+    td.rounded_rectangle((0, 0, tag.width - 1, tag.height - 1), 40, fill=(14, 18, 28, 255), outline=G + (255,), width=4)
+    tag.paste(v, (pad, pad))
+    tag = tag.rotate(7, resample=Image.BICUBIC, expand=True)
+    im.alpha_composite(tag, ((W - tag.width) // 2 - 60, 1335))
+    d = ImageDraw.Draw(im)
 else:
     d.text((W/2, 230), '40,6 mil pessoas pararam', font=estilo.playfair(60), fill=B, anchor='mm')
     d.text((W/2, 310), 'para pensar no próprio tempo.', font=estilo.playfair(60, True), fill=G, anchor='mm')
