@@ -1,6 +1,8 @@
-# Perfil @mente.mulher.estoica
+# Perfil @mente_mulher_estoica
 
 Materiais de organização do perfil no Instagram.
+
+**Orientação vigente (02/11/2026):** não sugerir automaticamente “Mulheres Estoicas” como destaque, série ou hashtag. O PDF de destaques permanece como arquivo histórico. O perfil prioriza estoicismo, psicanálise e neurociência; nomes de destaques abaixo são propostas, não configurações já verificadas na conta.
 
 ## Estrutura dos Destaques
 
@@ -14,7 +16,7 @@ Ordem dos destaques e o objetivo de cada um:
 | **Manifesto** | Explicar a alma da página: não se abandonar quando a vida pesa. |
 | **Reconstrução** | Autoridade pela experiência. |
 | **Estoicismo** | Ensinar os fundamentos (controle, Sêneca, Epicteto, Marco Aurélio). |
-| **Mulheres Estoicas** | O grande diferencial (Pórcia, Fânia, Ânia, Hipárquia, Musônio Rufo). |
+| **Psicanálise & Neurociência** | Abordagens sobre emoções e processos mentais, distinguindo conceitos psicanalíticos de evidências científicas. |
 | **Relacionamentos** | Aplicação prática (limites, dependência, valor próprio). |
 | **Bíblia & Estoicismo** | Segundo diferencial (domínio próprio, temperança, fé e filosofia). |
 | **Perguntas** | Responder dúvidas recorrentes sobre estoicismo. |

@@ -1,11 +1,38 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 02/11/2026  
+**Atualização:** 09/11/2026 (novas dicas arquivadas; posicionamento revisado em 02/11)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
-> Esta biblioteca atualiza as orientações operacionais de engajamento presentes em comandos mais antigos. Em caso de conflito sobre handle, duração ou estilo, usar as orientações mais recentes aprovadas pela autora.
+> Esta biblioteca atualiza as orientações operacionais de engajamento presentes em comandos mais antigos. Em caso de conflito sobre **posicionamento**, público, handle, duração, temas ou estilo, usar as orientações mais recentes aprovadas pela autora.
 
+## Posicionamento editorial vigente — decisão de 02/11/2026
+
+**Eixos prioritários:** estoicismo e filosofia prática; **psicanálise**; **neurociência**; autoconhecimento, maturidade emocional, relações, decisões, limites e responsabilidade; fé quando pertinente. A abordagem deve aproximar ideias filosóficas e conhecimentos atuais sem confundi-los: psicanálise é uma tradição teórica e clínica; neurociência envolve pesquisa empírica específica, que deve ser citada ao fazer afirmações científicas.
+
+**Terminologia:** não usar **"comportamento humano" como rótulo/pilar editorial da página**; o termo pode existir em explicações comuns, mas a identidade temática deve nomear **psicanálise e neurociência**. Não sugerir diagnósticos nem credenciais de psicóloga ou psicanalista não comprovadas.
+
+**Público:** pessoas interessadas nesses assuntos, independentemente de gênero. "Mulher" faz parte do nome da marca, não delimita a audiência.
+
+**Mulheres Estoicas:** **não** inserir como quadro, série obrigatória, hashtag ou proposta editorial automática. Não usar `#mulheresestoicas` por padrão, nem acrescentar listas de personagens femininas antigas sem pedido expresso. Materiais previamente produzidos sobre esse tema permanecem apenas como acervo histórico; não são orientação para novos conteúdos.
+
+**Hashtags e texto de perfil:** escolher termos diretamente relacionados ao conteúdo e ao posicionamento (por exemplo `#estoicismo`, `#filosofia`, `#psicanalise`, `#neurociencia` quando de fato pertinentes). Volume aparente da hashtag, sozinho, não demonstra alcance nem exige sua inclusão. **Não usar todas essas hashtags em qualquer post**; escolher poucas específicas, sem repetição automática.
+
+**Obrigação operacional:** **antes de escrever, revisar ou aprovar QUALQUER legenda, post, Reels, Story ou roteiro, reabrir o índice, a [Skill de Validação Editorial](skills/validacao-editorial/SKILL.md) e o registro de desempenho pertinente no GitHub**. Checar o posicionamento e as hashtags antes de entregar. Se o GitHub estiver indisponível, declarar isso e não afirmar que conferiu. Não apenas mencionar a consulta: aplicar as regras efetivamente.
+
+
+
+
+## Pesquisas temáticas e referências verificadas
+- [Estamos aqui de passagem: o tempo, o apego e o valor do que é transitório](../pesquisas/2026-11-02-vida-como-passagem-freud-erickson.md) (02/11/2026): pesquisa reunindo Epicteto, Sêneca, Jesus, Marco Aurélio, Buda, Jó, Freud e Milton H. Erickson, além de estudos psicológicos; distingue citações verificadas, sínteses autorais, interpretações e correlações. **Importante:** o Elicit não autorizou acesso à API, então não atribuir resultados a ele; o vínculo com Erickson é interpretativo, sem citação direta sobre a vida como empréstimo.
+
+## Dicas de engajamento recebidas em 09/11/2026
+
+- [Quatro formatos: carrosséis simples, reflexões curtas, passo a passo e Reels de sete segundos](registros/2026-11-09-quatro-formatos-afonso-molina.md), extraídos das legendas do vídeo de @afonsomolina enviado pela autora. Incorporar como repertório de testes, mantendo identidade visual, referências e legibilidade. Não adotar promessa de crescimento garantido nem CTA comercial com direct. Resultados ainda pendentes.
+
+## Dicas de engajamento recebidas em 04/11/2026
+
+- [SEO, hashtags, frequência e reaproveitamento entre formatos — @jessicadomarktingg e @afonsomolina](registros/2026-11-04-dicas-seo-frequencia-reaproveitamento.md): sete capturas de publicações de terceiros, com dicas extraídas, autoria, classificação de evidências, aplicações originais e testes sugeridos. **Prioridade editorial:** transformar temas que já funcionaram em formatos complementares, com valor novo e linguagem natural. Não tratar como regras do algoritmo as afirmações absolutas de que hashtags não funcionam, contas pequenas são favorecidas, ou três posts diários são obrigatórios. Testar cadência sustentável e resultados após 24 h e 72 h.
 
 ## Onde fica cada coisa (comece por aqui)
 - [Skill de crescimento do perfil](skills/crescimento-instagram/SKILL.md): checklist antes e depois de postar, formatos que funcionam, reel de teste. **Nome da skill: `crescimento-instagram`.**
@@ -31,8 +58,13 @@
 - [Registro de 02/11/2026 — checklist extraído de um Reel](registros/2026-11-02-checklist-configuracoes-instagram.md): o que os prints mostram, riscos e limites das alegações de crescimento.
 - **Regra:** não desligar proteção contra spam nem liberar toda reutilização em nome de um suposto bônus de alcance; preservar a preferência por DMs sem automação.
 
+## Skill obrigatória de validação de cada conteúdo
+- [Skill: Validação Editorial e Aprendizado de Engajamento](skills/validacao-editorial/SKILL.md): consultar **a cada nova proposta de post, Reel, Story, carrossel, legenda, gancho, roteiro ou modelo recebido**. Exige comparação com os registros de maior alcance da própria página, gancho, curiosidade com entrega, identificação do público, rigor estoico, estética da marca e **tabela de conformidade antes de aprovar**.
+- **Regra operacional:** a autora não precisa lembrar o assistente de consultar o GitHub. O modelo recebido é ponto de partida, não aprovação automática. Se a conexão estiver indisponível, registrar a limitação e não afirmar que conferiu a Skill ou as métricas.
+- Para mudanças de configuração do Instagram, combinar com a Skill de Auditoria de Configurações e Alcance indicada acima.
+
 ## Regras inegociáveis da marca
-- Estoicismo verificável, aplicado a comportamento humano, relações, decisões, responsabilidade, justiça, autocontrole e vida real. O perfil recebe todos os públicos; a palavra "Mulher" integra a identidade, mas não obriga conteúdo dirigido exclusivamente a mulheres.
+- Estoicismo verificável e aplicado à vida real, em diálogo criterioso com **psicanálise** e **neurociência**, além de relações, decisões, responsabilidade, justiça, autocontrole e maturidade emocional. O perfil recebe todos os públicos; a palavra "Mulher" integra a identidade, mas não obriga conteúdo dirigido exclusivamente a mulheres.
 - Voz humana, natural, madura, perspicaz, firme quando necessário; leve/humorada quando pertinente. Sem tom de coach, sem frases genéricas de autoajuda, sem travessões desnecessários, sem interação forçada (ex.: “comente um número”, “siga para…”).
 - Citação literal de filósofo: identificar obra/passagem e conferir a fonte; texto inspirado na filosofia: identificar como adaptação autoral, nunca inventar aspas.
 - Fotos da autora: preservar identidade, proporções reais do rosto e corpo, idade, cabelo e traços; não criar mãos/dedos/acessórios artificiais. Em montagens com terceiros, acrescentar análise/valor autoral e creditar a fonte quando aplicável. Direitos autorais e consentimento quando necessários.
@@ -41,11 +73,11 @@
 
 ## Processo de produção — antes de qualquer post
 1. **Definir ideia e intenção**: descoberta, aprofundamento, reflexão, autoridade ou convite legítimo à conversa.
-2. **Checar fonte e autenticidade**: fato, hipótese, inferência, opinião; separar ciência da filosofia e verificar referências filosóficas.
+2. **Checar fonte, posicionamento e autenticidade**: fato, hipótese, inferência, opinião; separar filosofia, psicanálise e pesquisas de neurociência, verificando referências e evitando extrapolar resultados científicos.
 3. **Criar gancho que cumpra a promessa**: primeira frase/quadro fala de um problema, tensão, pergunta ou contradição relevante para quem vê. Não abrir com “Hoje vou falar sobre…”. Não usar clickbait.
 4. **Escolher formato como hipótese, não dogma**: Reels curtos (7–20 segundos) para teste de retenção e distribuição; outros comprimentos se a mensagem exigir. Carrosséis para desenvolvimento sequencial e conteúdo salvável. Stories para conexão cotidiana. Não alegar que um formato sempre vence.
 5. **Montar conteúdo**: primeiro quadro legível, movimento discreto e rápido se ajudar, contraste alto, uma mensagem por bloco, ritmo compatível com leitura sem som.
-6. **Legenda e publicação**: acrescentar contexto ou aplicação prática, sem repetir tudo do vídeo, com hashtags relevantes (sem excesso) e crédito à fonte quando houver conteúdo de terceiros. Não acionar respostas automáticas nem prometer responder direct; preservar a preferência da autora por não administrar conversas privadas.
+6. **Legenda e publicação**: acrescentar contexto ou aplicação prática, sem repetir tudo do vídeo, com hashtags pertinentes ao assunto (sem excesso, sem `#mulheresestoicas` automática), sem sugerir público exclusivo e com crédito à fonte quando houver conteúdo de terceiros. Não acionar respostas automáticas nem prometer responder direct; preservar a preferência da autora por não administrar conversas privadas.
 7. **Avaliar**: visualizações vs espectadores únicos, retenção, tempo médio de visualização, salvamentos, envios, reposts, novos seguidores, comentários relevantes e alcance de não seguidores; diferenciar Facebook/Instagram e resultados pagos/orgânicos quando houver informação.
 8. **Aprender**: registrar hipótese, métricas após janelas comparáveis, confusores e decisão (repetir, refinar, descartar). Não tirar regra universal de um vídeo viral.
 
