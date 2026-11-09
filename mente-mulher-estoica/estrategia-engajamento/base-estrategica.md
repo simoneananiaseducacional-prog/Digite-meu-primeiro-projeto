@@ -359,6 +359,13 @@ Medições de cada experimento entram abaixo, com data:
 
 *(sem medições registradas ainda para E02 a E05)*
 
+**E09, Põe o pé que Deus coloca o chão** (pegadas e pedras douradas, 24 s, publicado em 08/11/2026, post cruzado no Facebook). Medição de 09/11/2026, 18h (cerca de 1 dia):
+- 10.053 visualizações, 7.607 contas alcançadas, tempo médio 11 s (de 24 s), 47 seguidores.
+- 466 curtidas, 1 comentário, 43 reposts, 137 compartilhamentos, 110 salvamentos.
+- Leitura: salvamentos (1,1% das visualizações) e compartilhamentos (1,4%) na mesma faixa do vídeo da energia (1,0% e 1,3%). Indício de que o formato "Mapas da mente" segue funcionando com desenho novo. Medir de novo em 7 dias antes de concluir.
+- Ponto de atenção: a capa é quase toda preta (só o título no alto). Testar capa com a imagem das pedras douradas.
+
+
 ---
 
 ## 9. Futura skill do Claude
