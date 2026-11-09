@@ -238,7 +238,8 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 
 ### 014. Hashtags de tema, não de marca
 **Classificação:** Decisão da Simone (02/11/2026).
-- Tirar #mentemulherestoica e #mulheresestoicas. Usar hashtags de tema: estoicismo, inteligência emocional, autoconhecimento, comportamento humano, neurociência, psicanálise (quando couber) e o filósofo citado.
+- Tirar #mentemulherestoica e #mulheresestoicas. Usar poucas hashtags de tema, escolhidas pelo assunto: estoicismo, filosofia, o filósofo citado, autoconhecimento, inteligência emocional; psicanálise e neurociência só quando o post tocar esses temas de fato.
+- **Atualização 09/11/2026:** não usar #comportamentohumano nem "comportamento humano" como rótulo da página (posicionamento de 02/11, ver README e skill de validação editorial).
 
 ### 015. Variar o desenho dentro da identidade
 **Classificação:** Decisão da Simone (02/11/2026).

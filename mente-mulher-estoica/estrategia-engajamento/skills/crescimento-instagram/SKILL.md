@@ -56,7 +56,7 @@ A página não é só para mulheres. Conferir se o texto do vídeo, do card e da
 ## Hashtags
 
 Não usar #mentemulherestoica nem #mulheresestoicas: quase ninguém busca, e o objetivo não é atrair só quem se identifica como "mulher estoica". Usar de 3 a 5 hashtags de tema, escolhidas pelo assunto do post:
-#estoicismo #inteligenciaemocional #autoconhecimento #comportamentohumano #neurociencia #psicanalise (só quando o post tocar psicanálise de fato), mais o nome do filósofo citado (#seneca, #epicteto, #marcoaurelio).
+#estoicismo #filosofia #autoconhecimento #inteligenciaemocional, mais o nome do filósofo citado (#seneca, #epicteto, #marcoaurelio). #psicanalise e #neurociencia só quando o post tocar esses temas de fato. Não usar #comportamentohumano (posicionamento de 02/11).
 
 ## Banco de ganchos
 
