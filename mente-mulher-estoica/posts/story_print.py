@@ -12,10 +12,13 @@ vis = src.crop((28, 1688, 250, 1758))   # o olho e o número de visualizações
 # desfoca as fotos de quem compartilhou (faixa dos avatares)
 box = (30, 1370, 620, 1630)
 src.paste(src.crop(box).filter(ImageFilter.GaussianBlur(22)), box[:2])
-# cobre a faixa de insights e 'Turbinar post' (visível só para a dona da conta)
-ImageDraw.Draw(src).rectangle((0, 1650, 1179, 1790), fill=src.getpixel((600, 1640)))
+# faixa real de números, sem retoque (prova): opcional, substitui a do print original
+faixa = sys.argv[4] if len(sys.argv) > 4 else None
+if faixa:
+    f = Image.open(faixa).convert('RGB').resize((1179, 325))
+    src.paste(f, (0, 1640))
 # recorta do título até a linha de curtidas
-recorte = src.crop((0, 120, 1179, 1910))
+recorte = src.crop((0, 120, 1179, 1930))
 esc = 820 / recorte.width
 recorte = recorte.resize((820, int(recorte.height * esc)), Image.LANCZOS)
 im = Image.fromarray(np.clip(estilo.granulado(estilo.fundo()), 0, 255).astype(np.uint8)).convert('RGB')
@@ -32,16 +35,6 @@ if modo == 'humor':
     yb = y + recorte.height + 75
     d.text((W/2, yb), 'Spoiler: era sobre a sua vida', font=estilo.playfair(52), fill=B, anchor='mm')
     d.text((W/2, yb + 72), 'o tempo todo.', font=estilo.playfair(56, True), fill=G, anchor='mm')
-    # visualizações como figurinha inclinada sobre o canto do print
-    v = vis.resize((vis.width * 2, vis.height * 2), Image.LANCZOS)
-    pad = 26
-    tag = Image.new('RGBA', (v.width + 2 * pad, v.height + 2 * pad), (0, 0, 0, 0))
-    td = ImageDraw.Draw(tag)
-    td.rounded_rectangle((0, 0, tag.width - 1, tag.height - 1), 40, fill=(14, 18, 28, 255), outline=G + (255,), width=4)
-    tag.paste(v, (pad, pad))
-    tag = tag.rotate(7, resample=Image.BICUBIC, expand=True)
-    im.alpha_composite(tag, ((W - tag.width) // 2 - 60, 1335))
-    d = ImageDraw.Draw(im)
 else:
     d.text((W/2, 230), '40,6 mil pessoas pararam', font=estilo.playfair(60), fill=B, anchor='mm')
     d.text((W/2, 310), 'para pensar no próprio tempo.', font=estilo.playfair(60, True), fill=G, anchor='mm')
