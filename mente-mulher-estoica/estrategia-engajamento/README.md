@@ -39,6 +39,7 @@
 - [Skill de auditoria de configurações](skills/instagram-auditoria-configuracoes/SKILL.md). **Nome da skill: `instagram-auditoria-configuracoes`.**
 - [Base estratégica](base-estrategica.md): aprendizados numerados (001 em diante), protocolo de testes e histórico de experimentos.
 - [Banco de ganchos](banco-de-ganchos.md): ganchos prontos por tipo, com tabela de resultados.
+- [Publicados](publicados.md): o que já foi ao ar, para não repetir.
 - [Registros](registros/): uma nota por dica recebida, com data.
 - Legendas publicadas: `mente-mulher-estoica/posts/textos/legendas-<mês>-<ano>.md`.
 
