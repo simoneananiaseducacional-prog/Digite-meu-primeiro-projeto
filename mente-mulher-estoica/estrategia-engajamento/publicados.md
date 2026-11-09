@@ -5,4 +5,4 @@ Consultar antes de sugerir um post, para não repetir. Atualizar sempre que a Si
 | Data | Peça | Script | Observação |
 |---|---|---|---|
 | 08/11/2026 | Põe o pé que Deus coloca o chão | videos/passo_chao.py | |
-| 09/11/2026 | A navegadora e a bússola | videos/navegadora.py | legenda sem citar curso; sem #comportamentohumano |
+| até 09/11/2026 | Todos os vídeos e cards feitos até aqui (Simone confirmou em 09/11): energia, amor, interpretação, cansaço (setas e jarro), abelha, mãos (ep. 1), virtudes/multidão, fios do tempo, raízes, constelação, navegadora, impacto, calada, rótulos, ser estoico (foto salpicada), cards nuvens/paz, carrossel verdade, passo | videos/ e posts/ | datas exatas não registradas |
