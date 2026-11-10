@@ -11,6 +11,7 @@ import math
 DOURADO = (196, 160, 92)
 CINZA = (175, 175, 175)
 CABELO = (24, 22, 22)
+ROSTO = (18, 17, 16)   # preenchimento do rosto (trocar para a cor do papel no design claro)
 def _rgba(c, a): return c + (int(255 * max(0, min(1, a))),)
 
 def _corpo(d, x, y, cor, a, sentado, braco, cabeca_baixa, lado, w=5):
@@ -32,22 +33,22 @@ def _corpo(d, x, y, cor, a, sentado, braco, cabeca_baixa, lado, w=5):
     return hx, hy
 
 def _rosto(d, hx, hy, cor, a, cabeca_baixa, r=36, w=5):
-    d.ellipse((hx - r, hy - r, hx + r, hy + r), fill=(18, 17, 16, int(255 * a)), outline=_rgba(cor, a), width=w)
+    d.ellipse((hx - r, hy - r, hx + r, hy + r), fill=ROSTO + (int(255 * a),), outline=_rgba(cor, a), width=w)
     oy = hy - 2 + 12 * cabeca_baixa
     for s in (-1, 1):
         d.ellipse((hx + s * 12 - 4, oy - 4, hx + s * 12 + 4, oy + 4), fill=_rgba(cor, a))
 
 def _cabelo_liso(d, hx, hy, a, comp, t):
-    """Cabelo preto, liso e comprido, como uma mecha única atrás da cabeça e das costas."""
+    """Cabelo preto, liso e comprido, caindo dos dois lados do rosto (o corpo fica visível no meio)."""
     bal = 3 * math.sin(t * 1.6)
-    forma = [(hx - 40, hy - 6), (hx - 46 + bal, hy + 60), (hx - 36 + bal, hy + comp),
-             (hx + bal, hy + comp + 12), (hx + 36 + bal, hy + comp), (hx + 46 + bal, hy + 60), (hx + 40, hy - 6)]
-    topo = [(hx + 40 * math.cos(math.radians(g)), hy - 4 + 42 * math.sin(math.radians(g))) for g in range(0, -181, -10)]
-    poly = [forma[-1]] + topo[1:-1] + forma[:-1]
-    d.polygon(poly, fill=CABELO + (int(255 * a),))
-    d.line(poly + [poly[0]], fill=_rgba(DOURADO, a), width=4, joint='curve')
-    for dx in (-22, 22):   # brilho de cabelo liso
-        d.line([(hx + dx, hy + 50), (hx + dx * 0.9 + bal, hy + comp - 15)], fill=_rgba(DOURADO, a * 0.35), width=2)
+    topo = [(hx + 41 * math.cos(math.radians(g)), hy - 2 + 43 * math.sin(math.radians(g))) for g in range(0, -181, -10)]
+    d.polygon(topo + [(hx - 41, hy + 6), (hx + 41, hy + 6)], fill=CABELO + (int(255 * a),))
+    for s_ in (-1, 1):
+        mecha = [(hx + s_ * 41, hy - 4), (hx + s_ * 47 + bal, hy + 60), (hx + s_ * 44 + bal, hy + comp),
+                 (hx + s_ * 18 + bal, hy + comp + 6), (hx + s_ * 20, hy + 40), (hx + s_ * 30, hy + 10)]
+        d.polygon(mecha, fill=CABELO + (int(255 * a),))
+        d.line(mecha + [mecha[0]], fill=_rgba(DOURADO, a), width=3, joint='curve')
+    d.arc((hx - 41, hy - 45, hx + 41, hy + 41), 180, 360, fill=_rgba(DOURADO, a), width=3)
 
 def ela(d, x, y, a, braco=0.0, lado=1, sentada=0.0, cabeca_baixa=0.0, t=0.0):
     if a <= 0.01: return

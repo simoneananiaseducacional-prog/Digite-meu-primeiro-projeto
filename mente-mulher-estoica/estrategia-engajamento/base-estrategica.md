@@ -288,6 +288,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - **Ela:** traço dourado, cabelo preto, bem liso e comprido até a cintura, repartido ao meio (inspirada na Simone). **Ele:** traço cinza-claro, cabelo curto. Também a borboleta e a abelha da fábula.
 - Código: `videos/personagens.py` (`ela`, `ele`). Todo vídeo novo com pessoas usa esse arquivo.
 
+### 022. Dois designs: feed escuro, story em papel
+**Classificação:** Decisão da Simone (11/11/2026).
+- **Feed (reels e Mapas da mente):** fundo preto, traço branco e dourado. Continua igual.
+- **Stories:** papel creme com textura, tinta preta, detalhe em dourado escuro e anotação manuscrita (Sacramento). Diferencia o story do feed, que no grid ficou quase todo escuro.
+- Os personagens fixos funcionam nos dois (no papel: tinta preta, rosto cor de papel). Código: `posts/story_papel.py`.
+
 ---
 
 ## 5. Identidade visual oficial
