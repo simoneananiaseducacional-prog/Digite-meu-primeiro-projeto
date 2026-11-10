@@ -4,6 +4,7 @@ Inspirado na ideia de @stepbychalk, com desenho próprio. Ou ação, ou texto. U
 import sys, math, numpy as np
 sys.path.insert(0, '/home/user/Digite-meu-primeiro-projeto/mente-mulher-estoica/videos')
 import estilo, midia
+from personagens import ela, ele
 from PIL import Image, ImageDraw
 from pathlib import Path
 W, H, FPS = 1080, 1920, 30
@@ -74,8 +75,8 @@ for k in range(int(T * FPS)):
     if junto > 0.05:   # mãos dadas no começo
         d.line([(xe + 40, CHAO - 160), (xd - 40, CHAO - 160)], fill=rgba(B, junto * fim), width=5)
     senta = ap(t, 10.0, 1.2)
-    pessoa(d, xe, CHAO, G, ap(t, 0.2, 0.8) * fim, braco=ap(t, 11.6, 0.6) * (1 - ap(t, 18.2, 0.6)), lado=1)
-    pessoa(d, xd, CHAO, C2, ap(t, 0.2, 0.8) * fim * (1 - ap(t, 26.5, 1.0)), sentado=senta, cabeca_baixa=ap(t, 9.4, 0.8), lado=-1)
+    ela(d, xe, CHAO, ap(t, 0.2, 0.8) * fim, braco=ap(t, 11.6, 0.6) * (1 - ap(t, 18.2, 0.6)), lado=1, t=t)
+    ele(d, xd, CHAO, ap(t, 0.2, 0.8) * fim * (1 - ap(t, 26.5, 1.0)), sentado=senta, cabeca_baixa=ap(t, 9.4, 0.8), lado=-1, t=t)
     # pedras: ela coloca, e no fim caem no vão
     for i, tp in zip(PEDRAS, T_PEDRA):
         a = ap(t, tp, 0.4)

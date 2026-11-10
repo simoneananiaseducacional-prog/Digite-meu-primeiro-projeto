@@ -282,6 +282,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Ordem da série: 1) responsabilidade individual; 2) aceitação não é passividade; 3) comunicação; 4) coragem de pôr limites ou encerrar. Começa falando com mulheres; depois a perspectiva masculina.
 - Detalhes: `registros/2026-11-06-serie-relacionamentos.md`.
 
+### 021. Personagens fixos da página
+**Classificação:** Decisão da Simone (10/11/2026).
+- Criar personagens próprios e reutilizá-los em todas as fábulas, como assinatura visual (inspiração: os bonecos de @stepbychalk, sem copiar o desenho dele).
+- **Ela:** traço dourado, cabelo preto, bem liso e comprido até a cintura, repartido ao meio (inspirada na Simone). **Ele:** traço cinza-claro, cabelo curto. Também a borboleta e a abelha da fábula.
+- Código: `videos/personagens.py` (`ela`, `ele`). Todo vídeo novo com pessoas usa esse arquivo.
+
 ---
 
 ## 5. Identidade visual oficial
