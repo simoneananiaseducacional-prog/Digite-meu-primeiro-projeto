@@ -69,6 +69,12 @@ Coletar as perguntas reais pela caixinha do Stories antes de gravar.
 - Eu tentando praticar o estoicismo. Meu interior:
 - Eu tentando passar um domingo sem filosofar. Minha cabeça:
 
+## Ganchos de pergunta convite (chamar um grupo e pedir a experiência)
+
+- "Pessoas que terminaram o relacionamento recentemente, digam o que vocês estão fazendo para se curar." (@sozinhoofc, 3.596 comentários, 832 salvamentos no print de 10/11/2026)
+- Nossa versão possível: "Quem já terminou um relacionamento: o que te ajudou a se reencontrar?"
+- Por que funciona: chama um grupo específico, pede a experiência (não a opinião) e é fácil de responder. Pedido final natural: comentar.
+
 ## Como registrar ganchos novos
 
 Quando a Simone trouxer um gancho que prendeu a atenção dela, anotar aqui: o texto, o perfil de origem e a data. Depois de usar, anotar o resultado do reel (visualizações, envios, salvamentos) ao lado do gancho.
