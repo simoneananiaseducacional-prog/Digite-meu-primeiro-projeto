@@ -52,6 +52,7 @@
 ## Registros de dicas
 - [06/11/2026: série Estoicismo nos relacionamentos e cuidado com a evidência](registros/2026-11-06-serie-relacionamentos.md)
 - [06/11/2026: carrossel-ensaio (@unvellum)](registros/2026-11-06-carrossel-ensaio.md)
+- [12/11/2026: série "Estoicos sem saber" (ícones como exemplo)](registros/2026-11-12-estoicos-sem-saber.md)
 - [05/11/2026: palavras salpicadas sobre a fala (@mateus.salvadori)](registros/2026-11-05-palavras-salpicadas.md)
 - [05/11/2026: animação, ou ação ou texto](registros/2026-11-05-animacao-acao-ou-texto.md)
 - [05/11/2026: linguagem para todos](registros/2026-11-05-linguagem-para-todos.md)

@@ -293,6 +293,13 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Story segue o modelo do grid: fundo preto, serifa branca centralizada, destaque em itálico dourado, fonte embaixo. Sem personagem nem ilustração por padrão.
 - Código: `posts/story_texto.py`.
 
+### 023. Série "Estoicos sem saber": ícones como exemplo
+**Classificação:** Decisão da Simone (12/11/2026). Primeiro post: carrossel do Senna.
+- Muita gente viveu de forma estoica sem nunca ter lido os estoicos. Usar ícones conhecidos como porta de entrada e ligar cada atitude a um texto estoico com fonte.
+- Não dizer que a pessoa era estoica. Frases atribuídas a ela só com fonte verificada; desmentir as falsas.
+- Fotos reais só com licença livre (Wikimedia Commons), com autor, licença e "recortada, P&B" no rodapé e na legenda.
+- Modelo: capa com título em serifa maiúscula entre linhas douradas, foto em moldura dourada fina, @ embaixo (`posts/carrossel_senna.py`).
+
 ---
 
 ## 5. Identidade visual oficial
