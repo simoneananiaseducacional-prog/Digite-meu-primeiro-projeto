@@ -1,6 +1,6 @@
-"""Carrossel 6 telas: Senna e o estoicismo.
+"""Carrossel 5 telas: Senna e o estoicismo.
 Capa com foto livre do Wikimedia Commons (Martin Lee, CC BY-SA 2.0), moldura no estilo da página.
-Tela 6 com foto do Instituto Ayrton Senna (CC BY 2.0).
+Tela 5 com foto do Instituto Ayrton Senna (CC BY 2.0).
 Uso: python3 carrossel_senna.py pasta_saida
 """
 import sys
@@ -14,7 +14,7 @@ out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
 fundo = np.clip(estilo.granulado(estilo.fundo()), 0, 255).astype(np.uint8)[285:285 + H]
 def tela(n):
     im = Image.fromarray(fundo).convert('RGB'); d = ImageDraw.Draw(im)
-    d.text((W/2, H - 70), f'{n}/6', font=estilo.playfair(26), fill=C, anchor='mm')
+    d.text((W/2, H - 70), f'{n}/5', font=estilo.playfair(26), fill=C, anchor='mm')
     return im, d
 def bloco(d, y, linhas, f, cor, alt):
     for i, l in enumerate(linhas): d.text((W/2, y + i * alt), l, font=f, fill=cor, anchor='mm')
@@ -59,24 +59,16 @@ d.text((W/2, 1000), 'Epicteto, Encheirídion, 1', font=estilo.playfair(32, True)
 im.save(out / '3.png')
 
 im, d = tela(4)
-d.text((W/2, 300), 'UM CUIDADO', font=estilo.sem_serifa(30, 600), fill=G, anchor='mm')
-bloco(d, 430, ['Muitas frases atribuídas', 'a ele não têm fonte.'], estilo.playfair(60), B, 80)
-bloco(d, 650, ['“Vencer sem risco', 'é triunfar sem glória”'], estilo.playfair(54, True), C, 72)
-bloco(d, 840, ['é de Pierre Corneille,', 'na peça O Cid, de 1637.'], estilo.playfair(54), B, 72)
-d.text((W/2, 1040), 'Admirar alguém também é cuidar da verdade sobre ele.', font=estilo.playfair(34, True), fill=G, anchor='mm')
-im.save(out / '4.png')
-
-im, d = tela(5)
 bloco(d, 520, ['“Não recebemos', 'uma vida curta.'], estilo.playfair(72), B, 92)
 d.text((W/2, 730), 'Nós a tornamos curta.”', font=estilo.playfair(72, True), fill=G, anchor='mm')
 d.text((W/2, 880), 'Sêneca, Sobre a brevidade da vida, 1', font=estilo.playfair(34, True), fill=C, anchor='mm')
-im.save(out / '5.png')
+im.save(out / '4.png')
 
-im, d = tela(6)
+im, d = tela(5)
 moldura(im, d, foto('senna_instituto.jpg', 380, 440, 0.2), (W - 380) // 2, 150)
 bloco(d, 720, ['Se a sua vida', 'fosse curta como a dele,'], estilo.playfair(58), B, 76)
 bloco(d, 900, ['em que você pararia', 'de desperdiçar tempo?'], estilo.playfair(58, True), G, 76)
 d.text((W - 40, 1325), 'Foto: Instituto Ayrton Senna (recortada, P&B), CC BY 2.0, via Wikimedia Commons', font=estilo.sem_serifa(16, 400), fill=C, anchor='rm')
 estilo.texto_espacado(d, (W/2, 1120), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(26, 500), C, 6)
-im.save(out / '6.png')
+im.save(out / '5.png')
 print('ok')
