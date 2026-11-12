@@ -59,9 +59,9 @@ d.text((W/2, 1000), 'Epicteto, Encheirídion, 1', font=estilo.playfair(32, True)
 im.save(out / '3.png')
 
 im, d = tela(4)
-bloco(d, 520, ['“Não recebemos', 'uma vida curta.'], estilo.playfair(72), B, 92)
-d.text((W/2, 730), 'Nós a tornamos curta.”', font=estilo.playfair(72, True), fill=G, anchor='mm')
-d.text((W/2, 880), 'Sêneca, Sobre a brevidade da vida, 1', font=estilo.playfair(34, True), fill=C, anchor='mm')
+bloco(d, 470, ['“Grande parte da vida', 'escapa a quem age mal.', 'A maior parte,', 'a quem nada faz.'], estilo.playfair(62), B, 82)
+bloco(d, 840, ['A vida inteira,', 'a quem faz outra coisa.”'], estilo.playfair(62, True), G, 82)
+d.text((W/2, 1040), 'Sêneca, Cartas a Lucílio, 1.1 (tradução livre)', font=estilo.playfair(32, True), fill=C, anchor='mm')
 im.save(out / '4.png')
 
 im, d = tela(5)
