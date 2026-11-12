@@ -1,7 +1,9 @@
-"""Carrossel 6 telas: Senna e o estoicismo (sem fotos dele; desenho próprio de capacete e pista).
+"""Carrossel 6 telas: Senna e o estoicismo.
+Capa com foto livre do Wikimedia Commons (Martin Lee, CC BY-SA 2.0), moldura no estilo da página.
+Tela 6 com foto do Instituto Ayrton Senna (CC BY 2.0).
 Uso: python3 carrossel_senna.py pasta_saida
 """
-import sys, math
+import sys
 sys.path.insert(0, '/home/user/Digite-meu-primeiro-projeto/mente-mulher-estoica/videos')
 import estilo, numpy as np
 from PIL import Image, ImageDraw
@@ -16,22 +18,30 @@ def tela(n):
     return im, d
 def bloco(d, y, linhas, f, cor, alt):
     for i, l in enumerate(linhas): d.text((W/2, y + i * alt), l, font=f, fill=cor, anchor='mm')
-def capacete(d, cx, cy, s=1.0):
-    # casco
-    d.chord((cx - 170 * s, cy - 150 * s, cx + 170 * s, cy + 170 * s), 180, 360, outline=G, width=5)
-    d.line([(cx - 170 * s, cy + 10 * s), (cx - 170 * s, cy + 90 * s), (cx + 150 * s, cy + 90 * s), (cx + 170 * s, cy + 10 * s)], fill=G, width=5, joint='curve')
-    # viseira
-    d.rounded_rectangle((cx - 40 * s, cy - 55 * s, cx + 165 * s, cy + 15 * s), 26, outline=G, width=5)
-    # faixa
-    d.arc((cx - 150 * s, cy - 130 * s, cx + 150 * s, cy + 150 * s), 200, 300, fill=G, width=3)
-def pista(d, y):
-    pts = [(80 + i * 10, y + 30 * math.sin(i / 14)) for i in range(93)]
-    for i in range(0, 92, 3): d.line(pts[i:i + 2], fill=C, width=3)
+FOTOS = Path(__file__).parent / 'fotos_terceiros'
+def foto(nome, larg, alt, cy=0.35):
+    f = Image.open(FOTOS / nome).convert('L')
+    esc = max(larg / f.width, alt / f.height); f = f.resize((round(f.width * esc), round(f.height * esc)), Image.LANCZOS)
+    x = (f.width - larg) // 2; y = int((f.height - alt) * cy)
+    f = f.crop((x, y, x + larg, y + alt))
+    from PIL import ImageOps
+    return ImageOps.autocontrast(f, cutoff=1).convert('RGB')
+def linhas_douradas(d, y, larg):
+    d.line([(W/2 - larg/2, y), (W/2 + larg/2, y)], fill=G, width=2)
+def moldura(im, d, img, x, y):
+    im.paste(img, (x, y))
+    d.rectangle((x - 14, y - 14, x + img.width + 13, y + img.height + 13), outline=G, width=2)
 
 im, d = tela(1)
-capacete(d, W/2, 470); pista(d, 700)
-bloco(d, 860, ['Ayrton Senna viveu', 'só 34 anos.'], estilo.playfair(70), B, 88)
-d.text((W/2, 1060), 'Mas não desperdiçou um dia.', font=estilo.playfair(60, True), fill=G, anchor='mm')
+linhas_douradas(d, 80, 760)
+bloco(d, 140, ['AYRTON SENNA', 'VIVEU SÓ 34 ANOS.'], estilo.playfair(62), B, 76)
+linhas_douradas(d, 275, 760)
+moldura(im, d, foto('senna_1993_martin_lee.jpg', 640, 740, 0.25), (W - 640) // 2, 315)
+d.text((W/2, 1125), 'Mas não desperdiçou um dia.', font=estilo.playfair(56, True), fill=G, anchor='mm')
+linhas_douradas(d, 1175, 420)
+estilo.texto_espacado(d, (W/2, 1208), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(24, 500), C, 6)
+linhas_douradas(d, 1241, 420)
+d.text((W - 40, 1325), 'Foto: Martin Lee (recortada, P&B), CC BY-SA 2.0, via Wikimedia Commons', font=estilo.sem_serifa(16, 400), fill=C, anchor='rm')
 im.save(out / '1.png')
 
 im, d = tela(2)
@@ -63,8 +73,10 @@ d.text((W/2, 880), 'Sêneca, Sobre a brevidade da vida, 1', font=estilo.playfair
 im.save(out / '5.png')
 
 im, d = tela(6)
-bloco(d, 480, ['Se a sua vida', 'fosse curta como a dele,'], estilo.playfair(62), B, 82)
-bloco(d, 700, ['em que você pararia', 'de desperdiçar tempo?'], estilo.playfair(62, True), G, 82)
+moldura(im, d, foto('senna_instituto.jpg', 380, 440, 0.2), (W - 380) // 2, 150)
+bloco(d, 720, ['Se a sua vida', 'fosse curta como a dele,'], estilo.playfair(58), B, 76)
+bloco(d, 900, ['em que você pararia', 'de desperdiçar tempo?'], estilo.playfair(58, True), G, 76)
+d.text((W - 40, 1325), 'Foto: Instituto Ayrton Senna (recortada, P&B), CC BY 2.0, via Wikimedia Commons', font=estilo.sem_serifa(16, 400), fill=C, anchor='rm')
 estilo.texto_espacado(d, (W/2, 1120), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(26, 500), C, 6)
 im.save(out / '6.png')
 print('ok')
