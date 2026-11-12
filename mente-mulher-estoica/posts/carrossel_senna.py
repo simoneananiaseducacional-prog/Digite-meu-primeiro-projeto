@@ -59,9 +59,9 @@ d.text((W/2, 1000), 'Epicteto, Encheirídion, 1', font=estilo.playfair(32, True)
 im.save(out / '3.png')
 
 im, d = tela(4)
-bloco(d, 470, ['“Grande parte da vida', 'escapa a quem age mal.', 'A maior parte,', 'a quem nada faz.'], estilo.playfair(62), B, 82)
-bloco(d, 840, ['A vida inteira,', 'a quem faz outra coisa.”'], estilo.playfair(62, True), G, 82)
-d.text((W/2, 1040), 'Sêneca, Cartas a Lucílio, 1.1 (tradução livre)', font=estilo.playfair(32, True), fill=C, anchor='mm')
+bloco(d, 540, ['“Agarre o dia de hoje', 'e você dependerá menos'], estilo.playfair(66), B, 88)
+d.text((W/2, 740), 'do amanhã.”', font=estilo.playfair(72, True), fill=G, anchor='mm')
+d.text((W/2, 890), 'Sêneca, Cartas a Lucílio, 1.2 (tradução livre)', font=estilo.playfair(32, True), fill=C, anchor='mm')
 im.save(out / '4.png')
 
 im, d = tela(5)
