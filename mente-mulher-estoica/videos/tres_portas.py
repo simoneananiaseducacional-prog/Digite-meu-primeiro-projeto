@@ -18,13 +18,13 @@ def cl(p): return max(0.0, min(1.0, p))
 def rgba(c, a): return c + (int(255 * cl(a)),)
 T = 26.0
 CX, CY, RX, RY = 540, 1400, 170, 46
-PORTAS = [(250, 1010, 'Mudar', ['o que depende', 'de você'], 4.2),
-          (540, 900, 'Aceitar', ['o que não', 'depende'], 5.6),
-          (830, 1010, 'Sair', ['quando ficar', 'custa a sua paz'], 7.0)]
+PORTAS = [(200, 1000, 'Mudar', ['o que depende', 'de você'], 4.2),
+          (540, 860, 'Aceitar', ['o que não', 'depende'], 5.6),
+          (880, 1000, 'Sair', ['quando ficar', 'custa a paz'], 7.0)]
 PARA = 14.0          # ela para de girar
 def txt(d, xy, s, f, cor, a, anc='mm'):
     if a > 0.01: d.text(xy, s, font=f, fill=rgba(cor, a), anchor=anc)
-F1, F2 = estilo.playfair(62), estilo.playfair(62, True)
+F1, F2 = estilo.playfair(70), estilo.playfair(70, True)
 ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
 for k in range(int(T * FPS)):
     t = k / FPS
@@ -54,17 +54,17 @@ for k in range(int(T * FPS)):
         d.ellipse((px - 120, py - 260, px + 120, py + 40), fill=rgba(G, 0.08 * a))
         d.rectangle((px - 52, py - 190, px + 52, py), fill=rgba((235, 205, 140), a), outline=rgba(B, a), width=3)
         d.ellipse((px + 30, py - 100, px + 40, py - 90), fill=rgba((40, 32, 20), a))
-        txt(d, (px, py + 50), nome, estilo.playfair(46, True), G, a)
+        txt(d, (px, py + 60), nome, estilo.playfair(64, True), G, a)
         for j, l in enumerate(sub):
-            txt(d, (px, py + 102 + j * 40), l, estilo.playfair(34, True), (190, 186, 178), ap(t, t0 + 0.4, 0.5) * fim)
+            txt(d, (px, py + 125 + j * 48), l, estilo.playfair(42, True), (215, 210, 200), ap(t, t0 + 0.4, 0.5) * fim)
     # textos no topo; a pergunta já aparece no primeiro quadro
     txt(d, (W/2, 330), 'Você está esperando', F1, B, 1 - ap(t, 3.6, 0.4))
     txt(d, (W/2, 410), 'que tudo mude sozinho?', F2, G, 1 - ap(t, 3.6, 0.4))
     txt(d, (W/2, 330), 'Girar em círculo', F1, B, jan(t, 9.2, 13.6)); txt(d, (W/2, 410), 'não te tira do lugar.', F2, VERM, jan(t, 9.6, 13.6))
     txt(d, (W/2, 330), 'Esperar', F1, B, jan(t, 15.4, 19.6)); txt(d, (W/2, 410), 'não é uma das portas.', F2, G, jan(t, 15.8, 19.6))
-    txt(d, (W/2, 300), '“A casa está cheia de fumaça?', estilo.playfair(46, True), G, ap(t, 19.8) * fim)
-    txt(d, (W/2, 365), 'A porta está aberta.”', estilo.playfair(46, True), G, ap(t, 20.1) * fim)
-    txt(d, (W/2, 430), 'Epicteto, Discursos, 1.25 (paráfrase)', estilo.playfair(28, True), C, ap(t, 20.6) * fim)
+    txt(d, (W/2, 300), '“A casa está cheia de fumaça?', estilo.playfair(56, True), G, ap(t, 19.8) * fim)
+    txt(d, (W/2, 365), 'A porta está aberta.”', estilo.playfair(56, True), G, ap(t, 20.1) * fim)
+    txt(d, (W/2, 440), 'Epicteto, Discursos, 1.25 (paráfrase)', estilo.playfair(34, True), C, ap(t, 20.6) * fim)
     if ap(t, 21.2) > 0:
         estilo.texto_espacado(d, (W/2, 1620), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(22, 500), rgba(C, ap(t, 21.2) * fim), 6)
     img = Image.alpha_composite(img, cam)
