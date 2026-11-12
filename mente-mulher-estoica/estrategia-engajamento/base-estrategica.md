@@ -388,6 +388,7 @@ Medições de cada experimento entram abaixo, com data:
 - **75.492 visualizações**, 60.043 contas, tempo médio 18 s, **345 seguidores**.
 - 6,3 mil curtidas, 22 comentários, 832 reposts, 946 compartilhamentos, 1,2 mil salvamentos.
 - Maior resultado da página até agora. Combina três aprendizados: fábula com personagens em traço, tema relacionamento (identificação) e texto curto na tela. Comentários viraram conversa entre seguidores (paixão x amor).
+- Nova medição (12/11/2026, 18h34): **82,2 mil visualizações**, 6.806 curtidas, 25 comentários, 892 reposts, 1.022 compartilhamentos. Segue crescendo dias depois de postado; compartilhamento passou de mil.
 - Decisão: repetir o formato fábula + relacionamento, alternando com reconstrução (que gera menos comentário, ex.: Tronco de ouro, 3.066 visualizações e 0 comentários em ~1 dia).
 
 
