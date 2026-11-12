@@ -375,6 +375,13 @@ Medições de cada experimento entram abaixo, com data:
 - 466 curtidas, 1 comentário, 43 reposts, 137 compartilhamentos, 110 salvamentos.
 - Leitura: salvamentos (1,1% das visualizações) e compartilhamentos (1,4%) na mesma faixa do vídeo da energia (1,0% e 1,3%). Indício de que o formato "Mapas da mente" segue funcionando com desenho novo. Medir de novo em 7 dias antes de concluir.
 - Ponto de atenção: a capa é quase toda preta (só o título no alto). Testar capa com a imagem das pedras douradas.
+- Medição de 12/11/2026: 37,6 mil visualizações, 1.876 curtidas, 17 comentários, 227 reposts, 543 compartilhamentos, 409 salvamentos. Passou o vídeo da energia em poucos dias.
+
+**E10, "Duas pessoas podem querer estar juntas..."** (casal em traço, caminhos que se separam; feito na outra conversa; post cruzado no Facebook). Medição de 12/11/2026:
+- **75.492 visualizações**, 60.043 contas, tempo médio 18 s, **345 seguidores**.
+- 6,3 mil curtidas, 22 comentários, 832 reposts, 946 compartilhamentos, 1,2 mil salvamentos.
+- Maior resultado da página até agora. Combina três aprendizados: fábula com personagens em traço, tema relacionamento (identificação) e texto curto na tela. Comentários viraram conversa entre seguidores (paixão x amor).
+- Decisão: repetir o formato fábula + relacionamento, alternando com reconstrução (que gera menos comentário, ex.: Tronco de ouro, 3.066 visualizações e 0 comentários em ~1 dia).
 
 
 ---
