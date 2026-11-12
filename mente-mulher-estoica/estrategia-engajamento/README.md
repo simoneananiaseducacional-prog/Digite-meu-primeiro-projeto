@@ -26,6 +26,10 @@
 ## Pesquisas temáticas e referências verificadas
 - [Estamos aqui de passagem: o tempo, o apego e o valor do que é transitório](../pesquisas/2026-11-02-vida-como-passagem-freud-erickson.md) (02/11/2026): pesquisa reunindo Epicteto, Sêneca, Jesus, Marco Aurélio, Buda, Jó, Freud e Milton H. Erickson, além de estudos psicológicos; distingue citações verificadas, sínteses autorais, interpretações e correlações. **Importante:** o Elicit não autorizou acesso à API, então não atribuir resultados a ele; o vínculo com Erickson é interpretativo, sem citação direta sobre a vida como empréstimo.
 
+## Resultados observados em 10/11/2026
+
+- [Reels: ponte, duas pessoas e personagem/porta — métricas das capturas de 10/11](registros/2026-11-10-resultados-ponte-relacoes-e-porta.md): dois Reels com cerca de 29 mil visualizações e diferenças entre envios/republicações; terceiro com 3.066 visualizações e cinco seguidores atribuídos. Capturas de janelas distintas; hipóteses sem causalidade confirmada.
+
 ## Dicas de engajamento recebidas em 09/11/2026
 
 - [Quatro formatos: carrosséis simples, reflexões curtas, passo a passo e Reels de sete segundos](registros/2026-11-09-quatro-formatos-afonso-molina.md), extraídos das legendas do vídeo de @afonsomolina enviado pela autora. Incorporar como repertório de testes, mantendo identidade visual, referências e legibilidade. Não adotar promessa de crescimento garantido nem CTA comercial com direct. Resultados ainda pendentes.
