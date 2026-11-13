@@ -317,6 +317,13 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - "5 sinais de relacionamento tóxico" informa; "Você já se pegou pedindo desculpa por chorar?" faz a pessoa se ver. A cena vem primeiro, a informação depois.
 - Na página: a cena é em "você" ou com os personagens fixos. Nada de expor a vida da Simone e nada de depoimento inventado apresentado como real.
 
+### 027. Vídeo-mapa em capítulos, com gancho para seguir
+**Classificação:** Decisão da Simone (15/11/2026). A testar: medir seguidores atribuídos antes e depois.
+- Os vídeos-mapa (personagens fixos) viram série: cada um termina com um gancho para o próximo capítulo e um convite para seguir.
+- O convite nasce da curiosidade, não de ordem: "Parte 1. Por que ela não percebia? No próximo capítulo." + "Segue para não perder a continuação."
+- Nesses vídeos, o pedido da legenda também é seguir (um pedido só, coerente com o vídeo).
+- Código: `videos/continua.py` (cartão final reutilizável).
+
 ---
 
 ## 5. Identidade visual oficial
