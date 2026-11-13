@@ -300,6 +300,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Fotos reais só com licença livre (Wikimedia Commons), com autor, licença e "recortada, P&B" no rodapé e na legenda.
 - Modelo: capa com título em serifa maiúscula entre linhas douradas, foto em moldura dourada fina, @ embaixo (`posts/carrossel_senna.py`).
 
+### 024. Hipótese da Simone: o desenho mostra o que o automático esconde
+**Classificação:** Hipótese com indício (13/11/2026). Inspiração: diagrama "Coragem = sentir medo + fazer assim mesmo" de @alfredosoares (crédito obrigatório se usar).
+- O que viraliza é um desenho simples de uma situação real que a pessoa vive e não consegue nomear; o desenho dá o "start" ("é isso que acontece comigo").
+- Indício: os três maiores resultados são desenhos de uma situação interna (vídeo da energia ~37 mil, "Põe o pé" 37,6 mil, casal que se separa 82,2 mil). O Tronco de ouro, mais abstrato, ficou em 3 mil. Amostra pequena; outros fatores (gancho, horário, tema) não foram isolados.
+- Regra de trabalho: antes de criar, responder "qual situação real a pessoa vai reconhecer no desenho?". Se não houver resposta clara, repensar.
+
 ---
 
 ## 5. Identidade visual oficial
