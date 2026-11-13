@@ -312,6 +312,11 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Formato: 2 fotos da Simone. Foto 1: a frase que para o dedo (dor ou verdade). Foto 2: o que fazer hoje com isso (uma ação pequena e concreta).
 - Fotos pessoais não vão para o repositório: a Simone aplica o texto no celular ou envia a foto só para a montagem.
 
+### 026. Micro-história antes da informação
+**Classificação:** Dica com indício (15/11/2026), de @erikammello. Bate com o vídeo de 82,2 mil (história do casal, não lista).
+- "5 sinais de relacionamento tóxico" informa; "Você já se pegou pedindo desculpa por chorar?" faz a pessoa se ver. A cena vem primeiro, a informação depois.
+- Na página: a cena é em "você" ou com os personagens fixos. Nada de expor a vida da Simone e nada de depoimento inventado apresentado como real.
+
 ---
 
 ## 5. Identidade visual oficial
