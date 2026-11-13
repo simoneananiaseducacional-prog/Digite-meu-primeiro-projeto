@@ -36,12 +36,12 @@ FRASES = [(0.4, 4.6, ['“Não é nada.”']),
           (4.8, 9.2, ['Depois, um carinho.']),
           (9.4, 13.6, ['“Você está louca.”']),
           (13.8, 17.6, ['E ela vai se apagando.']),
-          (17.8, 26.2, ['Até ela voltar a confiar', 'no que viu.'])]
+          (17.8, 26.4, ['Até ela perceber', 'quem segura a borracha.'])]
 
 # apagões: (início, fim, centro, meia-largura, meia-altura)
 APAGA = [(2.2, 3.5, (480, 1052), 55, 18),     # a mão que apontou
          (10.4, 11.8, (375, 1200), 40, 40),   # parte das pernas
-         (12.0, 13.2, (415, 1080), 22, 50)]   # um pedaço do cabelo e do braço
+         (12.0, 13.2, (380, 1008), 26, 12)]   # os olhos: ela deixa de ver
 def borracha_pos(t):
     for t0, t1, (cx, cy), rx, ry in APAGA:
         if t0 <= t <= t1:
@@ -57,8 +57,8 @@ def x_ele(t):
 def braco_ele(t):
     v = 0.0
     for t0, t1, *_ in APAGA: v = max(v, pulso(t, t0 - 0.3, t1 + 0.2, 0.3))
-    return max(v, pulso(t, 5.8, 7.6, 0.4))
-def braco_ela(t): return max(pulso(t, 0.8, 3.0, 0.4), pulso(t, 6.6, 9.6, 0.4) * 0.6, pulso(t, 18.2, 22.0, 0.4) * 0.7)
+    return max(v, pulso(t, 5.8, 7.6, 0.4), 0.5 * ap(t, 18.4, 0.5))
+def braco_ela(t): return max(pulso(t, 0.8, 3.0, 0.4), pulso(t, 6.6, 9.6, 0.4) * 0.6, pulso(t, 20.0, 24.0, 0.4) * 0.7)
 def flor_pos(t):
     if t < 5.6: return None
     mao_ele = (x_ele(t) - 150, CHAO - 6 - 240 + 50)
@@ -98,22 +98,31 @@ for k in range(int(T * FPS)):
     lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); dl = ImageDraw.Draw(lay, 'RGBA')
     ela(dl, XE, CHAO - 6, 1.0, braco=braco_ela(t), lado=1, cabeca_baixa=ap(t, 13.8, 1.5) * (1 - ap(t, 18.0, 1.0)), t=t)
     # redesenho: a máscara volta de baixo para cima com o lápis
-    volta = seg(t, 18.6, 22.0)
+    volta = seg(t, 20.4, 23.6)
     linha = lerp(BASE_ELA, TOPO_ELA - 40, volta)
     m = MASK.copy()
     if volta > 0: m[int(max(linha, 0)):, :] = 1.0
+    acorda = seg(t, 17.6, 18.6)          # primeiro os olhos voltam: ela acorda
+    if acorda > 0:
+        rr = 44 * acorda
+        m[(xx - XE) ** 2 + (yy - 1012) ** 2 < rr * rr] = 1.0
     fade = lerp(1.0 - 0.6 * ap(t, 13.8, 3.5), 1.0, volta)
     arr = np.asarray(lay).copy().astype(np.float32)
     arr[..., 3] *= m * fade * a
     cen = Image.alpha_composite(cen, Image.fromarray(arr.astype(np.uint8), 'RGBA')); d = Desenho(cen)
-    ele(d, x_ele(t), CHAO - 6, a * (1 - 0.5 * ap(t, 19.0, 2.0)), braco=braco_ele(t), lado=-1, t=t)
+    ele(d, x_ele(t), CHAO - 6, a * (1 - 0.5 * ap(t, 22.0, 2.0)), braco=braco_ele(t), lado=-1, t=t)
     fp = flor_pos(t)
     if fp: flor(d, fp, a * (1 - 0.6 * ap(t, 13.8, 2.0)), murcha=ap(t, 11.6, 1.0))
+    if t > 18.4 and not bp:   # ela vê a borracha na mão dele (com brilho)
+        bb = 0.5 * ap(t, 18.4, 0.5); ex = x_ele(t) - (40 + 110 * bb) - 18; ey = CHAO - 6 - 240 + 72 - 22 * bb
+        ha = a * ap(t, 18.4, 0.6) * (1 - 0.5 * ap(t, 22.0, 2.0))
+        d.rounded_rectangle((ex - 40, ey - 30, ex + 40, ey + 30), radius=12, outline=rgba(G, ha), width=4)
+        d.rounded_rectangle((ex - 26, ey - 16, ex + 26, ey + 16), radius=6, fill=(225, 160, 160, int(255 * ha)), outline=rgba(B, ha), width=3)
     if bp:   # a borracha
         d.rounded_rectangle((bp[0] - 26, bp[1] - 16, bp[0] + 26, bp[1] + 16), radius=6, fill=(225, 160, 160, int(255 * a)), outline=rgba(B, a), width=3)
-    if 18.0 < t < 22.6:   # o lápis dourado, riscando a linha que redesenha
+    if 20.0 < t < 24.2:   # o lápis dourado, riscando a linha que redesenha
         lx = XE + 70 + 26 * math.sin(t * 9); ly = linha
-        pa = pulso(t, 18.0, 22.6, 0.4)
+        pa = pulso(t, 20.0, 24.2, 0.4)
         d.line([(lx, ly), (lx + 60, ly - 90)], fill=rgba(G, pa), width=10)
         d.polygon([(lx - 6, ly + 4), (lx + 6, ly - 4), (lx - 4, ly + 16)], fill=rgba(B, pa))
     big = cen.resize((int(W * K), int(H * K)), Image.BICUBIC)
