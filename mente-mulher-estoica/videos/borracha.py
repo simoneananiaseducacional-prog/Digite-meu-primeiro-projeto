@@ -36,7 +36,7 @@ FRASES = [(0.4, 4.6, ['“Não é nada.”']),
           (4.8, 9.2, ['Depois, um carinho.']),
           (9.4, 13.6, ['“Você está louca.”']),
           (13.8, 17.6, ['E ela vai se apagando.']),
-          (17.8, 26.2, ['Até lembrar', 'que o traço é dela.'])]
+          (17.8, 26.2, ['Até ela voltar a confiar', 'no que viu.'])]
 
 # apagões: (início, fim, centro, meia-largura, meia-altura)
 APAGA = [(2.2, 3.5, (480, 1052), 55, 18),     # a mão que apontou
