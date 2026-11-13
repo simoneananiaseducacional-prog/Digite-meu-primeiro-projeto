@@ -52,6 +52,7 @@
 ## Registros de dicas
 - [06/11/2026: série Estoicismo nos relacionamentos e cuidado com a evidência](registros/2026-11-06-serie-relacionamentos.md)
 - [06/11/2026: carrossel-ensaio (@unvellum)](registros/2026-11-06-carrossel-ensaio.md)
+- [14/11/2026: carrossel de 2 fotos, frase + orientação para hoje (@paulodygital)](registros/2026-11-14-carrossel-duas-fotos.md)
 - [13/11/2026: o desenho mostra o que o automático esconde (hipótese da Simone)](registros/2026-11-13-desenho-que-revela.md)
 - [12/11/2026: série "Estoicos sem saber" (ícones como exemplo)](registros/2026-11-12-estoicos-sem-saber.md)
 - [05/11/2026: palavras salpicadas sobre a fala (@mateus.salvadori)](registros/2026-11-05-palavras-salpicadas.md)

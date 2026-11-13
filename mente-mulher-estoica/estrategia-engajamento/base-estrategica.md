@@ -306,6 +306,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Indício: os três maiores resultados são desenhos de uma situação interna (vídeo da energia ~37 mil, "Põe o pé" 37,6 mil, casal que se separa 82,2 mil). O Tronco de ouro, mais abstrato, ficou em 3 mil. Amostra pequena; outros fatores (gancho, horário, tema) não foram isolados.
 - Regra de trabalho: antes de criar, responder "qual situação real a pessoa vai reconhecer no desenho?". Se não houver resposta clara, repensar.
 
+### 025. Carrossel de 2 fotos: frase + orientação útil para hoje (a testar)
+**Classificação:** Dica a testar (14/11/2026), vista em vídeo de @paulodygital; só vimos as legendas na tela, não o áudio.
+- Ideia: todo post com um objetivo claro (atrair seguidores, gerar engajamento ou vender) e com uma orientação útil que a pessoa aplique hoje.
+- Formato: 2 fotos da Simone. Foto 1: a frase que para o dedo (dor ou verdade). Foto 2: o que fazer hoje com isso (uma ação pequena e concreta).
+- Fotos pessoais não vão para o repositório: a Simone aplica o texto no celular ou envia a foto só para a montagem.
+
 ---
 
 ## 5. Identidade visual oficial
