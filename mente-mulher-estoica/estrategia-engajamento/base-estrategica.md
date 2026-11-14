@@ -418,6 +418,8 @@ Medições de cada experimento entram abaixo, com data:
 - 6,3 mil curtidas, 22 comentários, 832 reposts, 946 compartilhamentos, 1,2 mil salvamentos.
 - Maior resultado da página até agora. Combina três aprendizados: fábula com personagens em traço, tema relacionamento (identificação) e texto curto na tela. Comentários viraram conversa entre seguidores (paixão x amor).
 - Nova medição (12/11/2026, 18h34): **82,2 mil visualizações**, 6.806 curtidas, 25 comentários, 892 reposts, 1.022 compartilhamentos. Segue crescendo dias depois de postado; compartilhamento passou de mil.
+- Medição de 15/11/2026: **98,7 mil visualizações**, 76,4 mil contas, 18 s, **506 seguidores**, 8 mil curtidas, 36 comentários, 1 mil reposts, 1,2 mil compartilhamentos, 1,5 mil salvamentos.
+- Outros (15/11): Borracha 22,2 mil (1.068 curtidas, 103 salvamentos); Coragem 10,2 mil; Mochila 5.077; Energia 43 mil; Ponte 38,7 mil; Porta 10,1 mil; frase 'próximo passo' 42,3 mil. Carrosséis e fotos ficam abaixo de 2,5 mil: o forte da página é o vídeo-desenho.
 - Decisão: repetir o formato fábula + relacionamento, alternando com reconstrução (que gera menos comentário, ex.: Tronco de ouro, 3.066 visualizações e 0 comentários em ~1 dia).
 
 
