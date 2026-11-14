@@ -20,8 +20,8 @@ def seg(t, t0, t1): return estilo.suavizar(cl((t - t0) / (t1 - t0)))
 
 CENAS = [0.0, 3.2, 6.4, 9.6, 13.4, 16.6, 19.8, 23.0, 26.2, 30.0]
 FRASES = [['Não era pra ser nada…'], ['Mas aconteceu.'], ['E foi intenso.'],
-          ['Nem todo amor consegue', 'permanecer no tempo certo.'], ['A vida continuou.'],
-          ['Mas algumas histórias', 'não terminam dentro da gente.'], ['E um dia, eles se', 'encontraram de novo.'],
+          ['Mas muita gente', 'ficou no meio.'], ['Ela seguiu a vida.', 'E se casou.'],
+          ['Mas algumas histórias', 'não terminam dentro da gente.'], ['Anos depois, os dois sozinhos,', 'se encontraram de novo.'],
           ['Dessa vez,', 'com mais consciência.'], ['Alguns sentimentos merecem', 'mais do que impulso.', 'Merecem cuidado.']]
 T = CENAS[-1]
 CHAO = 1250
@@ -32,20 +32,20 @@ OURO_ELE = personagens.CINZA
 def x_ela(t):
     x = lerp(200, 320, seg(t, 0.2, 2.6))             # cena 1: entram e se cruzam
     x = lerp(x, 430, seg(t, 3.4, 5.6))                # cena 2: se aproximam
-    x = lerp(x, 320, seg(t, 10.4, 12.8))              # cena 4: se afastam
-    x = lerp(x, 380, seg(t, 20.4, 22.6))              # cena 7: reencontro
+    x = lerp(x, 280, seg(t, 9.8, 11.6))              # cena 4: se afastam
+    x = lerp(x, 380, seg(t, 20.4, 22.6))  # reencontro              # cena 7: reencontro
     x = lerp(x, 440, seg(t, 23.2, 24.8))
     return x
 def x_ele(t):
     x = lerp(940, 780, seg(t, 0.2, 2.6))
     x = lerp(x, 650, seg(t, 3.4, 5.6))
-    x = lerp(x, 760, seg(t, 10.4, 12.8))
+    x = lerp(x, 800, seg(t, 9.8, 11.6))
     x = lerp(x, 1250, seg(t, 12.9, 14.0))             # sai de cena
     x = lerp(x, 700, seg(t, 19.8, 22.4))              # volta
     x = lerp(x, 640, seg(t, 23.2, 24.8))
     return x
 def x_outro(t):
-    return lerp(1250, 540, seg(t, 13.6, 15.2)) if t < 16.8 else lerp(540, 1250, seg(t, 16.8, 18.6))
+    return lerp(1250, 500, seg(t, 13.6, 15.2)) if t < 16.8 else lerp(500, 1250, seg(t, 16.8, 18.6))
 
 def coracao(d, cx, cy, s, a, partido=0.0, metade=None):
     if a < 0.02 or s < 0.02: return
@@ -65,6 +65,27 @@ def rachadura(d, t, a):
     d.polygon(pe + pd[::-1], fill=(4, 4, 4, int(255 * a)))
     d.line(pe, fill=rgba(C, a), width=3); d.line(pd, fill=rgba(C, a), width=3)
 
+def figura_cinza(d, x, a, aponta, t):
+    cor = (125, 125, 132); hy = HY + 6
+    d.ellipse((x - 32, hy - 32, x + 32, hy + 32), fill=(45, 45, 50, int(235 * a)), outline=rgba(cor, a), width=4)
+    d.line([(x, hy + 32), (x, CHAO - 96)], fill=rgba(cor, a), width=5)
+    for s_ in (-1, 1): d.line([(x, CHAO - 96), (x + s_ * 26, CHAO - 6)], fill=rgba(cor, a), width=5)
+    d.line([(x, hy + 58), (x + aponta * 70, hy + 44 + 5 * math.sin(t * 9 + x))], fill=rgba(cor, a), width=5)
+    for s_ in (-1, 1): d.line([(x + s_ * 11 - 5, hy - 4 + 3), (x + s_ * 11 + 5, hy - 4 - 3 * s_)], fill=rgba(cor, a), width=4)
+def multidao(d, t, a):
+    """Várias pessoas entram entre os dois, apontando, e empurram cada um para um lado."""
+    for i, (xa, ti, ap_) in enumerate([(540, 10.0, 1), (460, 10.3, -1), (620, 10.6, 1), (380, 10.9, -1), (700, 11.2, 1)]):
+        chega = seg(t, ti, ti + 0.6); sai = seg(t, 12.8, 13.4)
+        fa = chega * (1 - sai)
+        if fa < 0.02: continue
+        xs = xa + (1 if ap_ > 0 else -1) * 300 * (1 - chega)
+        figura_cinza(d, xs, a * fa, ap_, t)
+def aliancas(d, cx, cy, a, quebra=0.0):
+    if a < 0.02: return
+    for k, cor in ((-1, G), (1, (170, 170, 176))):
+        off = k * (14 + 30 * quebra)
+        d.ellipse((cx + off - 18, cy - 18 + 20 * quebra, cx + off + 18, cy + 18 + 20 * quebra), outline=rgba(cor, a), width=5)
+
 fundo = Image.fromarray(np.clip(estilo.granulado(estilo.fundo()), 0, 255).astype(np.uint8)).convert('RGBA')
 FT = estilo.sem_serifa(54, 500); TXT = (205, 200, 194)
 ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
@@ -74,7 +95,7 @@ for k in range(int(T * FPS)):
     cena = a * (1 - 0.92 * ap(t, 26.4, 0.8))
     cen = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(cen, 'RGBA')
     d.line([(0, CHAO), (W, CHAO)], fill=rgba(C, cena), width=4)
-    rachadura(d, t, cena)
+    multidao(d, t, cena)
     xe, xh = x_ela(t), x_ele(t)
     # emoções por cena
     feliz = seg(t, 3.6, 4.6) * (1 - seg(t, 9.8, 10.4))
@@ -91,12 +112,14 @@ for k in range(int(T * FPS)):
         personagens.CINZA = (105, 105, 112)
         ele(d, xo, CHAO - 6, cena, braco=0.1, lado=-1, t=t, emo=dict(sorriso=0.1))
         personagens.CINZA = OURO_ELE
+        ali = seg(t, 15.0, 15.6) * (1 - seg(t, 17.6, 18.2))
+        aliancas(d, (xe + xo) / 2, HY - 40, cena * ali, quebra=seg(t, 16.8, 17.6))
     # o coração: nasce entre eles, cresce, se parte, fica uma metade em cada um, volta a se unir
     meio = ((xe + xh) / 2, HY + 30)
     nasce = seg(t, 4.2, 5.4); cresce = seg(t, 6.6, 8.2)
     s = 0.6 * nasce + 0.9 * cresce
-    partido = seg(t, 10.0, 10.8)
-    some = seg(t, 12.4, 13.2)                   # metades viram brilhos guardados no peito
+    partido = seg(t, 9.6, 10.2)
+    some = seg(t, 10.2, 10.8)                   # metades viram brilhos guardados no peito
     peito = seg(t, 17.0, 18.0) * (1 - seg(t, 23.2, 24.2))
     une = seg(t, 23.4, 24.8)
     glow_s = 0.0
