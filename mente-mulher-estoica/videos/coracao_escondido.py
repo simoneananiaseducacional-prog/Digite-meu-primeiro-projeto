@@ -33,7 +33,7 @@ class Esc:
             return orig(self._xy(xy), *args, **kw)
         return chama
 
-T = 26.0
+T = 31.0
 CHAO = 1250
 XE, XH = 420, 660
 HY = CHAO - 6 - 240
@@ -95,7 +95,7 @@ ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
 for k in range(int(T * FPS)):
     t = k / FPS
     a = ap(t, 0.1, 0.5)
-    cena = a * (1 - 0.8 * ap(t, T_FIM, 0.8))
+    cena = a * (1 - 0.96 * ap(t, T_FIM, 0.8))
     big = Image.new('RGBA', (int(W * F), int(H * F)), (0, 0, 0, 0)); d = Esc(ImageDraw.Draw(big, 'RGBA'), F)
     d.line([(0, CHAO), (W, CHAO)], fill=rgba(C, cena), width=4)
     for x, sa, lado in sombras(t): sombra(d, x, sa * cena, lado, t)
@@ -135,14 +135,17 @@ for k in range(int(T * FPS)):
     cam = big.crop(region).resize((W, H), Image.LANCZOS)
     im = Image.alpha_composite(fundo, glow_c); im = Image.alpha_composite(im, cam)
     d2 = ImageDraw.Draw(im, 'RGBA')
-    f1 = jan(t, T_FIM + 0.3, 24.4); f2 = jan(t, T_FIM + 1.6, 24.4)
+    f1 = jan(t, T_FIM + 0.3, 29.4); f2 = jan(t, T_FIM + 2.0, 29.4); f3 = jan(t, T_FIM + 4.0, 29.4)
     if f1 > 0.02:
-        for i, l in enumerate(['Não foi falta de amor.', 'Foi falta de coragem']):
-            d2.text((W/2, 560 + i * 76), l, font=FT, fill=rgba(TXT, f1), anchor='mm')
-        d2.text((W/2, 712), 'para viver esse amor.', font=FT, fill=rgba(TXT, f1), anchor='mm')
+        d2.text((W/2, 470), 'Os dois queriam.', font=FT, fill=rgba(TXT, f1), anchor='mm')
     if f2 > 0.02:
-        d2.text((W/2, 860), 'Dessa vez, ele escolheu ter coragem.', font=estilo.playfair(50, True), fill=rgba(G, f2), anchor='mm')
-    ia = ap(t, 24.4, 0.5)
+        d2.text((W/2, 570), 'Mas um deles vivia', font=FT, fill=rgba(TXT, f2), anchor='mm')
+        d2.text((W/2, 646), 'pelo olhar dos outros.', font=FT, fill=rgba(TXT, f2), anchor='mm')
+    if f3 > 0.02:
+        for i, l in enumerate(['O que os outros pensam', 'não depende de você.', 'A sua escolha, sim.']):
+            d2.text((W/2, 790 + i * 70), l, font=estilo.playfair(52, i == 2), fill=rgba(B if i < 2 else G, f3), anchor='mm')
+        d2.text((W/2, 1020), 'Epicteto, Encheirídion, 1', font=estilo.playfair(32, True), fill=rgba(C, f3), anchor='mm')
+    ia = ap(t, 29.4, 0.5)
     if ia > 0.02:
         s_ = 70; yy = 860
         d2.rounded_rectangle((W/2 - s_, yy - s_, W/2 + s_, yy + s_), radius=40, outline=rgba(B, ia), width=10)
