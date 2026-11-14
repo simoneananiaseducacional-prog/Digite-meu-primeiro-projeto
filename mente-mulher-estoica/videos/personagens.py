@@ -50,7 +50,22 @@ def _cabelo_liso(d, hx, hy, a, comp, t):
         d.line(mecha + [mecha[0]], fill=_rgba(DOURADO, a), width=3, joint='curve')
     d.arc((hx - 41, hy - 45, hx + 41, hy + 41), 180, 360, fill=_rgba(DOURADO, a), width=3)
 
-def ela(d, x, y, a, braco=0.0, lado=1, sentada=0.0, cabeca_baixa=0.0, t=0.0):
+def expressao(d, hx, hy, cor, a, raiva=0.0, triste=0.0, sorriso=0.0, aberta=0.0, w=4):
+    """Sobrancelhas e boca. raiva/triste/sorriso/aberta de 0 a 1 (podem se misturar)."""
+    if a <= 0.01: return
+    for s_ in (-1, 1):
+        dentro = (hx + s_ * 6, hy - 13 + 7 * raiva - 6 * triste)
+        fora = (hx + s_ * 21, hy - 15 - 4 * raiva + 5 * triste)
+        d.line([dentro, fora], fill=_rgba(cor, a), width=w)
+    my = hy + 17
+    if aberta > 0.05:
+        d.ellipse((hx - 8 - 3 * aberta, my - 3 - 9 * aberta, hx + 8 + 3 * aberta, my + 3 + 9 * aberta), fill=(8, 8, 8, int(255 * a)), outline=_rgba(cor, a), width=w)
+    else:
+        c = sorriso - triste - 0.6 * raiva
+        pts = [(hx + x, my + 6 * c * (1 - (x / 12) ** 2) - 2 * c) for x in range(-12, 13, 3)]
+        d.line(pts, fill=_rgba(cor, a), width=w, joint='curve')
+
+def ela(d, x, y, a, braco=0.0, lado=1, sentada=0.0, cabeca_baixa=0.0, t=0.0, emo=None):
     if a <= 0.01: return
     hy0 = y - 240 + 95 * sentada + 16 * cabeca_baixa
     hx0 = x + lado * 8 * cabeca_baixa
@@ -60,10 +75,12 @@ def ela(d, x, y, a, braco=0.0, lado=1, sentada=0.0, cabeca_baixa=0.0, t=0.0):
     # franja lisa repartida ao meio cobrindo o alto da testa
     d.chord((hx - 36, hy - 36, hx + 36, hy + 36), 200, 340, fill=CABELO + (int(255 * a),), outline=_rgba(DOURADO, a), width=3)
     d.line([(hx, hy - 36), (hx, hy - 20)], fill=_rgba(DOURADO, a), width=2)
+    if emo is not None: expressao(d, hx, hy + 12 * cabeca_baixa, DOURADO, a, **emo)
 
-def ele(d, x, y, a, braco=0.0, lado=-1, sentado=0.0, cabeca_baixa=0.0, t=0.0):
+def ele(d, x, y, a, braco=0.0, lado=-1, sentado=0.0, cabeca_baixa=0.0, t=0.0, emo=None):
     if a <= 0.01: return
     hx, hy = _corpo(d, x, y, CINZA, a, sentado, braco, cabeca_baixa, lado)
     _rosto(d, hx, hy, CINZA, a, cabeca_baixa)
     # cabelo curto: arco grosso no topo
     d.arc((hx - 38, hy - 40, hx + 38, hy + 34), 195, 345, fill=_rgba(CINZA, a), width=9)
+    if emo is not None: expressao(d, hx, hy + 12 * cabeca_baixa, CINZA, a, **emo)
