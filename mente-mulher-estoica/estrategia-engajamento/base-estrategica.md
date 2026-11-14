@@ -324,6 +324,11 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Nesses vídeos, o pedido da legenda também é seguir (um pedido só, coerente com o vídeo).
 - Código: `videos/continua.py` (cartão final reutilizável).
 
+### 028. Reels-pergunta de comentário ("trend da idade")
+**Classificação:** Dica a testar (15/11/2026), de @paulodygital.
+- Vídeo ou foto da Simone, música engraçada em alta, pergunta grande na tela que todo mundo consegue responder nos comentários, e um exemplo de resposta dela ("Eu começo: ...") para puxar a conversa.
+- Versão da página: "Qual é a sua idade emocional sem dizer quantos anos você tem?" (ex.: "Eu começo: hoje prefiro paz a ter razão."). Objetivo: comentários, não seguidores.
+
 ---
 
 ## 5. Identidade visual oficial
