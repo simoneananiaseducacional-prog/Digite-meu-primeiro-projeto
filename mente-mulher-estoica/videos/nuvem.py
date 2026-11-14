@@ -1,4 +1,4 @@
-"""A nuvem (Epicteto, Encheirídion 5): o mesmo café derramado; sobre ele cresce uma nuvem de tempestade,
+"""A nuvem (Epicteto, Encheirídion 5): os dois cafés derramados ao mesmo tempo; sobre ele cresce uma nuvem de tempestade,
 sobre ela a nuvem some com uma respiração. No fim ele olha para ela e a nuvem dele se desfaz.
 Molde inspirado no ritmo de @project.vglyb (sem texto, rostos com emoção, cortes de câmera, @ no fim),
 com história e desenho próprios. Uso: python3 nuvem.py saida.mp4
@@ -18,6 +18,7 @@ def ap(t, t0, d=0.5): return estilo.suavizar((t - t0) / d) if t > t0 else 0.0
 def jan(t, t0, t1): return ap(t, t0) * (1 - ap(t, t1 - 0.5, 0.5))
 def rgba(c, a): return c + (int(255 * cl(a)),)
 def lerp(a, b, p): return a + (b - a) * p
+def pulso(t, t0, t1, s=0.2): return ap(t, t0, s) * (1 - ap(t, t1 - s, s))
 def seg(t, t0, t1): return estilo.suavizar(cl((t - t0) / (t1 - t0)))
 
 class Esc:
@@ -64,20 +65,24 @@ def nuvem(d, cx, cy, s, a, chuva=0.0, t=0.0):
         d.line([(x, y0), (x - 4 * s, y0 + 18 * s)], fill=rgba((150, 170, 200), a * chuva), width=3)
 
 def copo(d, t, a):
+    """Mesa com dois copos, um de cada. A mesa balança sozinha e os dois caem juntos."""
     x0, x1, ym = MESA
-    d.line([(x0, ym), (x1, ym)], fill=rgba(C, a), width=5)
+    bal = 6 * math.sin(t * 40) * pulso(t, 1.4, 2.2)
+    d.line([(x0, ym + bal), (x1, ym - bal)], fill=rgba(C, a), width=5)
     for x in (x0 + 12, x1 - 12): d.line([(x, ym), (x, CHAO)], fill=rgba(C, a), width=4)
     cai = seg(t, 1.8, 2.3); volta = seg(t, 10.6, 11.4)
-    ang = 90 * cai * (1 - volta)
-    cx, base = 548, ym
-    # mancha de café (some quando ela limpa)
     mancha = cai * (1 - seg(t, 11.0, 12.0))
-    if mancha > 0.02:
-        d.ellipse((cx - 10, ym - 3, cx + 10 + 60 * mancha, ym + 5), fill=(70, 45, 30, int(230 * a)))
-    r = math.radians(ang)
-    def gira(px, py): return (cx + (px - cx) * math.cos(r) - (py - base) * math.sin(r) * -1, base + (px - cx) * math.sin(r) + (py - base) * math.cos(r))
-    pts = [gira(cx - 16, base), gira(cx + 16, base), gira(cx + 20, base - 44), gira(cx - 20, base - 44)]
-    d.polygon(pts, fill=(18, 17, 16, int(255 * a)), outline=rgba(B, a), width=4)
+    for cx, lado in ((512, -1), (588, 1)):        # copo dela (esquerda) e dele (direita)
+        ang = -lado * 90 * cai * (1 - volta)
+        base = ym
+        if mancha > 0.02:
+            if lado < 0: d.ellipse((cx - 10 - 40 * mancha, ym - 3, cx + 10, ym + 5), fill=(70, 45, 30, int(230 * a)))
+            else: d.ellipse((cx - 10, ym - 3, cx + 10 + 40 * mancha, ym + 5), fill=(70, 45, 30, int(230 * a)))
+        r = math.radians(ang)
+        def gira(px, py):
+            return (cx + (px - cx) * math.cos(r) + (py - base) * math.sin(r), base - (px - cx) * math.sin(r) + (py - base) * math.cos(r))
+        pts = [gira(cx - 14, base), gira(cx + 14, base), gira(cx + 18, base - 40), gira(cx - 18, base - 40)]
+        d.polygon(pts, fill=(18, 17, 16, int(255 * a)), outline=rgba(B, a), width=4)
 
 def emo_ele(t):
     raiva = ap(t, 2.4, 0.6) * (1 - seg(t, 14.0, 15.2))
@@ -101,7 +106,7 @@ for k in range(int(T * FPS)):
     d.line([(0, CHAO), (W, CHAO)], fill=rgba(C, cena_a), width=4)
     copo(d, t, cena_a)
     # ele esbarra no copo; ela se abaixa um pouco para arrumar
-    br_ele = 0.7 * math.sin(math.pi * seg(t, 1.3, 2.1))
+    br_ele = 0.0
     ele(d, XH, CHAO - 6, cena_a, braco=br_ele, lado=-1, cabeca_baixa=0.0, t=t, emo=emo_ele(t))
     xe = XE + 80 * math.sin(math.pi * seg(t, 10.0, 12.2))
     ela(d, xe, CHAO - 6, cena_a, braco=0.8 * math.sin(math.pi * seg(t, 10.2, 12.0)), lado=1, t=t, emo=emo_ela(t))
