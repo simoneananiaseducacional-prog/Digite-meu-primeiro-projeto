@@ -18,11 +18,11 @@ def rgba(c, a): return c + (int(255 * cl(a)),)
 def lerp(a, b, p): return a + (b - a) * p
 def seg(t, t0, t1): return estilo.suavizar(cl((t - t0) / (t1 - t0)))
 
-CENAS = [0.0, 3.2, 6.4, 9.6, 13.4, 16.6, 19.8, 23.0, 26.2, 30.0]
+CENAS = [0.0, 3.2, 6.4, 9.6, 13.4, 16.6, 19.8, 23.0, 26.0, 31.0]
 FRASES = [['Não era pra ser nada…'], ['Mas aconteceu.'], ['E foi intenso.'],
           ['Mas muita gente', 'ficou no meio.'], ['Ela seguiu a vida.', 'E se casou.'],
           ['Mas algumas histórias', 'não terminam dentro da gente.'], ['Anos depois, os dois sozinhos,', 'se encontraram de novo.'],
-          ['Dessa vez,', 'com mais consciência.'], ['Alguns sentimentos merecem', 'mais do que impulso.', 'Merecem cuidado.']]
+          ['Dessa vez,', 'com mais consciência.'], ['Alguns sentimentos', 'merecem cuidado.']]
 T = CENAS[-1]
 CHAO = 1250
 HY = CHAO - 6 - 240
@@ -92,7 +92,7 @@ ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
 for k in range(int(T * FPS)):
     t = k / FPS
     a = ap(t, 0.1, 0.5)
-    cena = a * (1 - 0.92 * ap(t, 26.4, 0.8))
+    cena = a * (1 - 0.92 * ap(t, 26.0, 0.6))
     cen = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(cen, 'RGBA')
     d.line([(0, CHAO), (W, CHAO)], fill=rgba(C, cena), width=4)
     multidao(d, t, cena)
@@ -145,15 +145,15 @@ for k in range(int(T * FPS)):
     im = Image.alpha_composite(fundo, cam); d2 = ImageDraw.Draw(im, 'RGBA')
     for i, linhas in enumerate(FRASES):
         t0, t1 = CENAS[i] + 0.2, CENAS[i + 1] - 0.1
-        if i == 8: t1 = 28.6
+        if i == 8: t1 = 29.8
         fa = jan(t, t0, t1, 0.35)
         if fa < 0.02: continue
         y0 = 470 if i < 8 else 760
         for j, l in enumerate(linhas):
-            cor = G if (i == 8 and j == 2) else TXT
-            fnt = estilo.playfair(56, True) if (i == 8 and j == 2) else FT
+            cor = G if (i == 8 and j == 1) else TXT
+            fnt = estilo.playfair(62, True) if (i == 8 and j == 1) else FT
             d2.text((W/2, y0 + j * 78), l, font=fnt, fill=rgba(cor, fa), anchor='mm')
-    ia = ap(t, 28.6, 0.4)
+    ia = ap(t, 29.8, 0.4)
     if ia > 0.02:
         s_ = 70; yy = 860
         d2.rounded_rectangle((W/2 - s_, yy - s_, W/2 + s_, yy + s_), radius=40, outline=rgba(B, ia), width=10)
