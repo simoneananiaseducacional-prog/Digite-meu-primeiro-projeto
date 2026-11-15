@@ -18,7 +18,7 @@ def rgba(c, a): return c + (int(255 * cl(a)),)
 def lerp(a, b, p): return a + (b - a) * p
 def seg(t, t0, t1): return estilo.suavizar(cl((t - t0) / (t1 - t0)))
 
-T = 28.0
+T = 30.0
 CHAO = 1250
 HY = CHAO - 6 - 240
 XE = 380
@@ -95,7 +95,7 @@ for k in range(int(T * FPS)):
         fa = jan(t, t0, t1)
         for j, l in enumerate(linhas):
             if fa > 0.02: d2.text((W / 2, 440 + j * 76), l, font=FT, fill=rgba(TXT, fa), anchor='mm')
-    fim = 27.6
+    fim = 29.6
     f1 = jan(t, 17.4, fim); f2 = jan(t, 19.0, fim); f3 = jan(t, 20.8, fim); f4 = jan(t, 22.8, fim)
     if f1 > 0.02: d2.text((W / 2, 360), 'Às vezes, não era para ser.', font=estilo.playfair(56), fill=rgba(B, f1), anchor='mm')
     if f2 > 0.02:
@@ -105,7 +105,7 @@ for k in range(int(T * FPS)):
         d2.text((W / 2, 628), 'Às vezes, é quem a gente escolhe,', font=estilo.playfair(56), fill=rgba(B, f3), anchor='mm')
         d2.text((W / 2, 696), 'de novo e de novo.', font=estilo.playfair(56), fill=rgba(B, f3), anchor='mm')
     if f4 > 0.02: d2.text((W / 2, 810), 'Olhar para dentro é o começo.', font=estilo.playfair(58, True), fill=rgba(G, f4), anchor='mm')
-    ia = jan(t, 25.0, 27.8)
+    ia = jan(t, 26.6, 29.8)
     if ia > 0.02: estilo.texto_espacado(d2, (W / 2, 1560), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(26, 500), rgba((150, 146, 140), ia), 6)
     ff.stdin.write(estilo.para_bytes(np.asarray(im.convert('RGB'), np.float32) * (1 - ap(t, T - 0.3, 0.3))))
 ff.stdin.close(); ff.wait()
