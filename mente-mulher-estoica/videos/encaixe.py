@@ -50,7 +50,7 @@ def tentativa(t, ent, ten, sai):
 
 fundo = Image.fromarray(np.clip(estilo.granulado(estilo.fundo()), 0, 255).astype(np.uint8)).convert('RGBA')
 FT = estilo.sem_serifa(54, 500); TXT = (205, 200, 194)
-TEXTOS = [(0.4, 5.6, ['Ela tentou.']), (6.8, 11.4, ['Tentou de novo.']), (11.4, 13.4, ['E de novo', 'não encaixou.'])]
+TEXTOS = [(0.4, 5.6, ['Ela tentou.']), (6.8, 11.4, ['Tentou de novo.']), (11.4, 13.4, ['E de novo', 'não encaixou.']), (13.4, 16.0, ['“O problema sou eu?”'])]
 ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
 for k in range(int(T * FPS)):
     t = k / FPS
@@ -69,8 +69,7 @@ for k in range(int(T * FPS)):
         xh = lerp(1250, 740, seg(t, ent, ent + 1.4)) + (510) * seg(t, sai, sai + 1.4)
         if xh < 1180:
             personagens.CINZA = cor
-            ele(d, xh, CHAO - 6, cena, braco=0.55, lado=-1, cabeca_baixa=0.3 * jan(t, ten + 0.9, sai + 0.4),
-                t=t, emo=dict(sorriso=0.5 * (t < ten + 0.7), triste=0.6 * jan(t, ten + 0.9, sai + 0.6)))
+            ele(d, xh, CHAO - 6, cena, braco=0.55, lado=-1, t=t, emo=None)
             personagens.CINZA = CINZA0
             tipo = 'triangulo' if cor == HOMENS[0][3] else 'quadrado'
             xph = xh - 130 - 60 * junta
@@ -86,15 +85,6 @@ for k in range(int(T * FPS)):
         r = 110 * percebe; gd.ellipse((xp - r, PY - r, xp + r, PY + r), fill=G + (int(80 * percebe * cena),))
         cen = Image.alpha_composite(gl.filter(ImageFilter.GaussianBlur(28)), cen); d = ImageDraw.Draw(cen, 'RGBA')
     peca(d, xp, PY, cena, 1, 'redondo', G, 1.0 + 0.15 * percebe)
-    # balão de pensamento
-    if duvida > 0.02:
-        bx, by = xe + 60, HY - 150
-        for i, (dx, dy, r) in enumerate([(-40, 110, 8), (-25, 80, 12)]):
-            d.ellipse((bx + dx - r, by + dy - r, bx + dx + r, by + dy + r), fill=(16, 16, 16, int(240 * duvida)), outline=rgba(C, duvida), width=3)
-        f = estilo.sem_serifa(36, 700); txt = 'O problema sou eu?'
-        lw = d.textlength(txt, font=f) + 60
-        d.rounded_rectangle((bx - lw / 2, by - 40, bx + lw / 2, by + 40), radius=40, fill=(16, 16, 16, int(240 * duvida)), outline=rgba(C, duvida), width=3)
-        d.text((bx, by), txt, font=f, fill=rgba(B, duvida), anchor='mm')
     # câmera
     close = jan(t, 12.2, 16.8, 0.6)
     K = lerp(1.55, 2.2, close); CX = lerp(560, XE + 60, close); CY = lerp(1100, HY + 20, close)
