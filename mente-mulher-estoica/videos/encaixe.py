@@ -95,10 +95,12 @@ for k in range(int(T * FPS)):
         fa = jan(t, t0, t1)
         for j, l in enumerate(linhas):
             if fa > 0.02: d2.text((W / 2, 440 + j * 76), l, font=FT, fill=rgba(TXT, fa), anchor='mm')
-    f1 = jan(t, 17.4, 24.6); f2 = jan(t, 18.8, 24.6); f3 = jan(t, 20.2, 24.6)
-    if f1 > 0.02: d2.text((W / 2, 420), 'Não foi fracasso.', font=estilo.playfair(64), fill=rgba(B, f1), anchor='mm')
-    if f2 > 0.02: d2.text((W / 2, 520), 'Foi constatação:', font=estilo.playfair(64), fill=rgba(B, f2), anchor='mm')
-    if f3 > 0.02: d2.text((W / 2, 620), 'aquilo não era para ela.', font=estilo.playfair(64, True), fill=rgba(G, f3), anchor='mm')
+    f1 = jan(t, 17.4, 24.6); f2 = jan(t, 18.9, 24.6); f3 = jan(t, 20.6, 24.6)
+    if f1 > 0.02: d2.text((W / 2, 400), 'Às vezes, não era para ser.', font=estilo.playfair(58), fill=rgba(B, f1), anchor='mm')
+    if f2 > 0.02:
+        d2.text((W / 2, 500), 'Às vezes, é algo em nós', font=estilo.playfair(58), fill=rgba(B, f2), anchor='mm')
+        d2.text((W / 2, 572), 'que precisa mudar.', font=estilo.playfair(58), fill=rgba(B, f2), anchor='mm')
+    if f3 > 0.02: d2.text((W / 2, 690), 'Saber a diferença é o começo.', font=estilo.playfair(58, True), fill=rgba(G, f3), anchor='mm')
     ia = jan(t, 22.6, 24.8)
     if ia > 0.02: estilo.texto_espacado(d2, (W / 2, 1560), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(26, 500), rgba((150, 146, 140), ia), 6)
     ff.stdin.write(estilo.para_bytes(np.asarray(im.convert('RGB'), np.float32) * (1 - ap(t, T - 0.3, 0.3))))
