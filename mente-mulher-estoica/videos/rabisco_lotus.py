@@ -16,26 +16,29 @@ def jan(t, t0, t1, d=0.6): return ap(t, t0, d) * (1 - ap(t, t1 - d, d))
 def rgba(c, a): return c + (int(255 * cl(a)),)
 def mix(a, b, p): return tuple(int(a[i] + (b[i] - a[i]) * p) for i in range(3))
 
-CX, CY = 540, 1000
-N = 36
-ORDEM = sorted(range(N), key=lambda i: (i * 0.618034) % 1)      # embaralha a ordem: começo parece caos
-ORDEM = [(i * 13) % N for i in range(N)]                          # 13 e 36 são primos entre si: passa por todos
-def petala(ang, L, Wd, n=110):
-    """Laço em forma de pétala saindo do centro, girado em ang."""
-    pts = []
-    for k in range(n + 1):
-        u = 2 * math.pi * k / n
-        x = L * (1 - math.cos(u)) / 2           # 0..L..0
-        y = Wd * math.sin(u) * (1 - math.cos(u)) / 2
-        ca, sa = math.cos(ang), math.sin(ang)
-        pts.append((CX + x * ca - y * sa, CY + x * sa + y * ca))
-    return pts
-CAMINHO = []
-for j, i in enumerate(ORDEM):
-    ang = 2 * math.pi * i / N - math.pi / 2
-    camada = i % 3
-    L = [330, 270, 200][camada]; Wd = [150, 120, 90][camada]
-    CAMINHO.append(petala(ang, L, Wd))
+CX, CY = 540, 1020
+BX, BY = 540, 1230          # base do lótus
+def petala(ang, L, Wd, n=120):
+    """Pétala de lótus (ponta fina) saindo da base, inclinada em ang (0 = para cima)."""
+    lado1, lado2 = [], []
+    for k in range(n // 2 + 1):
+        u = k / (n // 2)
+        meia = Wd * math.sin(math.pi * u) ** 0.9 * (1 - 0.45 * u)
+        lado1.append((meia, -L * u)); lado2.append((-meia, -L * u))
+    pts = lado1 + lado2[::-1]
+    ca, sa = math.cos(ang), math.sin(ang)
+    return [(BX + x * ca - y * sa, BY + x * sa + y * ca) for x, y in pts]
+CAMADAS = [(11, 78, 380, 95), (9, 56, 330, 92), (7, 36, 290, 85), (5, 16, 250, 75)]   # (qtd, abertura em graus, comprimento, largura)
+PET = []
+for qtd, ab, L, Wd in CAMADAS:
+    for i in range(qtd):
+        g = -ab + 2 * ab * i / (qtd - 1)
+        PET.append(petala(math.radians(g), L, Wd))
+for r_ in (190, 260):     # linhas da água
+    PET.append([(BX + r_ * math.cos(math.radians(a_)), BY + 18 + 0.18 * r_ * math.sin(math.radians(a_))) for a_ in range(0, 361, 6)])
+N = len(PET)
+ORDEM = [(i * 7) % N for i in range(N)] if math.gcd(7, N) == 1 else [(i * 5) % N for i in range(N)]
+CAMINHO = [PET[i] for i in ORDEM]
 TOT = sum(len(p) for p in CAMINHO)
 rng = np.random.default_rng(7)
 CAOS = [dict(dx=rng.uniform(-170, 170), dy=rng.uniform(-60, 240), esc=rng.uniform(0.6, 1.35), rot=rng.uniform(-1.6, 1.6),
@@ -80,7 +83,7 @@ for k in range(int(T * FPS)):
     if ponta and prog < 1:
         d.ellipse((ponta[0] - 5, ponta[1] - 5, ponta[0] + 5, ponta[1] + 5), fill=rgba(B, 1))
     if ouro > 0.02:
-        d.ellipse((CX - 14, CY - 14, CX + 14, CY + 14), fill=rgba(G, ouro))
+        pass
     im = Image.alpha_composite(im, lay)
     fim = 1 - 0.75 * ap(t, 15.2, 0.8)
     if fim < 1:
