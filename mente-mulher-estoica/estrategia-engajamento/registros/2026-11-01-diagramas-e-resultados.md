@@ -94,4 +94,16 @@
 
 **Critério de decisão proposto:** priorizar o formato se a vantagem se repetir em várias publicações comparáveis e nas métricas ligadas ao objetivo, com custo de produção viável. Se o resultado ficar concentrado em um único tema ou vídeo, refinar a hipótese antes de ampliar o volume.
 
-**Decisão após teste:** _(preencher em 15/11/2026; distinguir resultados maduros dos que ainda não completaram a janela de medição)_
+**Decisão após teste (16/11/2026): refinar.**
+
+Semana 09 a 15/11: +1.199 seguidores (antes 89), 41 reels, alcance mediano 379. Os dois reels com desenho entre os 6 analisados ficaram em 1º e 3º lugar ("Vocês podem gostar um do outro...", 82.179; "Desculpa. Eu vou mudar.", 31.595). O 2º lugar ("O pedido de desculpas importa...", 38.573) não tinha desenho. Os 3 menores também não. Inferência: o tema relações pesou tanto quanto o formato; dois vídeos ainda não fecham regra.
+
+Plano de 16 a 22/11:
+- 2 a 3 reels por dia (antes cerca de 6; 21 de 41 ficaram abaixo de 400 de alcance).
+- Tema principal: relações. Modelo: "futuros diferentes" (casal em traço, texto curto, cerca de 18 s).
+- Primeiro quadro: a pergunta inteira legível desde o quadro zero e primeiro movimento antes de 1 s (a ampulheta teve 57% de pulo nos 3 s, contra 41% no "futuros diferentes").
+- Comparação justa: cerca de 1 reels sem desenho para cada 2 com desenho, com mesmo tema, duração e horário parecidos.
+- Legenda: pergunta aberta sobre o tema. Sem "segue para mais..." e sem "comente uma palavra/número".
+- Registrar desenho e diagrama de setas como formatos separados.
+
+Revisão em 23/11: comparar por grupo (com e sem desenho) a mediana de alcance, o pulo nos 3 s, o tempo médio, envios e salvamentos por alcance e quantos passaram de mil. A Simone informa quais reels foram desenho.
