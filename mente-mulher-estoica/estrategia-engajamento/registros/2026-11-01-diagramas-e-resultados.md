@@ -102,7 +102,7 @@ Plano de 16 a 22/11:
 - 2 a 3 reels por dia (antes cerca de 6; 21 de 41 ficaram abaixo de 400 de alcance).
 - Tema principal: relações. Modelo: "futuros diferentes" (casal em traço, texto curto, cerca de 18 s).
 - Primeiro quadro: a pergunta inteira legível desde o quadro zero e primeiro movimento antes de 1 s (a ampulheta teve 57% de pulo nos 3 s, contra 41% no "futuros diferentes").
-- Comparação justa: cerca de 1 reels sem desenho para cada 2 com desenho, com mesmo tema, duração e horário parecidos.
+- Comparação justa: cerca de 1 reel sem desenho para cada 2 com desenho, com mesmo tema, duração e horário parecidos.
 - Legenda: pergunta aberta sobre o tema. Sem "segue para mais..." e sem "comente uma palavra/número".
 - Registrar desenho e diagrama de setas como formatos separados.
 
