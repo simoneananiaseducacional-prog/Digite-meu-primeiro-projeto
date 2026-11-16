@@ -1,5 +1,5 @@
 """Curar ou só parar de doer: ela tem fios cinzas presos ao peito (uma pessoa, o celular, um copo).
-Solta um por vez e o peito fica dourado. Fecho: Sêneca, Cartas a Lucílio, 50.4.
+Solta um por vez, põe a mão no peito e só então o dourado acende (a cura vem de dentro). Fecho: Sêneca, Cartas a Lucílio, 50.4.
 Ideia inspirada em @italoramon.neuro (cena própria; a frase atribuída a Hipócrates não tem fonte, por isso Sêneca).
 Uso: python3 curar.py saida.mp4
 """
@@ -9,7 +9,7 @@ import estilo, midia, personagens
 from personagens import ela, ele
 from PIL import Image, ImageDraw, ImageFilter
 from pathlib import Path
-W, H, FPS, T = 1080, 1920, 30, 18.0
+W, H, FPS, T = 1080, 1920, 30, 19.0
 B, G, C = estilo.BRANCO, estilo.DOURADO, estilo.CINZA
 def cl(p): return max(0.0, min(1.0, p))
 def ap(t, t0, d=0.5): return estilo.suavizar((t - t0) / d) if t > t0 else 0.0
@@ -53,7 +53,8 @@ FQ = estilo.playfair(66); FQ2 = estilo.playfair(66, True)
 saida = Path(sys.argv[1]); ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
 for k in range(int(T * FPS)):
     t = k / FPS
-    cena_a = 1 - 0.8 * ap(t, 12.0, 0.8)
+    cena_a = 1 - 0.8 * ap(t, 13.6, 0.8)
+    mao = ap(t, 11.4, 0.9); ouro = ap(t, 12.0, 1.2)
     soltos = sum(ap(t, ts, DUR) for _, _, ts, _ in FIOS) / 3
     cen = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(cen, 'RGBA')
     d.line([(XE - 360, CHAO), (XE + 360, CHAO)], fill=rgba(C, cena_a * 0.8), width=4)
@@ -71,25 +72,27 @@ for k in range(int(T * FPS)):
                 personagens.CINZA = (175, 175, 175)
             elif nome == 'celular': celular(d, ox, oy, oa)
             else: copo(d, ox, oy + 60, oa)
-    triste = 1 - soltos
-    ela(d, XE, CHAO - 6, cena_a, braco=0.0, lado=1, cabeca_baixa=0.6 * triste, t=t,
-        emo=dict(triste=0.8 * triste, sorriso=0.8 * ap(t, 10.6, 1.2)))
-    # peito: ponto cinza que vai ficando dourado
-    pc = mix((120, 120, 126), G, soltos); r = 14 + 6 * soltos
+    triste = 1 - ouro
+    # peito: ponto cinza que só acende quando ela põe a mão
+    pc = mix((120, 120, 126), G, ouro); r = 12 + 6 * ouro
     d.ellipse((PEITO[0] - r, PEITO[1] - r, PEITO[0] + r, PEITO[1] + r), fill=rgba(pc, cena_a))
+    personagens.MAO_PEITO = mao
+    ela(d, XE, CHAO - 6, cena_a, braco=0.0, lado=1, cabeca_baixa=0.6 * triste * (1 - 0.3 * soltos), t=t,
+        emo=dict(triste=0.8 * triste, sorriso=0.8 * ap(t, 12.4, 1.0)))
+    personagens.MAO_PEITO = 0.0
     big = cen.resize((int(W * K), int(H * K)), Image.BICUBIC)
     cam = Image.new('RGBA', (W, H), (0, 0, 0, 0)); cam.paste(big, (int(W / 2 - PEITO[0] * K), int(1060 - PEITO[1] * K)))
     im = fundo.copy()
-    if soltos > 0.02:
+    if ouro > 0.02:
         gl = Image.new('RGBA', (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(gl)
-        gd.ellipse((W / 2 - 330, 1060 - 330, W / 2 + 330, 1060 + 330), fill=G + (int(80 * soltos * cena_a),))
+        gd.ellipse((W / 2 - 330, 1060 - 330, W / 2 + 330, 1060 + 330), fill=G + (int(80 * ouro * cena_a),))
         im = Image.alpha_composite(im, gl.filter(ImageFilter.GaussianBlur(90)))
     im = Image.alpha_composite(im, cam); d2 = ImageDraw.Draw(im, 'RGBA')
     q = 1 - ap(t, 5.0, 0.5)   # pergunta inteira desde o quadro zero
     if q > 0.02:
         d2.text((W / 2, 300), 'Você quer se curar…', font=FQ, fill=rgba(B, q), anchor='mm')
         d2.text((W / 2, 395), 'ou só parar de doer?', font=FQ2, fill=rgba(G, q), anchor='mm')
-    f1 = jan(t, 12.4, 17.6); f2 = jan(t, 13.6, 17.6)
+    f1 = jan(t, 14.0, 18.6); f2 = jan(t, 15.2, 18.6)
     if f1 > 0.02:
         d2.text((W / 2, 760), 'O nosso mal', font=estilo.playfair(72), fill=rgba(B, f1), anchor='mm')
         d2.text((W / 2, 860), 'não vem de fora:', font=estilo.playfair(72), fill=rgba(B, f1), anchor='mm')

@@ -11,6 +11,7 @@ import math
 DOURADO = (196, 160, 92)
 CINZA = (175, 175, 175)
 CABELO = (24, 22, 22)
+MAO_PEITO = 0.0   # 0 a 1: leva a mão da frente até o peito
 ROSTO = (18, 17, 16)   # preenchimento do rosto (trocar para a cor do papel no design claro)
 def _rgba(c, a): return c + (int(255 * max(0, min(1, a))),)
 
@@ -28,7 +29,14 @@ def _corpo(d, x, y, cor, a, sentado, braco, cabeca_baixa, lado, w=5):
         d.line([(x, hy + 58), (x + lado * 58, quadril[1] - 32)], fill=_rgba(cor, a), width=w)
     if sentado < 0.5:
         mao = (x + lado * (40 + 110 * braco), hy + 72 - 22 * braco)
-        d.line([(x, hy + 58), mao], fill=_rgba(cor, a), width=w)
+        if MAO_PEITO > 0:
+            p = MAO_PEITO; alvo = (x + lado * 6, hy + 96); cot = (x + lado * 46, hy + 122)
+            mao = (mao[0] + (alvo[0] - mao[0]) * p, mao[1] + (alvo[1] - mao[1]) * p)
+            meio = ((x + mao[0]) / 2 + (cot[0] - (x + alvo[0]) / 2) * p, (hy + 58 + mao[1]) / 2 + (cot[1] - (hy + 58 + alvo[1]) / 2) * p)
+            d.line([(x, hy + 58), meio, mao], fill=_rgba(cor, a), width=w, joint='curve')
+            if p > 0.6: d.ellipse((mao[0] - 10, mao[1] - 9, mao[0] + 10, mao[1] + 9), fill=(18, 17, 16, int(255 * a * (p - 0.6) / 0.4)), outline=_rgba(cor, a * (p - 0.6) / 0.4), width=4)
+        else:
+            d.line([(x, hy + 58), mao], fill=_rgba(cor, a), width=w)
         d.line([(x, hy + 58), (x - lado * 38, hy + 140)], fill=_rgba(cor, a), width=w)
     return hx, hy
 
