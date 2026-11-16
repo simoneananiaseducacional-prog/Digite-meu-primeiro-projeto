@@ -8,7 +8,7 @@ import estilo, midia, personagens
 from personagens import ela, ele
 from PIL import Image, ImageDraw
 from pathlib import Path
-W, H, FPS, T = 1080, 1920, 30, 19.0
+W, H, FPS, T = 1080, 1920, 30, 23.0
 B, G, C = estilo.BRANCO, estilo.DOURADO, estilo.CINZA
 TX = (215, 210, 202); CZ = (165, 168, 178)
 def cl(p): return max(0.0, min(1.0, p))
@@ -83,10 +83,10 @@ for k in range(int(T * FPS)):
     for x, _, linhas, cor, tq in PESSOAS:
         cab = tela(x, CHAO - 6 - 240 - 40)
         nuvem_pensamento(d2, cab[0], 790, linhas, cor, jan(t, tq, 9.6, 0.5), (cab[0], cab[1] - 20))
-    f1 = jan(t, 9.8, 13.8); f2 = jan(t, 10.8, 13.8)
+    f1 = jan(t, 9.8, 14.8); f2 = jan(t, 10.8, 14.8)
     if f1 > 0.02: d2.text((W / 2, 820), 'Cada um lê', font=estilo.playfair(74), fill=rgba(B, f1), anchor='mm')
     if f2 > 0.02: d2.text((W / 2, 920), 'com a dor que carrega.', font=estilo.playfair(74, True), fill=rgba(G, f2), anchor='mm')
-    f3 = jan(t, 14.1, 18.6)
+    f3 = jan(t, 15.2, 22.6)
     if f3 > 0.02:
         for i, l in enumerate(['“O que perturba as pessoas', 'não são os fatos, mas as opiniões', 'que elas formam sobre os fatos.”']):
             d2.text((W / 2, 760 + i * 76), l, font=estilo.playfair(52, True), fill=rgba(G if i == 2 else B, f3), anchor='mm')
