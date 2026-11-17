@@ -24,6 +24,10 @@
 
 
 
+## Referência de bonequinhos com bom alcance relatado — 16/11/2026
+
+- [Ciclo de desculpas, repetição e limites](registros/2026-11-16-bonequinhos-ciclo-desculpas-limites.md): vídeo de 52 segundos enviado por Simone como exemplo de muitas visualizações. História relacional concreta, diálogos e decisão final; prioridade de referência para novos roteiros. Métricas exatas não fornecidas.
+
 ## Modelo visual aprovado em 16/11/2026
 
 - [Moldura com vídeo central e foto da Simone](modelos/moldura-video-foto-simone.md): referência exata da montagem “O que a vida ainda está te ensinando?”, aprovada pela autora. Inclui medidas, cores, fontes, foto original e acesso ao vídeo. Reutilizar a estrutura, adaptando a frase ao conteúdo. Aprovação visual confirmada; engajamento ainda sem dados.
