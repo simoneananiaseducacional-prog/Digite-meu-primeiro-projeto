@@ -47,6 +47,8 @@ A autora observa que o público se comove com relacionamentos. Isso orienta a pa
 
 Hashtags opcionais e específicas: `#relacionamentos #escutaempatica #comunicacaonaoviolenta #estoicismo`.
 
+**Correção visual (17/11):** os textos dos diálogos foram centralizados dentro dos respectivos balões. O MP4 da Biblioteca foi atualizado para a versão 1.
+
 **Classificação editorial:** reflexão autoral inspirada na escuta empática e em princípios da Comunicação Não Violenta; não é citação literal nem substitui uma conversa segura ou apoio especializado.
 
 ## Avaliação após publicação
