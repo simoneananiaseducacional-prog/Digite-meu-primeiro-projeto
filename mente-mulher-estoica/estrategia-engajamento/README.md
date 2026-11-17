@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 09/11/2026 (novas dicas arquivadas; posicionamento revisado em 02/11)  
+**Atualização:** 16/11/2026 (modelo visual aprovado arquivado; posicionamento revisado em 02/11)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -22,6 +22,11 @@
 
 
 
+
+
+## Modelo visual aprovado em 16/11/2026
+
+- [Moldura com vídeo central e foto da Simone](modelos/moldura-video-foto-simone.md): referência exata da montagem “O que a vida ainda está te ensinando?”, aprovada pela autora. Inclui medidas, cores, fontes, foto original e acesso ao vídeo. Reutilizar a estrutura, adaptando a frase ao conteúdo. Aprovação visual confirmada; engajamento ainda sem dados.
 
 ## Pesquisas temáticas e referências verificadas
 - [Estamos aqui de passagem: o tempo, o apego e o valor do que é transitório](../pesquisas/2026-11-02-vida-como-passagem-freud-erickson.md) (02/11/2026): pesquisa reunindo Epicteto, Sêneca, Jesus, Marco Aurélio, Buda, Jó, Freud e Milton H. Erickson, além de estudos psicológicos; distingue citações verificadas, sínteses autorais, interpretações e correlações. **Importante:** o Elicit não autorizou acesso à API, então não atribuir resultados a ele; o vínculo com Erickson é interpretativo, sem citação direta sobre a vida como empréstimo.
