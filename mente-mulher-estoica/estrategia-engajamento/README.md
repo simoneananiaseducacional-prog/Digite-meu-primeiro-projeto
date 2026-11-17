@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 16/11/2026 (modelo visual aprovado arquivado; posicionamento revisado em 02/11)  
+**Atualização:** 17/11/2026 (formatos relacionais e piloto de escuta arquivados; modelo visual aprovado em 16/11)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -27,6 +27,10 @@
 ## Referência de bonequinhos com bom alcance relatado — 16/11/2026
 
 - [Ciclo de desculpas, repetição e limites](registros/2026-11-16-bonequinhos-ciclo-desculpas-limites.md): vídeo de 52 segundos enviado por Simone como exemplo de muitas visualizações. História relacional concreta, diálogos e decisão final; prioridade de referência para novos roteiros. Métricas exatas não fornecidas.
+
+## Formatos de Reels relacionais — atualização de 17/11/2026
+
+- [Formatos para testar e piloto de Reel sobre escuta](registros/2026-11-17-formatos-reels-relacionamentos-e-piloto-escuta.md): micro-história com personagens como prioridade baseada nos sinais observados; demais formatos classificados por evidência e pendentes de teste. Inclui roteiro, legenda e plano de medição do piloto.
 
 ## Modelo visual aprovado em 16/11/2026
 
