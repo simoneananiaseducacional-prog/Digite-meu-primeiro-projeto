@@ -32,11 +32,14 @@ A autora observa que o público se comove com relacionamentos. Isso orienta a pa
 3. A conversa vira defesa.
 4. A pessoa que reagiu pergunta: “O que mais te afetou?”
 5. A resposta: “Achei que eu não importava.”
-6. Reflexão: “Escutar não é concordar. É buscar compreender antes de responder.”
-7. Complemento: “A intenção pode ser explicada. O impacto também merece ser ouvido.”
-8. Fecho: “Compreender não apaga os seus limites.”
+6. Ele explica: “Precisei de uma pausa. Estava muito nervoso.”
+7. Ele reconhece: “Podia ter te avisado.”
+8. Ela escuta e pede: “Entendi. Pode me avisar quando precisar de uma pausa?”
+9. Ele propõe: “Sim. E combinamos quando voltar à conversa.”
+10. Ela concorda: “Combinado. Quero ouvir o seu lado também.”
+11. Fecho: “Uma conversa precisa de espaço para os dois. Para falar. E para ouvir.”
 
-**Arquivo final:** [Reel de escuta e relacionamento](https://chatgpt.com/library?file_id=libfile_bd5091fb4d648191bf4e63dbd57535db&account_id=personal). Duração de 31,2 s, proporção 9:16, 1080 × 1920, animação minimalista de personagens e texto na tela. O arquivo está sem música para permitir escolha de áudio na publicação.
+**Arquivo final:** [Reel de escuta e relacionamento](https://chatgpt.com/library?file_id=libfile_bd5091fb4d648191bf4e63dbd57535db&account_id=personal). Duração de 43,2 s, proporção 9:16, 1080 × 1920, animação minimalista de personagens e texto na tela. O arquivo está sem música para permitir escolha de áudio na publicação.
 
 **Legenda sugerida:**
 
@@ -62,3 +65,8 @@ Registrar resultados comparáveis após 24 h e 72 h, separando Instagram e Faceb
 - contexto de distribuição e diferenças entre as janelas de medição.
 
 **Decisão posterior:** repetir, ajustar o gancho/ritmo ou arquivar como não validado. Até a publicação e leitura das métricas, este piloto é uma hipótese criativa pronta para teste, não um formato comprovadamente vencedor.
+
+
+## Revisão narrativa solicitada pela autora
+
+A primeira versão não mostrava a explicação dele nem a escuta dela. A versão 2 do MP4 completa a cena com contexto, reconhecimento da falta de aviso e acordo para retomar a conversa. O motivo da saída é uma escolha ficcional deste roteiro, não um fato sobre pessoas reais. Aprendizado: demonstrar reciprocidade no diálogo antes do fechamento reflexivo.
