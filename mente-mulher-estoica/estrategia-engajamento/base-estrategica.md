@@ -329,6 +329,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Vídeo ou foto da Simone, música engraçada em alta, pergunta grande na tela que todo mundo consegue responder nos comentários, e um exemplo de resposta dela ("Eu começo: ...") para puxar a conversa.
 - Versão da página: "Qual é a sua idade emocional sem dizer quantos anos você tem?" (ex.: "Eu começo: hoje prefiro paz a ter razão."). Objetivo: comentários, não seguidores.
 
+### 029. Story com adesivo de texto sobre foto real (público fiel)
+**Classificação:** Preferência visual aprovada pela Simone (19/11/2026).
+- Foto do dia a dia (café, trabalho, carro, escola) com adesivo PNG: letras brancas grossas, fonte fina + letra de mão + maiúscula condensada, emojis, coração rosa, palavra circulada ou traço com bolinha.
+- Texto dourado fino não aparece sobre foto clara: no story, branco grosso com sombra.
+- Gerador: `posts/adesivos_story.py`. Registro: `registros/2026-11-19-adesivos-story.md`.
+
 ---
 
 ## 5. Identidade visual oficial

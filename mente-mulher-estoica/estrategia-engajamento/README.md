@@ -63,6 +63,7 @@
 **Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
 
 ## Registros de dicas
+- [19/11/2026: adesivos de story sobre foto real, estilo aprovado](registros/2026-11-19-adesivos-story.md)
 - [06/11/2026: série Estoicismo nos relacionamentos e cuidado com a evidência](registros/2026-11-06-serie-relacionamentos.md)
 - [06/11/2026: carrossel-ensaio (@unvellum)](registros/2026-11-06-carrossel-ensaio.md)
 - [15/11/2026: vídeo-mapa em capítulos, gancho para seguir (decisão da Simone)](base-estrategica.md)
