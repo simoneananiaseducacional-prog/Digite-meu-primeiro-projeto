@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 09/11/2026 (novas dicas arquivadas; posicionamento revisado em 02/11)  
+**Atualização:** 17/11/2026 (formatos relacionais e piloto de escuta arquivados; modelo visual aprovado em 16/11)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -22,6 +22,19 @@
 
 
 
+
+
+## Referência de bonequinhos com bom alcance relatado — 16/11/2026
+
+- [Ciclo de desculpas, repetição e limites](registros/2026-11-16-bonequinhos-ciclo-desculpas-limites.md): vídeo de 52 segundos enviado por Simone como exemplo de muitas visualizações. História relacional concreta, diálogos e decisão final; prioridade de referência para novos roteiros. Métricas exatas não fornecidas.
+
+## Formatos de Reels relacionais — atualização de 17/11/2026
+
+- [Formatos para testar e piloto de Reel sobre escuta](registros/2026-11-17-formatos-reels-relacionamentos-e-piloto-escuta.md): micro-história com personagens como prioridade baseada nos sinais observados; demais formatos classificados por evidência e pendentes de teste. Inclui roteiro, legenda e plano de medição do piloto.
+
+## Modelo visual aprovado em 16/11/2026
+
+- [Moldura com vídeo central e foto da Simone](modelos/moldura-video-foto-simone.md): referência exata da montagem “O que a vida ainda está te ensinando?”, aprovada pela autora. Inclui medidas, cores, fontes, foto original e acesso ao vídeo. Reutilizar a estrutura, adaptando a frase ao conteúdo. Aprovação visual confirmada; engajamento ainda sem dados.
 
 ## Pesquisas temáticas e referências verificadas
 - [Estamos aqui de passagem: o tempo, o apego e o valor do que é transitório](../pesquisas/2026-11-02-vida-como-passagem-freud-erickson.md) (02/11/2026): pesquisa reunindo Epicteto, Sêneca, Jesus, Marco Aurélio, Buda, Jó, Freud e Milton H. Erickson, além de estudos psicológicos; distingue citações verificadas, sínteses autorais, interpretações e correlações. **Importante:** o Elicit não autorizou acesso à API, então não atribuir resultados a ele; o vínculo com Erickson é interpretativo, sem citação direta sobre a vida como empréstimo.
