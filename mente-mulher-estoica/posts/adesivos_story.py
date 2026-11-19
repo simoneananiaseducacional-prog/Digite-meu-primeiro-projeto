@@ -1,41 +1,87 @@
-"""Adesivos de story (PNG transparente) no padrão da página, para colar sobre fotos do dia a dia
-(café, trabalho, carro, escola). Uso: python3 adesivos_story.py pasta_saida
+"""Adesivos de story (PNG transparente) no estilo das referências que a Simone mandou: letras brancas,
+mistura de fonte fina, maiúscula grossa e letra de mão, emojis, corações e traço sublinhado.
+Uso: python3 adesivos_story.py pasta_saida
 """
-import sys
-sys.path.insert(0, '/home/user/Digite-meu-primeiro-projeto/mente-mulher-estoica/videos')
-import estilo
-from PIL import Image, ImageDraw, ImageFilter
+import sys, math
 from pathlib import Path
-B, G = estilo.BRANCO, estilo.DOURADO
-P, S = estilo.playfair, estilo.sem_serifa
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
+F = Path('/home/user/Digite-meu-primeiro-projeto/mente-mulher-estoica/videos/fontes')
+def fonte(n, t): return ImageFont.truetype(str(F / n), t)
+def fina(t): return fonte('Poppins-Light.ttf', t)
+def grossa(t): return fonte('Poppins-ExtraBold.ttf', t)
+def mao(t): return fonte('CaveatBrush-Regular.ttf', t)
+def alta(t): return fonte('BebasNeue-Regular.ttf', t)
+def script(t): return fonte('Sacramento-Regular.ttf', t)
+EMO = ImageFont.truetype('/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf', 109)
+BR = (255, 255, 255, 255); ROSA = (244, 114, 182, 255); OURO = (242, 214, 150, 255)
 out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
 
-ADESIVOS = [  # nome, [(texto, fonte, cor)]
-    ('cafe', [('correndo contra o tempo', S(40, 400), B), ('mas presente', P(84, True), G), ('no agora.', P(84, True), G)]),
-    ('vida_nao_posta', [('A VIDA QUE A GENTE', S(66, 700), B), ('NÃO POSTA', S(66, 700), B), ('também é prática.', P(52, True), G)]),
-    ('silencio', [('Café, silêncio', P(72), B), ('e o que depende de mim.', P(56, True), G)]),
-    ('bom_dia', [('Bom dia.', P(96, True), G), ('Hoje eu escolho responder,', S(40, 500), B), ('não reagir.', S(40, 500), B)]),
-    ('transito', [('NÃO CONTROLO O TRÂNSITO.', S(50, 700), B), ('Controlo o meu humor.', P(64, True), G)]),
-    ('cabe_a_mim', [('mais um dia', S(40, 400), B), ('de fazer', P(78), B), ('o que cabe a mim.', P(78, True), G)]),
-    ('escola', [('Dia de escola.', P(76), B), ('Cada aluno,', P(58, True), G), ('uma história inteira.', P(58, True), G)]),
-    ('pausa', [('PAUSA', S(88, 700), B), ('para lembrar o que importa.', P(46, True), G)]),
-]
+def emojis(txt, alt=70):
+    ims = []
+    for ch in txt:
+        im = Image.new('RGBA', (140, 140), (0, 0, 0, 0))
+        ImageDraw.Draw(im).text((70, 70), ch, font=EMO, embedded_color=True, anchor='mm')
+        im = im.crop(im.getbbox()); s = alt / im.height
+        ims.append(im.resize((int(im.width * s), alt), Image.LANCZOS))
+    w = sum(i.width for i in ims) + 8 * (len(ims) - 1)
+    linha = Image.new('RGBA', (w, alt), (0, 0, 0, 0)); x = 0
+    for i in ims: linha.alpha_composite(i, (x, 0)); x += i.width + 8
+    return linha
 
-def adesivo(linhas):
-    W = 1080; esp = 14
-    alts = [f.getbbox(t)[3] - f.getbbox(t)[1] for t, f, _ in linhas]
-    H = sum(alts) + esp * (len(linhas) - 1) + 120
-    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
-    y = 60; larg = 0
-    for (t, f, c), h in zip(linhas, alts):
-        d.text((W / 2, y + h / 2), t, font=f, fill=c + (255,), anchor='mm'); y += h + esp
-        larg = max(larg, f.getlength(t))
-    d.line([(W / 2 - 40, y + 16), (W / 2 + 40, y + 16)], fill=G + (255,), width=3)   # traço dourado
-    sombra = Image.new('RGBA', lay.size, (0, 0, 0, 0)); sombra.putalpha(lay.getchannel('A').point(lambda v: int(v * 0.55)))
-    sombra = sombra.filter(ImageFilter.GaussianBlur(6))
-    im = Image.alpha_composite(sombra, lay)
+def coracao(d, cx, cy, r, cor):
+    pts = [(cx + r * 16 * math.sin(u) ** 3 / 16, cy - r * (13 * math.cos(u) - 5 * math.cos(2 * u) - 2 * math.cos(3 * u) - math.cos(4 * u)) / 16)
+           for u in [k / 60 * 2 * math.pi for k in range(61)]]
+    d.polygon(pts, fill=cor)
+
+def montar(itens, largura=1000):
+    """itens: ('t', texto, fonte, cor) | ('e', emojis) | ('sub',) sublinhado | ('oval', texto, fonte) palavra circulada"""
+    blocos = []
+    for it in itens:
+        if it[0] == 'e':
+            blocos.append(emojis(it[1]))
+            continue
+        im = Image.new('RGBA', (largura, 260), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+        if it[0] == 't':
+            _, txt, f, cor = it
+            heart = txt.endswith('♡'); txt = txt.rstrip('♡ ')
+            d.text((largura / 2, 130), txt, font=f, fill=cor, anchor='mm')
+            if heart:
+                r = max(16, f.size * 0.28)
+                coracao(d, largura / 2 + f.getlength(txt) / 2 + r * 1.6, 130 - r * 0.2, r, ROSA)
+        elif it[0] == 'oval':
+            _, txt, f = it
+            w = f.getlength(txt)
+            d.text((largura / 2, 130), txt, font=f, fill=BR, anchor='mm')
+            d.ellipse((largura / 2 - w / 2 - 40, 130 - 62, largura / 2 + w / 2 + 40, 130 + 58), outline=BR, width=5)
+            d.arc((largura / 2 - w / 2 - 30, 130 - 70, largura / 2 + w / 2 + 50, 130 + 50), 190, 250, fill=BR, width=4)
+        elif it[0] == 'sub':
+            d.line([(largura / 2 - 230, 120), (largura / 2 + 200, 126)], fill=BR, width=7)
+            d.ellipse((largura / 2 + 206, 116, largura / 2 + 222, 132), fill=BR)
+        elif it[0] == 'cor':
+            coracao(d, largura / 2 + it[1], 130, 34, ROSA)
+        bb = im.getbbox()
+        if bb: blocos.append(im.crop((0, bb[1], largura, bb[3])))
+    H = sum(b.height for b in blocos) + 18 * (len(blocos) - 1) + 40
+    lay = Image.new('RGBA', (largura, H), (0, 0, 0, 0)); y = 20
+    for b in blocos:
+        lay.alpha_composite(b, ((largura - b.width) // 2, y)); y += b.height + 18
+    sombra = Image.new('RGBA', lay.size, (0, 0, 0, 0)); sombra.putalpha(lay.getchannel('A').point(lambda v: int(v * 0.6)))
+    im = Image.alpha_composite(sombra.filter(ImageFilter.GaussianBlur(7)), lay)
     return im.crop(im.getbbox())
 
-for nome, linhas in ADESIVOS:
-    adesivo(linhas).save(out / f'{nome}.png')
+ADESIVOS = {
+    'cafe': [('e', '🤭☕💖'), ('t', 'correndo contra o tempo', fina(50), BR),
+             ('t', 'MAS SEMPRE PRESENTE', grossa(72), BR), ('t', 'NO AGORA ♡', grossa(72), BR)],
+    'vida_nao_posta': [('e', '🙈🥴'), ('t', 'A VIDA QUE A', alta(130), BR), ('t', 'GENTE NÃO POSTA', alta(130), BR),
+                       ('t', 'TAMBÉM É PRÁTICA ESTOICA', mao(62), BR), ('sub',)],
+    'silencio': [('t', 'Café, silêncio', grossa(84), BR), ('t', 'e o que depende de mim', script(96), BR), ('e', '☕🤍')],
+    'bom_dia': [('t', 'Bom dia!', grossa(130), BR), ('t', 'hoje eu escolho responder,', fina(52), BR), ('t', 'não reagir ♡', fina(52), BR)],
+    'transito': [('t', 'NÃO CONTROLO', mao(110), BR), ('t', 'O TRÂNSITO.', mao(110), BR),
+                 ('t', 'controlo o meu', fina(54), BR), ('oval', 'humor', script(110)), ('e', '🚗💖')],
+    'cabe_a_mim': [('t', 'mais um dia de trabalho,', fina(52), BR), ('t', 'fazendo o que', mao(96), BR), ('oval', 'cabe a mim', mao(96))],
+    'escola': [('e', '📚✨💖'), ('t', 'DIA DE ESCOLA', mao(120), BR), ('t', 'cada aluno,', fina(54), BR), ('t', 'uma história inteira ♡', fina(54), BR)],
+    'pausa': [('t', 'PAUSA', alta(190), BR), ('t', 'para lembrar', fina(54), BR), ('oval', 'o que importa', script(96))],
+}
+for nome, itens in ADESIVOS.items():
+    montar(itens).save(out / f'{nome}.png')
 print('ok', len(ADESIVOS))
