@@ -58,13 +58,16 @@ def montar(itens, largura=1300):
             d.arc((largura / 2 - w / 2 - 30, 130 - 70, largura / 2 + w / 2 + 50, 130 + 50), 190, 250, fill=BR, width=4)
         elif it[0] == 'seg':   # linha com parte circulada: ('seg', [(texto, circular)], fonte)
             _, partes, f = it
-            tot = sum(f.getlength(tx) for tx, _ in partes); x = largura / 2 - tot / 2
+            pad = f.size * 0.32
+            tot = sum(f.getlength(tx) + (2 * pad if c else 0) for tx, c in partes); x = largura / 2 - tot / 2
             for tx, circ in partes:
                 w = f.getlength(tx)
+                if circ: x += pad
                 d.text((x, 130), tx, font=f, fill=BR, anchor='lm')
                 if circ:
-                    d.ellipse((x - 18, 130 - f.size * 0.42, x + w + 14, 130 + f.size * 0.36), outline=BR, width=4)
+                    d.ellipse((x - 22, 130 - f.size * 0.5, x + w + 18, 130 + f.size * 0.48), outline=BR, width=4)
                     d.arc((x - 8, 130 - f.size * 0.5, x + w + 30, 130 + f.size * 0.3), 195, 300, fill=BR, width=3)
+                    x += pad
                 x += w
         elif it[0] == 'sub':
             d.line([(largura / 2 - 230, 120), (largura / 2 + 200, 126)], fill=BR, width=7)
