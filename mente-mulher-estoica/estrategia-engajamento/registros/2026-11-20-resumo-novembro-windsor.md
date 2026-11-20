@@ -35,3 +35,17 @@
 - **Concentração:** os 4 maiores (90 mil, 43 mil, 41 mil, 40 mil) somam mais que todo o resto. Todos são de relação ou fé, com texto curto e personagem.
 - **Formato:** reels são quase tudo. Carrossel e foto ficaram abaixo de 200 de alcance e quase sem envios.
 - **Sugestão do Instagram (7 reels e 10 posts por semana):** é genérica. Pelos dados da conta, vale manter reels como formato principal, com menos volume e mais foco nos temas que destravam.
+
+## Correção: visualizações x alcance (pedido da Simone)
+
+As tabelas acima usam **alcance** (contas únicas). O aplicativo mostra **visualizações** (cada vez que o vídeo foi visto), que é maior. Visualizações pelo Windsor:
+
+| Reels | Data | Visualizações | Alcance |
+|---|---|---|---|
+| Vocês podem gostar um do outro... | 10/11 | 123.961 | 90.352 |
+| Põe o pé que Deus coloca o chão | 08/11 | 52.305 | 41.194 |
+| O pedido de desculpas importa | 12/11 | 48.676 | 42.879 |
+| "Desculpa. Eu vou mudar." (ampulheta) | 14/11 | 48.137 | 40.442 |
+| Primeiro ela duvida do que viu | 13/11 | 26.130 | 20.447 |
+
+O app pode mostrar um pouco mais (soma Facebook e o dia de hoje). Daqui para frente, relatar as duas medidas.
