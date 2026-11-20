@@ -63,6 +63,8 @@
 **Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
 
 ## Registros de dicas
+- [20/11/2026: resumo de novembro por tipo e semana (Windsor)](registros/2026-11-20-resumo-novembro-windsor.md)
+- [20/11/2026: leitura dos reels de teste](registros/2026-11-20-reels-de-teste.md)
 - [19/11/2026: adesivos de story sobre foto real, estilo aprovado](registros/2026-11-19-adesivos-story.md)
 - [06/11/2026: série Estoicismo nos relacionamentos e cuidado com a evidência](registros/2026-11-06-serie-relacionamentos.md)
 - [06/11/2026: carrossel-ensaio (@unvellum)](registros/2026-11-06-carrossel-ensaio.md)
