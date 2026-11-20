@@ -335,6 +335,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Texto dourado fino não aparece sobre foto clara: no story, branco grosso com sombra.
 - Gerador: `posts/adesivos_story.py`. Registro: `registros/2026-11-19-adesivos-story.md`.
 
+### 030. "Sozinha" nunca como dor (regra da Simone)
+**Classificação:** Regra da página (20/11/2026).
+- A página ensina que estar consigo é autoconhecimento e aceitação: aprender a viver com a própria companhia.
+- Não usar "sozinha", "solidão" ou "ficar só" como sentimento ruim ou ameaça. Para nomear dor, usar outras palavras (insegura, cansada, com medo, sobrecarregada).
+- Ao falar de relação ruim, o problema é a companhia que não acolhe, não o estar consigo.
+
 ---
 
 ## 5. Identidade visual oficial

@@ -1,5 +1,5 @@
 """Estoicismo e CNV, parte 2: Sentimento. Ela diz "Tô bem.", mas há um nó no peito. Ao olhar para dentro,
-o nó vira palavras (cansada, sozinha, com medo) e o peito fica dourado.
+o nó vira palavras (cansada, insegura, com medo) e o peito fica dourado.
 Rosenberg, Comunicação Não-Violenta, cap. 4; Marco Aurélio, Meditações, 4.3. Uso: python3 sentir.py saida.mp4
 """
 import sys, math, numpy as np
@@ -21,7 +21,7 @@ def mix(a, b, p): return tuple(int(lerp(a[i], b[i], p)) for i in range(3))
 XE, CHAO, K = 540, 1250, 1.6
 PEITO = (XE, 1090)
 def tela(x, y): return (W / 2 + (x - PEITO[0]) * K, 1060 + (y - PEITO[1]) * K)
-PALAVRAS = [('cansada', (215, 980), 5.5), ('sozinha', (865, 980), 7.3), ('com medo', (540, 735), 9.1)]
+PALAVRAS = [('cansada', (215, 980), 5.5), ('insegura', (865, 980), 7.3), ('com medo', (540, 735), 9.1)]
 
 def no(d, s, t, a):
     """Nó embolado no peito; s = tamanho (1 cheio, 0 desfeito)."""
