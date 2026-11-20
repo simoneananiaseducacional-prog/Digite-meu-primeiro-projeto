@@ -353,6 +353,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - O que passar de 500 visualizações é compartilhado com os seguidores.
 - Ao entregar um vídeo, não sugerir postar como reels normal; seguir esta regra.
 
+### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
+**Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).
+- Todo carrossel e foto vem com texto alternativo pronto, uma descrição por tela, para leitores de tela (VoiceOver, TalkBack).
+- Descrever a cena em poucas palavras e transcrever o texto da imagem com a fonte.
+- Onde colocar: Mais opções, Escrever texto alternativo.
+
 ---
 
 ## 5. Identidade visual oficial
