@@ -341,6 +341,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Não usar "sozinha", "solidão" ou "ficar só" como sentimento ruim ou ameaça. Para nomear dor, usar outras palavras (insegura, cansada, com medo, sobrecarregada).
 - Ao falar de relação ruim, o problema é a companhia que não acolhe, não o estar consigo.
 
+### 031. Reels de frase única em vinho (aprovado pela Simone)
+**Classificação:** Preferência visual aprovada (20/11/2026), a medir.
+- Referência: card de frase da @ser_a_paz_do_silencio (2.225 curtidas, 352 envios), fundo vinho com textura.
+- Versão da página: fundo vinho escuro com textura, serifa branca e dourado claro, frase autoral no quadro zero e depois citação com fonte verificada. Cerca de 10 s, sem desenho.
+- Gerador: `videos/carencia.py` (argumento `vinho` ou `preto`). Conta como "sem desenho" na comparação.
+
 ---
 
 ## 5. Identidade visual oficial
