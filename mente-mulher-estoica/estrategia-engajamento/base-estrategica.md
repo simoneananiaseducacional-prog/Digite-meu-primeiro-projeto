@@ -347,6 +347,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Versão da página: fundo vinho escuro com textura, serifa branca e dourado claro, frase autoral no quadro zero e depois citação com fonte verificada. Cerca de 10 s, sem desenho.
 - Gerador: `videos/carencia.py` (argumento `vinho` ou `preto`). Conta como "sem desenho" na comparação.
 
+### 032. Estratégia de reels de teste (decisão da Simone)
+**Classificação:** Regra da página (20/11/2026).
+- Todo reels novo vai primeiro como reels de teste.
+- O que passar de 500 visualizações é compartilhado com os seguidores.
+- Ao entregar um vídeo, não sugerir postar como reels normal; seguir esta regra.
+
 ---
 
 ## 5. Identidade visual oficial
