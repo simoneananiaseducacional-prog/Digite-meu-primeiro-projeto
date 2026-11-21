@@ -63,6 +63,7 @@
 **Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
 
 ## Registros de dicas
+- [21/11/2026: Higgsfield (vídeo com IA) e "comenta uma palavra"](registros/2026-11-21-higgsfield-e-comenta-palavra.md)
 - [20/11/2026: resumo de novembro por tipo e semana (Windsor)](registros/2026-11-20-resumo-novembro-windsor.md)
 - [20/11/2026: leitura dos reels de teste](registros/2026-11-20-reels-de-teste.md)
 - [19/11/2026: adesivos de story sobre foto real, estilo aprovado](registros/2026-11-19-adesivos-story.md)
