@@ -24,6 +24,10 @@
 
 
 
+## Nova referência criativa recebida em 21/11/2026
+
+- [Fofoca estoica em carrossel: referência TikTok e adaptação histórica sobre Musônio Rufo](registros/2026-11-21-referencia-fofoca-estoica-tiktok.md): seis capturas fornecidas pela autora; 99 curtidas/4 comentários/20 salvamentos/7 compartilhamentos visíveis, sem alcance informado. Novo roteiro de sete cards em avaliação, com fontes primárias e contraponto histórico. Sem avaliação de resultados ou artes aprovadas.
+
 ## Referência de bonequinhos com bom alcance relatado — 16/11/2026
 
 - [Ciclo de desculpas, repetição e limites](registros/2026-11-16-bonequinhos-ciclo-desculpas-limites.md): vídeo de 52 segundos enviado por Simone como exemplo de muitas visualizações. História relacional concreta, diálogos e decisão final; prioridade de referência para novos roteiros. Métricas exatas não fornecidas.
