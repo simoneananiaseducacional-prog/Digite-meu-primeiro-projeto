@@ -1,42 +1,32 @@
-# Referência externa — “fofoca” para revelar uma ideia estoica
+# Referência e produção — “fofoca sobre o Estoicismo Feminino” (seis cards)
 
-**Coleta:** 21/11/2026.
-**Origem visual:** seis capturas enviadas pela autora de um post de fotos no TikTok do perfil @amulherestoica; abertura “Posso te contar uma fofoca sobre o Estoicismo Feminino?”. Os seis prints estão na conversa da autora; não presumir licença para reutilizar fotografias.
-**Métricas observáveis no momento da captura:** 99 curtidas, 4 comentários, 20 salvamentos e 7 compartilhamentos; alcance, espectadores únicos, data de publicação e atribuição de seguidores: **não informados**. Não inferir viralidade ou eficácia do gancho desses números.
+**Coleta:** 21/11/2026. **Fonte visual:** seis capturas enviadas pela autora, carrossel TikTok de @amulherestoica. Usar o modelo como inspiração de ritmo/gancho, não reutilizar as fotografias de terceiros.
 
-## Como funciona o modelo
-- Gatilho coloquial de curiosidade (“fofoca”), com promessa de revelação.
-- Carrossel fotográfico: primeiro quadro com duas mulheres cochichando, depois cenas cotidianas com texto sobreposto.
-- Sequência: não reagir a todas as provocações → relações sem reciprocidade → não suprimir emoções → escolhas sob responsabilidade própria → fechamento comercial de ebook.
-- Potencial: tom próximo, identificação com relações e descoberta em etapas.
-- Limitações: caixas de texto excessivas e sobrepostas, leitura prejudicada em tela pequena, simplificação de “estoicismo feminino” e afirmação imprecisa de que se “cuida das emoções” por simples vontade. A proposta original não demonstra resultados nem fundamenta citações.
+## Decisão explícita da autora
+A autora confirmou que **o principal é o gancho original**, e quer a mesma progressão/contexto do post de referência. Não converter em aula histórica ou proposta sobre Musônio Rufo. A autora aprovou a ideia de divulgar no sexto card **o aplicativo já existente “Desafio Estoico”** em lugar do e-book de terceiro.
 
-## Adaptação autoral recomendada
-Tema: **Uma fofoca estoica de quase dois mil anos — Musônio Rufo e o estudo da filosofia pelas mulheres**. Diferencial: revelação histórica verdadeira + contradição histórica, não repetição genérica de “ela mudou depois que aprendeu estoicismo”. A marca acolhe todos os públicos e não cria série “Mulheres Estoicas”.
+## Métricas observáveis no print
+99 curtidas, 4 comentários, 20 salvamentos e 7 compartilhamentos. Alcance, visualizadores únicos, data e novos seguidores não informados. Não concluir viralidade ou eficácia causal.
 
-### Roteiro provisório (revisão antes das artes)
-1. Uma fofoca estoica de quase 2 mil anos: um filósofo defendia algo que ainda incomoda muita gente. 👀
-2. Na Roma antiga, Musônio Rufo dizia que mulheres também deveriam estudar filosofia.
-3. Para ele, justiça, coragem e domínio próprio eram virtudes que mulheres e homens precisavam cultivar.
-4. Mas a história tem uma contradição: ele defendia a formação filosófica das mulheres e ainda aceitava papéis sociais desiguais.
-5. Conhecer a filosofia não é colocar filósofos num pedestal. É compreender suas ideias e reconhecer seus limites.
-6. Na prática, isso exige pensar com autonomia, examinar julgamentos e agir sem abrir mão da justiça.
-7. A parte mais interessante da história? Até os filósofos precisam ser questionados. 🪷 @mente_mulher_estoica
+## Roteiro final usado para montagem (paráfrase autoral, contexto fiel)
 
-### Legenda provisória
-Musônio Rufo defendeu que mulheres também estudassem filosofia (Diatribes III e IV). Foi uma posição marcante em seu contexto, mas não elimina as limitações que suas ideias ainda tinham sobre os papéis sociais. Conhecer filosofia também é saber admirar sem idealizar. 🪷
-#estoicismo #filosofia #musoniorufo
+1. **Posso te contar uma fofoca sobre o Estoicismo Feminino? 👀**
+2. Dizem que a mulher estoica mudou quando percebeu que não precisava responder a todas as provocações, justificar cada escolha ou provar seu valor para ninguém.
+3. Também deixou de insistir em amizades sem reciprocidade, de implorar por atenção e de medir seu valor pela opinião dos outros.
+4. E sabe o que mais? Ela descobriu que não precisava ser fria, esconder o que sentia ou fingir que nada a afetava. Precisava compreender suas emoções antes de agir.
+5. A maior mudança foi perceber que não controlava as atitudes de outras pessoas. Mas podia desenvolver domínio sobre suas escolhas, reações e decisões.
+6. E agora que você já sabe da fofoca, que tal se colocar à prova? Nosso **Desafio Estoico** traz 5 situações do cotidiano para você refletir sobre suas escolhas e reações. Conheça o aplicativo da **Mente Mulher Estoica**. 🪷
 
-### Fontes de conferência
-- Diatribes III e IV de Musônio Rufo: https://stoicismnow.com/read/musonius-rufus
-- Internet Encyclopedia of Philosophy: https://iep.utm.edu/musonius/
-- Aggio, Juliana (2018), “O ‘feminismo’ de Musônio Rufo”: https://periodicos.ufsc.br/index.php/ethic/article/view/1677-2954.2018v17n2p179
-- Acervo local da autora, “MULHERES ESTOICAS.pdf”, seção sobre Musônio Rufo, Diatribes III e IV.
+**Aplicativo:** projeto Lovable *Desafio Estoico*: https://lovable.dev/projects/0b7d516d-6258-45b5-8e6e-147bad95b30c; preview verificado: https://id-preview--0b7d516d-6258-45b5-8e6e-147bad95b30c.lovable.app. Publicação do aplicativo aparece como ativa no Lovable, mas não presumir que URL consta na bio do Instagram.
 
-## Direção visual e produção
-- Sete cards para Instagram, 1080×1350 (4:5), fotografias reais (preferencialmente autorais ou licenciadas), composição editorial preto/grafite e off-white, tipografia serifada com poucos acentos em dourado envelhecido.
-- Uma ideia e pouco texto por card, sem caixas brancas coladas e sem texto sob elementos do app; assinatura discreta.
-- Usar o projeto existente “Mente Mulher Estoica” do Lovable (id 46ce7f2a-8ba2-4344-a8b2-cc10f62a2183) para arte e exportação somente após aprovação do roteiro, conforme padrão PROMPT_BASE.md.
+## Produção
+- **Lovable:** nova rota isolada `/fofoca-estoica` solicitada no projeto existente Mente Mulher Estoica, sem alterar projetos/rotas anteriores. Acompanhar conclusão real antes de afirmar que está pronta.
+- **Formato:** seis cards 1080x1350 4:5, fotos naturais/licenciadas, ambientes diferentes; assinatura @mente_mulher_estoica; gancho forte, textos legíveis e tom conversado. Não usar foto da autora sem arquivo adequado; não copiar a original.
+- **Legenda:** complementar sem repetir cards; foco em emoções não reprimidas, limites e maturidade; link real do Desafio Estoico disponível na página de acesso e deve ser posto na bio antes de prometer 'link na bio'.
+- **Prática estoica:** enquadrar controle como exame de julgamentos e escolhas, sem pretender controlar completamente emoções ou reações fisiológicas.
 
-## Hipótese/teste
-Hipótese: abrir com curiosidade histórica e entregar uma contradição pode gerar salvamentos e compartilhamentos; ainda **não validada**. Após publicação registrar métricas comparáveis em 24h/72h, separando Instagram de Facebook: alcance, envios, salvamentos, seguidores, visitas, distribuição orgânica/paga. Evitar comparação causal com o vídeo de terceiros.
+## Hipótese de engajamento
+Gancho coloquial de fofoca + sequências de identificação podem favorecer avanço nos cards, compartilhamentos e visitas. Teste ainda não realizado. Acompanhar métricas 24h e 72h (IG vs Facebook, paid vs orgânico, envios e salvamentos por alcance, visita a perfil/cliques ao Desafio quando mensuráveis).
+
+## Status
+Referência aprovada quanto ao contexto e ao gancho; montagem em andamento. Artes não consideradas revisadas até confirmação e inspeção da exportação.
