@@ -359,6 +359,12 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Antes de cada criação, puxar os números recentes e partir dos maiores (visualizações, envios, salvamentos).
 - Erro que originou a regra: a matriz de 3 ganchos foi feita com a tábua (1,7 mil) em vez dos maiores da semana (Senna 12,4 mil; raízes 5 mil).
 
+### 035. A fala da Simone é reflexão; o Claude verifica e dá a fonte (regra da Simone)
+**Classificação:** Regra da página (23/11/2026).
+- O que a Simone fala vem dos pensamentos dela, sem referência. Antes de transformar em post ou legenda, conferir em pesquisa ou fonte confiável.
+- Dizer o que procede, o que é menos direto e o que fica de fora (por exemplo, rótulos clínicos como "narcisista", que só um profissional diagnostica).
+- Registro: `registros/2026-11-23-fala-vira-conteudo-verificado.md`.
+
 ### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
 **Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).
 - Todo carrossel e foto vem com texto alternativo pronto, uma descrição por tela, para leitores de tela (VoiceOver, TalkBack).
