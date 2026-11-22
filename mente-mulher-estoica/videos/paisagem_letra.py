@@ -13,7 +13,7 @@ ENT, SAI = sys.argv[1], sys.argv[2]
 DUR = float(subprocess.check_output(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', ENT]))
 # (início, fim, linha branca, linha dourada em itálico)
 LETRA = [
-    (1.0, 4.6, 'E se eu quisesse', 'terminar?'),
+    (1.0, 4.6, 'E se eu quisesse', 'desabar?'),
     (5.3, 9.0, 'Rir de tudo', 'na sua cara'),
     (9.3, 12.6, '', 'O que você faria?'),
     (17.3, 20.9, 'E se eu caísse', 'no chão'),
