@@ -6,6 +6,9 @@ Consultar a **Biblioteca de Engajamento** (`mente-mulher-estoica/estrategia-enga
 - `banco-de-ganchos.md`: escolher o gancho.
 - `base-estrategica.md`: aprendizados numerados e o que já foi testado.
 
+## Análise do perfil antes de criar (regra da Simone, 23/11/2026)
+Antes de escolher tema, formato ou qual vídeo refazer, puxar os números recentes do perfil (Windsor, últimos 7 a 14 dias) e partir do que mais teve visualizações, envios e salvamentos. Não escolher por conveniência (por exemplo, refazer um vídeo só porque o código já existe). Dizer em uma linha qual dado justificou a escolha.
+
 ## Conferência obrigatória (mostrar para a Simone antes de entregar)
 Todo post, vídeo e legenda vem com esta tabela curta, preenchida a partir da Biblioteca:
 

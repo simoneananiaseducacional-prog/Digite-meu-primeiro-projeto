@@ -354,6 +354,11 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Ao entregar um vídeo, não sugerir postar como reels normal; seguir esta regra.
 - Matriz de teste (dica de @brunamalucelli, 23/11/2026): um assunto, mesmo vídeo, 3 ganchos diferentes; o vencedor é o de maior retenção nos 3 primeiros segundos e mais envios, não o de mais curtidas. Registro: `registros/2026-11-23-matriz-reels-de-teste.md`.
 
+### 034. Sempre analisar o perfil antes de criar (regra da Simone)
+**Classificação:** Regra da página (23/11/2026).
+- Antes de cada criação, puxar os números recentes e partir dos maiores (visualizações, envios, salvamentos).
+- Erro que originou a regra: a matriz de 3 ganchos foi feita com a tábua (1,7 mil) em vez dos maiores da semana (Senna 12,4 mil; raízes 5 mil).
+
 ### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
 **Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).
 - Todo carrossel e foto vem com texto alternativo pronto, uma descrição por tela, para leitores de tela (VoiceOver, TalkBack).
