@@ -352,6 +352,7 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Todo reels novo vai primeiro como reels de teste.
 - O que passar de 500 visualizações é compartilhado com os seguidores.
 - Ao entregar um vídeo, não sugerir postar como reels normal; seguir esta regra.
+- Matriz de teste (dica de @brunamalucelli, 23/11/2026): um assunto, mesmo vídeo, 3 ganchos diferentes; o vencedor é o de maior retenção nos 3 primeiros segundos e mais envios, não o de mais curtidas. Registro: `registros/2026-11-23-matriz-reels-de-teste.md`.
 
 ### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
 **Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).

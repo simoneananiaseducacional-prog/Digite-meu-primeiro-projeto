@@ -63,6 +63,7 @@
 **Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
 
 ## Registros de dicas
+- [23/11/2026: matriz de ganchos para reels de teste (@brunamalucelli)](registros/2026-11-23-matriz-reels-de-teste.md)
 - [22/11/2026: revisão da semana 16 a 22/11 (Senna 12,4 mil)](registros/2026-11-22-revisao-semana-16-22.md)
 - [21/11/2026: Higgsfield (vídeo com IA) e "comenta uma palavra"](registros/2026-11-21-higgsfield-e-comenta-palavra.md)
 - [20/11/2026: resumo de novembro por tipo e semana (Windsor)](registros/2026-11-20-resumo-novembro-windsor.md)
