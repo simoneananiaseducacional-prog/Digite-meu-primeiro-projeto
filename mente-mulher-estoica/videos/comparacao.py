@@ -97,8 +97,8 @@ for k in range(int(T * FPS)):
     im = Image.alpha_composite(im, cam)
     im = tela_celular(im, olhando * cena * ap(t, 1.0, 0.5), t)
     q = 1 - ap(t, 11.0, 0.6)   # pergunta inteira desde o quadro zero
-    im = texto(im, (W / 2, 290), 'Quanto tempo você passa', estilo.playfair(62), B, q)
-    im = texto(im, (W / 2, 380), 'olhando a vida dos outros?', estilo.playfair(64, True), G, q)
+    im = texto(im, (W / 2, 290), 'Você também se pega comparando', estilo.playfair(60), B, q)
+    im = texto(im, (W / 2, 380), 'a sua vida com a que vê na tela?', estilo.playfair(62, True), G, q)
     f1 = jan(t, 12.0, 15.6); f2 = jan(t, 12.8, 15.6)
     im = texto(im, (W / 2, 790), 'A grama do vizinho é bonita.', estilo.playfair(66), B, f1)
     im = texto(im, (W / 2, 890), 'A sua precisa de você.', estilo.playfair(70, True), G, f2)
