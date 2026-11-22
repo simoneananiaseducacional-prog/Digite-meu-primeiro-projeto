@@ -1,6 +1,6 @@
 """Tirar o pé da tábua: ela, na beira do penhasco, segura com o pé a tábua onde ele está gritando com ela.
 Ela respira, não grita de volta, tira o pé; a tábua vira e ele cai. Marco Aurélio, Meditações, 6.6.
-Ideia inspirada em @hellendalla (cena própria em traço). Uso: python3 tabua.py saida.mp4
+Ideia inspirada em @hellendalla (cena própria em traço). Uso: python3 tabua.py saida.mp4 [a|b|c]  (gancho da matriz de teste)
 """
 import sys, math, random, numpy as np
 sys.path.insert(0, '/home/user/Digite-meu-primeiro-projeto/mente-mulher-estoica/videos')
@@ -38,6 +38,11 @@ def penhasco(d, a):
     for k in range(3):   # mar lá embaixo
         y = 1640 + k * 34
         d.line([(PIV[0] + 40 + 30 * k, y), (W, y)], fill=rgba((90, 100, 118), a * (0.6 - 0.15 * k)), width=3)
+
+GANCHOS = {'a': ('Você ainda sustenta', 'quem só grita com você?'),
+           'b': ('Parei de segurar a tábua.', 'Aconteceu isso.'),
+           'c': ('Ninguém me contou que dava', 'para simplesmente soltar.')}
+GANCHO = GANCHOS[sys.argv[2] if len(sys.argv) > 2 else 'a']   # matriz de teste: mesmo vídeo, 3 ganchos
 
 fundo = Image.fromarray(np.clip(estilo.granulado(estilo.fundo()), 0, 255).astype(np.uint8)).convert('RGBA')
 saida = Path(sys.argv[1]); ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
@@ -91,8 +96,9 @@ for k in range(int(T * FPS)):
         im = Image.alpha_composite(im, gl.filter(ImageFilter.GaussianBlur(80)))
     im = Image.alpha_composite(im, cam)
     q = 1 - ap(t, 10.8, 0.6)   # pergunta inteira desde o quadro zero
-    im = texto(im, (W / 2, 290), 'Você ainda sustenta', estilo.playfair(66), B, q)
-    im = texto(im, (W / 2, 385), 'quem só grita com você?', estilo.playfair(66, True), G, q)
+    l1, l2 = GANCHO
+    im = texto(im, (W / 2, 290), l1, estilo.playfair(66), B, q)
+    im = texto(im, (W / 2, 385), l2, estilo.playfair(66, True), G, q)
     f1 = jan(t, 11.8, 15.0); f2 = jan(t, 12.6, 15.0)
     im = texto(im, (W / 2, 800), 'Às vezes, a paz', estilo.playfair(74), B, f1)
     im = texto(im, (W / 2, 900), 'é só tirar o pé da tábua.', estilo.playfair(70, True), G, f2)
