@@ -1,6 +1,6 @@
 """Story "pensamento da Simone" (modelo do card com foto, nome e caixa com borda dourada), em fonte mais leve.
 A foto NÃO vai para o repositório: passe o caminho de um arquivo fora dele (scratchpad).
-Uso: python3 story_pensamento.py saida.png foto.png "parágrafo 1||parágrafo 2" "Fonte linha 1|Fonte linha 2" [cormorant|playfair]
+Uso: python3 story_pensamento.py saida.png foto.png "parágrafo 1||parágrafo 2" "Fonte linha 1|Fonte linha 2" [garamond|cormorant|playfair]
 """
 import sys
 sys.path.insert(0, '/home/user/Digite-meu-primeiro-projeto/mente-mulher-estoica/videos')
@@ -11,14 +11,18 @@ W, H = 1080, 1920
 FT = Path('/home/user/Digite-meu-primeiro-projeto/mente-mulher-estoica/videos/fontes')
 CREME, OURO, CINZA = (240, 232, 218), (201, 168, 118), (170, 162, 150)
 saida, foto, texto, fonte_ref = sys.argv[1:5]
-estilo_f = sys.argv[5] if len(sys.argv) > 5 else 'cormorant'
+estilo_f = sys.argv[5] if len(sys.argv) > 5 else 'garamond'
 
 def cormorant(t, peso='Regular', italico=False):
     f = ImageFont.truetype(str(FT / ('CormorantGaramond-Italic.ttf' if italico else 'CormorantGaramond.ttf')), t)
     try: f.set_variation_by_name(peso)
     except Exception: pass
     return f
-if estilo_f == 'playfair':
+def ebg(t, nome): return ImageFont.truetype(str(FT / f'EBGaramond-{nome}.ttf'), t)
+if estilo_f == 'garamond':
+    F_TXT, F_NOME, F_ARROBA, F_REF = ebg(70, 'Regular'), ebg(56, 'Medium'), ebg(34, 'Regular'), ebg(40, 'Italic')
+    ALT = 92
+elif estilo_f == 'playfair':
     F_TXT, F_NOME, F_ARROBA, F_REF = estilo.playfair(66), estilo.playfair(54), estilo.playfair(34), estilo.playfair(38, True)
     ALT = 92
 else:
