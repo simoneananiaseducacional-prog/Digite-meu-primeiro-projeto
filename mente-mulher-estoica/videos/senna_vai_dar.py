@@ -1,5 +1,6 @@
 """Senna, GP do Brasil de 1991: "vai ter que dar". Trecho da entrevista (montagem de @chagaas_07, com as legendas dela)
-+ gancho no topo + fecho em tela própria com Marco Aurélio, Meditações, 6.19. Áudio original.
++ gancho no topo + fecho em tela própria com Marco Aurélio, Meditações, 6.19.
+Sem marca do TikTok e sem áudio original (o teste com marca e áudio teve 1 visualização).
 Ideia da Simone: confiança com lastro (preparo, treino, autoconhecimento). Autoeficácia: Bandura, 1977 (na legenda).
 Uso: python3 senna_vai_dar.py entrada.mp4 saida.mp4
 """
@@ -39,11 +40,12 @@ def montar(a):
     out = FUNDO.copy(); seg = a[Y_SRC:Y_SRC + ALT_V]
     out[Y_DST:Y_DST + ALT_V] = seg * PENA + 8 * (1 - PENA)
     return out
-dec = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-t', str(CORTE), '-i', ENT, '-vf', f'fps={FPS},scale={W}:{H}:flags=lanczos',
+dec = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-t', str(CORTE), '-i', ENT, '-vf', "delogo=x=1:y=452:w=112:h=118:enable='lt(t,5.0)',delogo=x=438:y=758:w=136:h=118:enable='gte(t,4.4)',"
+                        f'fps={FPS},scale={W}:{H}:flags=lanczos',
                         '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], stdout=subprocess.PIPE)
 enc = subprocess.Popen(['ffmpeg', '-loglevel', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
-                        '-i', ENT, '-filter_complex', f'[1:a]atrim=0:{T},asetpts=PTS-STARTPTS,afade=t=out:st={T - 1.8}:d=1.8[a]',
-                        '-map', '0:v', '-map', '[a]', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k',
+                        '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=stereo',   # sem o áudio original: a música entra no Instagram
+                        '-map', '0:v', '-map', '1:a', '-c:v', 'libx264', '-crf', '18', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k',
                         '-shortest', '-movflags', '+faststart', SAI], stdin=subprocess.PIPE)
 def rodape(im):
     d = ImageDraw.Draw(im, 'RGBA')
