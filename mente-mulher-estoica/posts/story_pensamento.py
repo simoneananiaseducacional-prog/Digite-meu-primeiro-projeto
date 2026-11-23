@@ -48,17 +48,23 @@ def quebra(s, f):
         if f.getlength(t) <= LARG: cur = t
         else: out.append(cur); cur = p
     return out + [cur]
-blocos = [quebra(p, F_TXT) for p in texto.split('||')]
 refs = fonte_ref.split('|')
-alt_txt = sum(len(b) for b in blocos) * ALT + (len(blocos) - 1) * 50
-alt = 110 + alt_txt + 70 + 40 + len(refs) * 62 + 90
+TAM0 = F_TXT.size
+while True:   # texto longo: diminui a letra até a caixa caber na tela
+    blocos = [quebra(p, F_TXT) for p in texto.split('||')]
+    gap = int(50 * F_TXT.size / TAM0)
+    alt_txt = sum(len(b) for b in blocos) * ALT + (len(blocos) - 1) * gap
+    alt = 110 + alt_txt + 70 + 40 + len(refs) * 62 + 90
+    if alt <= H - 600 - 110 or F_TXT.size <= 40: break
+    novo = F_TXT.size - 2
+    F_TXT = F_TXT.font_variant(size=novo); ALT = int(ALT * novo / (novo + 2))
 y0 = max(600, (H - alt) // 2 + 120); y1 = y0 + alt
 d.rounded_rectangle((x0, y0, x1, y1), radius=36, fill=(16, 15, 14), outline=OURO, width=3)
 y = y0 + 110
 for b in blocos:
     for l in b:
         d.text((x0 + 75, y), l, font=F_TXT, fill=CREME, anchor='lm'); y += ALT
-    y += 50
+    y += gap
 y += 10
 d.line([(x0 + 75, y), (x0 + 255, y)], fill=OURO, width=3); y += 75
 for r in refs:
