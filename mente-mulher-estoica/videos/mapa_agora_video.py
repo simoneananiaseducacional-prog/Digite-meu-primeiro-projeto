@@ -8,7 +8,7 @@ import midia
 from PIL import Image, ImageDraw, ImageFont
 from pathlib import Path
 W, H, FPS, T = 1080, 1920, 30, 28.0
-OY = 330   # a página (desenho de 1350 px) começa aqui
+OY = 0
 FT = Path(__file__).with_name('fontes')
 def F(n, t): return ImageFont.truetype(str(FT / f'EBGaramond-{n}.ttf'), t)
 TINTA, CINZA, PAPEL, PILULA = (38, 35, 32), (95, 90, 84), (238, 234, 226), (222, 217, 207)
@@ -36,36 +36,37 @@ def pilula(cx, cy, s, f):
     d.rounded_rectangle((2, 3, w + 2, 57), radius=27, fill=PILULA + (255,)); d.text((w / 2 + 2, 30), s, font=f, fill=TINTA + (255,), anchor='mm')
     return (lay, int(cx - lay.width / 2), int(cy + OY - 30))
 
-C = (540, 760)
+C = (540, 1010)
 E = {}
-E['cab'] = [em((W - 110 - F('Regular', 28).getlength('@mente_mulher_estoica   |   12') / 2, 78), camada_texto('@mente_mulher_estoica   |   12', F('Regular', 28), CINZA))]
-E['tit'] = [em((110, 160), camada_texto('O passado já foi.', F('Regular', 60)), 'lm'),
-            em((110, 228), camada_texto('O futuro ainda não chegou.', F('Regular', 60)), 'lm'),
-            em((110, 300), camada_texto('Você vive no agora.', F('Italic', 64)), 'lm')]
-E['par'] = [em((110, 390 + i * 34), camada_texto(l, F('Regular', 27), CINZA), 'lm') for i, l in
-            enumerate(['Remoer o que passou e temer o que virá', 'tiram você do único lugar onde a vida', 'acontece: este momento.'])]
-E['pas'] = [pilula(185, C[1] - 52, 'Seu passado', F('Italic', 32))]
-E['fut'] = [pilula(880, C[1] + 52, 'Seu futuro', F('Italic', 32))]
-E['ago'] = [pilula(C[0], 560, 'Agora', F('Italic', 34))]
-E['pre'] = [pilula(C[0], 935, 'Presença', F('Italic', 34))]
-E['pal'] = [[em((C[0], 985 + i * 34), camada_texto(s, F('Italic', 29)))] for i, s in enumerate(['Atenção', 'Escolha', 'Ação', 'Serenidade'])]
-E['col'] = [pilula(290, 1145, 'O que te prende', F('Medium', 28)), pilula(800, 1145, 'O que te liberta', F('Medium', 28))]
-E['col'] += [em((110, 1190 + i * 30), camada_texto(l, F('Regular', 25)), 'lm') for i, l in enumerate(['Reviver o que passou e', 'antecipar o que não veio.', 'Os dois tiram você daqui.'])]
-E['col'] += [em((590, 1190 + i * 30), camada_texto(l, F('Regular', 25)), 'lm') for i, l in enumerate(['Agir no que depende de você,', 'aqui e agora. É onde a', 'vida acontece.'])]
-E['rod'] = [em((W / 2, 1300), camada_texto('“Cada um vive apenas o presente.”  Marco Aurélio, Meditações, 3.10', F('Italic', 25), CINZA))]
-E['gan'] = [(camada_texto('Quantas vezes hoje', F('Italic', 58)), 0, 0), (camada_texto('você esteve aqui de verdade?', F('Italic', 58)), 0, 0)]
-E['gan'] = [(l, int(W / 2 - l.width / 2), int(150 + i * 70 - l.height / 2)) for i, (l, _, _) in enumerate(E['gan'])]
-E['ped'] = [(l, int(W / 2 - l.width / 2), int(1720 + i * 62 - l.height / 2)) for i, l in
-            enumerate([camada_texto('Salve este mapa para os dias', F('Italic', 50)), camada_texto('em que a cabeça estiver longe.', F('Italic', 50))])]
-fr = F('Italic', 30)
+E['cab'] = []
+E['tit'] = [em((90, 370), camada_texto('O passado já foi.', F('Regular', 76)), 'lm'),
+            em((90, 458), camada_texto('O futuro ainda não chegou.', F('Regular', 76)), 'lm'),
+            em((90, 552), camada_texto('Você vive no agora.', F('Italic', 84)), 'lm')]
+E['par'] = []
+E['pas'] = [pilula(200, C[1] - 64, 'Seu passado', F('Italic', 42))]
+E['fut'] = [pilula(870, C[1] + 64, 'Seu futuro', F('Italic', 42))]
+E['ago'] = [pilula(C[0], 760, 'Agora', F('Italic', 46))]
+E['pre'] = [pilula(C[0], 1250, 'Presença', F('Italic', 46))]
+E['pal'] = [[em((C[0], 1318 + i * 50), camada_texto(s, F('Italic', 40)))] for i, s in enumerate(['Atenção', 'Escolha', 'Ação', 'Serenidade'])]
+E['col'] = [pilula(285, 1555, 'O que te prende', F('Medium', 36)), pilula(805, 1555, 'O que te liberta', F('Medium', 36))]
+E['col'] += [em((70, 1615 + i * 42), camada_texto(l, F('Regular', 34)), 'lm') for i, l in enumerate(['Reviver o passado', 'e antecipar o futuro.'])]
+E['col'] += [em((580, 1615 + i * 42), camada_texto(l, F('Regular', 34)), 'lm') for i, l in enumerate(['Agir no que depende', 'de você, agora.'])]
+E['rod'] = [em((W / 2, 1730), camada_texto('“Cada um vive apenas o presente.”', F('Italic', 36), CINZA)),
+            em((W / 2, 1778), camada_texto('Marco Aurélio, Meditações, 3.10', F('Italic', 32), CINZA))]
+E['gan'] = [(camada_texto('Quantas vezes hoje', F('Italic', 66)), 0, 0), (camada_texto('você esteve aqui de verdade?', F('Italic', 66)), 0, 0)]
+E['gan'] = [(l, int(W / 2 - l.width / 2), int(140 + i * 80 - l.height / 2)) for i, (l, _, _) in enumerate(E['gan'])]
+E['ped'] = [(l, int(W / 2 - l.width / 2), int(140 + i * 80 - l.height / 2)) for i, l in
+            enumerate([camada_texto('Salve este mapa para os dias', F('Italic', 62)), camada_texto('em que a cabeça estiver longe.', F('Italic', 62))])]
+E['arr'] = [(l, int(W / 2 - l.width / 2), int(1860 - l.height / 2)) for l in [camada_texto('@mente_mulher_estoica', F('Regular', 30), CINZA)]]
+fr = F('Italic', 40)
 RAIOS = []   # (fim, camada do rótulo, posição, início)
 def raio(s, ang, L, lado, t0):
     a = math.radians(ang); u = (lado * math.cos(a), -lado * math.sin(a))
     end = (C[0] + L * u[0], C[1] + L * u[1]); k = L - fr.getlength(s) / 2 - 18; n = (-math.sin(a), -math.cos(a))
-    lay = camada_texto(s, fr, ang=ang); p = (C[0] + k * u[0] + 18 * n[0], C[1] + k * u[1] + 18 * n[1])
+    lay = camada_texto(s, fr, ang=ang); p = (C[0] + k * u[0] + 30 * n[0], C[1] + k * u[1] + 30 * n[1])
     RAIOS.append((end, (lay, int(p[0] - lay.width / 2), int(p[1] + OY - lay.height / 2)), t0))
-for i, s in enumerate(['Arrependimentos', 'Mágoas', 'Crenças antigas', 'Culpa']): raio(s, 11 + i * 9, 440, -1, 6.6 + i * 1.1)
-for i, s in enumerate(['Ansiedade', 'E se…?', 'Expectativas', 'Medo de errar']): raio(s, 40 - i * 9, 455, 1, 11.2 + i * 1.1)
+for i, s in enumerate(['Arrependimentos', 'Mágoas', 'Crenças antigas', 'Culpa']): raio(s, 11 + i * 10, 500, -1, 6.6 + i * 1.1)
+for i, s in enumerate(['Ansiedade', 'E se…?', 'Expectativas', 'Medo de errar']): raio(s, 42 - i * 10, 510, 1, 11.2 + i * 1.1)
 
 def colar(base, itens, a):
     if a <= 0.01: return
@@ -77,7 +78,7 @@ def pontos(d, p0, p1, frac, passo=9):
     n = int(math.dist(p0, p1) / passo)
     for i in range(int(n * frac)):
         x = p0[0] + (p1[0] - p0[0]) * i / n; y = p0[1] + (p1[1] - p0[1]) * i / n + OY
-        d.ellipse((x - 1.3, y - 1.3, x + 1.3, y + 1.3), fill=CINZA)
+        d.ellipse((x - 1.8, y - 1.8, x + 1.8, y + 1.8), fill=CINZA)
 
 saida = Path(sys.argv[1]); ff = midia.gravador(saida.with_suffix('.mudo.mp4'), estatico=False)
 for k in range(int(T * FPS)):
@@ -88,19 +89,20 @@ for k in range(int(T * FPS)):
     colar(im, E['par'], ap(t, 1.2))
     lp = ap(t, 3.0, 1.4)                                         # linha do tempo
     if lp > 0:
-        x1 = 85 + (985 - 85) * lp; d.line([(85, C[1] + OY), (x1, C[1] + OY)], fill=TINTA, width=3)
-        if lp >= 1: d.polygon([(1000, C[1] + OY), (982, C[1] + OY - 9), (982, C[1] + OY + 9)], fill=TINTA)
+        x1 = 40 + (1020 - 40) * lp; d.line([(40, C[1] + OY), (x1, C[1] + OY)], fill=TINTA, width=3)
+        if lp >= 1: d.polygon([(1040, C[1] + OY), (1018, C[1] + OY - 11), (1018, C[1] + OY + 11)], fill=TINTA)
     colar(im, E['pas'], ap(t, 4.2)); colar(im, E['fut'], ap(t, 4.6))
-    colar(im, E['ago'], ap(t, 5.2)); pontos(d, (C[0], 592), (C[0], 905), ap(t, 5.4, 1.0))
+    colar(im, E['ago'], ap(t, 5.2)); pontos(d, (C[0], 798), (C[0], 1212), ap(t, 5.4, 1.0))
     for end, rot, t0 in RAIOS:
         pontos(d, C, end, ap(t, t0, 0.7)); colar(im, [rot], ap(t, t0 + 0.5, 0.4))
-    if t >= 4.0: d.ellipse((C[0] - 9, C[1] + OY - 9, C[0] + 9, C[1] + OY + 9), fill=TINTA)
+    if t >= 4.0: d.ellipse((C[0] - 11, C[1] + OY - 11, C[0] + 11, C[1] + OY + 11), fill=TINTA)
     colar(im, E['pre'], ap(t, 15.8))
     for i, it in enumerate(E['pal']): colar(im, it, ap(t, 16.4 + i * 0.5, 0.4))
-    if t > 18.6: d.line([(C[0], 1145 + OY), (C[0], 1145 + OY + 95 * ap(t, 18.6))], fill=TINTA, width=2)
+    if t > 18.6: d.line([(C[0], 1555 + OY), (C[0], 1555 + OY + 110 * ap(t, 18.6))], fill=TINTA, width=2)
     colar(im, E['col'], ap(t, 18.8))
     colar(im, E['rod'], ap(t, 20.2))
     colar(im, E['ped'], ap(t, 21.6))
+    colar(im, E['arr'], 1)
     fade = cl((T - t) / 0.5)
     ff.stdin.write((np.asarray(im.convert('RGB'), np.float32) * fade).astype(np.uint8).tobytes())
 ff.stdin.close(); ff.wait(); midia.juntar_audio(saida.with_suffix('.mudo.mp4'), saida); print('ok', saida)
