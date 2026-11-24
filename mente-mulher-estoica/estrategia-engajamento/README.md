@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 17/11/2026 (formatos relacionais e piloto de escuta arquivados; modelo visual aprovado em 16/11)  
+**Atualização:** 24/11/2026 (leitura da retenção de Reels)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -23,6 +23,19 @@
 
 
 
+
+## Como ler a retenção de um Reels
+
+Dica arquivada em 24/11/2026 a partir de um vídeo de referência de 30 segundos enviado por Sy. Autoria a confirmar. Os gráficos do vídeo são ilustrativos. O horário da queda indica qual trecho rever, e a causa continua sendo uma hipótese.
+
+| Padrão observado | O que conferir no vídeo da página |
+|---|---|
+| Queda forte logo no início | Ler a primeira frase e olhar o primeiro quadro. A situação já fica clara para quem chega sem contexto? |
+| Queda brusca no meio | Rever os segundos antes e depois da queda. Houve repetição, mudança de assunto ou texto que passou rápido demais? |
+| Queda gradual ao longo do vídeo | Conferir se cada trecho acrescenta algo à reflexão e comparar a curva com a de Reels de tema e duração semelhantes. |
+| Queda forte só no final | Ver se a reflexão já terminou e quantos segundos ainda restam de assinatura ou convite à interação. |
+
+**Aplicação na página.** Registrar o segundo da queda, o que aparece ou é dito ali e uma hipótese. No próximo Reels comparável, testar uma mudança por vez. Por exemplo, abrir uma reflexão sobre limites com a fala que iniciou o conflito. Status do teste na página: pendente.
 
 ## Nova referência criativa recebida em 21/11/2026
 
