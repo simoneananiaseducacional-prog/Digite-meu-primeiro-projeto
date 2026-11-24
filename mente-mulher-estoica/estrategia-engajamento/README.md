@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 24/11/2026 (leitura da retenção de Reels)  
+**Atualização:** 24/11/2026 (retenção de Reels e análise de perfil)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -23,6 +23,10 @@
 
 
 
+
+## Análise de perfil em três camadas
+
+[Transcrição dos slides de @douglasgomides e roteiro para avaliar a página](registros/2026-11-24-analise-de-perfil-douglas-gomides.md). Referência de 24/11/2026 sobre voz, público e clareza para quem visita o perfil pela primeira vez. Aplicação pendente de teste.
 
 ## Como ler a retenção de um Reels
 
