@@ -76,3 +76,8 @@ Ganchos e chamadas propostos (o corpo de cada episódio usa Rahmadianti 2025, Ra
 
 Instruções da Consensus mantidas: um roteiro por vez; aviso fixo ("Isto não é diagnóstico. Se dói, procure apoio profissional."); proibido rótulo de pessoa; cena concreta em cada episódio; o estoicismo não é o herói.
 Nota de honestidade da Consensus: a base são estudos qualitativos com três informantes, um modelo teórico e um estudo de projeção interpessoal; a série é conteúdo educativo, não triagem.
+
+## 5. Destaque da série
+- Nome: **Amor & Limites** (escolha da Simone, 26/11/2026).
+- Capa: `posts/saida/destaques/destaque-relacoes.png` (lupa dourada sobre dois anéis), gerada por `posts/capa_destaque.py`.
+- Ordem: trailer primeiro, depois os episódios em sequência (cada reels compartilhado no story e destacado).
