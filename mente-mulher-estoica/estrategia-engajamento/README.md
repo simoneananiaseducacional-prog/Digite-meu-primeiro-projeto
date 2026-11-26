@@ -1,6 +1,6 @@
 # Biblioteca editorial de engajamento — Mente Mulher Estoica
 
-**Atualização:** 17/11/2026 (formatos relacionais e piloto de escuta arquivados; modelo visual aprovado em 16/11)  
+**Atualização:** 24/11/2026 (retenção de Reels e análise de perfil)  
 **Perfil oficial:** @mente_mulher_estoica  
 **Função:** fonte central de estratégias para Reels, carrosséis, Stories e publicações da marca. Consultar antes de roteirizar ou revisar novos posts. Registrar toda dica nova com autor, data, contexto, evidência, aplicação e status de teste.
 
@@ -24,6 +24,23 @@
 
 
 
+## Análise de perfil em três camadas
+
+[Transcrição dos slides de @douglasgomides e roteiro para avaliar a página](registros/2026-11-24-analise-de-perfil-douglas-gomides.md). Referência de 24/11/2026 sobre voz, público e clareza para quem visita o perfil pela primeira vez. Aplicação pendente de teste.
+
+## Como ler a retenção de um Reels
+
+Dica arquivada em 24/11/2026 a partir de um vídeo de referência de 30 segundos enviado por Sy. Autoria a confirmar. Os gráficos do vídeo são ilustrativos. O horário da queda indica qual trecho rever, e a causa continua sendo uma hipótese.
+
+| Padrão observado | O que conferir no vídeo da página |
+|---|---|
+| Queda forte logo no início | Ler a primeira frase e olhar o primeiro quadro. A situação já fica clara para quem chega sem contexto? |
+| Queda brusca no meio | Rever os segundos antes e depois da queda. Houve repetição, mudança de assunto ou texto que passou rápido demais? |
+| Queda gradual ao longo do vídeo | Conferir se cada trecho acrescenta algo à reflexão e comparar a curva com a de Reels de tema e duração semelhantes. |
+| Queda forte só no final | Ver se a reflexão já terminou e quantos segundos ainda restam de assinatura ou convite à interação. |
+
+**Aplicação na página.** Registrar o segundo da queda, o que aparece ou é dito ali e uma hipótese. No próximo Reels comparável, testar uma mudança por vez. Por exemplo, abrir uma reflexão sobre limites com a fala que iniciou o conflito. Status do teste na página: pendente.
+
 ## Nova referência criativa recebida em 21/11/2026
 
 - [Fofoca estoica em carrossel: referência TikTok e adaptação histórica sobre Musônio Rufo](registros/2026-11-21-referencia-fofoca-estoica-tiktok.md): seis capturas fornecidas pela autora; 99 curtidas/4 comentários/20 salvamentos/7 compartilhamentos visíveis, sem alcance informado. Novo roteiro de sete cards em avaliação, com fontes primárias e contraponto histórico. Sem avaliação de resultados ou artes aprovadas.
@@ -35,6 +52,14 @@
 ## Formatos de Reels relacionais — atualização de 17/11/2026
 
 - [Formatos para testar e piloto de Reel sobre escuta](registros/2026-11-17-formatos-reels-relacionamentos-e-piloto-escuta.md): micro-história com personagens como prioridade baseada nos sinais observados; demais formatos classificados por evidência e pendentes de teste. Inclui roteiro, legenda e plano de medição do piloto.
+
+
+## Direção de arte e templates editáveis — 26/11/2026
+- [Padrão visual refinado no Figma: arte editorial sem aparência artificial](modelos/direcao-de-arte-editorial-figma-2026-11-26.md): reduzir bordas e textos pesados, preservar fotografias reais, usar camadas editáveis e revisar antes de aprovar como identidade definitiva. Modelo em construção/revisão visual; nenhuma métrica de desempenho atribuída.
+
+## Modelo de Story de agradecimento aprovado em 25/11/2026
+
+- [Story com prints nativos de mensagens, faixas rosa discretas e duas amigas](modelos/story-agradecimento-montagem-prints-reais-2026-11-25.md): modelo visual aprovado pela autora após rejeitar versões com aparência artificial; usar capturas reais e separar corretamente as pessoas. Desempenho ainda sem dados.
 
 ## Modelo visual aprovado em 16/11/2026
 
