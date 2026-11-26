@@ -53,6 +53,10 @@ Dica arquivada em 24/11/2026 a partir de um vídeo de referência de 30 segundos
 
 - [Formatos para testar e piloto de Reel sobre escuta](registros/2026-11-17-formatos-reels-relacionamentos-e-piloto-escuta.md): micro-história com personagens como prioridade baseada nos sinais observados; demais formatos classificados por evidência e pendentes de teste. Inclui roteiro, legenda e plano de medição do piloto.
 
+
+## Direção de arte e templates editáveis — 26/11/2026
+- [Padrão visual refinado no Figma: arte editorial sem aparência artificial](modelos/direcao-de-arte-editorial-figma-2026-11-26.md): reduzir bordas e textos pesados, preservar fotografias reais, usar camadas editáveis e revisar antes de aprovar como identidade definitiva. Modelo em construção/revisão visual; nenhuma métrica de desempenho atribuída.
+
 ## Modelo de Story de agradecimento aprovado em 25/11/2026
 
 - [Story com prints nativos de mensagens, faixas rosa discretas e duas amigas](modelos/story-agradecimento-montagem-prints-reais-2026-11-25.md): modelo visual aprovado pela autora após rejeitar versões com aparência artificial; usar capturas reais e separar corretamente as pessoas. Desempenho ainda sem dados.
