@@ -66,6 +66,8 @@ Dica arquivada em 24/11/2026 a partir de um vídeo de referência de 30 segundos
 - [Moldura com vídeo central e foto da Simone](modelos/moldura-video-foto-simone.md): referência exata da montagem “O que a vida ainda está te ensinando?”, aprovada pela autora. Inclui medidas, cores, fontes, foto original e acesso ao vídeo. Reutilizar a estrutura, adaptando a frase ao conteúdo. Aprovação visual confirmada; engajamento ainda sem dados.
 
 ## Pesquisas temáticas e referências verificadas
+- [O preço de dar conta de tudo: estoicismo, burnout e limites](../pesquisas/2026-11-26-estoicismo-burnout-limites.md) (26/11/2026): síntese autoral da primeira rodada do Consensus, referências candidatas, lacunas, prompt de aprofundamento e dez pautas de dezembro. Pesquisa exploratória; verificação dos artigos e segunda rodada pendentes. Não tratar filosofia ou hipnoterapia como prevenção clínica comprovada de burnout.
+
 - [Estamos aqui de passagem: o tempo, o apego e o valor do que é transitório](../pesquisas/2026-11-02-vida-como-passagem-freud-erickson.md) (02/11/2026): pesquisa reunindo Epicteto, Sêneca, Jesus, Marco Aurélio, Buda, Jó, Freud e Milton H. Erickson, além de estudos psicológicos; distingue citações verificadas, sínteses autorais, interpretações e correlações. **Importante:** o Elicit não autorizou acesso à API, então não atribuir resultados a ele; o vínculo com Erickson é interpretativo, sem citação direta sobre a vida como empréstimo.
 
 ## Resultados observados em 10/11/2026
