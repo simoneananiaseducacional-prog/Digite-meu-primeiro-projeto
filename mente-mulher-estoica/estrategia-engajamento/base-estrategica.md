@@ -365,6 +365,16 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Dizer o que procede, o que é menos direto e o que fica de fora (por exemplo, rótulos clínicos como "narcisista", que só um profissional diagnostica).
 - Registro: `registros/2026-11-23-fala-vira-conteudo-verificado.md`.
 
+### 036. Menos posts, nada repetido, e a fórmula que viralizou (dados de 20 a 26/11)
+**Classificação:** Regra da página (26/11/2026), aprovada pela Simone.
+- Evidência: 55 publicações em 7 dias (quase 8 por dia; 11 só em 20/11) e cerca de 187 mil visualizações, 82% vindas de 2 posts do Senna (foto 91,9 mil e 1.303 envios; reels 61,8 mil). Fora o Senna, a maioria ficou entre 100 e 600.
+- No máximo 2 posts por dia no feed. O resto vai como reels de teste; só entra no perfil o que passar de 500 visualizações (032).
+- Não repetir post (a tábua saiu duas vezes; foto e reels do Senna com a mesma legenda). Para republicar, mudar o gancho e esperar alguns dias.
+- Sem gancho ou sem legenda, o post morre (93% e 97% de pulo). Humor e texto genérico: 100 a 250 visualizações e zero envios; humor fica para os stories.
+- Vídeo de TV ou de outro aplicativo (marca do TikTok) não distribui: o Senna da entrevista teve 0 e 1 visualização. Foto com licença Creative Commons, sim.
+- Fórmula que viralizou: pessoa real ou cena forte + o que depende de você + fonte conferida + pergunta no fim.
+- Registro: `registros/2026-11-26-diagnostico-semana.md`.
+
 ### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
 **Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).
 - Todo carrossel e foto vem com texto alternativo pronto, uma descrição por tela, para leitores de tela (VoiceOver, TalkBack).
