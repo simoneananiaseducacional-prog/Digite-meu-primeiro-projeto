@@ -58,3 +58,16 @@ Fundo escuro. Título: Você precisa dar conta de tudo? Um ponto dourado se divi
 | Potencial de salvar ou enviar | Três orientações práticas, fáceis de guardar | Comparativo de diagramas | Sem dados (peça nova) |
 
 Pendências de rigor: Hill e Curran (2016) está como "conferir na rodada 2" na pesquisa; a síntese na legenda reflete o resumo publicado da metanálise e deve ser conferida no artigo original. Veredito: **testar como hipótese**, como reels de teste; medir retenção nos 3 s, envios e salvamentos em 24 h e 72 h.
+
+## Versão com personagem (par da versão em esquema)
+Regra da Simone (26/11): todo tema sai em dois estilos, esquema/guia e mapa com bonecos, para testar os dois.
+Código: `videos/reel_dar_conta_bonecos.py`. Saídas: `posts/saida/dar_conta_bonecos.mp4` (30 s, H.264, 1080 × 1920, 30 fps) e `posts/saida/dar_conta_bonecos_capa.png`.
+| Tempo | Cena |
+|---|---|
+| 0 s | Título inteiro no quadro zero; ela em pé no chão |
+| 2,8 a 6 s | Três caixas douradas pousam sobre a cabeça dela: Trabalho, Família, Responsabilidades (rótulo DEMANDAS REAIS) |
+| 7,8 a 11 s | Três pedras vinho por cima: Não posso falhar. Não posso descansar. Tenho que ser forte. (rótulo AUTOCOBRANÇA); a pilha balança e ela se curva |
+| 12 a 14 s | As pedras caem e somem; ela se endireita |
+| 14 a 19 s | A caixa "Responsabilidades" desce para o chão (priorizar); entram as três orientações |
+| 19 a 30 s | Mesma reflexão autoral e referência da versão em esquema |
+Legenda: a mesma da versão em esquema. Teste: postar as duas como reels de teste e comparar retenção nos 3 s, envios e salvamentos em 24 h e 72 h.

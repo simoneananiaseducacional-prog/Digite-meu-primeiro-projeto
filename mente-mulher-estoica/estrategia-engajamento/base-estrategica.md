@@ -375,6 +375,13 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Fórmula que viralizou: pessoa real ou cena forte + o que depende de você + fonte conferida + pergunta no fim.
 - Registro: `registros/2026-11-26-diagnostico-semana.md`.
 
+### 037. Todo tema em dois estilos: esquema e mapa com bonecos (regra da Simone)
+**Classificação:** Regra da página (26/11/2026).
+- Cada tema novo sai em duas versões: esquema/guia (pergunta, setas, ramificações) e cena com personagem (bonecos em traço, com ação).
+- As duas vão como reels de teste; a de melhor retenção nos 3 s, envios e salvamentos vai para o perfil.
+- Evidência: o esquema "Para onde vai a sua energia?" teve 27.477 de alcance (01/11); as cenas com personagem, como a tábua, ficaram entre as melhores de relacionamento (2,4 mil). Hipótese, não causalidade.
+- Primeiro par: "Você precisa dar conta de tudo?" (`videos/reel_dar_conta_de_tudo.py` e `videos/reel_dar_conta_bonecos.py`).
+
 ### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
 **Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).
 - Todo carrossel e foto vem com texto alternativo pronto, uma descrição por tela, para leitores de tela (VoiceOver, TalkBack).
