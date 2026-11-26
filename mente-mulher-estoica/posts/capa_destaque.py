@@ -81,3 +81,18 @@ for (x, y), cor in (((CX + 245, CY - 245), (115, 45, 45)), ((CX + 245, CY + 245)
 d.ellipse((CX + 268, CY - 16, CX + 300, CY + 16), fill=G)
 im.convert('RGB').save(out / 'destaque-mapas.png')
 print('ok mapas')
+
+# SÉRIE RELAÇÕES (padrões em relacionamentos): lupa sobre dois anéis entrelaçados (olhar com clareza para o vínculo)
+im, d = tela()
+LX, LY, R = CX - 50, CY - 60, 250
+d.ellipse((LX - R, LY - R, LX + R, LY + R), outline=G, width=12)
+ang = math.radians(45)
+p0 = (LX + R * math.cos(ang) + 6, LY + R * math.sin(ang) + 6)
+p1 = (p0[0] + 210 * math.cos(ang), p0[1] + 210 * math.sin(ang))
+d.line([p0, p1], fill=G, width=34)
+d.ellipse((p1[0] - 17, p1[1] - 17, p1[0] + 17, p1[1] + 17), fill=G)
+r = 85
+d.ellipse((LX - 55 - r, LY - r, LX - 55 + r, LY + r), outline=B, width=10)
+d.ellipse((LX + 55 - r, LY - r, LX + 55 + r, LY + r), outline=B, width=10)
+im.convert('RGB').save(out / 'destaque-relacoes.png')
+print('ok relacoes')
