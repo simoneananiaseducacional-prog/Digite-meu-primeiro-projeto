@@ -60,3 +60,19 @@ Regras da série:
 - Mesmo visual (fundo escuro, Playfair, branco e dourado), selo "SÉRIE · EP. N" e aviso no fim: "Isto não é diagnóstico. Se dói, procure apoio profissional." Sem números de telefone (pedido da Simone).
 - Linguagem neutra; nomear o padrão, nunca a pessoa (sem "narcisista").
 - Trailer pronto: `videos/perguntas_relacao.py` gera `posts/saida/perguntas_relacao.mp4`.
+
+## 4. Roteiros dos 6 episódios sugeridos pela Consensus (arquivo) e ajustes
+
+Ganchos e chamadas propostos (o corpo de cada episódio usa Rahmadianti 2025, Rai e Kumari 2025, Solferino 2021 e Praptiningsih 2024):
+
+| Ep. | Gancho | Fecho proposto | Chamada proposta | Ajuste do Claude |
+|---|---|---|---|---|
+| 1 | "Isso é cuidado ou é controle?" | Reconhecer que gritos, sarcasmo e desprezo são nocivos é o primeiro passo | "Salva para reler quando alguém disser que é 'pelo seu bem'." | Manter gancho e chamada; base: Stark (2007) + Epicteto, Encheirídion, 1 |
+| 2 | "Quantas decisões suas você já entregou para outra pessoa?" | Conta própria e grupo de apoio permitiram a separação | "Manda para quem precisa ouvir isso." | Relato de uma única informante: contar como "relatos de pesquisa", não como regra; linguagem neutra ("grupo de apoio") |
+| 3 | "Sua felicidade depende de uma pessoa só?" | Uma terceira parte que acolhe reduz o apelo do parceiro tóxico | "Comenta: quem é a sua terceira parte?" | Tirar o trecho sobre "renda ou riqueza" (é detalhe do modelo matemático e confunde); base: Dutton e Painter (1981) |
+| 4 | "Fase feliz. Fase ansiosa. Fase ameaçada." | Nomear a fase permite reconhecer a dinâmica | "Salva e marca em que fase você está." | Trocar as três fases (um entrevistado) pelo ciclo da violência (Walker, 1979). **Não pedir que a pessoa diga nos comentários em que fase está**: expõe quem vive abuso (o parceiro pode ver). Chamada segura: "Salva para você." |
+| 5 | "Coerção não é prova de amor." | Se há violência, não agir de forma permissiva | "Compartilha. Isso pode chegar a quem precisa." | Tema sensível (ameaça de autolesão, exposição de imagens): tratar com cuidado, sem detalhes, e com o aviso de apoio profissional |
+| 6 | "Lucidez não é frieza." | É possível desenvolver padrões mais saudáveis com consciência | "Salva a série inteira." | Manter; ponte estoica: Sêneca, Cartas a Lucílio, 3.2 |
+
+Instruções da Consensus mantidas: um roteiro por vez; aviso fixo ("Isto não é diagnóstico. Se dói, procure apoio profissional."); proibido rótulo de pessoa; cena concreta em cada episódio; o estoicismo não é o herói.
+Nota de honestidade da Consensus: a base são estudos qualitativos com três informantes, um modelo teórico e um estudo de projeção interpessoal; a série é conteúdo educativo, não triagem.
