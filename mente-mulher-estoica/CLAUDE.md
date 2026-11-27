@@ -39,3 +39,8 @@ A Biblioteca de referência é a da branch **main**. Antes de criar ou revisar q
 1. `git fetch origin main` e juntar a main no ramo de trabalho (`git merge origin/main`), para ler a versão mais recente.
 2. Seguir as regras da main quando houver conflito com registros antigos deste ramo.
 Atualizações aprovadas pela Simone devem chegar à main (por pull request revisado). Juntar ramos uma vez não sincroniza conversas futuras.
+
+## Primeiro quadro e volume (combinado em 27/11/2026, aprendizado 038)
+- Todo vídeo começa com movimento ou personagem em ação no quadro zero, com o gancho visível. Conferir o primeiro quadro antes de entregar e avisar a Simone se estiver fraco.
+- No máximo 2 posts por dia no feed; as duas versões de um tema (esquema e bonecos) em dias diferentes; nunca a mesma legenda duas vezes no dia.
+- Lembrar: capa em "Editar capa" e rótulo de IA desligado quando não houver imagem gerada por IA.

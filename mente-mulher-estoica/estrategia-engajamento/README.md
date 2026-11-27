@@ -98,6 +98,7 @@ Dica arquivada em 24/11/2026 a partir de um vídeo de referência de 30 segundos
 - [23/11/2026: a fala da Simone vira conteúdo verificado (aprendizado 035)](registros/2026-11-23-fala-vira-conteudo-verificado.md)
 - [26/11/2026: diagnóstico da semana, menos posts e a fórmula que viralizou (aprendizado 036)](registros/2026-11-26-diagnostico-semana.md)
 - [26/11/2026: série "Padrões em relacionamentos" (pesquisa Consensus e plano de episódios)](registros/2026-11-26-serie-relacionamentos-toxicos.md)
+- [27/11/2026: primeiro quadro em ação e volume controlado (aprendizado 038)](registros/2026-11-27-primeiro-quadro-e-volume.md)
 - [22/11/2026: revisão da semana 16 a 22/11 (Senna 12,4 mil)](registros/2026-11-22-revisao-semana-16-22.md)
 - [21/11/2026: Higgsfield (vídeo com IA) e "comenta uma palavra"](registros/2026-11-21-higgsfield-e-comenta-palavra.md)
 - [20/11/2026: resumo de novembro por tipo e semana (Windsor)](registros/2026-11-20-resumo-novembro-windsor.md)

@@ -382,6 +382,14 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Evidência: o esquema "Para onde vai a sua energia?" teve 27.477 de alcance (01/11); as cenas com personagem, como a tábua, ficaram entre as melhores de relacionamento (2,4 mil). Hipótese, não causalidade.
 - Primeiro par: "Você precisa dar conta de tudo?" (`videos/reel_dar_conta_de_tudo.py` e `videos/reel_dar_conta_bonecos.py`).
 
+### 038. Primeiro quadro em ação e volume controlado (combinado com a Simone)
+**Classificação:** Regra da página (27/11/2026).
+- Dados de 24 a 27/11: a conta não está bloqueada (posts de 1,6 a 2,2 mil nos mesmos dias); os vídeos com primeiro quadro parado tiveram até 73% de pulo nos 3 s e 140 a 190 visualizações.
+- Todo vídeo começa com movimento ou personagem em ação no quadro zero; o Claude confere o primeiro quadro antes de entregar.
+- No máximo 2 posts por dia no feed; versões de um mesmo tema em dias diferentes; nunca a mesma legenda duas vezes no dia.
+- Rótulo de IA desligado quando não houver imagem gerada por IA. Julgar testes em 24 h e 72 h.
+- Registro: `registros/2026-11-27-primeiro-quadro-e-volume.md`.
+
 ### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
 **Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).
 - Todo carrossel e foto vem com texto alternativo pronto, uma descrição por tela, para leitores de tela (VoiceOver, TalkBack).
