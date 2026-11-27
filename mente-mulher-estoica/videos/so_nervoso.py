@@ -69,12 +69,12 @@ def quadro(t):
     im = texto(im, (W / 2, 1045), 'não podemos nos calar.”', ebg('Italic', 70), G, f * ap(t, 9.6))
     im = texto(im, (W / 2, 1125), 'Marcielly Netto', ebg('Italic', 34), C, f * ap(t, 9.6))
     f = jan(t, 13.0, 20.0)
-    im = texto(im, (W / 2, 560), 'Por que isso acontece?', ebg('Regular', 72), B, f)
-    for i, (s1, s2) in enumerate([('Aprendeu que raiva', 'se resolve na força.'), ('Cresceu vendo violência:', 'risco maior, não destino.'),
-                                  ('Ouviu a vida toda:', '“ele só ficou nervoso”.')]):
-        a = f * ap(t, 14.0 + i * 1.6)
-        im = texto(im, (W / 2, 730 + i * 200), s1, ebg('Regular', 56), B, a)
-        im = texto(im, (W / 2, 800 + i * 200), s2, ebg('Italic', 56), G, a)
+    im = texto(im, (W / 2, 470), 'Por que isso acontece?', ebg('Regular', 72), B, f)
+    im = texto(im, (W / 2, 555), 'Não existe uma causa única.', ebg('Italic', 60), G, f * ap(t, 13.5))
+    for i, s_ in enumerate(['Traumas na infância', 'Masculinidade hostil', 'Dificuldade com a raiva',
+                            'Traços como narcisismo', 'Ciúme e controle', 'Álcool, drogas, pobreza']):
+        im = texto(im, (W / 2, 680 + i * 82), s_, ebg('Regular', 56), B, f * ap(t, 14.0 + i * 0.7))
+    im = texto(im, (W / 2, 1210), 'Nenhum fator determina. Nenhum justifica.', ebg('Italic', 46), G, f * ap(t, 18.3))
     f = jan(t, 20.2, 24.0)
     im = texto(im, (W / 2, 820), '1.571 feminicídios', ebg('Regular', 84), B, f)
     im = texto(im, (W / 2, 915), 'registrados no Brasil em 2025.', ebg('Italic', 60), G, f)
