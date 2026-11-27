@@ -43,3 +43,16 @@ Muitos homens aprenderam o afeto no grito. Crescer assim aumenta o risco de repe
 - Sweet, P. L. (2019). The Sociology of Gaslighting. American Sociological Review, 84, 851-875. https://doi.org/10.1177/0003122419874843
 - Walker, L. E. (1979). The Battered Woman. Harper & Row.
 - Wilson, J. K. (2019). Cycle of Violence. Wiley. https://doi.org/10.1002/9781118929803.ewac0083
+
+## Rodada 2 (Consensus, fornecida pela Simone): fatores que levam homens a agredir parceiras
+Síntese autoral. Nenhum fator determina a violência sozinho; todos aumentam a probabilidade (Gibbs et al., 2020).
+1. Trauma e adversidade na infância: cada experiência adversa a mais eleva em 51% a chance de agressão física à parceira (Kaufman-Parks et al., 2023); testemunhar violência entre cuidadores aumenta o risco, mas o trauma direto pesa mais (Jewkes et al., 2025); negligência ligada à gravidade via TEPT e dominância (Gilbar et al., 2020); meta-análise ACE e IPV (Zhu et al., 2023).
+2. Masculinidade e pares: masculinidade hostil e pares que apoiam a violência (Sutton, 2024); masculinidades antissociais, álcool e drogas (Jewkes et al., 2025); socialização que rejeita o feminino (Shaked e Baum, 2024).
+3. Regulação emocional: raiva intensa e desregulação afetiva (Audet et al., 2022); agressividade como traço media cerca de 15% do efeito da exposição na infância (Cunha et al., 2023).
+4. Personalidade e empatia: traços da "tríade sombria" (narcisismo, maquiavelismo, psicopatia) e falha de empatia fazem a ponte entre trauma e violência (Claing et al., 2025). Falar em traços, não em diagnóstico de pessoas.
+5. Comunicação: padrões de cobrança e retirada (Bouchard et al., 2022); ciúme e controle (OR 1,41), desconfiança (OR 1,66), discussões (OR 1,52) (Kaufman-Parks et al., 2023).
+6. Contexto: pobreza, insegurança alimentar e depressão (Jewkes et al., 2025).
+Mecanismos de transmissão: normalização da violência e normas de gênero, imitação, desregulação emocional, vulnerabilidade e relações prejudicadas (Meinck et al., 2025). Programas eficazes combinam cuidado informado por trauma, saúde mental e mudança de normas de gênero (Voith et al., 2018; Jewkes et al., 2025).
+Ressalvas do Claude: Shaked e Baum (2024) é teórico; percentuais e OR de um único estudo (Kaufman-Parks, amostra dos EUA) não devem ser generalizados no texto; conferir os artigos antes de citar números.
+
+Referências da rodada 2: Audet et al. (2022) JIV; Bouchard et al. (2022) JIV doi:10.1177/08862605221138651; Claing et al. (2025) J Aggression Maltreatment & Trauma doi:10.1080/10926771.2025.2607579; Cunha et al. (2023) Deviant Behavior doi:10.1080/01639625.2023.2270127; Gibbs et al. (2020) Global Health Action doi:10.1080/16549716.2020.1739845; Gilbar, Taft e Dekel (2020) J Family Psychology doi:10.1037/fam0000669; Jewkes et al. (2025) SSM Mental Health doi:10.1016/j.ssmmh.2025.100391; Kaufman-Parks et al. (2023) Child Abuse & Neglect doi:10.1016/j.chiabu.2023.106381; Meinck et al. (2025) Trauma Violence & Abuse doi:10.1177/15248380251361468; Pérez-Cámara et al. (2026) J Criminal Psychology doi:10.1108/jcp-12-2025-0128; Shaked e Baum (2024) JIV doi:10.1177/08862605241287804; Sutton (2024) Violence Against Women doi:10.1177/10778012241252013; Voith et al. (2018) TVA doi:10.1177/1524838018791268; Zhu et al. (2023) Development and Psychopathology doi:10.1017/s0954579423000196.
