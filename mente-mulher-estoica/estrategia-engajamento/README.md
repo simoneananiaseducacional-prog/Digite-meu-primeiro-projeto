@@ -41,6 +41,10 @@ Dica arquivada em 24/11/2026 a partir de um vídeo de referência de 30 segundos
 
 **Aplicação na página.** Registrar o segundo da queda, o que aparece ou é dito ali e uma hipótese. No próximo Reels comparável, testar uma mudança por vez. Por exemplo, abrir uma reflexão sobre limites com a fala que iniciou o conflito. Status do teste na página: pendente.
 
+## Referência filosófica verificada — 27/11/2026
+
+- [Marco Aurélio IX.11: gentileza, ensino e limites](registros/2026-11-27-referencia-marco-aurelio-gentileza-limites.md): referência em print de terceiro; origem da passagem confirmada, tradução do print tratada como adaptação; gancho e carrossel apenas propostos. Asana na seção Ideias e sementes; Lovable sem alterações, aguardando aprovação.
+
 ## Nova referência criativa recebida em 21/11/2026
 
 - [Fofoca estoica em carrossel: referência TikTok e adaptação histórica sobre Musônio Rufo](registros/2026-11-21-referencia-fofoca-estoica-tiktok.md): seis capturas fornecidas pela autora; 99 curtidas/4 comentários/20 salvamentos/7 compartilhamentos visíveis, sem alcance informado. Novo roteiro de sete cards em avaliação, com fontes primárias e contraponto histórico. Sem avaliação de resultados ou artes aprovadas.
