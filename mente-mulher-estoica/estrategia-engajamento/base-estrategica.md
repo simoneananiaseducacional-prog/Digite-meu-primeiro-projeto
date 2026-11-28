@@ -517,3 +517,6 @@ A skill deverá reunir:
 Ela deve separar com clareza: regras permanentes de identidade, preferências editoriais, hipóteses em teste, dados históricos e resultados confirmados por novas medições. Resultados temporários não viram regras fixas.
 
 **Regras da página que valem sempre:** sem travessão nos textos da Simone; fonte específica para toda citação ou dado; tradução livre identificada; linguagem inclusiva com identidade feminina; crédito a outros criadores na legenda e em "Marcar pessoas"; fotos pessoais nunca vão para o repositório.
+
+### 040. Prompts com Identidade, Contexto, Tarefa e Regra (@maestroprompts, 28/11)
+Prompts levados ao ChatGPT seguem quatro blocos: Identidade, Contexto, Tarefa e Regra. A Regra é o que evita resposta genérica (ex.: "entregue no vídeo o que o gancho prometeu", "se os dados não sustentam, diga o que falta medir"). Usar a auditoria de perfil uma vez por mês e o roteiro de Reels em cada vídeo; funil só quando o acervo for lançado. Ferramenta de processo, sem métrica atribuída. Registro: `registros/2026-11-28-prompts-maestroprompts.md`.

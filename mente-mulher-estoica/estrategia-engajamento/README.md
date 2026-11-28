@@ -94,6 +94,7 @@ Dica arquivada em 24/11/2026 a partir de um vídeo de referência de 30 segundos
 **Regra:** antes de criar qualquer post, consultar esta biblioteca. Toda dica nova entra aqui. Registro em `registros/`, número novo na base estratégica e, se mudar o processo, ajuste na skill de crescimento.
 
 ## Registros de dicas
+- [28/11/2026: seis prompts de gestão do perfil (@maestroprompts), formato Identidade/Contexto/Tarefa/Regra (aprendizado 040)](registros/2026-11-28-prompts-maestroprompts.md)
 - [23/11/2026: matriz de ganchos para reels de teste (@brunamalucelli)](registros/2026-11-23-matriz-reels-de-teste.md)
 - [23/11/2026: a fala da Simone vira conteúdo verificado (aprendizado 035)](registros/2026-11-23-fala-vira-conteudo-verificado.md)
 - [26/11/2026: diagnóstico da semana, menos posts e a fórmula que viralizou (aprendizado 036)](registros/2026-11-26-diagnostico-semana.md)
