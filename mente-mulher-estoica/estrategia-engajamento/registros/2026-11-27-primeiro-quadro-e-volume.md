@@ -35,3 +35,13 @@
 
 ## Primeiro vídeo feito com o combinado
 "Some. Volta. Some de novo." (`videos/some_e_volta.py`, `posts/saida/some_e_volta.mp4` e capa). Roteiro e legenda: `roteiros/2026-11-27-some-e-volta.md`. Resultado: preencher após 24 h e 72 h.
+
+## Conferência de 24 h (28/11/2026, Windsor, posts de 26 a 28/11)
+- "Some e volta": não aparece no Windsor (provavelmente ainda como reel de teste ou não publicado). Pedir print dos insights.
+- Melhores da série: Ep. 2 (controle coercitivo, "Não acontece de uma vez"): 1.515 visualizações, 6 envios, 13 salvamentos, 52,9% de pulo. Ep. 1: 338. Trailer: 190.
+- Semáforo (fé + estoicismo, vídeo dela com assinatura): 1.063 visualizações, 7 salvamentos e o menor pulo da semana (33,7%).
+- "Quantas vezes deixamos o passado..." (26/11): 1.878.
+- "Só nervoso": montagem com vídeo real 303 (44,2% de pulo); versão bonecos 118. Dar conta de tudo: esquema 261, bonecos 185 (72 a 74% de pulo).
+- Zonas: 117. Odisseia e fósforos: poucas horas no ar.
+- Volume continua alto: 8 publicações em 27/11; "Só nervoso" e "Dar conta de tudo" saíram duas vezes com a mesma legenda. O combinado (até 2 por dia) não foi aplicado ainda.
+- Leitura: relacionamento com cena do cotidiano (Ep. 2) e fé com vídeo real dela seguram melhor; abertura parada continua com pulo acima de 70%.
