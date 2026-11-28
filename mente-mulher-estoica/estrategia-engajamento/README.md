@@ -24,6 +24,10 @@
 
 
 
+## Referência de humor literário — 28/11/2026
+
+- [Humor acadêmico e observação das relações humanas](registros/2026-11-28-referencia-humor-literario.md): referência de @machadodeboche, 6.089 envios visíveis no print; adaptação autoral em avaliação, sem publicação ou teste concluído.
+
 ## Análise de perfil em três camadas
 
 [Transcrição dos slides de @douglasgomides e roteiro para avaliar a página](registros/2026-11-24-analise-de-perfil-douglas-gomides.md). Referência de 24/11/2026 sobre voz, público e clareza para quem visita o perfil pela primeira vez. Aplicação pendente de teste.
