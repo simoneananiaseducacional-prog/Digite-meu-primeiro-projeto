@@ -390,6 +390,14 @@ Não afirmar que o Instagram distribuiu o conteúdo por causa de uma técnica es
 - Rótulo de IA desligado quando não houver imagem gerada por IA. Julgar testes em 24 h e 72 h.
 - Registro: `registros/2026-11-27-primeiro-quadro-e-volume.md`.
 
+### 039. Deu certo: cena com rosto em close + frase curta de autoconhecimento (Vikings, 28/11)
+**Classificação:** Resultado comprovado da página (28/11/2026).
+- Reel de teste com cena da série Vikings (Ragnar), frase "A melhor fase não é quando tudo muda, é quando a gente finalmente se enxerga", assinatura no rodapé e legenda ligando a Sêneca (Cartas a Lucílio, 6.1).
+- Resultado só com não seguidores: 1,4 mil visualizações, 119 curtidas, 10 envios. Passou de 500 e foi compartilhado com todos.
+- O que funcionou: rosto humano em close desde o primeiro quadro, frase curta que dá vontade de enviar, legenda que liga a cena ao estoicismo.
+- Repetir: cenas fortes com rosto + frase de autoconhecimento + ponte estoica com fonte. Imagem de TV não travou neste caso, mas o risco de direitos continua; sempre como reel de teste.
+- Registro: `registros/2026-11-27-primeiro-quadro-e-volume.md`.
+
 ### 033. Texto alternativo em todo carrossel e foto (acessibilidade)
 **Classificação:** Regra da página (21/11/2026), ideia da Simone (educação inclusiva).
 - Todo carrossel e foto vem com texto alternativo pronto, uma descrição por tela, para leitores de tela (VoiceOver, TalkBack).
