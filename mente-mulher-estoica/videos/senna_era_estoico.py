@@ -9,7 +9,7 @@ import estilo, midia
 from personagens import ele
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pathlib import Path
-W, H, FPS, T = 1080, 1920, 30, 28.0
+W, H, FPS, T = 1080, 1920, 30, 28.5
 B, G, C = estilo.BRANCO, estilo.DOURADO, estilo.CINZA
 FT = Path(__file__).with_name('fontes')
 def ebg(n, t): return ImageFont.truetype(str(FT / f'EBGaramond-{n}.ttf'), t)
@@ -110,19 +110,16 @@ def quadro(t):
                           ('Pediu à irmã ajuda', ebg('Regular', 66), B, 1),
                           ('para cuidar das crianças do Brasil.', ebg('Regular', 60), B, ap(t, 11.2)),
                           ('Nasceu o Instituto Ayrton Senna.', ebg('Italic', 64), G, ap(t, 12.6))], a2, 92)
-    a3 = jan(t, 15.6, 20.4)
-    im = linhas(im, 640, [('Mas em Suzuka, 1990,', ebg('Regular', 66), B, 1),
-                          ('bateu de propósito no rival.', ebg('Regular', 66), B, ap(t, 16.3)),
-                          ('Por raiva. Ele mesmo admitiu.', ebg('Italic', 66), G, ap(t, 17.6))], a3, 92)
-    a4 = jan(t, 20.6, 25.4)
-    im = linhas(im, 470, [('Era estoico?', ebg('Regular', 74), B, 1),
-                          ('Nas atitudes, muitas vezes.', ebg('Italic', 66), G, ap(t, 21.2)),
-                          ('Na raiva, não.', ebg('Italic', 66), G, ap(t, 21.8)),
-                          ('', ebg('Regular', 30), B, 0),
-                          ('“A natureza não dá a virtude.', ebg('Italic', 60), B, ap(t, 22.6)),
-                          ('Tornar-se bom é uma arte.”', ebg('Italic', 60), B, ap(t, 22.6)),
-                          ('Sêneca, Cartas a Lucílio, 90.44', ebg('Italic', 36), C, ap(t, 22.6))], a4, 88)
-    a5 = ap(t, 25.6)
+    a3 = jan(t, 15.6, 20.6)
+    im = linhas(im, 600, [('Era estoico?', ebg('Regular', 76), B, 1),
+                          ('Ninguém é estoico.', ebg('Regular', 68), B, ap(t, 16.4)),
+                          ('A gente está estoico,', ebg('Italic', 70), G, ap(t, 17.4)),
+                          ('a cada atitude.', ebg('Italic', 70), G, ap(t, 17.9))], a3, 96)
+    a4 = jan(t, 20.8, 25.6)
+    im = linhas(im, 640, [('“A natureza não dá a virtude.', ebg('Italic', 64), B, 1),
+                          ('Tornar-se bom é uma arte.”', ebg('Italic', 64), G, ap(t, 21.6)),
+                          ('Sêneca, Cartas a Lucílio, 90.44', ebg('Italic', 38), C, ap(t, 21.6))], a4, 96)
+    a5 = ap(t, 25.8)
     im = texto(im, (W / 2, 700), 'Manda para quem', ebg('Regular', 76), B, a5)
     im = texto(im, (W / 2, 800), 'é fã do Senna.', ebg('Italic', 80), G, a5)
     estilo.texto_espacado(ImageDraw.Draw(im, 'RGBA'), (W / 2, 1720), '@MENTE_MULHER_ESTOICA', estilo.sem_serifa(26, 500), (170, 165, 158, 210), 6)
