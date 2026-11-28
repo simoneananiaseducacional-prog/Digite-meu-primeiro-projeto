@@ -22,3 +22,16 @@ Ideia da Simone: não afirmar que Senna foi filósofo estoico, e sim mostrar ati
 ## Ângulo do post
 
 "Ayrton Senna era estoico?" Resposta honesta: nas atitudes, muitas vezes; na raiva, não. Isso é estoicismo também: ninguém é sábio pronto, a virtude é treino.
+
+## Base acadêmica (pesquisa da Simone na Consensus, 28/11)
+
+Confirma o enquadramento, não os fatos biográficos (esses vêm da imprensa, acima).
+- Ira em Sêneca: excitação voltada à vingança, a ser eliminada. Vogt, K. M. (2006). Anger, Present Injustice and Future Revenge in Seneca's De Ira. https://doi.org/10.1163/9789047409366_009
+- Alternativa estoica à vingança: perdão e amizade. Braicovich, R. S. (2017). Seneca's Medea and De ira: justice and revenge. https://doi.org/10.11606/issn.1981-9471.v11i2p106-119
+- Progresso moral: o proficiente ainda tem paixões; ética como arte de viver. Suvák, V. (2024). Ethics as self-mastery in Seneca's Letters. https://doi.org/10.2478/ebce-2024-0008
+- Filosofia como exercício (askêsis); o sábio como modelo em crise. Sharpe, M. J. (2021). A Good Person for a Crisis? https://doi.org/10.14394/eidos.jpc.2021.0003
+
+## Decisão
+
+- Reel publicado: só as atitudes (Spa e Instituto) + "ninguém é estoico, a gente está estoico" (escolha da Simone).
+- Suzuka 1990 fica para um post próprio sobre raiva e vingança premeditada (Sêneca, Sobre a ira, 2.4; Vogt 2006; Braicovich 2017), na linha do "Raiva é emoção. Agressão é escolha."
