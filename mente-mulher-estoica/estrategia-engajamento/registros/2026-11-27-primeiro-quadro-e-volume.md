@@ -45,3 +45,7 @@
 - Zonas: 117. Odisseia e fósforos: poucas horas no ar.
 - Volume continua alto: 8 publicações em 27/11; "Só nervoso" e "Dar conta de tudo" saíram duas vezes com a mesma legenda. O combinado (até 2 por dia) não foi aplicado ainda.
 - Leitura: relacionamento com cena do cotidiano (Ep. 2) e fé com vídeo real dela seguram melhor; abertura parada continua com pulo acima de 70%.
+
+## Reel de teste "Vikings" (28/11, print da Simone, 06h51)
+1,4 mil visualizações, 119 curtidas, 0 comentários, 10 envios, só para não seguidores. Passou de 500: compartilhar com todos (aprendizado 032).
+Observação: cena de série com rosto em close desde o primeiro quadro e frase curta de autoconhecimento. Mesmo sendo imagem de TV, não travou; o risco de direitos segue existindo, mas não é bloqueio automático.
