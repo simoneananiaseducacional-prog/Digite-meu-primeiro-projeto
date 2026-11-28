@@ -15,7 +15,7 @@ LISTA = ['Comece sem precisar de convite', 'Não fique esperando instruções', 
          'Carregue a sua parte do peso', 'Caminhe ao lado, não pendurado', 'Enfrente os assuntos difíceis',
          'Escolham juntos o rumo', 'Troque a queixa pela ação', 'A casa também é sua: cuide dela',
          'Sonhem e organizem a vida em dupla', 'Filho não é favor, é responsabilidade',
-         'Faça surpresas sem data marcada', 'Deixe suas ações falarem por você', 'Assuma seus erros sem desculpas']
+         'Faça surpresas sem data marcada', 'Cumpra o que você promete', 'Assuma seus erros sem desculpas']
 FECHO = ['“Algumas coisas dependem de nós;', 'outras não dependem.”']
 FONTE = 'Epicteto, Manual, 1'
 
