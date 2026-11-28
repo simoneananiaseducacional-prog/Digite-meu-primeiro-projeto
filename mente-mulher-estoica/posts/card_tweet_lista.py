@@ -1,5 +1,5 @@
 """Card estilo tweet com lista: fundo preto, foto de perfil redonda, nome e @, título, lista e fecho estoico com fonte.
-Inspirado no formato de @maiconknoblauch (lista de atitudes), reescrito com linguagem neutra e ligação ao estoicismo.
+Ideias inspiradas na lista de @maiconknoblauch, reescritas com palavras próprias, com linguagem neutra e ligação ao estoicismo.
 
     python3 card_tweet_lista.py foto_perfil.png saida.jpg   # a foto nunca vai para o repositório
 """
@@ -10,11 +10,12 @@ from PIL import Image, ImageDraw
 
 W, H = 1080, 1350
 BR, CZ, G = (240, 240, 240), (140, 140, 140), estilo.DOURADO
-TITULO = ['Atitudes para não virar “filho”', 'de quem você ama']
-LISTA = ['Tome iniciativa', 'Não espere alguém mandar', 'Resolva antes que precisem pedir',
-         'Não deixe tudo nas costas do outro', 'Seja parceria, não dependência', 'Não fuja das conversas sérias',
-         'Decidam juntos', 'Menos reclamação, mais ação', 'Viu bagunça? Arrume. Não espere ordem',
-         'Planejem a dois', 'Criar os filhos não é “ajudar”', 'Fale menos, cumpra mais', 'Reconheça quando errar']
+TITULO = ['Como ser parceria, e não peso,', 'para quem você ama']
+LISTA = ['Comece sem precisar de convite', 'Não fique esperando instruções', 'Perceba o que falta e faça',
+         'Carregue a sua parte do peso', 'Caminhe ao lado, não pendurado', 'Enfrente os assuntos difíceis',
+         'Escolham juntos o rumo', 'Troque a queixa pela ação', 'A casa também é sua: cuide dela',
+         'Sonhem e organizem a vida em dupla', 'Filho não é favor, é responsabilidade',
+         'Faça surpresas sem data marcada', 'Deixe suas ações falarem por você', 'Assuma seus erros sem desculpas']
 FECHO = ['“Algumas coisas dependem de nós;', 'outras não dependem.”']
 FONTE = 'Epicteto, Manual, 1'
 
@@ -28,14 +29,14 @@ x, y = 90, 110
 img.paste(av, (x, y), m)
 d.text((x + 145, y + 42), 'Mente Mulher Estoica', font=estilo.sem_serifa(38, 700), fill=(245, 245, 245), anchor='lm')
 d.text((x + 145, y + 86), '@mente_mulher_estoica', font=estilo.sem_serifa(30, 400), fill=CZ, anchor='lm')
-y += 175
+y += 165
 ft, fl = estilo.sem_serifa(44, 600), estilo.sem_serifa(36, 400)
 for l in TITULO:
     d.text((x, y), l, font=ft, fill=BR, anchor='ls'); y += 56
 y += 22
 for item in LISTA:
     d.ellipse((x + 2, y - 19, x + 14, y - 7), fill=G)
-    d.text((x + 34, y), item, font=fl, fill=BR, anchor='ls'); y += 54
+    d.text((x + 34, y), item, font=fl, fill=BR, anchor='ls'); y += 50
 y += 30
 fi = estilo.playfair(38, italica=True)
 for l in FECHO:
